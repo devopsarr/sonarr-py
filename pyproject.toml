@@ -1,8 +1,8 @@
 [project]
 name = "sonarr-py"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
-    "basearr-pi>=0.0.1",
+    "basearr-py>=0.0.1",
 ]
 description = "Basic API wrapper for sonarr"
 readme = "README.md"
