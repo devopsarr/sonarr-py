@@ -4,13 +4,13 @@ All URIs are relative to *http://localhost:8989*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_config_indexer**](IndexerConfigApi.md#get_config_indexer) | **GET** /api/v3/config/indexer | 
-[**get_config_indexer_by_id**](IndexerConfigApi.md#get_config_indexer_by_id) | **GET** /api/v3/config/indexer/{id} | 
-[**update_config_indexer**](IndexerConfigApi.md#update_config_indexer) | **PUT** /api/v3/config/indexer/{id} | 
+[**get_indexer_config**](IndexerConfigApi.md#get_indexer_config) | **GET** /api/v3/config/indexer | 
+[**get_indexer_config_by_id**](IndexerConfigApi.md#get_indexer_config_by_id) | **GET** /api/v3/config/indexer/{id} | 
+[**update_indexer_config**](IndexerConfigApi.md#update_indexer_config) | **PUT** /api/v3/config/indexer/{id} | 
 
 
-# **get_config_indexer**
-> IndexerConfigResource get_config_indexer()
+# **get_indexer_config**
+> IndexerConfigResource get_indexer_config()
 
 
 
@@ -53,11 +53,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.IndexerConfigApi(api_client)
 
     try:
-        api_response = api_instance.get_config_indexer()
-        print("The response of IndexerConfigApi->get_config_indexer:\n")
+        api_response = api_instance.get_indexer_config()
+        print("The response of IndexerConfigApi->get_indexer_config:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling IndexerConfigApi->get_config_indexer: %s\n" % e)
+        print("Exception when calling IndexerConfigApi->get_indexer_config: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -97,11 +97,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.IndexerConfigApi(api_client)
 
     try:
-        api_response = api_instance.get_config_indexer()
-        print("The response of IndexerConfigApi->get_config_indexer:\n")
+        api_response = api_instance.get_indexer_config()
+        print("The response of IndexerConfigApi->get_indexer_config:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling IndexerConfigApi->get_config_indexer: %s\n" % e)
+        print("Exception when calling IndexerConfigApi->get_indexer_config: %s\n" % e)
 ```
 
 ### Parameters
@@ -127,8 +127,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_config_indexer_by_id**
-> IndexerConfigResource get_config_indexer_by_id(id)
+# **get_indexer_config_by_id**
+> IndexerConfigResource get_indexer_config_by_id(id)
 
 
 
@@ -172,11 +172,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_config_indexer_by_id(id)
-        print("The response of IndexerConfigApi->get_config_indexer_by_id:\n")
+        api_response = api_instance.get_indexer_config_by_id(id)
+        print("The response of IndexerConfigApi->get_indexer_config_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling IndexerConfigApi->get_config_indexer_by_id: %s\n" % e)
+        print("Exception when calling IndexerConfigApi->get_indexer_config_by_id: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -217,11 +217,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_config_indexer_by_id(id)
-        print("The response of IndexerConfigApi->get_config_indexer_by_id:\n")
+        api_response = api_instance.get_indexer_config_by_id(id)
+        print("The response of IndexerConfigApi->get_indexer_config_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling IndexerConfigApi->get_config_indexer_by_id: %s\n" % e)
+        print("Exception when calling IndexerConfigApi->get_indexer_config_by_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -250,8 +250,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **update_config_indexer**
-> IndexerConfigResource update_config_indexer(id, indexer_config_resource=indexer_config_resource)
+# **update_indexer_config**
+> IndexerConfigResource update_indexer_config(id, indexer_config_resource=indexer_config_resource)
 
 
 
@@ -296,11 +296,11 @@ with sonarr.ApiClient(configuration) as api_client:
     indexer_config_resource = sonarr.IndexerConfigResource() # IndexerConfigResource |  (optional)
 
     try:
-        api_response = api_instance.update_config_indexer(id, indexer_config_resource=indexer_config_resource)
-        print("The response of IndexerConfigApi->update_config_indexer:\n")
+        api_response = api_instance.update_indexer_config(id, indexer_config_resource=indexer_config_resource)
+        print("The response of IndexerConfigApi->update_indexer_config:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling IndexerConfigApi->update_config_indexer: %s\n" % e)
+        print("Exception when calling IndexerConfigApi->update_indexer_config: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -342,11 +342,11 @@ with sonarr.ApiClient(configuration) as api_client:
     indexer_config_resource = sonarr.IndexerConfigResource() # IndexerConfigResource |  (optional)
 
     try:
-        api_response = api_instance.update_config_indexer(id, indexer_config_resource=indexer_config_resource)
-        print("The response of IndexerConfigApi->update_config_indexer:\n")
+        api_response = api_instance.update_indexer_config(id, indexer_config_resource=indexer_config_resource)
+        print("The response of IndexerConfigApi->update_indexer_config:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling IndexerConfigApi->update_config_indexer: %s\n" % e)
+        print("Exception when calling IndexerConfigApi->update_indexer_config: %s\n" % e)
 ```
 
 ### Parameters

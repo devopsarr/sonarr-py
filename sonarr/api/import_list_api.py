@@ -43,13 +43,13 @@ class ImportListApi(object):
         self.api_client = api_client
 
     @validate_arguments
-    def create_importlist(self, import_list_resource : Optional[ImportListResource] = None, **kwargs) -> ImportListResource:  # noqa: E501
-        """create_importlist  # noqa: E501
+    def create_import_list(self, import_list_resource : Optional[ImportListResource] = None, **kwargs) -> ImportListResource:  # noqa: E501
+        """create_import_list  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_importlist(import_list_resource, async_req=True)
+        >>> thread = api.create_import_list(import_list_resource, async_req=True)
         >>> result = thread.get()
 
         :param import_list_resource:
@@ -70,16 +70,16 @@ class ImportListApi(object):
         :rtype: ImportListResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.create_importlist_with_http_info(import_list_resource, **kwargs)  # noqa: E501
+        return self.create_import_list_with_http_info(import_list_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def create_importlist_with_http_info(self, import_list_resource : Optional[ImportListResource] = None, **kwargs):  # noqa: E501
-        """create_importlist  # noqa: E501
+    def create_import_list_with_http_info(self, import_list_resource : Optional[ImportListResource] = None, **kwargs):  # noqa: E501
+        """create_import_list  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_importlist_with_http_info(import_list_resource, async_req=True)
+        >>> thread = api.create_import_list_with_http_info(import_list_resource, async_req=True)
         >>> result = thread.get()
 
         :param import_list_resource:
@@ -130,7 +130,7 @@ class ImportListApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method create_importlist" % _key
+                    " to method create_import_list" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -191,13 +191,13 @@ class ImportListApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def create_importlist_action_by_name(self, name : StrictStr, import_list_resource : Optional[ImportListResource] = None, **kwargs) -> None:  # noqa: E501
-        """create_importlist_action_by_name  # noqa: E501
+    def create_import_list_action_by_name(self, name : StrictStr, import_list_resource : Optional[ImportListResource] = None, **kwargs) -> None:  # noqa: E501
+        """create_import_list_action_by_name  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_importlist_action_by_name(name, import_list_resource, async_req=True)
+        >>> thread = api.create_import_list_action_by_name(name, import_list_resource, async_req=True)
         >>> result = thread.get()
 
         :param name: (required)
@@ -220,16 +220,16 @@ class ImportListApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.create_importlist_action_by_name_with_http_info(name, import_list_resource, **kwargs)  # noqa: E501
+        return self.create_import_list_action_by_name_with_http_info(name, import_list_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def create_importlist_action_by_name_with_http_info(self, name : StrictStr, import_list_resource : Optional[ImportListResource] = None, **kwargs):  # noqa: E501
-        """create_importlist_action_by_name  # noqa: E501
+    def create_import_list_action_by_name_with_http_info(self, name : StrictStr, import_list_resource : Optional[ImportListResource] = None, **kwargs):  # noqa: E501
+        """create_import_list_action_by_name  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_importlist_action_by_name_with_http_info(name, import_list_resource, async_req=True)
+        >>> thread = api.create_import_list_action_by_name_with_http_info(name, import_list_resource, async_req=True)
         >>> result = thread.get()
 
         :param name: (required)
@@ -283,7 +283,7 @@ class ImportListApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method create_importlist_action_by_name" % _key
+                    " to method create_import_list_action_by_name" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -340,13 +340,13 @@ class ImportListApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def delete_importlist(self, id : StrictInt, **kwargs) -> None:  # noqa: E501
-        """delete_importlist  # noqa: E501
+    def delete_import_list(self, id : StrictInt, **kwargs) -> None:  # noqa: E501
+        """delete_import_list  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_importlist(id, async_req=True)
+        >>> thread = api.delete_import_list(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -367,16 +367,16 @@ class ImportListApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.delete_importlist_with_http_info(id, **kwargs)  # noqa: E501
+        return self.delete_import_list_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def delete_importlist_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """delete_importlist  # noqa: E501
+    def delete_import_list_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """delete_import_list  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_importlist_with_http_info(id, async_req=True)
+        >>> thread = api.delete_import_list_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -427,7 +427,7 @@ class ImportListApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method delete_importlist" % _key
+                    " to method delete_import_list" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -475,13 +475,13 @@ class ImportListApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def get_importlist_by_id(self, id : StrictInt, **kwargs) -> ImportListResource:  # noqa: E501
-        """get_importlist_by_id  # noqa: E501
+    def get_import_list_by_id(self, id : StrictInt, **kwargs) -> ImportListResource:  # noqa: E501
+        """get_import_list_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_importlist_by_id(id, async_req=True)
+        >>> thread = api.get_import_list_by_id(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -502,16 +502,16 @@ class ImportListApi(object):
         :rtype: ImportListResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_importlist_by_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.get_import_list_by_id_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_importlist_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """get_importlist_by_id  # noqa: E501
+    def get_import_list_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """get_import_list_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_importlist_by_id_with_http_info(id, async_req=True)
+        >>> thread = api.get_import_list_by_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -562,7 +562,7 @@ class ImportListApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_importlist_by_id" % _key
+                    " to method get_import_list_by_id" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -616,13 +616,13 @@ class ImportListApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def list_importlist(self, **kwargs) -> List[ImportListResource]:  # noqa: E501
-        """list_importlist  # noqa: E501
+    def list_import_list(self, **kwargs) -> List[ImportListResource]:  # noqa: E501
+        """list_import_list  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_importlist(async_req=True)
+        >>> thread = api.list_import_list(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -641,16 +641,16 @@ class ImportListApi(object):
         :rtype: List[ImportListResource]
         """
         kwargs['_return_http_data_only'] = True
-        return self.list_importlist_with_http_info(**kwargs)  # noqa: E501
+        return self.list_import_list_with_http_info(**kwargs)  # noqa: E501
 
     @validate_arguments
-    def list_importlist_with_http_info(self, **kwargs):  # noqa: E501
-        """list_importlist  # noqa: E501
+    def list_import_list_with_http_info(self, **kwargs):  # noqa: E501
+        """list_import_list  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_importlist_with_http_info(async_req=True)
+        >>> thread = api.list_import_list_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -698,7 +698,7 @@ class ImportListApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method list_importlist" % _key
+                    " to method list_import_list" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -750,13 +750,13 @@ class ImportListApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def list_importlist_schema(self, **kwargs) -> List[ImportListResource]:  # noqa: E501
-        """list_importlist_schema  # noqa: E501
+    def list_import_list_schema(self, **kwargs) -> List[ImportListResource]:  # noqa: E501
+        """list_import_list_schema  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_importlist_schema(async_req=True)
+        >>> thread = api.list_import_list_schema(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -775,16 +775,16 @@ class ImportListApi(object):
         :rtype: List[ImportListResource]
         """
         kwargs['_return_http_data_only'] = True
-        return self.list_importlist_schema_with_http_info(**kwargs)  # noqa: E501
+        return self.list_import_list_schema_with_http_info(**kwargs)  # noqa: E501
 
     @validate_arguments
-    def list_importlist_schema_with_http_info(self, **kwargs):  # noqa: E501
-        """list_importlist_schema  # noqa: E501
+    def list_import_list_schema_with_http_info(self, **kwargs):  # noqa: E501
+        """list_import_list_schema  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_importlist_schema_with_http_info(async_req=True)
+        >>> thread = api.list_import_list_schema_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -832,7 +832,7 @@ class ImportListApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method list_importlist_schema" % _key
+                    " to method list_import_list_schema" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -884,13 +884,13 @@ class ImportListApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def test_importlist(self, import_list_resource : Optional[ImportListResource] = None, **kwargs) -> None:  # noqa: E501
-        """test_importlist  # noqa: E501
+    def test_import_list(self, import_list_resource : Optional[ImportListResource] = None, **kwargs) -> None:  # noqa: E501
+        """test_import_list  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.test_importlist(import_list_resource, async_req=True)
+        >>> thread = api.test_import_list(import_list_resource, async_req=True)
         >>> result = thread.get()
 
         :param import_list_resource:
@@ -911,16 +911,16 @@ class ImportListApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.test_importlist_with_http_info(import_list_resource, **kwargs)  # noqa: E501
+        return self.test_import_list_with_http_info(import_list_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def test_importlist_with_http_info(self, import_list_resource : Optional[ImportListResource] = None, **kwargs):  # noqa: E501
-        """test_importlist  # noqa: E501
+    def test_import_list_with_http_info(self, import_list_resource : Optional[ImportListResource] = None, **kwargs):  # noqa: E501
+        """test_import_list  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.test_importlist_with_http_info(import_list_resource, async_req=True)
+        >>> thread = api.test_import_list_with_http_info(import_list_resource, async_req=True)
         >>> result = thread.get()
 
         :param import_list_resource:
@@ -971,7 +971,7 @@ class ImportListApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method test_importlist" % _key
+                    " to method test_import_list" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -1026,13 +1026,13 @@ class ImportListApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def testall_importlist(self, **kwargs) -> None:  # noqa: E501
-        """testall_importlist  # noqa: E501
+    def testall_import_list(self, **kwargs) -> None:  # noqa: E501
+        """testall_import_list  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.testall_importlist(async_req=True)
+        >>> thread = api.testall_import_list(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -1051,16 +1051,16 @@ class ImportListApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.testall_importlist_with_http_info(**kwargs)  # noqa: E501
+        return self.testall_import_list_with_http_info(**kwargs)  # noqa: E501
 
     @validate_arguments
-    def testall_importlist_with_http_info(self, **kwargs):  # noqa: E501
-        """testall_importlist  # noqa: E501
+    def testall_import_list_with_http_info(self, **kwargs):  # noqa: E501
+        """testall_import_list  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.testall_importlist_with_http_info(async_req=True)
+        >>> thread = api.testall_import_list_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -1108,7 +1108,7 @@ class ImportListApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method testall_importlist" % _key
+                    " to method testall_import_list" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -1154,13 +1154,13 @@ class ImportListApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def update_importlist(self, id : StrictStr, import_list_resource : Optional[ImportListResource] = None, **kwargs) -> ImportListResource:  # noqa: E501
-        """update_importlist  # noqa: E501
+    def update_import_list(self, id : StrictStr, import_list_resource : Optional[ImportListResource] = None, **kwargs) -> ImportListResource:  # noqa: E501
+        """update_import_list  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_importlist(id, import_list_resource, async_req=True)
+        >>> thread = api.update_import_list(id, import_list_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -1183,16 +1183,16 @@ class ImportListApi(object):
         :rtype: ImportListResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.update_importlist_with_http_info(id, import_list_resource, **kwargs)  # noqa: E501
+        return self.update_import_list_with_http_info(id, import_list_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def update_importlist_with_http_info(self, id : StrictStr, import_list_resource : Optional[ImportListResource] = None, **kwargs):  # noqa: E501
-        """update_importlist  # noqa: E501
+    def update_import_list_with_http_info(self, id : StrictStr, import_list_resource : Optional[ImportListResource] = None, **kwargs):  # noqa: E501
+        """update_import_list  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_importlist_with_http_info(id, import_list_resource, async_req=True)
+        >>> thread = api.update_import_list_with_http_info(id, import_list_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -1246,7 +1246,7 @@ class ImportListApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method update_importlist" % _key
+                    " to method update_import_list" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']

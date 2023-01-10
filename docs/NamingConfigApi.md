@@ -4,14 +4,14 @@ All URIs are relative to *http://localhost:8989*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_config_naming**](NamingConfigApi.md#get_config_naming) | **GET** /api/v3/config/naming | 
-[**get_config_naming_by_id**](NamingConfigApi.md#get_config_naming_by_id) | **GET** /api/v3/config/naming/{id} | 
-[**get_config_naming_examples**](NamingConfigApi.md#get_config_naming_examples) | **GET** /api/v3/config/naming/examples | 
-[**update_config_naming**](NamingConfigApi.md#update_config_naming) | **PUT** /api/v3/config/naming/{id} | 
+[**get_naming_config**](NamingConfigApi.md#get_naming_config) | **GET** /api/v3/config/naming | 
+[**get_naming_config_by_id**](NamingConfigApi.md#get_naming_config_by_id) | **GET** /api/v3/config/naming/{id} | 
+[**get_naming_config_examples**](NamingConfigApi.md#get_naming_config_examples) | **GET** /api/v3/config/naming/examples | 
+[**update_naming_config**](NamingConfigApi.md#update_naming_config) | **PUT** /api/v3/config/naming/{id} | 
 
 
-# **get_config_naming**
-> NamingConfigResource get_config_naming()
+# **get_naming_config**
+> NamingConfigResource get_naming_config()
 
 
 
@@ -54,11 +54,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.NamingConfigApi(api_client)
 
     try:
-        api_response = api_instance.get_config_naming()
-        print("The response of NamingConfigApi->get_config_naming:\n")
+        api_response = api_instance.get_naming_config()
+        print("The response of NamingConfigApi->get_naming_config:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling NamingConfigApi->get_config_naming: %s\n" % e)
+        print("Exception when calling NamingConfigApi->get_naming_config: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -98,11 +98,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.NamingConfigApi(api_client)
 
     try:
-        api_response = api_instance.get_config_naming()
-        print("The response of NamingConfigApi->get_config_naming:\n")
+        api_response = api_instance.get_naming_config()
+        print("The response of NamingConfigApi->get_naming_config:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling NamingConfigApi->get_config_naming: %s\n" % e)
+        print("Exception when calling NamingConfigApi->get_naming_config: %s\n" % e)
 ```
 
 ### Parameters
@@ -128,8 +128,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_config_naming_by_id**
-> NamingConfigResource get_config_naming_by_id(id)
+# **get_naming_config_by_id**
+> NamingConfigResource get_naming_config_by_id(id)
 
 
 
@@ -173,11 +173,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_config_naming_by_id(id)
-        print("The response of NamingConfigApi->get_config_naming_by_id:\n")
+        api_response = api_instance.get_naming_config_by_id(id)
+        print("The response of NamingConfigApi->get_naming_config_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling NamingConfigApi->get_config_naming_by_id: %s\n" % e)
+        print("Exception when calling NamingConfigApi->get_naming_config_by_id: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -218,11 +218,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_config_naming_by_id(id)
-        print("The response of NamingConfigApi->get_config_naming_by_id:\n")
+        api_response = api_instance.get_naming_config_by_id(id)
+        print("The response of NamingConfigApi->get_naming_config_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling NamingConfigApi->get_config_naming_by_id: %s\n" % e)
+        print("Exception when calling NamingConfigApi->get_naming_config_by_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -251,8 +251,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_config_naming_examples**
-> get_config_naming_examples(rename_episodes=rename_episodes, replace_illegal_characters=replace_illegal_characters, multi_episode_style=multi_episode_style, standard_episode_format=standard_episode_format, daily_episode_format=daily_episode_format, anime_episode_format=anime_episode_format, series_folder_format=series_folder_format, season_folder_format=season_folder_format, specials_folder_format=specials_folder_format, include_series_title=include_series_title, include_episode_title=include_episode_title, include_quality=include_quality, replace_spaces=replace_spaces, separator=separator, number_style=number_style, id=id, resource_name=resource_name)
+# **get_naming_config_examples**
+> get_naming_config_examples(rename_episodes=rename_episodes, replace_illegal_characters=replace_illegal_characters, multi_episode_style=multi_episode_style, standard_episode_format=standard_episode_format, daily_episode_format=daily_episode_format, anime_episode_format=anime_episode_format, series_folder_format=series_folder_format, season_folder_format=season_folder_format, specials_folder_format=specials_folder_format, include_series_title=include_series_title, include_episode_title=include_episode_title, include_quality=include_quality, replace_spaces=replace_spaces, separator=separator, number_style=number_style, id=id, resource_name=resource_name)
 
 
 
@@ -312,9 +312,9 @@ with sonarr.ApiClient(configuration) as api_client:
     resource_name = 'resource_name_example' # str |  (optional)
 
     try:
-        api_instance.get_config_naming_examples(rename_episodes=rename_episodes, replace_illegal_characters=replace_illegal_characters, multi_episode_style=multi_episode_style, standard_episode_format=standard_episode_format, daily_episode_format=daily_episode_format, anime_episode_format=anime_episode_format, series_folder_format=series_folder_format, season_folder_format=season_folder_format, specials_folder_format=specials_folder_format, include_series_title=include_series_title, include_episode_title=include_episode_title, include_quality=include_quality, replace_spaces=replace_spaces, separator=separator, number_style=number_style, id=id, resource_name=resource_name)
+        api_instance.get_naming_config_examples(rename_episodes=rename_episodes, replace_illegal_characters=replace_illegal_characters, multi_episode_style=multi_episode_style, standard_episode_format=standard_episode_format, daily_episode_format=daily_episode_format, anime_episode_format=anime_episode_format, series_folder_format=series_folder_format, season_folder_format=season_folder_format, specials_folder_format=specials_folder_format, include_series_title=include_series_title, include_episode_title=include_episode_title, include_quality=include_quality, replace_spaces=replace_spaces, separator=separator, number_style=number_style, id=id, resource_name=resource_name)
     except Exception as e:
-        print("Exception when calling NamingConfigApi->get_config_naming_examples: %s\n" % e)
+        print("Exception when calling NamingConfigApi->get_naming_config_examples: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -371,9 +371,9 @@ with sonarr.ApiClient(configuration) as api_client:
     resource_name = 'resource_name_example' # str |  (optional)
 
     try:
-        api_instance.get_config_naming_examples(rename_episodes=rename_episodes, replace_illegal_characters=replace_illegal_characters, multi_episode_style=multi_episode_style, standard_episode_format=standard_episode_format, daily_episode_format=daily_episode_format, anime_episode_format=anime_episode_format, series_folder_format=series_folder_format, season_folder_format=season_folder_format, specials_folder_format=specials_folder_format, include_series_title=include_series_title, include_episode_title=include_episode_title, include_quality=include_quality, replace_spaces=replace_spaces, separator=separator, number_style=number_style, id=id, resource_name=resource_name)
+        api_instance.get_naming_config_examples(rename_episodes=rename_episodes, replace_illegal_characters=replace_illegal_characters, multi_episode_style=multi_episode_style, standard_episode_format=standard_episode_format, daily_episode_format=daily_episode_format, anime_episode_format=anime_episode_format, series_folder_format=series_folder_format, season_folder_format=season_folder_format, specials_folder_format=specials_folder_format, include_series_title=include_series_title, include_episode_title=include_episode_title, include_quality=include_quality, replace_spaces=replace_spaces, separator=separator, number_style=number_style, id=id, resource_name=resource_name)
     except Exception as e:
-        print("Exception when calling NamingConfigApi->get_config_naming_examples: %s\n" % e)
+        print("Exception when calling NamingConfigApi->get_naming_config_examples: %s\n" % e)
 ```
 
 ### Parameters
@@ -418,8 +418,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **update_config_naming**
-> NamingConfigResource update_config_naming(id, naming_config_resource=naming_config_resource)
+# **update_naming_config**
+> NamingConfigResource update_naming_config(id, naming_config_resource=naming_config_resource)
 
 
 
@@ -464,11 +464,11 @@ with sonarr.ApiClient(configuration) as api_client:
     naming_config_resource = sonarr.NamingConfigResource() # NamingConfigResource |  (optional)
 
     try:
-        api_response = api_instance.update_config_naming(id, naming_config_resource=naming_config_resource)
-        print("The response of NamingConfigApi->update_config_naming:\n")
+        api_response = api_instance.update_naming_config(id, naming_config_resource=naming_config_resource)
+        print("The response of NamingConfigApi->update_naming_config:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling NamingConfigApi->update_config_naming: %s\n" % e)
+        print("Exception when calling NamingConfigApi->update_naming_config: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -510,11 +510,11 @@ with sonarr.ApiClient(configuration) as api_client:
     naming_config_resource = sonarr.NamingConfigResource() # NamingConfigResource |  (optional)
 
     try:
-        api_response = api_instance.update_config_naming(id, naming_config_resource=naming_config_resource)
-        print("The response of NamingConfigApi->update_config_naming:\n")
+        api_response = api_instance.update_naming_config(id, naming_config_resource=naming_config_resource)
+        print("The response of NamingConfigApi->update_naming_config:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling NamingConfigApi->update_config_naming: %s\n" % e)
+        print("Exception when calling NamingConfigApi->update_naming_config: %s\n" % e)
 ```
 
 ### Parameters

@@ -41,13 +41,13 @@ class DiskSpaceApi(object):
         self.api_client = api_client
 
     @validate_arguments
-    def list_diskspace(self, **kwargs) -> List[DiskSpaceResource]:  # noqa: E501
-        """list_diskspace  # noqa: E501
+    def list_disk_space(self, **kwargs) -> List[DiskSpaceResource]:  # noqa: E501
+        """list_disk_space  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_diskspace(async_req=True)
+        >>> thread = api.list_disk_space(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -66,16 +66,16 @@ class DiskSpaceApi(object):
         :rtype: List[DiskSpaceResource]
         """
         kwargs['_return_http_data_only'] = True
-        return self.list_diskspace_with_http_info(**kwargs)  # noqa: E501
+        return self.list_disk_space_with_http_info(**kwargs)  # noqa: E501
 
     @validate_arguments
-    def list_diskspace_with_http_info(self, **kwargs):  # noqa: E501
-        """list_diskspace  # noqa: E501
+    def list_disk_space_with_http_info(self, **kwargs):  # noqa: E501
+        """list_disk_space  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_diskspace_with_http_info(async_req=True)
+        >>> thread = api.list_disk_space_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -123,7 +123,7 @@ class DiskSpaceApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method list_diskspace" % _key
+                    " to method list_disk_space" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']

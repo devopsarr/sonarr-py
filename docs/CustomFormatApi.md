@@ -4,16 +4,16 @@ All URIs are relative to *http://localhost:8989*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_customformat**](CustomFormatApi.md#create_customformat) | **POST** /api/v3/customformat | 
-[**delete_customformat**](CustomFormatApi.md#delete_customformat) | **DELETE** /api/v3/customformat/{id} | 
-[**get_customformat_by_id**](CustomFormatApi.md#get_customformat_by_id) | **GET** /api/v3/customformat/{id} | 
-[**get_customformat_schema**](CustomFormatApi.md#get_customformat_schema) | **GET** /api/v3/customformat/schema | 
-[**list_customformat**](CustomFormatApi.md#list_customformat) | **GET** /api/v3/customformat | 
-[**update_customformat**](CustomFormatApi.md#update_customformat) | **PUT** /api/v3/customformat/{id} | 
+[**create_custom_format**](CustomFormatApi.md#create_custom_format) | **POST** /api/v3/customformat | 
+[**delete_custom_format**](CustomFormatApi.md#delete_custom_format) | **DELETE** /api/v3/customformat/{id} | 
+[**get_custom_format_by_id**](CustomFormatApi.md#get_custom_format_by_id) | **GET** /api/v3/customformat/{id} | 
+[**get_custom_format_schema**](CustomFormatApi.md#get_custom_format_schema) | **GET** /api/v3/customformat/schema | 
+[**list_custom_format**](CustomFormatApi.md#list_custom_format) | **GET** /api/v3/customformat | 
+[**update_custom_format**](CustomFormatApi.md#update_custom_format) | **PUT** /api/v3/customformat/{id} | 
 
 
-# **create_customformat**
-> CustomFormatResource create_customformat(custom_format_resource=custom_format_resource)
+# **create_custom_format**
+> CustomFormatResource create_custom_format(custom_format_resource=custom_format_resource)
 
 
 
@@ -57,11 +57,11 @@ with sonarr.ApiClient(configuration) as api_client:
     custom_format_resource = sonarr.CustomFormatResource() # CustomFormatResource |  (optional)
 
     try:
-        api_response = api_instance.create_customformat(custom_format_resource=custom_format_resource)
-        print("The response of CustomFormatApi->create_customformat:\n")
+        api_response = api_instance.create_custom_format(custom_format_resource=custom_format_resource)
+        print("The response of CustomFormatApi->create_custom_format:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CustomFormatApi->create_customformat: %s\n" % e)
+        print("Exception when calling CustomFormatApi->create_custom_format: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -102,11 +102,11 @@ with sonarr.ApiClient(configuration) as api_client:
     custom_format_resource = sonarr.CustomFormatResource() # CustomFormatResource |  (optional)
 
     try:
-        api_response = api_instance.create_customformat(custom_format_resource=custom_format_resource)
-        print("The response of CustomFormatApi->create_customformat:\n")
+        api_response = api_instance.create_custom_format(custom_format_resource=custom_format_resource)
+        print("The response of CustomFormatApi->create_custom_format:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CustomFormatApi->create_customformat: %s\n" % e)
+        print("Exception when calling CustomFormatApi->create_custom_format: %s\n" % e)
 ```
 
 ### Parameters
@@ -135,8 +135,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **delete_customformat**
-> delete_customformat(id)
+# **delete_custom_format**
+> delete_custom_format(id)
 
 
 
@@ -180,9 +180,9 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_instance.delete_customformat(id)
+        api_instance.delete_custom_format(id)
     except Exception as e:
-        print("Exception when calling CustomFormatApi->delete_customformat: %s\n" % e)
+        print("Exception when calling CustomFormatApi->delete_custom_format: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -223,9 +223,9 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_instance.delete_customformat(id)
+        api_instance.delete_custom_format(id)
     except Exception as e:
-        print("Exception when calling CustomFormatApi->delete_customformat: %s\n" % e)
+        print("Exception when calling CustomFormatApi->delete_custom_format: %s\n" % e)
 ```
 
 ### Parameters
@@ -254,8 +254,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_customformat_by_id**
-> CustomFormatResource get_customformat_by_id(id)
+# **get_custom_format_by_id**
+> CustomFormatResource get_custom_format_by_id(id)
 
 
 
@@ -299,11 +299,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_customformat_by_id(id)
-        print("The response of CustomFormatApi->get_customformat_by_id:\n")
+        api_response = api_instance.get_custom_format_by_id(id)
+        print("The response of CustomFormatApi->get_custom_format_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CustomFormatApi->get_customformat_by_id: %s\n" % e)
+        print("Exception when calling CustomFormatApi->get_custom_format_by_id: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -344,11 +344,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_customformat_by_id(id)
-        print("The response of CustomFormatApi->get_customformat_by_id:\n")
+        api_response = api_instance.get_custom_format_by_id(id)
+        print("The response of CustomFormatApi->get_custom_format_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CustomFormatApi->get_customformat_by_id: %s\n" % e)
+        print("Exception when calling CustomFormatApi->get_custom_format_by_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -377,8 +377,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_customformat_schema**
-> get_customformat_schema()
+# **get_custom_format_schema**
+> get_custom_format_schema()
 
 
 
@@ -421,9 +421,9 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.CustomFormatApi(api_client)
 
     try:
-        api_instance.get_customformat_schema()
+        api_instance.get_custom_format_schema()
     except Exception as e:
-        print("Exception when calling CustomFormatApi->get_customformat_schema: %s\n" % e)
+        print("Exception when calling CustomFormatApi->get_custom_format_schema: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -463,9 +463,9 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.CustomFormatApi(api_client)
 
     try:
-        api_instance.get_customformat_schema()
+        api_instance.get_custom_format_schema()
     except Exception as e:
-        print("Exception when calling CustomFormatApi->get_customformat_schema: %s\n" % e)
+        print("Exception when calling CustomFormatApi->get_custom_format_schema: %s\n" % e)
 ```
 
 ### Parameters
@@ -491,8 +491,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **list_customformat**
-> List[CustomFormatResource] list_customformat()
+# **list_custom_format**
+> List[CustomFormatResource] list_custom_format()
 
 
 
@@ -535,11 +535,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.CustomFormatApi(api_client)
 
     try:
-        api_response = api_instance.list_customformat()
-        print("The response of CustomFormatApi->list_customformat:\n")
+        api_response = api_instance.list_custom_format()
+        print("The response of CustomFormatApi->list_custom_format:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CustomFormatApi->list_customformat: %s\n" % e)
+        print("Exception when calling CustomFormatApi->list_custom_format: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -579,11 +579,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.CustomFormatApi(api_client)
 
     try:
-        api_response = api_instance.list_customformat()
-        print("The response of CustomFormatApi->list_customformat:\n")
+        api_response = api_instance.list_custom_format()
+        print("The response of CustomFormatApi->list_custom_format:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CustomFormatApi->list_customformat: %s\n" % e)
+        print("Exception when calling CustomFormatApi->list_custom_format: %s\n" % e)
 ```
 
 ### Parameters
@@ -609,8 +609,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **update_customformat**
-> CustomFormatResource update_customformat(id, custom_format_resource=custom_format_resource)
+# **update_custom_format**
+> CustomFormatResource update_custom_format(id, custom_format_resource=custom_format_resource)
 
 
 
@@ -655,11 +655,11 @@ with sonarr.ApiClient(configuration) as api_client:
     custom_format_resource = sonarr.CustomFormatResource() # CustomFormatResource |  (optional)
 
     try:
-        api_response = api_instance.update_customformat(id, custom_format_resource=custom_format_resource)
-        print("The response of CustomFormatApi->update_customformat:\n")
+        api_response = api_instance.update_custom_format(id, custom_format_resource=custom_format_resource)
+        print("The response of CustomFormatApi->update_custom_format:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CustomFormatApi->update_customformat: %s\n" % e)
+        print("Exception when calling CustomFormatApi->update_custom_format: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -701,11 +701,11 @@ with sonarr.ApiClient(configuration) as api_client:
     custom_format_resource = sonarr.CustomFormatResource() # CustomFormatResource |  (optional)
 
     try:
-        api_response = api_instance.update_customformat(id, custom_format_resource=custom_format_resource)
-        print("The response of CustomFormatApi->update_customformat:\n")
+        api_response = api_instance.update_custom_format(id, custom_format_resource=custom_format_resource)
+        print("The response of CustomFormatApi->update_custom_format:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CustomFormatApi->update_customformat: %s\n" % e)
+        print("Exception when calling CustomFormatApi->update_custom_format: %s\n" % e)
 ```
 
 ### Parameters

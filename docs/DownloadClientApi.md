@@ -4,19 +4,19 @@ All URIs are relative to *http://localhost:8989*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_downloadclient**](DownloadClientApi.md#create_downloadclient) | **POST** /api/v3/downloadclient | 
-[**create_downloadclient_action_by_name**](DownloadClientApi.md#create_downloadclient_action_by_name) | **POST** /api/v3/downloadclient/action/{name} | 
-[**delete_downloadclient**](DownloadClientApi.md#delete_downloadclient) | **DELETE** /api/v3/downloadclient/{id} | 
-[**get_downloadclient_by_id**](DownloadClientApi.md#get_downloadclient_by_id) | **GET** /api/v3/downloadclient/{id} | 
-[**list_downloadclient**](DownloadClientApi.md#list_downloadclient) | **GET** /api/v3/downloadclient | 
-[**list_downloadclient_schema**](DownloadClientApi.md#list_downloadclient_schema) | **GET** /api/v3/downloadclient/schema | 
-[**test_downloadclient**](DownloadClientApi.md#test_downloadclient) | **POST** /api/v3/downloadclient/test | 
-[**testall_downloadclient**](DownloadClientApi.md#testall_downloadclient) | **POST** /api/v3/downloadclient/testall | 
-[**update_downloadclient**](DownloadClientApi.md#update_downloadclient) | **PUT** /api/v3/downloadclient/{id} | 
+[**create_download_client**](DownloadClientApi.md#create_download_client) | **POST** /api/v3/downloadclient | 
+[**create_download_client_action_by_name**](DownloadClientApi.md#create_download_client_action_by_name) | **POST** /api/v3/downloadclient/action/{name} | 
+[**delete_download_client**](DownloadClientApi.md#delete_download_client) | **DELETE** /api/v3/downloadclient/{id} | 
+[**get_download_client_by_id**](DownloadClientApi.md#get_download_client_by_id) | **GET** /api/v3/downloadclient/{id} | 
+[**list_download_client**](DownloadClientApi.md#list_download_client) | **GET** /api/v3/downloadclient | 
+[**list_download_client_schema**](DownloadClientApi.md#list_download_client_schema) | **GET** /api/v3/downloadclient/schema | 
+[**test_download_client**](DownloadClientApi.md#test_download_client) | **POST** /api/v3/downloadclient/test | 
+[**testall_download_client**](DownloadClientApi.md#testall_download_client) | **POST** /api/v3/downloadclient/testall | 
+[**update_download_client**](DownloadClientApi.md#update_download_client) | **PUT** /api/v3/downloadclient/{id} | 
 
 
-# **create_downloadclient**
-> DownloadClientResource create_downloadclient(download_client_resource=download_client_resource)
+# **create_download_client**
+> DownloadClientResource create_download_client(download_client_resource=download_client_resource)
 
 
 
@@ -60,11 +60,11 @@ with sonarr.ApiClient(configuration) as api_client:
     download_client_resource = sonarr.DownloadClientResource() # DownloadClientResource |  (optional)
 
     try:
-        api_response = api_instance.create_downloadclient(download_client_resource=download_client_resource)
-        print("The response of DownloadClientApi->create_downloadclient:\n")
+        api_response = api_instance.create_download_client(download_client_resource=download_client_resource)
+        print("The response of DownloadClientApi->create_download_client:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling DownloadClientApi->create_downloadclient: %s\n" % e)
+        print("Exception when calling DownloadClientApi->create_download_client: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -105,11 +105,11 @@ with sonarr.ApiClient(configuration) as api_client:
     download_client_resource = sonarr.DownloadClientResource() # DownloadClientResource |  (optional)
 
     try:
-        api_response = api_instance.create_downloadclient(download_client_resource=download_client_resource)
-        print("The response of DownloadClientApi->create_downloadclient:\n")
+        api_response = api_instance.create_download_client(download_client_resource=download_client_resource)
+        print("The response of DownloadClientApi->create_download_client:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling DownloadClientApi->create_downloadclient: %s\n" % e)
+        print("Exception when calling DownloadClientApi->create_download_client: %s\n" % e)
 ```
 
 ### Parameters
@@ -138,8 +138,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **create_downloadclient_action_by_name**
-> create_downloadclient_action_by_name(name, download_client_resource=download_client_resource)
+# **create_download_client_action_by_name**
+> create_download_client_action_by_name(name, download_client_resource=download_client_resource)
 
 
 
@@ -184,9 +184,9 @@ with sonarr.ApiClient(configuration) as api_client:
     download_client_resource = sonarr.DownloadClientResource() # DownloadClientResource |  (optional)
 
     try:
-        api_instance.create_downloadclient_action_by_name(name, download_client_resource=download_client_resource)
+        api_instance.create_download_client_action_by_name(name, download_client_resource=download_client_resource)
     except Exception as e:
-        print("Exception when calling DownloadClientApi->create_downloadclient_action_by_name: %s\n" % e)
+        print("Exception when calling DownloadClientApi->create_download_client_action_by_name: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -228,9 +228,9 @@ with sonarr.ApiClient(configuration) as api_client:
     download_client_resource = sonarr.DownloadClientResource() # DownloadClientResource |  (optional)
 
     try:
-        api_instance.create_downloadclient_action_by_name(name, download_client_resource=download_client_resource)
+        api_instance.create_download_client_action_by_name(name, download_client_resource=download_client_resource)
     except Exception as e:
-        print("Exception when calling DownloadClientApi->create_downloadclient_action_by_name: %s\n" % e)
+        print("Exception when calling DownloadClientApi->create_download_client_action_by_name: %s\n" % e)
 ```
 
 ### Parameters
@@ -260,8 +260,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **delete_downloadclient**
-> delete_downloadclient(id)
+# **delete_download_client**
+> delete_download_client(id)
 
 
 
@@ -305,9 +305,9 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_instance.delete_downloadclient(id)
+        api_instance.delete_download_client(id)
     except Exception as e:
-        print("Exception when calling DownloadClientApi->delete_downloadclient: %s\n" % e)
+        print("Exception when calling DownloadClientApi->delete_download_client: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -348,9 +348,9 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_instance.delete_downloadclient(id)
+        api_instance.delete_download_client(id)
     except Exception as e:
-        print("Exception when calling DownloadClientApi->delete_downloadclient: %s\n" % e)
+        print("Exception when calling DownloadClientApi->delete_download_client: %s\n" % e)
 ```
 
 ### Parameters
@@ -379,8 +379,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_downloadclient_by_id**
-> DownloadClientResource get_downloadclient_by_id(id)
+# **get_download_client_by_id**
+> DownloadClientResource get_download_client_by_id(id)
 
 
 
@@ -424,11 +424,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_downloadclient_by_id(id)
-        print("The response of DownloadClientApi->get_downloadclient_by_id:\n")
+        api_response = api_instance.get_download_client_by_id(id)
+        print("The response of DownloadClientApi->get_download_client_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling DownloadClientApi->get_downloadclient_by_id: %s\n" % e)
+        print("Exception when calling DownloadClientApi->get_download_client_by_id: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -469,11 +469,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_downloadclient_by_id(id)
-        print("The response of DownloadClientApi->get_downloadclient_by_id:\n")
+        api_response = api_instance.get_download_client_by_id(id)
+        print("The response of DownloadClientApi->get_download_client_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling DownloadClientApi->get_downloadclient_by_id: %s\n" % e)
+        print("Exception when calling DownloadClientApi->get_download_client_by_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -502,8 +502,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **list_downloadclient**
-> List[DownloadClientResource] list_downloadclient()
+# **list_download_client**
+> List[DownloadClientResource] list_download_client()
 
 
 
@@ -546,11 +546,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.DownloadClientApi(api_client)
 
     try:
-        api_response = api_instance.list_downloadclient()
-        print("The response of DownloadClientApi->list_downloadclient:\n")
+        api_response = api_instance.list_download_client()
+        print("The response of DownloadClientApi->list_download_client:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling DownloadClientApi->list_downloadclient: %s\n" % e)
+        print("Exception when calling DownloadClientApi->list_download_client: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -590,11 +590,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.DownloadClientApi(api_client)
 
     try:
-        api_response = api_instance.list_downloadclient()
-        print("The response of DownloadClientApi->list_downloadclient:\n")
+        api_response = api_instance.list_download_client()
+        print("The response of DownloadClientApi->list_download_client:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling DownloadClientApi->list_downloadclient: %s\n" % e)
+        print("Exception when calling DownloadClientApi->list_download_client: %s\n" % e)
 ```
 
 ### Parameters
@@ -620,8 +620,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **list_downloadclient_schema**
-> List[DownloadClientResource] list_downloadclient_schema()
+# **list_download_client_schema**
+> List[DownloadClientResource] list_download_client_schema()
 
 
 
@@ -664,11 +664,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.DownloadClientApi(api_client)
 
     try:
-        api_response = api_instance.list_downloadclient_schema()
-        print("The response of DownloadClientApi->list_downloadclient_schema:\n")
+        api_response = api_instance.list_download_client_schema()
+        print("The response of DownloadClientApi->list_download_client_schema:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling DownloadClientApi->list_downloadclient_schema: %s\n" % e)
+        print("Exception when calling DownloadClientApi->list_download_client_schema: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -708,11 +708,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.DownloadClientApi(api_client)
 
     try:
-        api_response = api_instance.list_downloadclient_schema()
-        print("The response of DownloadClientApi->list_downloadclient_schema:\n")
+        api_response = api_instance.list_download_client_schema()
+        print("The response of DownloadClientApi->list_download_client_schema:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling DownloadClientApi->list_downloadclient_schema: %s\n" % e)
+        print("Exception when calling DownloadClientApi->list_download_client_schema: %s\n" % e)
 ```
 
 ### Parameters
@@ -738,8 +738,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **test_downloadclient**
-> test_downloadclient(download_client_resource=download_client_resource)
+# **test_download_client**
+> test_download_client(download_client_resource=download_client_resource)
 
 
 
@@ -783,9 +783,9 @@ with sonarr.ApiClient(configuration) as api_client:
     download_client_resource = sonarr.DownloadClientResource() # DownloadClientResource |  (optional)
 
     try:
-        api_instance.test_downloadclient(download_client_resource=download_client_resource)
+        api_instance.test_download_client(download_client_resource=download_client_resource)
     except Exception as e:
-        print("Exception when calling DownloadClientApi->test_downloadclient: %s\n" % e)
+        print("Exception when calling DownloadClientApi->test_download_client: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -826,9 +826,9 @@ with sonarr.ApiClient(configuration) as api_client:
     download_client_resource = sonarr.DownloadClientResource() # DownloadClientResource |  (optional)
 
     try:
-        api_instance.test_downloadclient(download_client_resource=download_client_resource)
+        api_instance.test_download_client(download_client_resource=download_client_resource)
     except Exception as e:
-        print("Exception when calling DownloadClientApi->test_downloadclient: %s\n" % e)
+        print("Exception when calling DownloadClientApi->test_download_client: %s\n" % e)
 ```
 
 ### Parameters
@@ -857,8 +857,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **testall_downloadclient**
-> testall_downloadclient()
+# **testall_download_client**
+> testall_download_client()
 
 
 
@@ -901,9 +901,9 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.DownloadClientApi(api_client)
 
     try:
-        api_instance.testall_downloadclient()
+        api_instance.testall_download_client()
     except Exception as e:
-        print("Exception when calling DownloadClientApi->testall_downloadclient: %s\n" % e)
+        print("Exception when calling DownloadClientApi->testall_download_client: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -943,9 +943,9 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.DownloadClientApi(api_client)
 
     try:
-        api_instance.testall_downloadclient()
+        api_instance.testall_download_client()
     except Exception as e:
-        print("Exception when calling DownloadClientApi->testall_downloadclient: %s\n" % e)
+        print("Exception when calling DownloadClientApi->testall_download_client: %s\n" % e)
 ```
 
 ### Parameters
@@ -971,8 +971,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **update_downloadclient**
-> DownloadClientResource update_downloadclient(id, download_client_resource=download_client_resource)
+# **update_download_client**
+> DownloadClientResource update_download_client(id, download_client_resource=download_client_resource)
 
 
 
@@ -1017,11 +1017,11 @@ with sonarr.ApiClient(configuration) as api_client:
     download_client_resource = sonarr.DownloadClientResource() # DownloadClientResource |  (optional)
 
     try:
-        api_response = api_instance.update_downloadclient(id, download_client_resource=download_client_resource)
-        print("The response of DownloadClientApi->update_downloadclient:\n")
+        api_response = api_instance.update_download_client(id, download_client_resource=download_client_resource)
+        print("The response of DownloadClientApi->update_download_client:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling DownloadClientApi->update_downloadclient: %s\n" % e)
+        print("Exception when calling DownloadClientApi->update_download_client: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -1063,11 +1063,11 @@ with sonarr.ApiClient(configuration) as api_client:
     download_client_resource = sonarr.DownloadClientResource() # DownloadClientResource |  (optional)
 
     try:
-        api_response = api_instance.update_downloadclient(id, download_client_resource=download_client_resource)
-        print("The response of DownloadClientApi->update_downloadclient:\n")
+        api_response = api_instance.update_download_client(id, download_client_resource=download_client_resource)
+        print("The response of DownloadClientApi->update_download_client:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling DownloadClientApi->update_downloadclient: %s\n" % e)
+        print("Exception when calling DownloadClientApi->update_download_client: %s\n" % e)
 ```
 
 ### Parameters

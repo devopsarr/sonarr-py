@@ -43,13 +43,13 @@ class RootFolderApi(object):
         self.api_client = api_client
 
     @validate_arguments
-    def create_rootfolder(self, root_folder_resource : Optional[RootFolderResource] = None, **kwargs) -> RootFolderResource:  # noqa: E501
-        """create_rootfolder  # noqa: E501
+    def create_root_folder(self, root_folder_resource : Optional[RootFolderResource] = None, **kwargs) -> RootFolderResource:  # noqa: E501
+        """create_root_folder  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_rootfolder(root_folder_resource, async_req=True)
+        >>> thread = api.create_root_folder(root_folder_resource, async_req=True)
         >>> result = thread.get()
 
         :param root_folder_resource:
@@ -70,16 +70,16 @@ class RootFolderApi(object):
         :rtype: RootFolderResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.create_rootfolder_with_http_info(root_folder_resource, **kwargs)  # noqa: E501
+        return self.create_root_folder_with_http_info(root_folder_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def create_rootfolder_with_http_info(self, root_folder_resource : Optional[RootFolderResource] = None, **kwargs):  # noqa: E501
-        """create_rootfolder  # noqa: E501
+    def create_root_folder_with_http_info(self, root_folder_resource : Optional[RootFolderResource] = None, **kwargs):  # noqa: E501
+        """create_root_folder  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_rootfolder_with_http_info(root_folder_resource, async_req=True)
+        >>> thread = api.create_root_folder_with_http_info(root_folder_resource, async_req=True)
         >>> result = thread.get()
 
         :param root_folder_resource:
@@ -130,7 +130,7 @@ class RootFolderApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method create_rootfolder" % _key
+                    " to method create_root_folder" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -191,13 +191,13 @@ class RootFolderApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def delete_rootfolder(self, id : StrictInt, **kwargs) -> None:  # noqa: E501
-        """delete_rootfolder  # noqa: E501
+    def delete_root_folder(self, id : StrictInt, **kwargs) -> None:  # noqa: E501
+        """delete_root_folder  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_rootfolder(id, async_req=True)
+        >>> thread = api.delete_root_folder(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -218,16 +218,16 @@ class RootFolderApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.delete_rootfolder_with_http_info(id, **kwargs)  # noqa: E501
+        return self.delete_root_folder_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def delete_rootfolder_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """delete_rootfolder  # noqa: E501
+    def delete_root_folder_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """delete_root_folder  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_rootfolder_with_http_info(id, async_req=True)
+        >>> thread = api.delete_root_folder_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -278,7 +278,7 @@ class RootFolderApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method delete_rootfolder" % _key
+                    " to method delete_root_folder" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -326,13 +326,13 @@ class RootFolderApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def get_rootfolder_by_id(self, id : StrictInt, **kwargs) -> RootFolderResource:  # noqa: E501
-        """get_rootfolder_by_id  # noqa: E501
+    def get_root_folder_by_id(self, id : StrictInt, **kwargs) -> RootFolderResource:  # noqa: E501
+        """get_root_folder_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_rootfolder_by_id(id, async_req=True)
+        >>> thread = api.get_root_folder_by_id(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -353,16 +353,16 @@ class RootFolderApi(object):
         :rtype: RootFolderResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_rootfolder_by_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.get_root_folder_by_id_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_rootfolder_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """get_rootfolder_by_id  # noqa: E501
+    def get_root_folder_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """get_root_folder_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_rootfolder_by_id_with_http_info(id, async_req=True)
+        >>> thread = api.get_root_folder_by_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -413,7 +413,7 @@ class RootFolderApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_rootfolder_by_id" % _key
+                    " to method get_root_folder_by_id" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -467,13 +467,13 @@ class RootFolderApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def list_rootfolder(self, **kwargs) -> List[RootFolderResource]:  # noqa: E501
-        """list_rootfolder  # noqa: E501
+    def list_root_folder(self, **kwargs) -> List[RootFolderResource]:  # noqa: E501
+        """list_root_folder  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_rootfolder(async_req=True)
+        >>> thread = api.list_root_folder(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -492,16 +492,16 @@ class RootFolderApi(object):
         :rtype: List[RootFolderResource]
         """
         kwargs['_return_http_data_only'] = True
-        return self.list_rootfolder_with_http_info(**kwargs)  # noqa: E501
+        return self.list_root_folder_with_http_info(**kwargs)  # noqa: E501
 
     @validate_arguments
-    def list_rootfolder_with_http_info(self, **kwargs):  # noqa: E501
-        """list_rootfolder  # noqa: E501
+    def list_root_folder_with_http_info(self, **kwargs):  # noqa: E501
+        """list_root_folder  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_rootfolder_with_http_info(async_req=True)
+        >>> thread = api.list_root_folder_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -549,7 +549,7 @@ class RootFolderApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method list_rootfolder" % _key
+                    " to method list_root_folder" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']

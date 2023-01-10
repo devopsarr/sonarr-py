@@ -43,13 +43,13 @@ class ReleaseProfileApi(object):
         self.api_client = api_client
 
     @validate_arguments
-    def create_releaseprofile(self, release_profile_resource : Optional[ReleaseProfileResource] = None, **kwargs) -> ReleaseProfileResource:  # noqa: E501
-        """create_releaseprofile  # noqa: E501
+    def create_release_profile(self, release_profile_resource : Optional[ReleaseProfileResource] = None, **kwargs) -> ReleaseProfileResource:  # noqa: E501
+        """create_release_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_releaseprofile(release_profile_resource, async_req=True)
+        >>> thread = api.create_release_profile(release_profile_resource, async_req=True)
         >>> result = thread.get()
 
         :param release_profile_resource:
@@ -70,16 +70,16 @@ class ReleaseProfileApi(object):
         :rtype: ReleaseProfileResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.create_releaseprofile_with_http_info(release_profile_resource, **kwargs)  # noqa: E501
+        return self.create_release_profile_with_http_info(release_profile_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def create_releaseprofile_with_http_info(self, release_profile_resource : Optional[ReleaseProfileResource] = None, **kwargs):  # noqa: E501
-        """create_releaseprofile  # noqa: E501
+    def create_release_profile_with_http_info(self, release_profile_resource : Optional[ReleaseProfileResource] = None, **kwargs):  # noqa: E501
+        """create_release_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_releaseprofile_with_http_info(release_profile_resource, async_req=True)
+        >>> thread = api.create_release_profile_with_http_info(release_profile_resource, async_req=True)
         >>> result = thread.get()
 
         :param release_profile_resource:
@@ -130,7 +130,7 @@ class ReleaseProfileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method create_releaseprofile" % _key
+                    " to method create_release_profile" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -191,13 +191,13 @@ class ReleaseProfileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def delete_releaseprofile(self, id : StrictInt, **kwargs) -> None:  # noqa: E501
-        """delete_releaseprofile  # noqa: E501
+    def delete_release_profile(self, id : StrictInt, **kwargs) -> None:  # noqa: E501
+        """delete_release_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_releaseprofile(id, async_req=True)
+        >>> thread = api.delete_release_profile(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -218,16 +218,16 @@ class ReleaseProfileApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.delete_releaseprofile_with_http_info(id, **kwargs)  # noqa: E501
+        return self.delete_release_profile_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def delete_releaseprofile_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """delete_releaseprofile  # noqa: E501
+    def delete_release_profile_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """delete_release_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_releaseprofile_with_http_info(id, async_req=True)
+        >>> thread = api.delete_release_profile_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -278,7 +278,7 @@ class ReleaseProfileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method delete_releaseprofile" % _key
+                    " to method delete_release_profile" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -326,13 +326,13 @@ class ReleaseProfileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def get_releaseprofile_by_id(self, id : StrictInt, **kwargs) -> ReleaseProfileResource:  # noqa: E501
-        """get_releaseprofile_by_id  # noqa: E501
+    def get_release_profile_by_id(self, id : StrictInt, **kwargs) -> ReleaseProfileResource:  # noqa: E501
+        """get_release_profile_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_releaseprofile_by_id(id, async_req=True)
+        >>> thread = api.get_release_profile_by_id(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -353,16 +353,16 @@ class ReleaseProfileApi(object):
         :rtype: ReleaseProfileResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_releaseprofile_by_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.get_release_profile_by_id_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_releaseprofile_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """get_releaseprofile_by_id  # noqa: E501
+    def get_release_profile_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """get_release_profile_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_releaseprofile_by_id_with_http_info(id, async_req=True)
+        >>> thread = api.get_release_profile_by_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -413,7 +413,7 @@ class ReleaseProfileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_releaseprofile_by_id" % _key
+                    " to method get_release_profile_by_id" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -467,13 +467,13 @@ class ReleaseProfileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def list_releaseprofile(self, **kwargs) -> List[ReleaseProfileResource]:  # noqa: E501
-        """list_releaseprofile  # noqa: E501
+    def list_release_profile(self, **kwargs) -> List[ReleaseProfileResource]:  # noqa: E501
+        """list_release_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_releaseprofile(async_req=True)
+        >>> thread = api.list_release_profile(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -492,16 +492,16 @@ class ReleaseProfileApi(object):
         :rtype: List[ReleaseProfileResource]
         """
         kwargs['_return_http_data_only'] = True
-        return self.list_releaseprofile_with_http_info(**kwargs)  # noqa: E501
+        return self.list_release_profile_with_http_info(**kwargs)  # noqa: E501
 
     @validate_arguments
-    def list_releaseprofile_with_http_info(self, **kwargs):  # noqa: E501
-        """list_releaseprofile  # noqa: E501
+    def list_release_profile_with_http_info(self, **kwargs):  # noqa: E501
+        """list_release_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_releaseprofile_with_http_info(async_req=True)
+        >>> thread = api.list_release_profile_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -549,7 +549,7 @@ class ReleaseProfileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method list_releaseprofile" % _key
+                    " to method list_release_profile" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -601,13 +601,13 @@ class ReleaseProfileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def update_releaseprofile(self, id : StrictStr, release_profile_resource : Optional[ReleaseProfileResource] = None, **kwargs) -> ReleaseProfileResource:  # noqa: E501
-        """update_releaseprofile  # noqa: E501
+    def update_release_profile(self, id : StrictStr, release_profile_resource : Optional[ReleaseProfileResource] = None, **kwargs) -> ReleaseProfileResource:  # noqa: E501
+        """update_release_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_releaseprofile(id, release_profile_resource, async_req=True)
+        >>> thread = api.update_release_profile(id, release_profile_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -630,16 +630,16 @@ class ReleaseProfileApi(object):
         :rtype: ReleaseProfileResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.update_releaseprofile_with_http_info(id, release_profile_resource, **kwargs)  # noqa: E501
+        return self.update_release_profile_with_http_info(id, release_profile_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def update_releaseprofile_with_http_info(self, id : StrictStr, release_profile_resource : Optional[ReleaseProfileResource] = None, **kwargs):  # noqa: E501
-        """update_releaseprofile  # noqa: E501
+    def update_release_profile_with_http_info(self, id : StrictStr, release_profile_resource : Optional[ReleaseProfileResource] = None, **kwargs):  # noqa: E501
+        """update_release_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_releaseprofile_with_http_info(id, release_profile_resource, async_req=True)
+        >>> thread = api.update_release_profile_with_http_info(id, release_profile_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -693,7 +693,7 @@ class ReleaseProfileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method update_releaseprofile" % _key
+                    " to method update_release_profile" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']

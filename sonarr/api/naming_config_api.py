@@ -43,13 +43,13 @@ class NamingConfigApi(object):
         self.api_client = api_client
 
     @validate_arguments
-    def get_config_naming(self, **kwargs) -> NamingConfigResource:  # noqa: E501
-        """get_config_naming  # noqa: E501
+    def get_naming_config(self, **kwargs) -> NamingConfigResource:  # noqa: E501
+        """get_naming_config  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_config_naming(async_req=True)
+        >>> thread = api.get_naming_config(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -68,16 +68,16 @@ class NamingConfigApi(object):
         :rtype: NamingConfigResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_config_naming_with_http_info(**kwargs)  # noqa: E501
+        return self.get_naming_config_with_http_info(**kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_config_naming_with_http_info(self, **kwargs):  # noqa: E501
-        """get_config_naming  # noqa: E501
+    def get_naming_config_with_http_info(self, **kwargs):  # noqa: E501
+        """get_naming_config  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_config_naming_with_http_info(async_req=True)
+        >>> thread = api.get_naming_config_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -125,7 +125,7 @@ class NamingConfigApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_config_naming" % _key
+                    " to method get_naming_config" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -177,13 +177,13 @@ class NamingConfigApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def get_config_naming_by_id(self, id : StrictInt, **kwargs) -> NamingConfigResource:  # noqa: E501
-        """get_config_naming_by_id  # noqa: E501
+    def get_naming_config_by_id(self, id : StrictInt, **kwargs) -> NamingConfigResource:  # noqa: E501
+        """get_naming_config_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_config_naming_by_id(id, async_req=True)
+        >>> thread = api.get_naming_config_by_id(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -204,16 +204,16 @@ class NamingConfigApi(object):
         :rtype: NamingConfigResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_config_naming_by_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.get_naming_config_by_id_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_config_naming_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """get_config_naming_by_id  # noqa: E501
+    def get_naming_config_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """get_naming_config_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_config_naming_by_id_with_http_info(id, async_req=True)
+        >>> thread = api.get_naming_config_by_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -264,7 +264,7 @@ class NamingConfigApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_config_naming_by_id" % _key
+                    " to method get_naming_config_by_id" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -318,13 +318,13 @@ class NamingConfigApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def get_config_naming_examples(self, rename_episodes : Optional[StrictBool] = None, replace_illegal_characters : Optional[StrictBool] = None, multi_episode_style : Optional[StrictInt] = None, standard_episode_format : Optional[StrictStr] = None, daily_episode_format : Optional[StrictStr] = None, anime_episode_format : Optional[StrictStr] = None, series_folder_format : Optional[StrictStr] = None, season_folder_format : Optional[StrictStr] = None, specials_folder_format : Optional[StrictStr] = None, include_series_title : Optional[StrictBool] = None, include_episode_title : Optional[StrictBool] = None, include_quality : Optional[StrictBool] = None, replace_spaces : Optional[StrictBool] = None, separator : Optional[StrictStr] = None, number_style : Optional[StrictStr] = None, id : Optional[StrictInt] = None, resource_name : Optional[StrictStr] = None, **kwargs) -> None:  # noqa: E501
-        """get_config_naming_examples  # noqa: E501
+    def get_naming_config_examples(self, rename_episodes : Optional[StrictBool] = None, replace_illegal_characters : Optional[StrictBool] = None, multi_episode_style : Optional[StrictInt] = None, standard_episode_format : Optional[StrictStr] = None, daily_episode_format : Optional[StrictStr] = None, anime_episode_format : Optional[StrictStr] = None, series_folder_format : Optional[StrictStr] = None, season_folder_format : Optional[StrictStr] = None, specials_folder_format : Optional[StrictStr] = None, include_series_title : Optional[StrictBool] = None, include_episode_title : Optional[StrictBool] = None, include_quality : Optional[StrictBool] = None, replace_spaces : Optional[StrictBool] = None, separator : Optional[StrictStr] = None, number_style : Optional[StrictStr] = None, id : Optional[StrictInt] = None, resource_name : Optional[StrictStr] = None, **kwargs) -> None:  # noqa: E501
+        """get_naming_config_examples  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_config_naming_examples(rename_episodes, replace_illegal_characters, multi_episode_style, standard_episode_format, daily_episode_format, anime_episode_format, series_folder_format, season_folder_format, specials_folder_format, include_series_title, include_episode_title, include_quality, replace_spaces, separator, number_style, id, resource_name, async_req=True)
+        >>> thread = api.get_naming_config_examples(rename_episodes, replace_illegal_characters, multi_episode_style, standard_episode_format, daily_episode_format, anime_episode_format, series_folder_format, season_folder_format, specials_folder_format, include_series_title, include_episode_title, include_quality, replace_spaces, separator, number_style, id, resource_name, async_req=True)
         >>> result = thread.get()
 
         :param rename_episodes:
@@ -377,16 +377,16 @@ class NamingConfigApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_config_naming_examples_with_http_info(rename_episodes, replace_illegal_characters, multi_episode_style, standard_episode_format, daily_episode_format, anime_episode_format, series_folder_format, season_folder_format, specials_folder_format, include_series_title, include_episode_title, include_quality, replace_spaces, separator, number_style, id, resource_name, **kwargs)  # noqa: E501
+        return self.get_naming_config_examples_with_http_info(rename_episodes, replace_illegal_characters, multi_episode_style, standard_episode_format, daily_episode_format, anime_episode_format, series_folder_format, season_folder_format, specials_folder_format, include_series_title, include_episode_title, include_quality, replace_spaces, separator, number_style, id, resource_name, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_config_naming_examples_with_http_info(self, rename_episodes : Optional[StrictBool] = None, replace_illegal_characters : Optional[StrictBool] = None, multi_episode_style : Optional[StrictInt] = None, standard_episode_format : Optional[StrictStr] = None, daily_episode_format : Optional[StrictStr] = None, anime_episode_format : Optional[StrictStr] = None, series_folder_format : Optional[StrictStr] = None, season_folder_format : Optional[StrictStr] = None, specials_folder_format : Optional[StrictStr] = None, include_series_title : Optional[StrictBool] = None, include_episode_title : Optional[StrictBool] = None, include_quality : Optional[StrictBool] = None, replace_spaces : Optional[StrictBool] = None, separator : Optional[StrictStr] = None, number_style : Optional[StrictStr] = None, id : Optional[StrictInt] = None, resource_name : Optional[StrictStr] = None, **kwargs):  # noqa: E501
-        """get_config_naming_examples  # noqa: E501
+    def get_naming_config_examples_with_http_info(self, rename_episodes : Optional[StrictBool] = None, replace_illegal_characters : Optional[StrictBool] = None, multi_episode_style : Optional[StrictInt] = None, standard_episode_format : Optional[StrictStr] = None, daily_episode_format : Optional[StrictStr] = None, anime_episode_format : Optional[StrictStr] = None, series_folder_format : Optional[StrictStr] = None, season_folder_format : Optional[StrictStr] = None, specials_folder_format : Optional[StrictStr] = None, include_series_title : Optional[StrictBool] = None, include_episode_title : Optional[StrictBool] = None, include_quality : Optional[StrictBool] = None, replace_spaces : Optional[StrictBool] = None, separator : Optional[StrictStr] = None, number_style : Optional[StrictStr] = None, id : Optional[StrictInt] = None, resource_name : Optional[StrictStr] = None, **kwargs):  # noqa: E501
+        """get_naming_config_examples  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_config_naming_examples_with_http_info(rename_episodes, replace_illegal_characters, multi_episode_style, standard_episode_format, daily_episode_format, anime_episode_format, series_folder_format, season_folder_format, specials_folder_format, include_series_title, include_episode_title, include_quality, replace_spaces, separator, number_style, id, resource_name, async_req=True)
+        >>> thread = api.get_naming_config_examples_with_http_info(rename_episodes, replace_illegal_characters, multi_episode_style, standard_episode_format, daily_episode_format, anime_episode_format, series_folder_format, season_folder_format, specials_folder_format, include_series_title, include_episode_title, include_quality, replace_spaces, separator, number_style, id, resource_name, async_req=True)
         >>> result = thread.get()
 
         :param rename_episodes:
@@ -485,7 +485,7 @@ class NamingConfigApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_config_naming_examples" % _key
+                    " to method get_naming_config_examples" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -565,13 +565,13 @@ class NamingConfigApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def update_config_naming(self, id : StrictStr, naming_config_resource : Optional[NamingConfigResource] = None, **kwargs) -> NamingConfigResource:  # noqa: E501
-        """update_config_naming  # noqa: E501
+    def update_naming_config(self, id : StrictStr, naming_config_resource : Optional[NamingConfigResource] = None, **kwargs) -> NamingConfigResource:  # noqa: E501
+        """update_naming_config  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_config_naming(id, naming_config_resource, async_req=True)
+        >>> thread = api.update_naming_config(id, naming_config_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -594,16 +594,16 @@ class NamingConfigApi(object):
         :rtype: NamingConfigResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.update_config_naming_with_http_info(id, naming_config_resource, **kwargs)  # noqa: E501
+        return self.update_naming_config_with_http_info(id, naming_config_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def update_config_naming_with_http_info(self, id : StrictStr, naming_config_resource : Optional[NamingConfigResource] = None, **kwargs):  # noqa: E501
-        """update_config_naming  # noqa: E501
+    def update_naming_config_with_http_info(self, id : StrictStr, naming_config_resource : Optional[NamingConfigResource] = None, **kwargs):  # noqa: E501
+        """update_naming_config  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_config_naming_with_http_info(id, naming_config_resource, async_req=True)
+        >>> thread = api.update_naming_config_with_http_info(id, naming_config_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -657,7 +657,7 @@ class NamingConfigApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method update_config_naming" % _key
+                    " to method update_naming_config" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']

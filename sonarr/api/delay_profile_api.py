@@ -43,13 +43,13 @@ class DelayProfileApi(object):
         self.api_client = api_client
 
     @validate_arguments
-    def create_delayprofile(self, delay_profile_resource : Optional[DelayProfileResource] = None, **kwargs) -> DelayProfileResource:  # noqa: E501
-        """create_delayprofile  # noqa: E501
+    def create_delay_profile(self, delay_profile_resource : Optional[DelayProfileResource] = None, **kwargs) -> DelayProfileResource:  # noqa: E501
+        """create_delay_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_delayprofile(delay_profile_resource, async_req=True)
+        >>> thread = api.create_delay_profile(delay_profile_resource, async_req=True)
         >>> result = thread.get()
 
         :param delay_profile_resource:
@@ -70,16 +70,16 @@ class DelayProfileApi(object):
         :rtype: DelayProfileResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.create_delayprofile_with_http_info(delay_profile_resource, **kwargs)  # noqa: E501
+        return self.create_delay_profile_with_http_info(delay_profile_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def create_delayprofile_with_http_info(self, delay_profile_resource : Optional[DelayProfileResource] = None, **kwargs):  # noqa: E501
-        """create_delayprofile  # noqa: E501
+    def create_delay_profile_with_http_info(self, delay_profile_resource : Optional[DelayProfileResource] = None, **kwargs):  # noqa: E501
+        """create_delay_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_delayprofile_with_http_info(delay_profile_resource, async_req=True)
+        >>> thread = api.create_delay_profile_with_http_info(delay_profile_resource, async_req=True)
         >>> result = thread.get()
 
         :param delay_profile_resource:
@@ -130,7 +130,7 @@ class DelayProfileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method create_delayprofile" % _key
+                    " to method create_delay_profile" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -191,13 +191,13 @@ class DelayProfileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def delete_delayprofile(self, id : StrictInt, **kwargs) -> None:  # noqa: E501
-        """delete_delayprofile  # noqa: E501
+    def delete_delay_profile(self, id : StrictInt, **kwargs) -> None:  # noqa: E501
+        """delete_delay_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_delayprofile(id, async_req=True)
+        >>> thread = api.delete_delay_profile(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -218,16 +218,16 @@ class DelayProfileApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.delete_delayprofile_with_http_info(id, **kwargs)  # noqa: E501
+        return self.delete_delay_profile_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def delete_delayprofile_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """delete_delayprofile  # noqa: E501
+    def delete_delay_profile_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """delete_delay_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_delayprofile_with_http_info(id, async_req=True)
+        >>> thread = api.delete_delay_profile_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -278,7 +278,7 @@ class DelayProfileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method delete_delayprofile" % _key
+                    " to method delete_delay_profile" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -326,13 +326,13 @@ class DelayProfileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def get_delayprofile_by_id(self, id : StrictInt, **kwargs) -> DelayProfileResource:  # noqa: E501
-        """get_delayprofile_by_id  # noqa: E501
+    def get_delay_profile_by_id(self, id : StrictInt, **kwargs) -> DelayProfileResource:  # noqa: E501
+        """get_delay_profile_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_delayprofile_by_id(id, async_req=True)
+        >>> thread = api.get_delay_profile_by_id(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -353,16 +353,16 @@ class DelayProfileApi(object):
         :rtype: DelayProfileResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_delayprofile_by_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.get_delay_profile_by_id_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_delayprofile_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """get_delayprofile_by_id  # noqa: E501
+    def get_delay_profile_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """get_delay_profile_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_delayprofile_by_id_with_http_info(id, async_req=True)
+        >>> thread = api.get_delay_profile_by_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -413,7 +413,7 @@ class DelayProfileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_delayprofile_by_id" % _key
+                    " to method get_delay_profile_by_id" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -467,13 +467,13 @@ class DelayProfileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def list_delayprofile(self, **kwargs) -> List[DelayProfileResource]:  # noqa: E501
-        """list_delayprofile  # noqa: E501
+    def list_delay_profile(self, **kwargs) -> List[DelayProfileResource]:  # noqa: E501
+        """list_delay_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_delayprofile(async_req=True)
+        >>> thread = api.list_delay_profile(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -492,16 +492,16 @@ class DelayProfileApi(object):
         :rtype: List[DelayProfileResource]
         """
         kwargs['_return_http_data_only'] = True
-        return self.list_delayprofile_with_http_info(**kwargs)  # noqa: E501
+        return self.list_delay_profile_with_http_info(**kwargs)  # noqa: E501
 
     @validate_arguments
-    def list_delayprofile_with_http_info(self, **kwargs):  # noqa: E501
-        """list_delayprofile  # noqa: E501
+    def list_delay_profile_with_http_info(self, **kwargs):  # noqa: E501
+        """list_delay_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_delayprofile_with_http_info(async_req=True)
+        >>> thread = api.list_delay_profile_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -549,7 +549,7 @@ class DelayProfileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method list_delayprofile" % _key
+                    " to method list_delay_profile" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -601,13 +601,13 @@ class DelayProfileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def update_delayprofile(self, id : StrictStr, delay_profile_resource : Optional[DelayProfileResource] = None, **kwargs) -> DelayProfileResource:  # noqa: E501
-        """update_delayprofile  # noqa: E501
+    def update_delay_profile(self, id : StrictStr, delay_profile_resource : Optional[DelayProfileResource] = None, **kwargs) -> DelayProfileResource:  # noqa: E501
+        """update_delay_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_delayprofile(id, delay_profile_resource, async_req=True)
+        >>> thread = api.update_delay_profile(id, delay_profile_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -630,16 +630,16 @@ class DelayProfileApi(object):
         :rtype: DelayProfileResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.update_delayprofile_with_http_info(id, delay_profile_resource, **kwargs)  # noqa: E501
+        return self.update_delay_profile_with_http_info(id, delay_profile_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def update_delayprofile_with_http_info(self, id : StrictStr, delay_profile_resource : Optional[DelayProfileResource] = None, **kwargs):  # noqa: E501
-        """update_delayprofile  # noqa: E501
+    def update_delay_profile_with_http_info(self, id : StrictStr, delay_profile_resource : Optional[DelayProfileResource] = None, **kwargs):  # noqa: E501
+        """update_delay_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_delayprofile_with_http_info(id, delay_profile_resource, async_req=True)
+        >>> thread = api.update_delay_profile_with_http_info(id, delay_profile_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -693,7 +693,7 @@ class DelayProfileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method update_delayprofile" % _key
+                    " to method update_delay_profile" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -756,13 +756,13 @@ class DelayProfileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def update_delayprofile_reorder(self, id : StrictInt, after : Optional[StrictInt] = None, **kwargs) -> List[DelayProfileResource]:  # noqa: E501
-        """update_delayprofile_reorder  # noqa: E501
+    def update_delay_profile_reorder(self, id : StrictInt, after : Optional[StrictInt] = None, **kwargs) -> List[DelayProfileResource]:  # noqa: E501
+        """update_delay_profile_reorder  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_delayprofile_reorder(id, after, async_req=True)
+        >>> thread = api.update_delay_profile_reorder(id, after, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -785,16 +785,16 @@ class DelayProfileApi(object):
         :rtype: List[DelayProfileResource]
         """
         kwargs['_return_http_data_only'] = True
-        return self.update_delayprofile_reorder_with_http_info(id, after, **kwargs)  # noqa: E501
+        return self.update_delay_profile_reorder_with_http_info(id, after, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def update_delayprofile_reorder_with_http_info(self, id : StrictInt, after : Optional[StrictInt] = None, **kwargs):  # noqa: E501
-        """update_delayprofile_reorder  # noqa: E501
+    def update_delay_profile_reorder_with_http_info(self, id : StrictInt, after : Optional[StrictInt] = None, **kwargs):  # noqa: E501
+        """update_delay_profile_reorder  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_delayprofile_reorder_with_http_info(id, after, async_req=True)
+        >>> thread = api.update_delay_profile_reorder_with_http_info(id, after, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -848,7 +848,7 @@ class DelayProfileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method update_delayprofile_reorder" % _key
+                    " to method update_delay_profile_reorder" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']

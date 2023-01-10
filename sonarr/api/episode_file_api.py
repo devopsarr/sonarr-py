@@ -44,13 +44,13 @@ class EpisodeFileApi(object):
         self.api_client = api_client
 
     @validate_arguments
-    def delete_episodefile(self, id : StrictInt, **kwargs) -> None:  # noqa: E501
-        """delete_episodefile  # noqa: E501
+    def delete_episode_file(self, id : StrictInt, **kwargs) -> None:  # noqa: E501
+        """delete_episode_file  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_episodefile(id, async_req=True)
+        >>> thread = api.delete_episode_file(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -71,16 +71,16 @@ class EpisodeFileApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.delete_episodefile_with_http_info(id, **kwargs)  # noqa: E501
+        return self.delete_episode_file_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def delete_episodefile_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """delete_episodefile  # noqa: E501
+    def delete_episode_file_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """delete_episode_file  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_episodefile_with_http_info(id, async_req=True)
+        >>> thread = api.delete_episode_file_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -131,7 +131,7 @@ class EpisodeFileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method delete_episodefile" % _key
+                    " to method delete_episode_file" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -179,13 +179,13 @@ class EpisodeFileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def delete_episodefile_bulk(self, episode_file_list_resource : Optional[EpisodeFileListResource] = None, **kwargs) -> None:  # noqa: E501
-        """delete_episodefile_bulk  # noqa: E501
+    def delete_episode_file_bulk(self, episode_file_list_resource : Optional[EpisodeFileListResource] = None, **kwargs) -> None:  # noqa: E501
+        """delete_episode_file_bulk  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_episodefile_bulk(episode_file_list_resource, async_req=True)
+        >>> thread = api.delete_episode_file_bulk(episode_file_list_resource, async_req=True)
         >>> result = thread.get()
 
         :param episode_file_list_resource:
@@ -206,16 +206,16 @@ class EpisodeFileApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.delete_episodefile_bulk_with_http_info(episode_file_list_resource, **kwargs)  # noqa: E501
+        return self.delete_episode_file_bulk_with_http_info(episode_file_list_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def delete_episodefile_bulk_with_http_info(self, episode_file_list_resource : Optional[EpisodeFileListResource] = None, **kwargs):  # noqa: E501
-        """delete_episodefile_bulk  # noqa: E501
+    def delete_episode_file_bulk_with_http_info(self, episode_file_list_resource : Optional[EpisodeFileListResource] = None, **kwargs):  # noqa: E501
+        """delete_episode_file_bulk  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_episodefile_bulk_with_http_info(episode_file_list_resource, async_req=True)
+        >>> thread = api.delete_episode_file_bulk_with_http_info(episode_file_list_resource, async_req=True)
         >>> result = thread.get()
 
         :param episode_file_list_resource:
@@ -266,7 +266,7 @@ class EpisodeFileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method delete_episodefile_bulk" % _key
+                    " to method delete_episode_file_bulk" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -321,13 +321,13 @@ class EpisodeFileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def get_episodefile_by_id(self, id : StrictInt, **kwargs) -> EpisodeFileResource:  # noqa: E501
-        """get_episodefile_by_id  # noqa: E501
+    def get_episode_file_by_id(self, id : StrictInt, **kwargs) -> EpisodeFileResource:  # noqa: E501
+        """get_episode_file_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_episodefile_by_id(id, async_req=True)
+        >>> thread = api.get_episode_file_by_id(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -348,16 +348,16 @@ class EpisodeFileApi(object):
         :rtype: EpisodeFileResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_episodefile_by_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.get_episode_file_by_id_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_episodefile_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """get_episodefile_by_id  # noqa: E501
+    def get_episode_file_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """get_episode_file_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_episodefile_by_id_with_http_info(id, async_req=True)
+        >>> thread = api.get_episode_file_by_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -408,7 +408,7 @@ class EpisodeFileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_episodefile_by_id" % _key
+                    " to method get_episode_file_by_id" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -462,13 +462,13 @@ class EpisodeFileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def list_episodefile(self, series_id : Optional[StrictInt] = None, episode_file_ids : Optional[List[StrictInt]] = None, **kwargs) -> List[EpisodeFileResource]:  # noqa: E501
-        """list_episodefile  # noqa: E501
+    def list_episode_file(self, series_id : Optional[StrictInt] = None, episode_file_ids : Optional[List[StrictInt]] = None, **kwargs) -> List[EpisodeFileResource]:  # noqa: E501
+        """list_episode_file  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_episodefile(series_id, episode_file_ids, async_req=True)
+        >>> thread = api.list_episode_file(series_id, episode_file_ids, async_req=True)
         >>> result = thread.get()
 
         :param series_id:
@@ -491,16 +491,16 @@ class EpisodeFileApi(object):
         :rtype: List[EpisodeFileResource]
         """
         kwargs['_return_http_data_only'] = True
-        return self.list_episodefile_with_http_info(series_id, episode_file_ids, **kwargs)  # noqa: E501
+        return self.list_episode_file_with_http_info(series_id, episode_file_ids, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def list_episodefile_with_http_info(self, series_id : Optional[StrictInt] = None, episode_file_ids : Optional[List[StrictInt]] = None, **kwargs):  # noqa: E501
-        """list_episodefile  # noqa: E501
+    def list_episode_file_with_http_info(self, series_id : Optional[StrictInt] = None, episode_file_ids : Optional[List[StrictInt]] = None, **kwargs):  # noqa: E501
+        """list_episode_file  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_episodefile_with_http_info(series_id, episode_file_ids, async_req=True)
+        >>> thread = api.list_episode_file_with_http_info(series_id, episode_file_ids, async_req=True)
         >>> result = thread.get()
 
         :param series_id:
@@ -554,7 +554,7 @@ class EpisodeFileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method list_episodefile" % _key
+                    " to method list_episode_file" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -611,13 +611,13 @@ class EpisodeFileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def put_episodefile_bulk(self, episode_file_resource : Optional[List[EpisodeFileResource]] = None, **kwargs) -> None:  # noqa: E501
-        """put_episodefile_bulk  # noqa: E501
+    def put_episode_file_bulk(self, episode_file_resource : Optional[List[EpisodeFileResource]] = None, **kwargs) -> None:  # noqa: E501
+        """put_episode_file_bulk  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.put_episodefile_bulk(episode_file_resource, async_req=True)
+        >>> thread = api.put_episode_file_bulk(episode_file_resource, async_req=True)
         >>> result = thread.get()
 
         :param episode_file_resource:
@@ -638,16 +638,16 @@ class EpisodeFileApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.put_episodefile_bulk_with_http_info(episode_file_resource, **kwargs)  # noqa: E501
+        return self.put_episode_file_bulk_with_http_info(episode_file_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def put_episodefile_bulk_with_http_info(self, episode_file_resource : Optional[List[EpisodeFileResource]] = None, **kwargs):  # noqa: E501
-        """put_episodefile_bulk  # noqa: E501
+    def put_episode_file_bulk_with_http_info(self, episode_file_resource : Optional[List[EpisodeFileResource]] = None, **kwargs):  # noqa: E501
+        """put_episode_file_bulk  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.put_episodefile_bulk_with_http_info(episode_file_resource, async_req=True)
+        >>> thread = api.put_episode_file_bulk_with_http_info(episode_file_resource, async_req=True)
         >>> result = thread.get()
 
         :param episode_file_resource:
@@ -698,7 +698,7 @@ class EpisodeFileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method put_episodefile_bulk" % _key
+                    " to method put_episode_file_bulk" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -753,13 +753,13 @@ class EpisodeFileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def put_episodefile_editor(self, episode_file_list_resource : Optional[EpisodeFileListResource] = None, **kwargs) -> None:  # noqa: E501
-        """put_episodefile_editor  # noqa: E501
+    def put_episode_file_editor(self, episode_file_list_resource : Optional[EpisodeFileListResource] = None, **kwargs) -> None:  # noqa: E501
+        """put_episode_file_editor  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.put_episodefile_editor(episode_file_list_resource, async_req=True)
+        >>> thread = api.put_episode_file_editor(episode_file_list_resource, async_req=True)
         >>> result = thread.get()
 
         :param episode_file_list_resource:
@@ -780,16 +780,16 @@ class EpisodeFileApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.put_episodefile_editor_with_http_info(episode_file_list_resource, **kwargs)  # noqa: E501
+        return self.put_episode_file_editor_with_http_info(episode_file_list_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def put_episodefile_editor_with_http_info(self, episode_file_list_resource : Optional[EpisodeFileListResource] = None, **kwargs):  # noqa: E501
-        """put_episodefile_editor  # noqa: E501
+    def put_episode_file_editor_with_http_info(self, episode_file_list_resource : Optional[EpisodeFileListResource] = None, **kwargs):  # noqa: E501
+        """put_episode_file_editor  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.put_episodefile_editor_with_http_info(episode_file_list_resource, async_req=True)
+        >>> thread = api.put_episode_file_editor_with_http_info(episode_file_list_resource, async_req=True)
         >>> result = thread.get()
 
         :param episode_file_list_resource:
@@ -840,7 +840,7 @@ class EpisodeFileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method put_episodefile_editor" % _key
+                    " to method put_episode_file_editor" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -895,13 +895,13 @@ class EpisodeFileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def update_episodefile(self, id : StrictStr, episode_file_resource : Optional[EpisodeFileResource] = None, **kwargs) -> EpisodeFileResource:  # noqa: E501
-        """update_episodefile  # noqa: E501
+    def update_episode_file(self, id : StrictStr, episode_file_resource : Optional[EpisodeFileResource] = None, **kwargs) -> EpisodeFileResource:  # noqa: E501
+        """update_episode_file  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_episodefile(id, episode_file_resource, async_req=True)
+        >>> thread = api.update_episode_file(id, episode_file_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -924,16 +924,16 @@ class EpisodeFileApi(object):
         :rtype: EpisodeFileResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.update_episodefile_with_http_info(id, episode_file_resource, **kwargs)  # noqa: E501
+        return self.update_episode_file_with_http_info(id, episode_file_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def update_episodefile_with_http_info(self, id : StrictStr, episode_file_resource : Optional[EpisodeFileResource] = None, **kwargs):  # noqa: E501
-        """update_episodefile  # noqa: E501
+    def update_episode_file_with_http_info(self, id : StrictStr, episode_file_resource : Optional[EpisodeFileResource] = None, **kwargs):  # noqa: E501
+        """update_episode_file  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_episodefile_with_http_info(id, episode_file_resource, async_req=True)
+        >>> thread = api.update_episode_file_with_http_info(id, episode_file_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -987,7 +987,7 @@ class EpisodeFileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method update_episodefile" % _key
+                    " to method update_episode_file" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']

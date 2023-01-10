@@ -43,13 +43,13 @@ class MediaManagementConfigApi(object):
         self.api_client = api_client
 
     @validate_arguments
-    def get_config_mediamanagement(self, **kwargs) -> MediaManagementConfigResource:  # noqa: E501
-        """get_config_mediamanagement  # noqa: E501
+    def get_media_management_config(self, **kwargs) -> MediaManagementConfigResource:  # noqa: E501
+        """get_media_management_config  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_config_mediamanagement(async_req=True)
+        >>> thread = api.get_media_management_config(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -68,16 +68,16 @@ class MediaManagementConfigApi(object):
         :rtype: MediaManagementConfigResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_config_mediamanagement_with_http_info(**kwargs)  # noqa: E501
+        return self.get_media_management_config_with_http_info(**kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_config_mediamanagement_with_http_info(self, **kwargs):  # noqa: E501
-        """get_config_mediamanagement  # noqa: E501
+    def get_media_management_config_with_http_info(self, **kwargs):  # noqa: E501
+        """get_media_management_config  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_config_mediamanagement_with_http_info(async_req=True)
+        >>> thread = api.get_media_management_config_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -125,7 +125,7 @@ class MediaManagementConfigApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_config_mediamanagement" % _key
+                    " to method get_media_management_config" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -177,13 +177,13 @@ class MediaManagementConfigApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def get_config_mediamanagement_by_id(self, id : StrictInt, **kwargs) -> MediaManagementConfigResource:  # noqa: E501
-        """get_config_mediamanagement_by_id  # noqa: E501
+    def get_media_management_config_by_id(self, id : StrictInt, **kwargs) -> MediaManagementConfigResource:  # noqa: E501
+        """get_media_management_config_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_config_mediamanagement_by_id(id, async_req=True)
+        >>> thread = api.get_media_management_config_by_id(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -204,16 +204,16 @@ class MediaManagementConfigApi(object):
         :rtype: MediaManagementConfigResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_config_mediamanagement_by_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.get_media_management_config_by_id_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_config_mediamanagement_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """get_config_mediamanagement_by_id  # noqa: E501
+    def get_media_management_config_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """get_media_management_config_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_config_mediamanagement_by_id_with_http_info(id, async_req=True)
+        >>> thread = api.get_media_management_config_by_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -264,7 +264,7 @@ class MediaManagementConfigApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_config_mediamanagement_by_id" % _key
+                    " to method get_media_management_config_by_id" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -318,13 +318,13 @@ class MediaManagementConfigApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def update_config_mediamanagement(self, id : StrictStr, media_management_config_resource : Optional[MediaManagementConfigResource] = None, **kwargs) -> MediaManagementConfigResource:  # noqa: E501
-        """update_config_mediamanagement  # noqa: E501
+    def update_media_management_config(self, id : StrictStr, media_management_config_resource : Optional[MediaManagementConfigResource] = None, **kwargs) -> MediaManagementConfigResource:  # noqa: E501
+        """update_media_management_config  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_config_mediamanagement(id, media_management_config_resource, async_req=True)
+        >>> thread = api.update_media_management_config(id, media_management_config_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -347,16 +347,16 @@ class MediaManagementConfigApi(object):
         :rtype: MediaManagementConfigResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.update_config_mediamanagement_with_http_info(id, media_management_config_resource, **kwargs)  # noqa: E501
+        return self.update_media_management_config_with_http_info(id, media_management_config_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def update_config_mediamanagement_with_http_info(self, id : StrictStr, media_management_config_resource : Optional[MediaManagementConfigResource] = None, **kwargs):  # noqa: E501
-        """update_config_mediamanagement  # noqa: E501
+    def update_media_management_config_with_http_info(self, id : StrictStr, media_management_config_resource : Optional[MediaManagementConfigResource] = None, **kwargs):  # noqa: E501
+        """update_media_management_config  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_config_mediamanagement_with_http_info(id, media_management_config_resource, async_req=True)
+        >>> thread = api.update_media_management_config_with_http_info(id, media_management_config_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -410,7 +410,7 @@ class MediaManagementConfigApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method update_config_mediamanagement" % _key
+                    " to method update_media_management_config" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']

@@ -41,13 +41,13 @@ class SeasonPassApi(object):
         self.api_client = api_client
 
     @validate_arguments
-    def create_seasonpass(self, season_pass_resource : Optional[SeasonPassResource] = None, **kwargs) -> None:  # noqa: E501
-        """create_seasonpass  # noqa: E501
+    def create_season_pass(self, season_pass_resource : Optional[SeasonPassResource] = None, **kwargs) -> None:  # noqa: E501
+        """create_season_pass  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_seasonpass(season_pass_resource, async_req=True)
+        >>> thread = api.create_season_pass(season_pass_resource, async_req=True)
         >>> result = thread.get()
 
         :param season_pass_resource:
@@ -68,16 +68,16 @@ class SeasonPassApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.create_seasonpass_with_http_info(season_pass_resource, **kwargs)  # noqa: E501
+        return self.create_season_pass_with_http_info(season_pass_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def create_seasonpass_with_http_info(self, season_pass_resource : Optional[SeasonPassResource] = None, **kwargs):  # noqa: E501
-        """create_seasonpass  # noqa: E501
+    def create_season_pass_with_http_info(self, season_pass_resource : Optional[SeasonPassResource] = None, **kwargs):  # noqa: E501
+        """create_season_pass  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_seasonpass_with_http_info(season_pass_resource, async_req=True)
+        >>> thread = api.create_season_pass_with_http_info(season_pass_resource, async_req=True)
         >>> result = thread.get()
 
         :param season_pass_resource:
@@ -128,7 +128,7 @@ class SeasonPassApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method create_seasonpass" % _key
+                    " to method create_season_pass" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']

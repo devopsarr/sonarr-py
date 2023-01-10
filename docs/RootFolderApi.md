@@ -4,14 +4,14 @@ All URIs are relative to *http://localhost:8989*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_rootfolder**](RootFolderApi.md#create_rootfolder) | **POST** /api/v3/rootfolder | 
-[**delete_rootfolder**](RootFolderApi.md#delete_rootfolder) | **DELETE** /api/v3/rootfolder/{id} | 
-[**get_rootfolder_by_id**](RootFolderApi.md#get_rootfolder_by_id) | **GET** /api/v3/rootfolder/{id} | 
-[**list_rootfolder**](RootFolderApi.md#list_rootfolder) | **GET** /api/v3/rootfolder | 
+[**create_root_folder**](RootFolderApi.md#create_root_folder) | **POST** /api/v3/rootfolder | 
+[**delete_root_folder**](RootFolderApi.md#delete_root_folder) | **DELETE** /api/v3/rootfolder/{id} | 
+[**get_root_folder_by_id**](RootFolderApi.md#get_root_folder_by_id) | **GET** /api/v3/rootfolder/{id} | 
+[**list_root_folder**](RootFolderApi.md#list_root_folder) | **GET** /api/v3/rootfolder | 
 
 
-# **create_rootfolder**
-> RootFolderResource create_rootfolder(root_folder_resource=root_folder_resource)
+# **create_root_folder**
+> RootFolderResource create_root_folder(root_folder_resource=root_folder_resource)
 
 
 
@@ -55,11 +55,11 @@ with sonarr.ApiClient(configuration) as api_client:
     root_folder_resource = sonarr.RootFolderResource() # RootFolderResource |  (optional)
 
     try:
-        api_response = api_instance.create_rootfolder(root_folder_resource=root_folder_resource)
-        print("The response of RootFolderApi->create_rootfolder:\n")
+        api_response = api_instance.create_root_folder(root_folder_resource=root_folder_resource)
+        print("The response of RootFolderApi->create_root_folder:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling RootFolderApi->create_rootfolder: %s\n" % e)
+        print("Exception when calling RootFolderApi->create_root_folder: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -100,11 +100,11 @@ with sonarr.ApiClient(configuration) as api_client:
     root_folder_resource = sonarr.RootFolderResource() # RootFolderResource |  (optional)
 
     try:
-        api_response = api_instance.create_rootfolder(root_folder_resource=root_folder_resource)
-        print("The response of RootFolderApi->create_rootfolder:\n")
+        api_response = api_instance.create_root_folder(root_folder_resource=root_folder_resource)
+        print("The response of RootFolderApi->create_root_folder:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling RootFolderApi->create_rootfolder: %s\n" % e)
+        print("Exception when calling RootFolderApi->create_root_folder: %s\n" % e)
 ```
 
 ### Parameters
@@ -133,8 +133,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **delete_rootfolder**
-> delete_rootfolder(id)
+# **delete_root_folder**
+> delete_root_folder(id)
 
 
 
@@ -178,9 +178,9 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_instance.delete_rootfolder(id)
+        api_instance.delete_root_folder(id)
     except Exception as e:
-        print("Exception when calling RootFolderApi->delete_rootfolder: %s\n" % e)
+        print("Exception when calling RootFolderApi->delete_root_folder: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -221,9 +221,9 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_instance.delete_rootfolder(id)
+        api_instance.delete_root_folder(id)
     except Exception as e:
-        print("Exception when calling RootFolderApi->delete_rootfolder: %s\n" % e)
+        print("Exception when calling RootFolderApi->delete_root_folder: %s\n" % e)
 ```
 
 ### Parameters
@@ -252,8 +252,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_rootfolder_by_id**
-> RootFolderResource get_rootfolder_by_id(id)
+# **get_root_folder_by_id**
+> RootFolderResource get_root_folder_by_id(id)
 
 
 
@@ -297,11 +297,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_rootfolder_by_id(id)
-        print("The response of RootFolderApi->get_rootfolder_by_id:\n")
+        api_response = api_instance.get_root_folder_by_id(id)
+        print("The response of RootFolderApi->get_root_folder_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling RootFolderApi->get_rootfolder_by_id: %s\n" % e)
+        print("Exception when calling RootFolderApi->get_root_folder_by_id: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -342,11 +342,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_rootfolder_by_id(id)
-        print("The response of RootFolderApi->get_rootfolder_by_id:\n")
+        api_response = api_instance.get_root_folder_by_id(id)
+        print("The response of RootFolderApi->get_root_folder_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling RootFolderApi->get_rootfolder_by_id: %s\n" % e)
+        print("Exception when calling RootFolderApi->get_root_folder_by_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -375,8 +375,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **list_rootfolder**
-> List[RootFolderResource] list_rootfolder()
+# **list_root_folder**
+> List[RootFolderResource] list_root_folder()
 
 
 
@@ -419,11 +419,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.RootFolderApi(api_client)
 
     try:
-        api_response = api_instance.list_rootfolder()
-        print("The response of RootFolderApi->list_rootfolder:\n")
+        api_response = api_instance.list_root_folder()
+        print("The response of RootFolderApi->list_root_folder:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling RootFolderApi->list_rootfolder: %s\n" % e)
+        print("Exception when calling RootFolderApi->list_root_folder: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -463,11 +463,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.RootFolderApi(api_client)
 
     try:
-        api_response = api_instance.list_rootfolder()
-        print("The response of RootFolderApi->list_rootfolder:\n")
+        api_response = api_instance.list_root_folder()
+        print("The response of RootFolderApi->list_root_folder:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling RootFolderApi->list_rootfolder: %s\n" % e)
+        print("Exception when calling RootFolderApi->list_root_folder: %s\n" % e)
 ```
 
 ### Parameters

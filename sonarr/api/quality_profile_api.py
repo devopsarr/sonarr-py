@@ -43,13 +43,13 @@ class QualityProfileApi(object):
         self.api_client = api_client
 
     @validate_arguments
-    def create_qualityprofile(self, quality_profile_resource : Optional[QualityProfileResource] = None, **kwargs) -> QualityProfileResource:  # noqa: E501
-        """create_qualityprofile  # noqa: E501
+    def create_quality_profile(self, quality_profile_resource : Optional[QualityProfileResource] = None, **kwargs) -> QualityProfileResource:  # noqa: E501
+        """create_quality_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_qualityprofile(quality_profile_resource, async_req=True)
+        >>> thread = api.create_quality_profile(quality_profile_resource, async_req=True)
         >>> result = thread.get()
 
         :param quality_profile_resource:
@@ -70,16 +70,16 @@ class QualityProfileApi(object):
         :rtype: QualityProfileResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.create_qualityprofile_with_http_info(quality_profile_resource, **kwargs)  # noqa: E501
+        return self.create_quality_profile_with_http_info(quality_profile_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def create_qualityprofile_with_http_info(self, quality_profile_resource : Optional[QualityProfileResource] = None, **kwargs):  # noqa: E501
-        """create_qualityprofile  # noqa: E501
+    def create_quality_profile_with_http_info(self, quality_profile_resource : Optional[QualityProfileResource] = None, **kwargs):  # noqa: E501
+        """create_quality_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_qualityprofile_with_http_info(quality_profile_resource, async_req=True)
+        >>> thread = api.create_quality_profile_with_http_info(quality_profile_resource, async_req=True)
         >>> result = thread.get()
 
         :param quality_profile_resource:
@@ -130,7 +130,7 @@ class QualityProfileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method create_qualityprofile" % _key
+                    " to method create_quality_profile" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -191,13 +191,13 @@ class QualityProfileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def delete_qualityprofile(self, id : StrictInt, **kwargs) -> None:  # noqa: E501
-        """delete_qualityprofile  # noqa: E501
+    def delete_quality_profile(self, id : StrictInt, **kwargs) -> None:  # noqa: E501
+        """delete_quality_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_qualityprofile(id, async_req=True)
+        >>> thread = api.delete_quality_profile(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -218,16 +218,16 @@ class QualityProfileApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.delete_qualityprofile_with_http_info(id, **kwargs)  # noqa: E501
+        return self.delete_quality_profile_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def delete_qualityprofile_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """delete_qualityprofile  # noqa: E501
+    def delete_quality_profile_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """delete_quality_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_qualityprofile_with_http_info(id, async_req=True)
+        >>> thread = api.delete_quality_profile_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -278,7 +278,7 @@ class QualityProfileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method delete_qualityprofile" % _key
+                    " to method delete_quality_profile" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -326,13 +326,13 @@ class QualityProfileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def get_qualityprofile_by_id(self, id : StrictInt, **kwargs) -> QualityProfileResource:  # noqa: E501
-        """get_qualityprofile_by_id  # noqa: E501
+    def get_quality_profile_by_id(self, id : StrictInt, **kwargs) -> QualityProfileResource:  # noqa: E501
+        """get_quality_profile_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_qualityprofile_by_id(id, async_req=True)
+        >>> thread = api.get_quality_profile_by_id(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -353,16 +353,16 @@ class QualityProfileApi(object):
         :rtype: QualityProfileResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_qualityprofile_by_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.get_quality_profile_by_id_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_qualityprofile_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """get_qualityprofile_by_id  # noqa: E501
+    def get_quality_profile_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """get_quality_profile_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_qualityprofile_by_id_with_http_info(id, async_req=True)
+        >>> thread = api.get_quality_profile_by_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -413,7 +413,7 @@ class QualityProfileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_qualityprofile_by_id" % _key
+                    " to method get_quality_profile_by_id" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -467,13 +467,13 @@ class QualityProfileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def list_qualityprofile(self, **kwargs) -> List[QualityProfileResource]:  # noqa: E501
-        """list_qualityprofile  # noqa: E501
+    def list_quality_profile(self, **kwargs) -> List[QualityProfileResource]:  # noqa: E501
+        """list_quality_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_qualityprofile(async_req=True)
+        >>> thread = api.list_quality_profile(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -492,16 +492,16 @@ class QualityProfileApi(object):
         :rtype: List[QualityProfileResource]
         """
         kwargs['_return_http_data_only'] = True
-        return self.list_qualityprofile_with_http_info(**kwargs)  # noqa: E501
+        return self.list_quality_profile_with_http_info(**kwargs)  # noqa: E501
 
     @validate_arguments
-    def list_qualityprofile_with_http_info(self, **kwargs):  # noqa: E501
-        """list_qualityprofile  # noqa: E501
+    def list_quality_profile_with_http_info(self, **kwargs):  # noqa: E501
+        """list_quality_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_qualityprofile_with_http_info(async_req=True)
+        >>> thread = api.list_quality_profile_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -549,7 +549,7 @@ class QualityProfileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method list_qualityprofile" % _key
+                    " to method list_quality_profile" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -601,13 +601,13 @@ class QualityProfileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def update_qualityprofile(self, id : StrictStr, quality_profile_resource : Optional[QualityProfileResource] = None, **kwargs) -> QualityProfileResource:  # noqa: E501
-        """update_qualityprofile  # noqa: E501
+    def update_quality_profile(self, id : StrictStr, quality_profile_resource : Optional[QualityProfileResource] = None, **kwargs) -> QualityProfileResource:  # noqa: E501
+        """update_quality_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_qualityprofile(id, quality_profile_resource, async_req=True)
+        >>> thread = api.update_quality_profile(id, quality_profile_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -630,16 +630,16 @@ class QualityProfileApi(object):
         :rtype: QualityProfileResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.update_qualityprofile_with_http_info(id, quality_profile_resource, **kwargs)  # noqa: E501
+        return self.update_quality_profile_with_http_info(id, quality_profile_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def update_qualityprofile_with_http_info(self, id : StrictStr, quality_profile_resource : Optional[QualityProfileResource] = None, **kwargs):  # noqa: E501
-        """update_qualityprofile  # noqa: E501
+    def update_quality_profile_with_http_info(self, id : StrictStr, quality_profile_resource : Optional[QualityProfileResource] = None, **kwargs):  # noqa: E501
+        """update_quality_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_qualityprofile_with_http_info(id, quality_profile_resource, async_req=True)
+        >>> thread = api.update_quality_profile_with_http_info(id, quality_profile_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -693,7 +693,7 @@ class QualityProfileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method update_qualityprofile" % _key
+                    " to method update_quality_profile" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']

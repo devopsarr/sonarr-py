@@ -44,13 +44,13 @@ class ManualImportApi(object):
         self.api_client = api_client
 
     @validate_arguments
-    def create_manualimport(self, manual_import_reprocess_resource : Optional[List[ManualImportReprocessResource]] = None, **kwargs) -> None:  # noqa: E501
-        """create_manualimport  # noqa: E501
+    def create_manual_import(self, manual_import_reprocess_resource : Optional[List[ManualImportReprocessResource]] = None, **kwargs) -> None:  # noqa: E501
+        """create_manual_import  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_manualimport(manual_import_reprocess_resource, async_req=True)
+        >>> thread = api.create_manual_import(manual_import_reprocess_resource, async_req=True)
         >>> result = thread.get()
 
         :param manual_import_reprocess_resource:
@@ -71,16 +71,16 @@ class ManualImportApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.create_manualimport_with_http_info(manual_import_reprocess_resource, **kwargs)  # noqa: E501
+        return self.create_manual_import_with_http_info(manual_import_reprocess_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def create_manualimport_with_http_info(self, manual_import_reprocess_resource : Optional[List[ManualImportReprocessResource]] = None, **kwargs):  # noqa: E501
-        """create_manualimport  # noqa: E501
+    def create_manual_import_with_http_info(self, manual_import_reprocess_resource : Optional[List[ManualImportReprocessResource]] = None, **kwargs):  # noqa: E501
+        """create_manual_import  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_manualimport_with_http_info(manual_import_reprocess_resource, async_req=True)
+        >>> thread = api.create_manual_import_with_http_info(manual_import_reprocess_resource, async_req=True)
         >>> result = thread.get()
 
         :param manual_import_reprocess_resource:
@@ -131,7 +131,7 @@ class ManualImportApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method create_manualimport" % _key
+                    " to method create_manual_import" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -186,13 +186,13 @@ class ManualImportApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def list_manualimport(self, folder : Optional[StrictStr] = None, download_id : Optional[StrictStr] = None, series_id : Optional[StrictInt] = None, season_number : Optional[StrictInt] = None, filter_existing_files : Optional[StrictBool] = None, **kwargs) -> List[ManualImportResource]:  # noqa: E501
-        """list_manualimport  # noqa: E501
+    def list_manual_import(self, folder : Optional[StrictStr] = None, download_id : Optional[StrictStr] = None, series_id : Optional[StrictInt] = None, season_number : Optional[StrictInt] = None, filter_existing_files : Optional[StrictBool] = None, **kwargs) -> List[ManualImportResource]:  # noqa: E501
+        """list_manual_import  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_manualimport(folder, download_id, series_id, season_number, filter_existing_files, async_req=True)
+        >>> thread = api.list_manual_import(folder, download_id, series_id, season_number, filter_existing_files, async_req=True)
         >>> result = thread.get()
 
         :param folder:
@@ -221,16 +221,16 @@ class ManualImportApi(object):
         :rtype: List[ManualImportResource]
         """
         kwargs['_return_http_data_only'] = True
-        return self.list_manualimport_with_http_info(folder, download_id, series_id, season_number, filter_existing_files, **kwargs)  # noqa: E501
+        return self.list_manual_import_with_http_info(folder, download_id, series_id, season_number, filter_existing_files, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def list_manualimport_with_http_info(self, folder : Optional[StrictStr] = None, download_id : Optional[StrictStr] = None, series_id : Optional[StrictInt] = None, season_number : Optional[StrictInt] = None, filter_existing_files : Optional[StrictBool] = None, **kwargs):  # noqa: E501
-        """list_manualimport  # noqa: E501
+    def list_manual_import_with_http_info(self, folder : Optional[StrictStr] = None, download_id : Optional[StrictStr] = None, series_id : Optional[StrictInt] = None, season_number : Optional[StrictInt] = None, filter_existing_files : Optional[StrictBool] = None, **kwargs):  # noqa: E501
+        """list_manual_import  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_manualimport_with_http_info(folder, download_id, series_id, season_number, filter_existing_files, async_req=True)
+        >>> thread = api.list_manual_import_with_http_info(folder, download_id, series_id, season_number, filter_existing_files, async_req=True)
         >>> result = thread.get()
 
         :param folder:
@@ -293,7 +293,7 @@ class ManualImportApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method list_manualimport" % _key
+                    " to method list_manual_import" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']

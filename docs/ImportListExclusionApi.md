@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost:8989*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_importlistexclusion**](ImportListExclusionApi.md#create_importlistexclusion) | **POST** /api/v3/importlistexclusion | 
-[**delete_importlistexclusion**](ImportListExclusionApi.md#delete_importlistexclusion) | **DELETE** /api/v3/importlistexclusion/{id} | 
-[**get_importlistexclusion_by_id**](ImportListExclusionApi.md#get_importlistexclusion_by_id) | **GET** /api/v3/importlistexclusion/{id} | 
-[**list_importlistexclusion**](ImportListExclusionApi.md#list_importlistexclusion) | **GET** /api/v3/importlistexclusion | 
-[**update_importlistexclusion**](ImportListExclusionApi.md#update_importlistexclusion) | **PUT** /api/v3/importlistexclusion/{id} | 
+[**create_import_list_exclusion**](ImportListExclusionApi.md#create_import_list_exclusion) | **POST** /api/v3/importlistexclusion | 
+[**delete_import_list_exclusion**](ImportListExclusionApi.md#delete_import_list_exclusion) | **DELETE** /api/v3/importlistexclusion/{id} | 
+[**get_import_list_exclusion_by_id**](ImportListExclusionApi.md#get_import_list_exclusion_by_id) | **GET** /api/v3/importlistexclusion/{id} | 
+[**list_import_list_exclusion**](ImportListExclusionApi.md#list_import_list_exclusion) | **GET** /api/v3/importlistexclusion | 
+[**update_import_list_exclusion**](ImportListExclusionApi.md#update_import_list_exclusion) | **PUT** /api/v3/importlistexclusion/{id} | 
 
 
-# **create_importlistexclusion**
-> ImportListExclusionResource create_importlistexclusion(import_list_exclusion_resource=import_list_exclusion_resource)
+# **create_import_list_exclusion**
+> ImportListExclusionResource create_import_list_exclusion(import_list_exclusion_resource=import_list_exclusion_resource)
 
 
 
@@ -56,11 +56,11 @@ with sonarr.ApiClient(configuration) as api_client:
     import_list_exclusion_resource = sonarr.ImportListExclusionResource() # ImportListExclusionResource |  (optional)
 
     try:
-        api_response = api_instance.create_importlistexclusion(import_list_exclusion_resource=import_list_exclusion_resource)
-        print("The response of ImportListExclusionApi->create_importlistexclusion:\n")
+        api_response = api_instance.create_import_list_exclusion(import_list_exclusion_resource=import_list_exclusion_resource)
+        print("The response of ImportListExclusionApi->create_import_list_exclusion:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ImportListExclusionApi->create_importlistexclusion: %s\n" % e)
+        print("Exception when calling ImportListExclusionApi->create_import_list_exclusion: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -101,11 +101,11 @@ with sonarr.ApiClient(configuration) as api_client:
     import_list_exclusion_resource = sonarr.ImportListExclusionResource() # ImportListExclusionResource |  (optional)
 
     try:
-        api_response = api_instance.create_importlistexclusion(import_list_exclusion_resource=import_list_exclusion_resource)
-        print("The response of ImportListExclusionApi->create_importlistexclusion:\n")
+        api_response = api_instance.create_import_list_exclusion(import_list_exclusion_resource=import_list_exclusion_resource)
+        print("The response of ImportListExclusionApi->create_import_list_exclusion:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ImportListExclusionApi->create_importlistexclusion: %s\n" % e)
+        print("Exception when calling ImportListExclusionApi->create_import_list_exclusion: %s\n" % e)
 ```
 
 ### Parameters
@@ -134,8 +134,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **delete_importlistexclusion**
-> delete_importlistexclusion(id)
+# **delete_import_list_exclusion**
+> delete_import_list_exclusion(id)
 
 
 
@@ -179,9 +179,9 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_instance.delete_importlistexclusion(id)
+        api_instance.delete_import_list_exclusion(id)
     except Exception as e:
-        print("Exception when calling ImportListExclusionApi->delete_importlistexclusion: %s\n" % e)
+        print("Exception when calling ImportListExclusionApi->delete_import_list_exclusion: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -222,9 +222,9 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_instance.delete_importlistexclusion(id)
+        api_instance.delete_import_list_exclusion(id)
     except Exception as e:
-        print("Exception when calling ImportListExclusionApi->delete_importlistexclusion: %s\n" % e)
+        print("Exception when calling ImportListExclusionApi->delete_import_list_exclusion: %s\n" % e)
 ```
 
 ### Parameters
@@ -253,8 +253,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_importlistexclusion_by_id**
-> ImportListExclusionResource get_importlistexclusion_by_id(id)
+# **get_import_list_exclusion_by_id**
+> ImportListExclusionResource get_import_list_exclusion_by_id(id)
 
 
 
@@ -298,11 +298,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_importlistexclusion_by_id(id)
-        print("The response of ImportListExclusionApi->get_importlistexclusion_by_id:\n")
+        api_response = api_instance.get_import_list_exclusion_by_id(id)
+        print("The response of ImportListExclusionApi->get_import_list_exclusion_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ImportListExclusionApi->get_importlistexclusion_by_id: %s\n" % e)
+        print("Exception when calling ImportListExclusionApi->get_import_list_exclusion_by_id: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -343,11 +343,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_importlistexclusion_by_id(id)
-        print("The response of ImportListExclusionApi->get_importlistexclusion_by_id:\n")
+        api_response = api_instance.get_import_list_exclusion_by_id(id)
+        print("The response of ImportListExclusionApi->get_import_list_exclusion_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ImportListExclusionApi->get_importlistexclusion_by_id: %s\n" % e)
+        print("Exception when calling ImportListExclusionApi->get_import_list_exclusion_by_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -376,8 +376,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **list_importlistexclusion**
-> List[ImportListExclusionResource] list_importlistexclusion()
+# **list_import_list_exclusion**
+> List[ImportListExclusionResource] list_import_list_exclusion()
 
 
 
@@ -420,11 +420,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.ImportListExclusionApi(api_client)
 
     try:
-        api_response = api_instance.list_importlistexclusion()
-        print("The response of ImportListExclusionApi->list_importlistexclusion:\n")
+        api_response = api_instance.list_import_list_exclusion()
+        print("The response of ImportListExclusionApi->list_import_list_exclusion:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ImportListExclusionApi->list_importlistexclusion: %s\n" % e)
+        print("Exception when calling ImportListExclusionApi->list_import_list_exclusion: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -464,11 +464,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.ImportListExclusionApi(api_client)
 
     try:
-        api_response = api_instance.list_importlistexclusion()
-        print("The response of ImportListExclusionApi->list_importlistexclusion:\n")
+        api_response = api_instance.list_import_list_exclusion()
+        print("The response of ImportListExclusionApi->list_import_list_exclusion:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ImportListExclusionApi->list_importlistexclusion: %s\n" % e)
+        print("Exception when calling ImportListExclusionApi->list_import_list_exclusion: %s\n" % e)
 ```
 
 ### Parameters
@@ -494,8 +494,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **update_importlistexclusion**
-> ImportListExclusionResource update_importlistexclusion(id, import_list_exclusion_resource=import_list_exclusion_resource)
+# **update_import_list_exclusion**
+> ImportListExclusionResource update_import_list_exclusion(id, import_list_exclusion_resource=import_list_exclusion_resource)
 
 
 
@@ -540,11 +540,11 @@ with sonarr.ApiClient(configuration) as api_client:
     import_list_exclusion_resource = sonarr.ImportListExclusionResource() # ImportListExclusionResource |  (optional)
 
     try:
-        api_response = api_instance.update_importlistexclusion(id, import_list_exclusion_resource=import_list_exclusion_resource)
-        print("The response of ImportListExclusionApi->update_importlistexclusion:\n")
+        api_response = api_instance.update_import_list_exclusion(id, import_list_exclusion_resource=import_list_exclusion_resource)
+        print("The response of ImportListExclusionApi->update_import_list_exclusion:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ImportListExclusionApi->update_importlistexclusion: %s\n" % e)
+        print("Exception when calling ImportListExclusionApi->update_import_list_exclusion: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -586,11 +586,11 @@ with sonarr.ApiClient(configuration) as api_client:
     import_list_exclusion_resource = sonarr.ImportListExclusionResource() # ImportListExclusionResource |  (optional)
 
     try:
-        api_response = api_instance.update_importlistexclusion(id, import_list_exclusion_resource=import_list_exclusion_resource)
-        print("The response of ImportListExclusionApi->update_importlistexclusion:\n")
+        api_response = api_instance.update_import_list_exclusion(id, import_list_exclusion_resource=import_list_exclusion_resource)
+        print("The response of ImportListExclusionApi->update_import_list_exclusion:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ImportListExclusionApi->update_importlistexclusion: %s\n" % e)
+        print("Exception when calling ImportListExclusionApi->update_import_list_exclusion: %s\n" % e)
 ```
 
 ### Parameters

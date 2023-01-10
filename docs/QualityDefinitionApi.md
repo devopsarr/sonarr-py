@@ -4,14 +4,14 @@ All URIs are relative to *http://localhost:8989*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_qualitydefinition_by_id**](QualityDefinitionApi.md#get_qualitydefinition_by_id) | **GET** /api/v3/qualitydefinition/{id} | 
-[**list_qualitydefinition**](QualityDefinitionApi.md#list_qualitydefinition) | **GET** /api/v3/qualitydefinition | 
-[**put_qualitydefinition_update**](QualityDefinitionApi.md#put_qualitydefinition_update) | **PUT** /api/v3/qualitydefinition/update | 
-[**update_qualitydefinition**](QualityDefinitionApi.md#update_qualitydefinition) | **PUT** /api/v3/qualitydefinition/{id} | 
+[**get_quality_definition_by_id**](QualityDefinitionApi.md#get_quality_definition_by_id) | **GET** /api/v3/qualitydefinition/{id} | 
+[**list_quality_definition**](QualityDefinitionApi.md#list_quality_definition) | **GET** /api/v3/qualitydefinition | 
+[**put_quality_definition_update**](QualityDefinitionApi.md#put_quality_definition_update) | **PUT** /api/v3/qualitydefinition/update | 
+[**update_quality_definition**](QualityDefinitionApi.md#update_quality_definition) | **PUT** /api/v3/qualitydefinition/{id} | 
 
 
-# **get_qualitydefinition_by_id**
-> QualityDefinitionResource get_qualitydefinition_by_id(id)
+# **get_quality_definition_by_id**
+> QualityDefinitionResource get_quality_definition_by_id(id)
 
 
 
@@ -55,11 +55,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_qualitydefinition_by_id(id)
-        print("The response of QualityDefinitionApi->get_qualitydefinition_by_id:\n")
+        api_response = api_instance.get_quality_definition_by_id(id)
+        print("The response of QualityDefinitionApi->get_quality_definition_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling QualityDefinitionApi->get_qualitydefinition_by_id: %s\n" % e)
+        print("Exception when calling QualityDefinitionApi->get_quality_definition_by_id: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -100,11 +100,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_qualitydefinition_by_id(id)
-        print("The response of QualityDefinitionApi->get_qualitydefinition_by_id:\n")
+        api_response = api_instance.get_quality_definition_by_id(id)
+        print("The response of QualityDefinitionApi->get_quality_definition_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling QualityDefinitionApi->get_qualitydefinition_by_id: %s\n" % e)
+        print("Exception when calling QualityDefinitionApi->get_quality_definition_by_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -133,8 +133,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **list_qualitydefinition**
-> List[QualityDefinitionResource] list_qualitydefinition()
+# **list_quality_definition**
+> List[QualityDefinitionResource] list_quality_definition()
 
 
 
@@ -177,11 +177,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.QualityDefinitionApi(api_client)
 
     try:
-        api_response = api_instance.list_qualitydefinition()
-        print("The response of QualityDefinitionApi->list_qualitydefinition:\n")
+        api_response = api_instance.list_quality_definition()
+        print("The response of QualityDefinitionApi->list_quality_definition:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling QualityDefinitionApi->list_qualitydefinition: %s\n" % e)
+        print("Exception when calling QualityDefinitionApi->list_quality_definition: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -221,11 +221,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.QualityDefinitionApi(api_client)
 
     try:
-        api_response = api_instance.list_qualitydefinition()
-        print("The response of QualityDefinitionApi->list_qualitydefinition:\n")
+        api_response = api_instance.list_quality_definition()
+        print("The response of QualityDefinitionApi->list_quality_definition:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling QualityDefinitionApi->list_qualitydefinition: %s\n" % e)
+        print("Exception when calling QualityDefinitionApi->list_quality_definition: %s\n" % e)
 ```
 
 ### Parameters
@@ -251,8 +251,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **put_qualitydefinition_update**
-> put_qualitydefinition_update(quality_definition_resource=quality_definition_resource)
+# **put_quality_definition_update**
+> put_quality_definition_update(quality_definition_resource=quality_definition_resource)
 
 
 
@@ -296,9 +296,9 @@ with sonarr.ApiClient(configuration) as api_client:
     quality_definition_resource = [sonarr.QualityDefinitionResource()] # List[QualityDefinitionResource] |  (optional)
 
     try:
-        api_instance.put_qualitydefinition_update(quality_definition_resource=quality_definition_resource)
+        api_instance.put_quality_definition_update(quality_definition_resource=quality_definition_resource)
     except Exception as e:
-        print("Exception when calling QualityDefinitionApi->put_qualitydefinition_update: %s\n" % e)
+        print("Exception when calling QualityDefinitionApi->put_quality_definition_update: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -339,9 +339,9 @@ with sonarr.ApiClient(configuration) as api_client:
     quality_definition_resource = [sonarr.QualityDefinitionResource()] # List[QualityDefinitionResource] |  (optional)
 
     try:
-        api_instance.put_qualitydefinition_update(quality_definition_resource=quality_definition_resource)
+        api_instance.put_quality_definition_update(quality_definition_resource=quality_definition_resource)
     except Exception as e:
-        print("Exception when calling QualityDefinitionApi->put_qualitydefinition_update: %s\n" % e)
+        print("Exception when calling QualityDefinitionApi->put_quality_definition_update: %s\n" % e)
 ```
 
 ### Parameters
@@ -370,8 +370,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **update_qualitydefinition**
-> QualityDefinitionResource update_qualitydefinition(id, quality_definition_resource=quality_definition_resource)
+# **update_quality_definition**
+> QualityDefinitionResource update_quality_definition(id, quality_definition_resource=quality_definition_resource)
 
 
 
@@ -416,11 +416,11 @@ with sonarr.ApiClient(configuration) as api_client:
     quality_definition_resource = sonarr.QualityDefinitionResource() # QualityDefinitionResource |  (optional)
 
     try:
-        api_response = api_instance.update_qualitydefinition(id, quality_definition_resource=quality_definition_resource)
-        print("The response of QualityDefinitionApi->update_qualitydefinition:\n")
+        api_response = api_instance.update_quality_definition(id, quality_definition_resource=quality_definition_resource)
+        print("The response of QualityDefinitionApi->update_quality_definition:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling QualityDefinitionApi->update_qualitydefinition: %s\n" % e)
+        print("Exception when calling QualityDefinitionApi->update_quality_definition: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -462,11 +462,11 @@ with sonarr.ApiClient(configuration) as api_client:
     quality_definition_resource = sonarr.QualityDefinitionResource() # QualityDefinitionResource |  (optional)
 
     try:
-        api_response = api_instance.update_qualitydefinition(id, quality_definition_resource=quality_definition_resource)
-        print("The response of QualityDefinitionApi->update_qualitydefinition:\n")
+        api_response = api_instance.update_quality_definition(id, quality_definition_resource=quality_definition_resource)
+        print("The response of QualityDefinitionApi->update_quality_definition:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling QualityDefinitionApi->update_qualitydefinition: %s\n" % e)
+        print("Exception when calling QualityDefinitionApi->update_quality_definition: %s\n" % e)
 ```
 
 ### Parameters

@@ -4,11 +4,11 @@ All URIs are relative to *http://localhost:8989*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**list_diskspace**](DiskSpaceApi.md#list_diskspace) | **GET** /api/v3/diskspace | 
+[**list_disk_space**](DiskSpaceApi.md#list_disk_space) | **GET** /api/v3/diskspace | 
 
 
-# **list_diskspace**
-> List[DiskSpaceResource] list_diskspace()
+# **list_disk_space**
+> List[DiskSpaceResource] list_disk_space()
 
 
 
@@ -51,11 +51,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.DiskSpaceApi(api_client)
 
     try:
-        api_response = api_instance.list_diskspace()
-        print("The response of DiskSpaceApi->list_diskspace:\n")
+        api_response = api_instance.list_disk_space()
+        print("The response of DiskSpaceApi->list_disk_space:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling DiskSpaceApi->list_diskspace: %s\n" % e)
+        print("Exception when calling DiskSpaceApi->list_disk_space: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -95,11 +95,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.DiskSpaceApi(api_client)
 
     try:
-        api_response = api_instance.list_diskspace()
-        print("The response of DiskSpaceApi->list_diskspace:\n")
+        api_response = api_instance.list_disk_space()
+        print("The response of DiskSpaceApi->list_disk_space:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling DiskSpaceApi->list_diskspace: %s\n" % e)
+        print("Exception when calling DiskSpaceApi->list_disk_space: %s\n" % e)
 ```
 
 ### Parameters

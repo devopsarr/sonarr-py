@@ -4,19 +4,19 @@ All URIs are relative to *http://localhost:8989*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_importlist**](ImportListApi.md#create_importlist) | **POST** /api/v3/importlist | 
-[**create_importlist_action_by_name**](ImportListApi.md#create_importlist_action_by_name) | **POST** /api/v3/importlist/action/{name} | 
-[**delete_importlist**](ImportListApi.md#delete_importlist) | **DELETE** /api/v3/importlist/{id} | 
-[**get_importlist_by_id**](ImportListApi.md#get_importlist_by_id) | **GET** /api/v3/importlist/{id} | 
-[**list_importlist**](ImportListApi.md#list_importlist) | **GET** /api/v3/importlist | 
-[**list_importlist_schema**](ImportListApi.md#list_importlist_schema) | **GET** /api/v3/importlist/schema | 
-[**test_importlist**](ImportListApi.md#test_importlist) | **POST** /api/v3/importlist/test | 
-[**testall_importlist**](ImportListApi.md#testall_importlist) | **POST** /api/v3/importlist/testall | 
-[**update_importlist**](ImportListApi.md#update_importlist) | **PUT** /api/v3/importlist/{id} | 
+[**create_import_list**](ImportListApi.md#create_import_list) | **POST** /api/v3/importlist | 
+[**create_import_list_action_by_name**](ImportListApi.md#create_import_list_action_by_name) | **POST** /api/v3/importlist/action/{name} | 
+[**delete_import_list**](ImportListApi.md#delete_import_list) | **DELETE** /api/v3/importlist/{id} | 
+[**get_import_list_by_id**](ImportListApi.md#get_import_list_by_id) | **GET** /api/v3/importlist/{id} | 
+[**list_import_list**](ImportListApi.md#list_import_list) | **GET** /api/v3/importlist | 
+[**list_import_list_schema**](ImportListApi.md#list_import_list_schema) | **GET** /api/v3/importlist/schema | 
+[**test_import_list**](ImportListApi.md#test_import_list) | **POST** /api/v3/importlist/test | 
+[**testall_import_list**](ImportListApi.md#testall_import_list) | **POST** /api/v3/importlist/testall | 
+[**update_import_list**](ImportListApi.md#update_import_list) | **PUT** /api/v3/importlist/{id} | 
 
 
-# **create_importlist**
-> ImportListResource create_importlist(import_list_resource=import_list_resource)
+# **create_import_list**
+> ImportListResource create_import_list(import_list_resource=import_list_resource)
 
 
 
@@ -60,11 +60,11 @@ with sonarr.ApiClient(configuration) as api_client:
     import_list_resource = sonarr.ImportListResource() # ImportListResource |  (optional)
 
     try:
-        api_response = api_instance.create_importlist(import_list_resource=import_list_resource)
-        print("The response of ImportListApi->create_importlist:\n")
+        api_response = api_instance.create_import_list(import_list_resource=import_list_resource)
+        print("The response of ImportListApi->create_import_list:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ImportListApi->create_importlist: %s\n" % e)
+        print("Exception when calling ImportListApi->create_import_list: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -105,11 +105,11 @@ with sonarr.ApiClient(configuration) as api_client:
     import_list_resource = sonarr.ImportListResource() # ImportListResource |  (optional)
 
     try:
-        api_response = api_instance.create_importlist(import_list_resource=import_list_resource)
-        print("The response of ImportListApi->create_importlist:\n")
+        api_response = api_instance.create_import_list(import_list_resource=import_list_resource)
+        print("The response of ImportListApi->create_import_list:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ImportListApi->create_importlist: %s\n" % e)
+        print("Exception when calling ImportListApi->create_import_list: %s\n" % e)
 ```
 
 ### Parameters
@@ -138,8 +138,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **create_importlist_action_by_name**
-> create_importlist_action_by_name(name, import_list_resource=import_list_resource)
+# **create_import_list_action_by_name**
+> create_import_list_action_by_name(name, import_list_resource=import_list_resource)
 
 
 
@@ -184,9 +184,9 @@ with sonarr.ApiClient(configuration) as api_client:
     import_list_resource = sonarr.ImportListResource() # ImportListResource |  (optional)
 
     try:
-        api_instance.create_importlist_action_by_name(name, import_list_resource=import_list_resource)
+        api_instance.create_import_list_action_by_name(name, import_list_resource=import_list_resource)
     except Exception as e:
-        print("Exception when calling ImportListApi->create_importlist_action_by_name: %s\n" % e)
+        print("Exception when calling ImportListApi->create_import_list_action_by_name: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -228,9 +228,9 @@ with sonarr.ApiClient(configuration) as api_client:
     import_list_resource = sonarr.ImportListResource() # ImportListResource |  (optional)
 
     try:
-        api_instance.create_importlist_action_by_name(name, import_list_resource=import_list_resource)
+        api_instance.create_import_list_action_by_name(name, import_list_resource=import_list_resource)
     except Exception as e:
-        print("Exception when calling ImportListApi->create_importlist_action_by_name: %s\n" % e)
+        print("Exception when calling ImportListApi->create_import_list_action_by_name: %s\n" % e)
 ```
 
 ### Parameters
@@ -260,8 +260,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **delete_importlist**
-> delete_importlist(id)
+# **delete_import_list**
+> delete_import_list(id)
 
 
 
@@ -305,9 +305,9 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_instance.delete_importlist(id)
+        api_instance.delete_import_list(id)
     except Exception as e:
-        print("Exception when calling ImportListApi->delete_importlist: %s\n" % e)
+        print("Exception when calling ImportListApi->delete_import_list: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -348,9 +348,9 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_instance.delete_importlist(id)
+        api_instance.delete_import_list(id)
     except Exception as e:
-        print("Exception when calling ImportListApi->delete_importlist: %s\n" % e)
+        print("Exception when calling ImportListApi->delete_import_list: %s\n" % e)
 ```
 
 ### Parameters
@@ -379,8 +379,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_importlist_by_id**
-> ImportListResource get_importlist_by_id(id)
+# **get_import_list_by_id**
+> ImportListResource get_import_list_by_id(id)
 
 
 
@@ -424,11 +424,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_importlist_by_id(id)
-        print("The response of ImportListApi->get_importlist_by_id:\n")
+        api_response = api_instance.get_import_list_by_id(id)
+        print("The response of ImportListApi->get_import_list_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ImportListApi->get_importlist_by_id: %s\n" % e)
+        print("Exception when calling ImportListApi->get_import_list_by_id: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -469,11 +469,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_importlist_by_id(id)
-        print("The response of ImportListApi->get_importlist_by_id:\n")
+        api_response = api_instance.get_import_list_by_id(id)
+        print("The response of ImportListApi->get_import_list_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ImportListApi->get_importlist_by_id: %s\n" % e)
+        print("Exception when calling ImportListApi->get_import_list_by_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -502,8 +502,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **list_importlist**
-> List[ImportListResource] list_importlist()
+# **list_import_list**
+> List[ImportListResource] list_import_list()
 
 
 
@@ -546,11 +546,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.ImportListApi(api_client)
 
     try:
-        api_response = api_instance.list_importlist()
-        print("The response of ImportListApi->list_importlist:\n")
+        api_response = api_instance.list_import_list()
+        print("The response of ImportListApi->list_import_list:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ImportListApi->list_importlist: %s\n" % e)
+        print("Exception when calling ImportListApi->list_import_list: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -590,11 +590,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.ImportListApi(api_client)
 
     try:
-        api_response = api_instance.list_importlist()
-        print("The response of ImportListApi->list_importlist:\n")
+        api_response = api_instance.list_import_list()
+        print("The response of ImportListApi->list_import_list:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ImportListApi->list_importlist: %s\n" % e)
+        print("Exception when calling ImportListApi->list_import_list: %s\n" % e)
 ```
 
 ### Parameters
@@ -620,8 +620,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **list_importlist_schema**
-> List[ImportListResource] list_importlist_schema()
+# **list_import_list_schema**
+> List[ImportListResource] list_import_list_schema()
 
 
 
@@ -664,11 +664,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.ImportListApi(api_client)
 
     try:
-        api_response = api_instance.list_importlist_schema()
-        print("The response of ImportListApi->list_importlist_schema:\n")
+        api_response = api_instance.list_import_list_schema()
+        print("The response of ImportListApi->list_import_list_schema:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ImportListApi->list_importlist_schema: %s\n" % e)
+        print("Exception when calling ImportListApi->list_import_list_schema: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -708,11 +708,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.ImportListApi(api_client)
 
     try:
-        api_response = api_instance.list_importlist_schema()
-        print("The response of ImportListApi->list_importlist_schema:\n")
+        api_response = api_instance.list_import_list_schema()
+        print("The response of ImportListApi->list_import_list_schema:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ImportListApi->list_importlist_schema: %s\n" % e)
+        print("Exception when calling ImportListApi->list_import_list_schema: %s\n" % e)
 ```
 
 ### Parameters
@@ -738,8 +738,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **test_importlist**
-> test_importlist(import_list_resource=import_list_resource)
+# **test_import_list**
+> test_import_list(import_list_resource=import_list_resource)
 
 
 
@@ -783,9 +783,9 @@ with sonarr.ApiClient(configuration) as api_client:
     import_list_resource = sonarr.ImportListResource() # ImportListResource |  (optional)
 
     try:
-        api_instance.test_importlist(import_list_resource=import_list_resource)
+        api_instance.test_import_list(import_list_resource=import_list_resource)
     except Exception as e:
-        print("Exception when calling ImportListApi->test_importlist: %s\n" % e)
+        print("Exception when calling ImportListApi->test_import_list: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -826,9 +826,9 @@ with sonarr.ApiClient(configuration) as api_client:
     import_list_resource = sonarr.ImportListResource() # ImportListResource |  (optional)
 
     try:
-        api_instance.test_importlist(import_list_resource=import_list_resource)
+        api_instance.test_import_list(import_list_resource=import_list_resource)
     except Exception as e:
-        print("Exception when calling ImportListApi->test_importlist: %s\n" % e)
+        print("Exception when calling ImportListApi->test_import_list: %s\n" % e)
 ```
 
 ### Parameters
@@ -857,8 +857,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **testall_importlist**
-> testall_importlist()
+# **testall_import_list**
+> testall_import_list()
 
 
 
@@ -901,9 +901,9 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.ImportListApi(api_client)
 
     try:
-        api_instance.testall_importlist()
+        api_instance.testall_import_list()
     except Exception as e:
-        print("Exception when calling ImportListApi->testall_importlist: %s\n" % e)
+        print("Exception when calling ImportListApi->testall_import_list: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -943,9 +943,9 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.ImportListApi(api_client)
 
     try:
-        api_instance.testall_importlist()
+        api_instance.testall_import_list()
     except Exception as e:
-        print("Exception when calling ImportListApi->testall_importlist: %s\n" % e)
+        print("Exception when calling ImportListApi->testall_import_list: %s\n" % e)
 ```
 
 ### Parameters
@@ -971,8 +971,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **update_importlist**
-> ImportListResource update_importlist(id, import_list_resource=import_list_resource)
+# **update_import_list**
+> ImportListResource update_import_list(id, import_list_resource=import_list_resource)
 
 
 
@@ -1017,11 +1017,11 @@ with sonarr.ApiClient(configuration) as api_client:
     import_list_resource = sonarr.ImportListResource() # ImportListResource |  (optional)
 
     try:
-        api_response = api_instance.update_importlist(id, import_list_resource=import_list_resource)
-        print("The response of ImportListApi->update_importlist:\n")
+        api_response = api_instance.update_import_list(id, import_list_resource=import_list_resource)
+        print("The response of ImportListApi->update_import_list:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ImportListApi->update_importlist: %s\n" % e)
+        print("Exception when calling ImportListApi->update_import_list: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -1063,11 +1063,11 @@ with sonarr.ApiClient(configuration) as api_client:
     import_list_resource = sonarr.ImportListResource() # ImportListResource |  (optional)
 
     try:
-        api_response = api_instance.update_importlist(id, import_list_resource=import_list_resource)
-        print("The response of ImportListApi->update_importlist:\n")
+        api_response = api_instance.update_import_list(id, import_list_resource=import_list_resource)
+        print("The response of ImportListApi->update_import_list:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ImportListApi->update_importlist: %s\n" % e)
+        print("Exception when calling ImportListApi->update_import_list: %s\n" % e)
 ```
 
 ### Parameters

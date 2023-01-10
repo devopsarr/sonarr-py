@@ -4,11 +4,11 @@ All URIs are relative to *http://localhost:8989*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_seasonpass**](SeasonPassApi.md#create_seasonpass) | **POST** /api/v3/seasonpass | 
+[**create_season_pass**](SeasonPassApi.md#create_season_pass) | **POST** /api/v3/seasonpass | 
 
 
-# **create_seasonpass**
-> create_seasonpass(season_pass_resource=season_pass_resource)
+# **create_season_pass**
+> create_season_pass(season_pass_resource=season_pass_resource)
 
 
 
@@ -52,9 +52,9 @@ with sonarr.ApiClient(configuration) as api_client:
     season_pass_resource = sonarr.SeasonPassResource() # SeasonPassResource |  (optional)
 
     try:
-        api_instance.create_seasonpass(season_pass_resource=season_pass_resource)
+        api_instance.create_season_pass(season_pass_resource=season_pass_resource)
     except Exception as e:
-        print("Exception when calling SeasonPassApi->create_seasonpass: %s\n" % e)
+        print("Exception when calling SeasonPassApi->create_season_pass: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -95,9 +95,9 @@ with sonarr.ApiClient(configuration) as api_client:
     season_pass_resource = sonarr.SeasonPassResource() # SeasonPassResource |  (optional)
 
     try:
-        api_instance.create_seasonpass(season_pass_resource=season_pass_resource)
+        api_instance.create_season_pass(season_pass_resource=season_pass_resource)
     except Exception as e:
-        print("Exception when calling SeasonPassApi->create_seasonpass: %s\n" % e)
+        print("Exception when calling SeasonPassApi->create_season_pass: %s\n" % e)
 ```
 
 ### Parameters

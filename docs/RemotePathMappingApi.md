@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost:8989*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_remotepathmapping**](RemotePathMappingApi.md#create_remotepathmapping) | **POST** /api/v3/remotepathmapping | 
-[**delete_remotepathmapping**](RemotePathMappingApi.md#delete_remotepathmapping) | **DELETE** /api/v3/remotepathmapping/{id} | 
-[**get_remotepathmapping_by_id**](RemotePathMappingApi.md#get_remotepathmapping_by_id) | **GET** /api/v3/remotepathmapping/{id} | 
-[**list_remotepathmapping**](RemotePathMappingApi.md#list_remotepathmapping) | **GET** /api/v3/remotepathmapping | 
-[**update_remotepathmapping**](RemotePathMappingApi.md#update_remotepathmapping) | **PUT** /api/v3/remotepathmapping/{id} | 
+[**create_remote_path_mapping**](RemotePathMappingApi.md#create_remote_path_mapping) | **POST** /api/v3/remotepathmapping | 
+[**delete_remote_path_mapping**](RemotePathMappingApi.md#delete_remote_path_mapping) | **DELETE** /api/v3/remotepathmapping/{id} | 
+[**get_remote_path_mapping_by_id**](RemotePathMappingApi.md#get_remote_path_mapping_by_id) | **GET** /api/v3/remotepathmapping/{id} | 
+[**list_remote_path_mapping**](RemotePathMappingApi.md#list_remote_path_mapping) | **GET** /api/v3/remotepathmapping | 
+[**update_remote_path_mapping**](RemotePathMappingApi.md#update_remote_path_mapping) | **PUT** /api/v3/remotepathmapping/{id} | 
 
 
-# **create_remotepathmapping**
-> RemotePathMappingResource create_remotepathmapping(remote_path_mapping_resource=remote_path_mapping_resource)
+# **create_remote_path_mapping**
+> RemotePathMappingResource create_remote_path_mapping(remote_path_mapping_resource=remote_path_mapping_resource)
 
 
 
@@ -56,11 +56,11 @@ with sonarr.ApiClient(configuration) as api_client:
     remote_path_mapping_resource = sonarr.RemotePathMappingResource() # RemotePathMappingResource |  (optional)
 
     try:
-        api_response = api_instance.create_remotepathmapping(remote_path_mapping_resource=remote_path_mapping_resource)
-        print("The response of RemotePathMappingApi->create_remotepathmapping:\n")
+        api_response = api_instance.create_remote_path_mapping(remote_path_mapping_resource=remote_path_mapping_resource)
+        print("The response of RemotePathMappingApi->create_remote_path_mapping:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling RemotePathMappingApi->create_remotepathmapping: %s\n" % e)
+        print("Exception when calling RemotePathMappingApi->create_remote_path_mapping: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -101,11 +101,11 @@ with sonarr.ApiClient(configuration) as api_client:
     remote_path_mapping_resource = sonarr.RemotePathMappingResource() # RemotePathMappingResource |  (optional)
 
     try:
-        api_response = api_instance.create_remotepathmapping(remote_path_mapping_resource=remote_path_mapping_resource)
-        print("The response of RemotePathMappingApi->create_remotepathmapping:\n")
+        api_response = api_instance.create_remote_path_mapping(remote_path_mapping_resource=remote_path_mapping_resource)
+        print("The response of RemotePathMappingApi->create_remote_path_mapping:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling RemotePathMappingApi->create_remotepathmapping: %s\n" % e)
+        print("Exception when calling RemotePathMappingApi->create_remote_path_mapping: %s\n" % e)
 ```
 
 ### Parameters
@@ -134,8 +134,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **delete_remotepathmapping**
-> delete_remotepathmapping(id)
+# **delete_remote_path_mapping**
+> delete_remote_path_mapping(id)
 
 
 
@@ -179,9 +179,9 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_instance.delete_remotepathmapping(id)
+        api_instance.delete_remote_path_mapping(id)
     except Exception as e:
-        print("Exception when calling RemotePathMappingApi->delete_remotepathmapping: %s\n" % e)
+        print("Exception when calling RemotePathMappingApi->delete_remote_path_mapping: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -222,9 +222,9 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_instance.delete_remotepathmapping(id)
+        api_instance.delete_remote_path_mapping(id)
     except Exception as e:
-        print("Exception when calling RemotePathMappingApi->delete_remotepathmapping: %s\n" % e)
+        print("Exception when calling RemotePathMappingApi->delete_remote_path_mapping: %s\n" % e)
 ```
 
 ### Parameters
@@ -253,8 +253,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_remotepathmapping_by_id**
-> RemotePathMappingResource get_remotepathmapping_by_id(id)
+# **get_remote_path_mapping_by_id**
+> RemotePathMappingResource get_remote_path_mapping_by_id(id)
 
 
 
@@ -298,11 +298,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_remotepathmapping_by_id(id)
-        print("The response of RemotePathMappingApi->get_remotepathmapping_by_id:\n")
+        api_response = api_instance.get_remote_path_mapping_by_id(id)
+        print("The response of RemotePathMappingApi->get_remote_path_mapping_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling RemotePathMappingApi->get_remotepathmapping_by_id: %s\n" % e)
+        print("Exception when calling RemotePathMappingApi->get_remote_path_mapping_by_id: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -343,11 +343,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_remotepathmapping_by_id(id)
-        print("The response of RemotePathMappingApi->get_remotepathmapping_by_id:\n")
+        api_response = api_instance.get_remote_path_mapping_by_id(id)
+        print("The response of RemotePathMappingApi->get_remote_path_mapping_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling RemotePathMappingApi->get_remotepathmapping_by_id: %s\n" % e)
+        print("Exception when calling RemotePathMappingApi->get_remote_path_mapping_by_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -376,8 +376,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **list_remotepathmapping**
-> List[RemotePathMappingResource] list_remotepathmapping()
+# **list_remote_path_mapping**
+> List[RemotePathMappingResource] list_remote_path_mapping()
 
 
 
@@ -420,11 +420,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.RemotePathMappingApi(api_client)
 
     try:
-        api_response = api_instance.list_remotepathmapping()
-        print("The response of RemotePathMappingApi->list_remotepathmapping:\n")
+        api_response = api_instance.list_remote_path_mapping()
+        print("The response of RemotePathMappingApi->list_remote_path_mapping:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling RemotePathMappingApi->list_remotepathmapping: %s\n" % e)
+        print("Exception when calling RemotePathMappingApi->list_remote_path_mapping: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -464,11 +464,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.RemotePathMappingApi(api_client)
 
     try:
-        api_response = api_instance.list_remotepathmapping()
-        print("The response of RemotePathMappingApi->list_remotepathmapping:\n")
+        api_response = api_instance.list_remote_path_mapping()
+        print("The response of RemotePathMappingApi->list_remote_path_mapping:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling RemotePathMappingApi->list_remotepathmapping: %s\n" % e)
+        print("Exception when calling RemotePathMappingApi->list_remote_path_mapping: %s\n" % e)
 ```
 
 ### Parameters
@@ -494,8 +494,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **update_remotepathmapping**
-> RemotePathMappingResource update_remotepathmapping(id, remote_path_mapping_resource=remote_path_mapping_resource)
+# **update_remote_path_mapping**
+> RemotePathMappingResource update_remote_path_mapping(id, remote_path_mapping_resource=remote_path_mapping_resource)
 
 
 
@@ -540,11 +540,11 @@ with sonarr.ApiClient(configuration) as api_client:
     remote_path_mapping_resource = sonarr.RemotePathMappingResource() # RemotePathMappingResource |  (optional)
 
     try:
-        api_response = api_instance.update_remotepathmapping(id, remote_path_mapping_resource=remote_path_mapping_resource)
-        print("The response of RemotePathMappingApi->update_remotepathmapping:\n")
+        api_response = api_instance.update_remote_path_mapping(id, remote_path_mapping_resource=remote_path_mapping_resource)
+        print("The response of RemotePathMappingApi->update_remote_path_mapping:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling RemotePathMappingApi->update_remotepathmapping: %s\n" % e)
+        print("Exception when calling RemotePathMappingApi->update_remote_path_mapping: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -586,11 +586,11 @@ with sonarr.ApiClient(configuration) as api_client:
     remote_path_mapping_resource = sonarr.RemotePathMappingResource() # RemotePathMappingResource |  (optional)
 
     try:
-        api_response = api_instance.update_remotepathmapping(id, remote_path_mapping_resource=remote_path_mapping_resource)
-        print("The response of RemotePathMappingApi->update_remotepathmapping:\n")
+        api_response = api_instance.update_remote_path_mapping(id, remote_path_mapping_resource=remote_path_mapping_resource)
+        print("The response of RemotePathMappingApi->update_remote_path_mapping:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling RemotePathMappingApi->update_remotepathmapping: %s\n" % e)
+        print("Exception when calling RemotePathMappingApi->update_remote_path_mapping: %s\n" % e)
 ```
 
 ### Parameters

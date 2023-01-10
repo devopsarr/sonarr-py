@@ -43,13 +43,13 @@ class LanguageProfileApi(object):
         self.api_client = api_client
 
     @validate_arguments
-    def create_languageprofile(self, language_profile_resource : Optional[LanguageProfileResource] = None, **kwargs) -> LanguageProfileResource:  # noqa: E501
-        """create_languageprofile  # noqa: E501
+    def create_language_profile(self, language_profile_resource : Optional[LanguageProfileResource] = None, **kwargs) -> LanguageProfileResource:  # noqa: E501
+        """create_language_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_languageprofile(language_profile_resource, async_req=True)
+        >>> thread = api.create_language_profile(language_profile_resource, async_req=True)
         >>> result = thread.get()
 
         :param language_profile_resource:
@@ -70,16 +70,16 @@ class LanguageProfileApi(object):
         :rtype: LanguageProfileResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.create_languageprofile_with_http_info(language_profile_resource, **kwargs)  # noqa: E501
+        return self.create_language_profile_with_http_info(language_profile_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def create_languageprofile_with_http_info(self, language_profile_resource : Optional[LanguageProfileResource] = None, **kwargs):  # noqa: E501
-        """create_languageprofile  # noqa: E501
+    def create_language_profile_with_http_info(self, language_profile_resource : Optional[LanguageProfileResource] = None, **kwargs):  # noqa: E501
+        """create_language_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_languageprofile_with_http_info(language_profile_resource, async_req=True)
+        >>> thread = api.create_language_profile_with_http_info(language_profile_resource, async_req=True)
         >>> result = thread.get()
 
         :param language_profile_resource:
@@ -130,7 +130,7 @@ class LanguageProfileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method create_languageprofile" % _key
+                    " to method create_language_profile" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -191,13 +191,13 @@ class LanguageProfileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def delete_languageprofile(self, id : StrictInt, **kwargs) -> None:  # noqa: E501
-        """delete_languageprofile  # noqa: E501
+    def delete_language_profile(self, id : StrictInt, **kwargs) -> None:  # noqa: E501
+        """delete_language_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_languageprofile(id, async_req=True)
+        >>> thread = api.delete_language_profile(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -218,16 +218,16 @@ class LanguageProfileApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.delete_languageprofile_with_http_info(id, **kwargs)  # noqa: E501
+        return self.delete_language_profile_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def delete_languageprofile_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """delete_languageprofile  # noqa: E501
+    def delete_language_profile_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """delete_language_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_languageprofile_with_http_info(id, async_req=True)
+        >>> thread = api.delete_language_profile_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -278,7 +278,7 @@ class LanguageProfileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method delete_languageprofile" % _key
+                    " to method delete_language_profile" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -326,13 +326,13 @@ class LanguageProfileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def get_languageprofile_by_id(self, id : StrictInt, **kwargs) -> LanguageProfileResource:  # noqa: E501
-        """get_languageprofile_by_id  # noqa: E501
+    def get_language_profile_by_id(self, id : StrictInt, **kwargs) -> LanguageProfileResource:  # noqa: E501
+        """get_language_profile_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_languageprofile_by_id(id, async_req=True)
+        >>> thread = api.get_language_profile_by_id(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -353,16 +353,16 @@ class LanguageProfileApi(object):
         :rtype: LanguageProfileResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_languageprofile_by_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.get_language_profile_by_id_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_languageprofile_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """get_languageprofile_by_id  # noqa: E501
+    def get_language_profile_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """get_language_profile_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_languageprofile_by_id_with_http_info(id, async_req=True)
+        >>> thread = api.get_language_profile_by_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -413,7 +413,7 @@ class LanguageProfileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_languageprofile_by_id" % _key
+                    " to method get_language_profile_by_id" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -467,13 +467,13 @@ class LanguageProfileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def list_languageprofile(self, **kwargs) -> List[LanguageProfileResource]:  # noqa: E501
-        """list_languageprofile  # noqa: E501
+    def list_language_profile(self, **kwargs) -> List[LanguageProfileResource]:  # noqa: E501
+        """list_language_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_languageprofile(async_req=True)
+        >>> thread = api.list_language_profile(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -492,16 +492,16 @@ class LanguageProfileApi(object):
         :rtype: List[LanguageProfileResource]
         """
         kwargs['_return_http_data_only'] = True
-        return self.list_languageprofile_with_http_info(**kwargs)  # noqa: E501
+        return self.list_language_profile_with_http_info(**kwargs)  # noqa: E501
 
     @validate_arguments
-    def list_languageprofile_with_http_info(self, **kwargs):  # noqa: E501
-        """list_languageprofile  # noqa: E501
+    def list_language_profile_with_http_info(self, **kwargs):  # noqa: E501
+        """list_language_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_languageprofile_with_http_info(async_req=True)
+        >>> thread = api.list_language_profile_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -549,7 +549,7 @@ class LanguageProfileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method list_languageprofile" % _key
+                    " to method list_language_profile" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -601,13 +601,13 @@ class LanguageProfileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def update_languageprofile(self, id : StrictStr, language_profile_resource : Optional[LanguageProfileResource] = None, **kwargs) -> LanguageProfileResource:  # noqa: E501
-        """update_languageprofile  # noqa: E501
+    def update_language_profile(self, id : StrictStr, language_profile_resource : Optional[LanguageProfileResource] = None, **kwargs) -> LanguageProfileResource:  # noqa: E501
+        """update_language_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_languageprofile(id, language_profile_resource, async_req=True)
+        >>> thread = api.update_language_profile(id, language_profile_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -630,16 +630,16 @@ class LanguageProfileApi(object):
         :rtype: LanguageProfileResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.update_languageprofile_with_http_info(id, language_profile_resource, **kwargs)  # noqa: E501
+        return self.update_language_profile_with_http_info(id, language_profile_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def update_languageprofile_with_http_info(self, id : StrictStr, language_profile_resource : Optional[LanguageProfileResource] = None, **kwargs):  # noqa: E501
-        """update_languageprofile  # noqa: E501
+    def update_language_profile_with_http_info(self, id : StrictStr, language_profile_resource : Optional[LanguageProfileResource] = None, **kwargs):  # noqa: E501
+        """update_language_profile  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_languageprofile_with_http_info(id, language_profile_resource, async_req=True)
+        >>> thread = api.update_language_profile_with_http_info(id, language_profile_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -693,7 +693,7 @@ class LanguageProfileApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method update_languageprofile" % _key
+                    " to method update_language_profile" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']

@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost:8989*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_releaseprofile**](ReleaseProfileApi.md#create_releaseprofile) | **POST** /api/v3/releaseprofile | 
-[**delete_releaseprofile**](ReleaseProfileApi.md#delete_releaseprofile) | **DELETE** /api/v3/releaseprofile/{id} | 
-[**get_releaseprofile_by_id**](ReleaseProfileApi.md#get_releaseprofile_by_id) | **GET** /api/v3/releaseprofile/{id} | 
-[**list_releaseprofile**](ReleaseProfileApi.md#list_releaseprofile) | **GET** /api/v3/releaseprofile | 
-[**update_releaseprofile**](ReleaseProfileApi.md#update_releaseprofile) | **PUT** /api/v3/releaseprofile/{id} | 
+[**create_release_profile**](ReleaseProfileApi.md#create_release_profile) | **POST** /api/v3/releaseprofile | 
+[**delete_release_profile**](ReleaseProfileApi.md#delete_release_profile) | **DELETE** /api/v3/releaseprofile/{id} | 
+[**get_release_profile_by_id**](ReleaseProfileApi.md#get_release_profile_by_id) | **GET** /api/v3/releaseprofile/{id} | 
+[**list_release_profile**](ReleaseProfileApi.md#list_release_profile) | **GET** /api/v3/releaseprofile | 
+[**update_release_profile**](ReleaseProfileApi.md#update_release_profile) | **PUT** /api/v3/releaseprofile/{id} | 
 
 
-# **create_releaseprofile**
-> ReleaseProfileResource create_releaseprofile(release_profile_resource=release_profile_resource)
+# **create_release_profile**
+> ReleaseProfileResource create_release_profile(release_profile_resource=release_profile_resource)
 
 
 
@@ -56,11 +56,11 @@ with sonarr.ApiClient(configuration) as api_client:
     release_profile_resource = sonarr.ReleaseProfileResource() # ReleaseProfileResource |  (optional)
 
     try:
-        api_response = api_instance.create_releaseprofile(release_profile_resource=release_profile_resource)
-        print("The response of ReleaseProfileApi->create_releaseprofile:\n")
+        api_response = api_instance.create_release_profile(release_profile_resource=release_profile_resource)
+        print("The response of ReleaseProfileApi->create_release_profile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ReleaseProfileApi->create_releaseprofile: %s\n" % e)
+        print("Exception when calling ReleaseProfileApi->create_release_profile: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -101,11 +101,11 @@ with sonarr.ApiClient(configuration) as api_client:
     release_profile_resource = sonarr.ReleaseProfileResource() # ReleaseProfileResource |  (optional)
 
     try:
-        api_response = api_instance.create_releaseprofile(release_profile_resource=release_profile_resource)
-        print("The response of ReleaseProfileApi->create_releaseprofile:\n")
+        api_response = api_instance.create_release_profile(release_profile_resource=release_profile_resource)
+        print("The response of ReleaseProfileApi->create_release_profile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ReleaseProfileApi->create_releaseprofile: %s\n" % e)
+        print("Exception when calling ReleaseProfileApi->create_release_profile: %s\n" % e)
 ```
 
 ### Parameters
@@ -134,8 +134,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **delete_releaseprofile**
-> delete_releaseprofile(id)
+# **delete_release_profile**
+> delete_release_profile(id)
 
 
 
@@ -179,9 +179,9 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_instance.delete_releaseprofile(id)
+        api_instance.delete_release_profile(id)
     except Exception as e:
-        print("Exception when calling ReleaseProfileApi->delete_releaseprofile: %s\n" % e)
+        print("Exception when calling ReleaseProfileApi->delete_release_profile: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -222,9 +222,9 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_instance.delete_releaseprofile(id)
+        api_instance.delete_release_profile(id)
     except Exception as e:
-        print("Exception when calling ReleaseProfileApi->delete_releaseprofile: %s\n" % e)
+        print("Exception when calling ReleaseProfileApi->delete_release_profile: %s\n" % e)
 ```
 
 ### Parameters
@@ -253,8 +253,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_releaseprofile_by_id**
-> ReleaseProfileResource get_releaseprofile_by_id(id)
+# **get_release_profile_by_id**
+> ReleaseProfileResource get_release_profile_by_id(id)
 
 
 
@@ -298,11 +298,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_releaseprofile_by_id(id)
-        print("The response of ReleaseProfileApi->get_releaseprofile_by_id:\n")
+        api_response = api_instance.get_release_profile_by_id(id)
+        print("The response of ReleaseProfileApi->get_release_profile_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ReleaseProfileApi->get_releaseprofile_by_id: %s\n" % e)
+        print("Exception when calling ReleaseProfileApi->get_release_profile_by_id: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -343,11 +343,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_releaseprofile_by_id(id)
-        print("The response of ReleaseProfileApi->get_releaseprofile_by_id:\n")
+        api_response = api_instance.get_release_profile_by_id(id)
+        print("The response of ReleaseProfileApi->get_release_profile_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ReleaseProfileApi->get_releaseprofile_by_id: %s\n" % e)
+        print("Exception when calling ReleaseProfileApi->get_release_profile_by_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -376,8 +376,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **list_releaseprofile**
-> List[ReleaseProfileResource] list_releaseprofile()
+# **list_release_profile**
+> List[ReleaseProfileResource] list_release_profile()
 
 
 
@@ -420,11 +420,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.ReleaseProfileApi(api_client)
 
     try:
-        api_response = api_instance.list_releaseprofile()
-        print("The response of ReleaseProfileApi->list_releaseprofile:\n")
+        api_response = api_instance.list_release_profile()
+        print("The response of ReleaseProfileApi->list_release_profile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ReleaseProfileApi->list_releaseprofile: %s\n" % e)
+        print("Exception when calling ReleaseProfileApi->list_release_profile: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -464,11 +464,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.ReleaseProfileApi(api_client)
 
     try:
-        api_response = api_instance.list_releaseprofile()
-        print("The response of ReleaseProfileApi->list_releaseprofile:\n")
+        api_response = api_instance.list_release_profile()
+        print("The response of ReleaseProfileApi->list_release_profile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ReleaseProfileApi->list_releaseprofile: %s\n" % e)
+        print("Exception when calling ReleaseProfileApi->list_release_profile: %s\n" % e)
 ```
 
 ### Parameters
@@ -494,8 +494,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **update_releaseprofile**
-> ReleaseProfileResource update_releaseprofile(id, release_profile_resource=release_profile_resource)
+# **update_release_profile**
+> ReleaseProfileResource update_release_profile(id, release_profile_resource=release_profile_resource)
 
 
 
@@ -540,11 +540,11 @@ with sonarr.ApiClient(configuration) as api_client:
     release_profile_resource = sonarr.ReleaseProfileResource() # ReleaseProfileResource |  (optional)
 
     try:
-        api_response = api_instance.update_releaseprofile(id, release_profile_resource=release_profile_resource)
-        print("The response of ReleaseProfileApi->update_releaseprofile:\n")
+        api_response = api_instance.update_release_profile(id, release_profile_resource=release_profile_resource)
+        print("The response of ReleaseProfileApi->update_release_profile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ReleaseProfileApi->update_releaseprofile: %s\n" % e)
+        print("Exception when calling ReleaseProfileApi->update_release_profile: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -586,11 +586,11 @@ with sonarr.ApiClient(configuration) as api_client:
     release_profile_resource = sonarr.ReleaseProfileResource() # ReleaseProfileResource |  (optional)
 
     try:
-        api_response = api_instance.update_releaseprofile(id, release_profile_resource=release_profile_resource)
-        print("The response of ReleaseProfileApi->update_releaseprofile:\n")
+        api_response = api_instance.update_release_profile(id, release_profile_resource=release_profile_resource)
+        print("The response of ReleaseProfileApi->update_release_profile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ReleaseProfileApi->update_releaseprofile: %s\n" % e)
+        print("Exception when calling ReleaseProfileApi->update_release_profile: %s\n" % e)
 ```
 
 ### Parameters

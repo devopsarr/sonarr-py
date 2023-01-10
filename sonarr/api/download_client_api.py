@@ -43,13 +43,13 @@ class DownloadClientApi(object):
         self.api_client = api_client
 
     @validate_arguments
-    def create_downloadclient(self, download_client_resource : Optional[DownloadClientResource] = None, **kwargs) -> DownloadClientResource:  # noqa: E501
-        """create_downloadclient  # noqa: E501
+    def create_download_client(self, download_client_resource : Optional[DownloadClientResource] = None, **kwargs) -> DownloadClientResource:  # noqa: E501
+        """create_download_client  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_downloadclient(download_client_resource, async_req=True)
+        >>> thread = api.create_download_client(download_client_resource, async_req=True)
         >>> result = thread.get()
 
         :param download_client_resource:
@@ -70,16 +70,16 @@ class DownloadClientApi(object):
         :rtype: DownloadClientResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.create_downloadclient_with_http_info(download_client_resource, **kwargs)  # noqa: E501
+        return self.create_download_client_with_http_info(download_client_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def create_downloadclient_with_http_info(self, download_client_resource : Optional[DownloadClientResource] = None, **kwargs):  # noqa: E501
-        """create_downloadclient  # noqa: E501
+    def create_download_client_with_http_info(self, download_client_resource : Optional[DownloadClientResource] = None, **kwargs):  # noqa: E501
+        """create_download_client  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_downloadclient_with_http_info(download_client_resource, async_req=True)
+        >>> thread = api.create_download_client_with_http_info(download_client_resource, async_req=True)
         >>> result = thread.get()
 
         :param download_client_resource:
@@ -130,7 +130,7 @@ class DownloadClientApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method create_downloadclient" % _key
+                    " to method create_download_client" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -191,13 +191,13 @@ class DownloadClientApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def create_downloadclient_action_by_name(self, name : StrictStr, download_client_resource : Optional[DownloadClientResource] = None, **kwargs) -> None:  # noqa: E501
-        """create_downloadclient_action_by_name  # noqa: E501
+    def create_download_client_action_by_name(self, name : StrictStr, download_client_resource : Optional[DownloadClientResource] = None, **kwargs) -> None:  # noqa: E501
+        """create_download_client_action_by_name  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_downloadclient_action_by_name(name, download_client_resource, async_req=True)
+        >>> thread = api.create_download_client_action_by_name(name, download_client_resource, async_req=True)
         >>> result = thread.get()
 
         :param name: (required)
@@ -220,16 +220,16 @@ class DownloadClientApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.create_downloadclient_action_by_name_with_http_info(name, download_client_resource, **kwargs)  # noqa: E501
+        return self.create_download_client_action_by_name_with_http_info(name, download_client_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def create_downloadclient_action_by_name_with_http_info(self, name : StrictStr, download_client_resource : Optional[DownloadClientResource] = None, **kwargs):  # noqa: E501
-        """create_downloadclient_action_by_name  # noqa: E501
+    def create_download_client_action_by_name_with_http_info(self, name : StrictStr, download_client_resource : Optional[DownloadClientResource] = None, **kwargs):  # noqa: E501
+        """create_download_client_action_by_name  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_downloadclient_action_by_name_with_http_info(name, download_client_resource, async_req=True)
+        >>> thread = api.create_download_client_action_by_name_with_http_info(name, download_client_resource, async_req=True)
         >>> result = thread.get()
 
         :param name: (required)
@@ -283,7 +283,7 @@ class DownloadClientApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method create_downloadclient_action_by_name" % _key
+                    " to method create_download_client_action_by_name" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -340,13 +340,13 @@ class DownloadClientApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def delete_downloadclient(self, id : StrictInt, **kwargs) -> None:  # noqa: E501
-        """delete_downloadclient  # noqa: E501
+    def delete_download_client(self, id : StrictInt, **kwargs) -> None:  # noqa: E501
+        """delete_download_client  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_downloadclient(id, async_req=True)
+        >>> thread = api.delete_download_client(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -367,16 +367,16 @@ class DownloadClientApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.delete_downloadclient_with_http_info(id, **kwargs)  # noqa: E501
+        return self.delete_download_client_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def delete_downloadclient_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """delete_downloadclient  # noqa: E501
+    def delete_download_client_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """delete_download_client  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_downloadclient_with_http_info(id, async_req=True)
+        >>> thread = api.delete_download_client_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -427,7 +427,7 @@ class DownloadClientApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method delete_downloadclient" % _key
+                    " to method delete_download_client" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -475,13 +475,13 @@ class DownloadClientApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def get_downloadclient_by_id(self, id : StrictInt, **kwargs) -> DownloadClientResource:  # noqa: E501
-        """get_downloadclient_by_id  # noqa: E501
+    def get_download_client_by_id(self, id : StrictInt, **kwargs) -> DownloadClientResource:  # noqa: E501
+        """get_download_client_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_downloadclient_by_id(id, async_req=True)
+        >>> thread = api.get_download_client_by_id(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -502,16 +502,16 @@ class DownloadClientApi(object):
         :rtype: DownloadClientResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_downloadclient_by_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.get_download_client_by_id_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_downloadclient_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """get_downloadclient_by_id  # noqa: E501
+    def get_download_client_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """get_download_client_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_downloadclient_by_id_with_http_info(id, async_req=True)
+        >>> thread = api.get_download_client_by_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -562,7 +562,7 @@ class DownloadClientApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_downloadclient_by_id" % _key
+                    " to method get_download_client_by_id" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -616,13 +616,13 @@ class DownloadClientApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def list_downloadclient(self, **kwargs) -> List[DownloadClientResource]:  # noqa: E501
-        """list_downloadclient  # noqa: E501
+    def list_download_client(self, **kwargs) -> List[DownloadClientResource]:  # noqa: E501
+        """list_download_client  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_downloadclient(async_req=True)
+        >>> thread = api.list_download_client(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -641,16 +641,16 @@ class DownloadClientApi(object):
         :rtype: List[DownloadClientResource]
         """
         kwargs['_return_http_data_only'] = True
-        return self.list_downloadclient_with_http_info(**kwargs)  # noqa: E501
+        return self.list_download_client_with_http_info(**kwargs)  # noqa: E501
 
     @validate_arguments
-    def list_downloadclient_with_http_info(self, **kwargs):  # noqa: E501
-        """list_downloadclient  # noqa: E501
+    def list_download_client_with_http_info(self, **kwargs):  # noqa: E501
+        """list_download_client  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_downloadclient_with_http_info(async_req=True)
+        >>> thread = api.list_download_client_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -698,7 +698,7 @@ class DownloadClientApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method list_downloadclient" % _key
+                    " to method list_download_client" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -750,13 +750,13 @@ class DownloadClientApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def list_downloadclient_schema(self, **kwargs) -> List[DownloadClientResource]:  # noqa: E501
-        """list_downloadclient_schema  # noqa: E501
+    def list_download_client_schema(self, **kwargs) -> List[DownloadClientResource]:  # noqa: E501
+        """list_download_client_schema  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_downloadclient_schema(async_req=True)
+        >>> thread = api.list_download_client_schema(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -775,16 +775,16 @@ class DownloadClientApi(object):
         :rtype: List[DownloadClientResource]
         """
         kwargs['_return_http_data_only'] = True
-        return self.list_downloadclient_schema_with_http_info(**kwargs)  # noqa: E501
+        return self.list_download_client_schema_with_http_info(**kwargs)  # noqa: E501
 
     @validate_arguments
-    def list_downloadclient_schema_with_http_info(self, **kwargs):  # noqa: E501
-        """list_downloadclient_schema  # noqa: E501
+    def list_download_client_schema_with_http_info(self, **kwargs):  # noqa: E501
+        """list_download_client_schema  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_downloadclient_schema_with_http_info(async_req=True)
+        >>> thread = api.list_download_client_schema_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -832,7 +832,7 @@ class DownloadClientApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method list_downloadclient_schema" % _key
+                    " to method list_download_client_schema" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -884,13 +884,13 @@ class DownloadClientApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def test_downloadclient(self, download_client_resource : Optional[DownloadClientResource] = None, **kwargs) -> None:  # noqa: E501
-        """test_downloadclient  # noqa: E501
+    def test_download_client(self, download_client_resource : Optional[DownloadClientResource] = None, **kwargs) -> None:  # noqa: E501
+        """test_download_client  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.test_downloadclient(download_client_resource, async_req=True)
+        >>> thread = api.test_download_client(download_client_resource, async_req=True)
         >>> result = thread.get()
 
         :param download_client_resource:
@@ -911,16 +911,16 @@ class DownloadClientApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.test_downloadclient_with_http_info(download_client_resource, **kwargs)  # noqa: E501
+        return self.test_download_client_with_http_info(download_client_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def test_downloadclient_with_http_info(self, download_client_resource : Optional[DownloadClientResource] = None, **kwargs):  # noqa: E501
-        """test_downloadclient  # noqa: E501
+    def test_download_client_with_http_info(self, download_client_resource : Optional[DownloadClientResource] = None, **kwargs):  # noqa: E501
+        """test_download_client  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.test_downloadclient_with_http_info(download_client_resource, async_req=True)
+        >>> thread = api.test_download_client_with_http_info(download_client_resource, async_req=True)
         >>> result = thread.get()
 
         :param download_client_resource:
@@ -971,7 +971,7 @@ class DownloadClientApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method test_downloadclient" % _key
+                    " to method test_download_client" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -1026,13 +1026,13 @@ class DownloadClientApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def testall_downloadclient(self, **kwargs) -> None:  # noqa: E501
-        """testall_downloadclient  # noqa: E501
+    def testall_download_client(self, **kwargs) -> None:  # noqa: E501
+        """testall_download_client  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.testall_downloadclient(async_req=True)
+        >>> thread = api.testall_download_client(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -1051,16 +1051,16 @@ class DownloadClientApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.testall_downloadclient_with_http_info(**kwargs)  # noqa: E501
+        return self.testall_download_client_with_http_info(**kwargs)  # noqa: E501
 
     @validate_arguments
-    def testall_downloadclient_with_http_info(self, **kwargs):  # noqa: E501
-        """testall_downloadclient  # noqa: E501
+    def testall_download_client_with_http_info(self, **kwargs):  # noqa: E501
+        """testall_download_client  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.testall_downloadclient_with_http_info(async_req=True)
+        >>> thread = api.testall_download_client_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -1108,7 +1108,7 @@ class DownloadClientApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method testall_downloadclient" % _key
+                    " to method testall_download_client" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -1154,13 +1154,13 @@ class DownloadClientApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def update_downloadclient(self, id : StrictStr, download_client_resource : Optional[DownloadClientResource] = None, **kwargs) -> DownloadClientResource:  # noqa: E501
-        """update_downloadclient  # noqa: E501
+    def update_download_client(self, id : StrictStr, download_client_resource : Optional[DownloadClientResource] = None, **kwargs) -> DownloadClientResource:  # noqa: E501
+        """update_download_client  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_downloadclient(id, download_client_resource, async_req=True)
+        >>> thread = api.update_download_client(id, download_client_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -1183,16 +1183,16 @@ class DownloadClientApi(object):
         :rtype: DownloadClientResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.update_downloadclient_with_http_info(id, download_client_resource, **kwargs)  # noqa: E501
+        return self.update_download_client_with_http_info(id, download_client_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def update_downloadclient_with_http_info(self, id : StrictStr, download_client_resource : Optional[DownloadClientResource] = None, **kwargs):  # noqa: E501
-        """update_downloadclient  # noqa: E501
+    def update_download_client_with_http_info(self, id : StrictStr, download_client_resource : Optional[DownloadClientResource] = None, **kwargs):  # noqa: E501
+        """update_download_client  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_downloadclient_with_http_info(id, download_client_resource, async_req=True)
+        >>> thread = api.update_download_client_with_http_info(id, download_client_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -1246,7 +1246,7 @@ class DownloadClientApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method update_downloadclient" % _key
+                    " to method update_download_client" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']

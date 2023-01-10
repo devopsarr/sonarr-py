@@ -43,13 +43,13 @@ class CustomFilterApi(object):
         self.api_client = api_client
 
     @validate_arguments
-    def create_customfilter(self, custom_filter_resource : Optional[CustomFilterResource] = None, **kwargs) -> CustomFilterResource:  # noqa: E501
-        """create_customfilter  # noqa: E501
+    def create_custom_filter(self, custom_filter_resource : Optional[CustomFilterResource] = None, **kwargs) -> CustomFilterResource:  # noqa: E501
+        """create_custom_filter  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_customfilter(custom_filter_resource, async_req=True)
+        >>> thread = api.create_custom_filter(custom_filter_resource, async_req=True)
         >>> result = thread.get()
 
         :param custom_filter_resource:
@@ -70,16 +70,16 @@ class CustomFilterApi(object):
         :rtype: CustomFilterResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.create_customfilter_with_http_info(custom_filter_resource, **kwargs)  # noqa: E501
+        return self.create_custom_filter_with_http_info(custom_filter_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def create_customfilter_with_http_info(self, custom_filter_resource : Optional[CustomFilterResource] = None, **kwargs):  # noqa: E501
-        """create_customfilter  # noqa: E501
+    def create_custom_filter_with_http_info(self, custom_filter_resource : Optional[CustomFilterResource] = None, **kwargs):  # noqa: E501
+        """create_custom_filter  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_customfilter_with_http_info(custom_filter_resource, async_req=True)
+        >>> thread = api.create_custom_filter_with_http_info(custom_filter_resource, async_req=True)
         >>> result = thread.get()
 
         :param custom_filter_resource:
@@ -130,7 +130,7 @@ class CustomFilterApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method create_customfilter" % _key
+                    " to method create_custom_filter" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -191,13 +191,13 @@ class CustomFilterApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def delete_customfilter(self, id : StrictInt, **kwargs) -> None:  # noqa: E501
-        """delete_customfilter  # noqa: E501
+    def delete_custom_filter(self, id : StrictInt, **kwargs) -> None:  # noqa: E501
+        """delete_custom_filter  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_customfilter(id, async_req=True)
+        >>> thread = api.delete_custom_filter(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -218,16 +218,16 @@ class CustomFilterApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.delete_customfilter_with_http_info(id, **kwargs)  # noqa: E501
+        return self.delete_custom_filter_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def delete_customfilter_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """delete_customfilter  # noqa: E501
+    def delete_custom_filter_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """delete_custom_filter  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_customfilter_with_http_info(id, async_req=True)
+        >>> thread = api.delete_custom_filter_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -278,7 +278,7 @@ class CustomFilterApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method delete_customfilter" % _key
+                    " to method delete_custom_filter" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -326,13 +326,13 @@ class CustomFilterApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def get_customfilter_by_id(self, id : StrictInt, **kwargs) -> CustomFilterResource:  # noqa: E501
-        """get_customfilter_by_id  # noqa: E501
+    def get_custom_filter_by_id(self, id : StrictInt, **kwargs) -> CustomFilterResource:  # noqa: E501
+        """get_custom_filter_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_customfilter_by_id(id, async_req=True)
+        >>> thread = api.get_custom_filter_by_id(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -353,16 +353,16 @@ class CustomFilterApi(object):
         :rtype: CustomFilterResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_customfilter_by_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.get_custom_filter_by_id_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_customfilter_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """get_customfilter_by_id  # noqa: E501
+    def get_custom_filter_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """get_custom_filter_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_customfilter_by_id_with_http_info(id, async_req=True)
+        >>> thread = api.get_custom_filter_by_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -413,7 +413,7 @@ class CustomFilterApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_customfilter_by_id" % _key
+                    " to method get_custom_filter_by_id" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -467,13 +467,13 @@ class CustomFilterApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def list_customfilter(self, **kwargs) -> List[CustomFilterResource]:  # noqa: E501
-        """list_customfilter  # noqa: E501
+    def list_custom_filter(self, **kwargs) -> List[CustomFilterResource]:  # noqa: E501
+        """list_custom_filter  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_customfilter(async_req=True)
+        >>> thread = api.list_custom_filter(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -492,16 +492,16 @@ class CustomFilterApi(object):
         :rtype: List[CustomFilterResource]
         """
         kwargs['_return_http_data_only'] = True
-        return self.list_customfilter_with_http_info(**kwargs)  # noqa: E501
+        return self.list_custom_filter_with_http_info(**kwargs)  # noqa: E501
 
     @validate_arguments
-    def list_customfilter_with_http_info(self, **kwargs):  # noqa: E501
-        """list_customfilter  # noqa: E501
+    def list_custom_filter_with_http_info(self, **kwargs):  # noqa: E501
+        """list_custom_filter  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_customfilter_with_http_info(async_req=True)
+        >>> thread = api.list_custom_filter_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -549,7 +549,7 @@ class CustomFilterApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method list_customfilter" % _key
+                    " to method list_custom_filter" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -601,13 +601,13 @@ class CustomFilterApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def update_customfilter(self, id : StrictStr, custom_filter_resource : Optional[CustomFilterResource] = None, **kwargs) -> CustomFilterResource:  # noqa: E501
-        """update_customfilter  # noqa: E501
+    def update_custom_filter(self, id : StrictStr, custom_filter_resource : Optional[CustomFilterResource] = None, **kwargs) -> CustomFilterResource:  # noqa: E501
+        """update_custom_filter  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_customfilter(id, custom_filter_resource, async_req=True)
+        >>> thread = api.update_custom_filter(id, custom_filter_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -630,16 +630,16 @@ class CustomFilterApi(object):
         :rtype: CustomFilterResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.update_customfilter_with_http_info(id, custom_filter_resource, **kwargs)  # noqa: E501
+        return self.update_custom_filter_with_http_info(id, custom_filter_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def update_customfilter_with_http_info(self, id : StrictStr, custom_filter_resource : Optional[CustomFilterResource] = None, **kwargs):  # noqa: E501
-        """update_customfilter  # noqa: E501
+    def update_custom_filter_with_http_info(self, id : StrictStr, custom_filter_resource : Optional[CustomFilterResource] = None, **kwargs):  # noqa: E501
+        """update_custom_filter  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_customfilter_with_http_info(id, custom_filter_resource, async_req=True)
+        >>> thread = api.update_custom_filter_with_http_info(id, custom_filter_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -693,7 +693,7 @@ class CustomFilterApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method update_customfilter" % _key
+                    " to method update_custom_filter" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']

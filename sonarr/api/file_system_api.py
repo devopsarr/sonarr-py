@@ -42,13 +42,13 @@ class FileSystemApi(object):
         self.api_client = api_client
 
     @validate_arguments
-    def get_filesystem(self, path : Optional[StrictStr] = None, include_files : Optional[StrictBool] = None, allow_folders_without_trailing_slashes : Optional[StrictBool] = None, **kwargs) -> None:  # noqa: E501
-        """get_filesystem  # noqa: E501
+    def get_file_system(self, path : Optional[StrictStr] = None, include_files : Optional[StrictBool] = None, allow_folders_without_trailing_slashes : Optional[StrictBool] = None, **kwargs) -> None:  # noqa: E501
+        """get_file_system  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_filesystem(path, include_files, allow_folders_without_trailing_slashes, async_req=True)
+        >>> thread = api.get_file_system(path, include_files, allow_folders_without_trailing_slashes, async_req=True)
         >>> result = thread.get()
 
         :param path:
@@ -73,16 +73,16 @@ class FileSystemApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_filesystem_with_http_info(path, include_files, allow_folders_without_trailing_slashes, **kwargs)  # noqa: E501
+        return self.get_file_system_with_http_info(path, include_files, allow_folders_without_trailing_slashes, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_filesystem_with_http_info(self, path : Optional[StrictStr] = None, include_files : Optional[StrictBool] = None, allow_folders_without_trailing_slashes : Optional[StrictBool] = None, **kwargs):  # noqa: E501
-        """get_filesystem  # noqa: E501
+    def get_file_system_with_http_info(self, path : Optional[StrictStr] = None, include_files : Optional[StrictBool] = None, allow_folders_without_trailing_slashes : Optional[StrictBool] = None, **kwargs):  # noqa: E501
+        """get_file_system  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_filesystem_with_http_info(path, include_files, allow_folders_without_trailing_slashes, async_req=True)
+        >>> thread = api.get_file_system_with_http_info(path, include_files, allow_folders_without_trailing_slashes, async_req=True)
         >>> result = thread.get()
 
         :param path:
@@ -139,7 +139,7 @@ class FileSystemApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_filesystem" % _key
+                    " to method get_file_system" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -191,13 +191,13 @@ class FileSystemApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def get_filesystem_mediafiles(self, path : Optional[StrictStr] = None, **kwargs) -> None:  # noqa: E501
-        """get_filesystem_mediafiles  # noqa: E501
+    def get_file_system_mediafiles(self, path : Optional[StrictStr] = None, **kwargs) -> None:  # noqa: E501
+        """get_file_system_mediafiles  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_filesystem_mediafiles(path, async_req=True)
+        >>> thread = api.get_file_system_mediafiles(path, async_req=True)
         >>> result = thread.get()
 
         :param path:
@@ -218,16 +218,16 @@ class FileSystemApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_filesystem_mediafiles_with_http_info(path, **kwargs)  # noqa: E501
+        return self.get_file_system_mediafiles_with_http_info(path, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_filesystem_mediafiles_with_http_info(self, path : Optional[StrictStr] = None, **kwargs):  # noqa: E501
-        """get_filesystem_mediafiles  # noqa: E501
+    def get_file_system_mediafiles_with_http_info(self, path : Optional[StrictStr] = None, **kwargs):  # noqa: E501
+        """get_file_system_mediafiles  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_filesystem_mediafiles_with_http_info(path, async_req=True)
+        >>> thread = api.get_file_system_mediafiles_with_http_info(path, async_req=True)
         >>> result = thread.get()
 
         :param path:
@@ -278,7 +278,7 @@ class FileSystemApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_filesystem_mediafiles" % _key
+                    " to method get_file_system_mediafiles" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -326,13 +326,13 @@ class FileSystemApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def get_filesystem_type(self, path : Optional[StrictStr] = None, **kwargs) -> None:  # noqa: E501
-        """get_filesystem_type  # noqa: E501
+    def get_file_system_type(self, path : Optional[StrictStr] = None, **kwargs) -> None:  # noqa: E501
+        """get_file_system_type  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_filesystem_type(path, async_req=True)
+        >>> thread = api.get_file_system_type(path, async_req=True)
         >>> result = thread.get()
 
         :param path:
@@ -353,16 +353,16 @@ class FileSystemApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_filesystem_type_with_http_info(path, **kwargs)  # noqa: E501
+        return self.get_file_system_type_with_http_info(path, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_filesystem_type_with_http_info(self, path : Optional[StrictStr] = None, **kwargs):  # noqa: E501
-        """get_filesystem_type  # noqa: E501
+    def get_file_system_type_with_http_info(self, path : Optional[StrictStr] = None, **kwargs):  # noqa: E501
+        """get_file_system_type  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_filesystem_type_with_http_info(path, async_req=True)
+        >>> thread = api.get_file_system_type_with_http_info(path, async_req=True)
         >>> result = thread.get()
 
         :param path:
@@ -413,7 +413,7 @@ class FileSystemApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_filesystem_type" % _key
+                    " to method get_file_system_type" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']

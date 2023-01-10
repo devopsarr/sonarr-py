@@ -4,16 +4,16 @@ All URIs are relative to *http://localhost:8989*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_delayprofile**](DelayProfileApi.md#create_delayprofile) | **POST** /api/v3/delayprofile | 
-[**delete_delayprofile**](DelayProfileApi.md#delete_delayprofile) | **DELETE** /api/v3/delayprofile/{id} | 
-[**get_delayprofile_by_id**](DelayProfileApi.md#get_delayprofile_by_id) | **GET** /api/v3/delayprofile/{id} | 
-[**list_delayprofile**](DelayProfileApi.md#list_delayprofile) | **GET** /api/v3/delayprofile | 
-[**update_delayprofile**](DelayProfileApi.md#update_delayprofile) | **PUT** /api/v3/delayprofile/{id} | 
-[**update_delayprofile_reorder**](DelayProfileApi.md#update_delayprofile_reorder) | **PUT** /api/v3/delayprofile/reorder/{id} | 
+[**create_delay_profile**](DelayProfileApi.md#create_delay_profile) | **POST** /api/v3/delayprofile | 
+[**delete_delay_profile**](DelayProfileApi.md#delete_delay_profile) | **DELETE** /api/v3/delayprofile/{id} | 
+[**get_delay_profile_by_id**](DelayProfileApi.md#get_delay_profile_by_id) | **GET** /api/v3/delayprofile/{id} | 
+[**list_delay_profile**](DelayProfileApi.md#list_delay_profile) | **GET** /api/v3/delayprofile | 
+[**update_delay_profile**](DelayProfileApi.md#update_delay_profile) | **PUT** /api/v3/delayprofile/{id} | 
+[**update_delay_profile_reorder**](DelayProfileApi.md#update_delay_profile_reorder) | **PUT** /api/v3/delayprofile/reorder/{id} | 
 
 
-# **create_delayprofile**
-> DelayProfileResource create_delayprofile(delay_profile_resource=delay_profile_resource)
+# **create_delay_profile**
+> DelayProfileResource create_delay_profile(delay_profile_resource=delay_profile_resource)
 
 
 
@@ -57,11 +57,11 @@ with sonarr.ApiClient(configuration) as api_client:
     delay_profile_resource = sonarr.DelayProfileResource() # DelayProfileResource |  (optional)
 
     try:
-        api_response = api_instance.create_delayprofile(delay_profile_resource=delay_profile_resource)
-        print("The response of DelayProfileApi->create_delayprofile:\n")
+        api_response = api_instance.create_delay_profile(delay_profile_resource=delay_profile_resource)
+        print("The response of DelayProfileApi->create_delay_profile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling DelayProfileApi->create_delayprofile: %s\n" % e)
+        print("Exception when calling DelayProfileApi->create_delay_profile: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -102,11 +102,11 @@ with sonarr.ApiClient(configuration) as api_client:
     delay_profile_resource = sonarr.DelayProfileResource() # DelayProfileResource |  (optional)
 
     try:
-        api_response = api_instance.create_delayprofile(delay_profile_resource=delay_profile_resource)
-        print("The response of DelayProfileApi->create_delayprofile:\n")
+        api_response = api_instance.create_delay_profile(delay_profile_resource=delay_profile_resource)
+        print("The response of DelayProfileApi->create_delay_profile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling DelayProfileApi->create_delayprofile: %s\n" % e)
+        print("Exception when calling DelayProfileApi->create_delay_profile: %s\n" % e)
 ```
 
 ### Parameters
@@ -135,8 +135,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **delete_delayprofile**
-> delete_delayprofile(id)
+# **delete_delay_profile**
+> delete_delay_profile(id)
 
 
 
@@ -180,9 +180,9 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_instance.delete_delayprofile(id)
+        api_instance.delete_delay_profile(id)
     except Exception as e:
-        print("Exception when calling DelayProfileApi->delete_delayprofile: %s\n" % e)
+        print("Exception when calling DelayProfileApi->delete_delay_profile: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -223,9 +223,9 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_instance.delete_delayprofile(id)
+        api_instance.delete_delay_profile(id)
     except Exception as e:
-        print("Exception when calling DelayProfileApi->delete_delayprofile: %s\n" % e)
+        print("Exception when calling DelayProfileApi->delete_delay_profile: %s\n" % e)
 ```
 
 ### Parameters
@@ -254,8 +254,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_delayprofile_by_id**
-> DelayProfileResource get_delayprofile_by_id(id)
+# **get_delay_profile_by_id**
+> DelayProfileResource get_delay_profile_by_id(id)
 
 
 
@@ -299,11 +299,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_delayprofile_by_id(id)
-        print("The response of DelayProfileApi->get_delayprofile_by_id:\n")
+        api_response = api_instance.get_delay_profile_by_id(id)
+        print("The response of DelayProfileApi->get_delay_profile_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling DelayProfileApi->get_delayprofile_by_id: %s\n" % e)
+        print("Exception when calling DelayProfileApi->get_delay_profile_by_id: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -344,11 +344,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_delayprofile_by_id(id)
-        print("The response of DelayProfileApi->get_delayprofile_by_id:\n")
+        api_response = api_instance.get_delay_profile_by_id(id)
+        print("The response of DelayProfileApi->get_delay_profile_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling DelayProfileApi->get_delayprofile_by_id: %s\n" % e)
+        print("Exception when calling DelayProfileApi->get_delay_profile_by_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -377,8 +377,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **list_delayprofile**
-> List[DelayProfileResource] list_delayprofile()
+# **list_delay_profile**
+> List[DelayProfileResource] list_delay_profile()
 
 
 
@@ -421,11 +421,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.DelayProfileApi(api_client)
 
     try:
-        api_response = api_instance.list_delayprofile()
-        print("The response of DelayProfileApi->list_delayprofile:\n")
+        api_response = api_instance.list_delay_profile()
+        print("The response of DelayProfileApi->list_delay_profile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling DelayProfileApi->list_delayprofile: %s\n" % e)
+        print("Exception when calling DelayProfileApi->list_delay_profile: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -465,11 +465,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.DelayProfileApi(api_client)
 
     try:
-        api_response = api_instance.list_delayprofile()
-        print("The response of DelayProfileApi->list_delayprofile:\n")
+        api_response = api_instance.list_delay_profile()
+        print("The response of DelayProfileApi->list_delay_profile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling DelayProfileApi->list_delayprofile: %s\n" % e)
+        print("Exception when calling DelayProfileApi->list_delay_profile: %s\n" % e)
 ```
 
 ### Parameters
@@ -495,8 +495,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **update_delayprofile**
-> DelayProfileResource update_delayprofile(id, delay_profile_resource=delay_profile_resource)
+# **update_delay_profile**
+> DelayProfileResource update_delay_profile(id, delay_profile_resource=delay_profile_resource)
 
 
 
@@ -541,11 +541,11 @@ with sonarr.ApiClient(configuration) as api_client:
     delay_profile_resource = sonarr.DelayProfileResource() # DelayProfileResource |  (optional)
 
     try:
-        api_response = api_instance.update_delayprofile(id, delay_profile_resource=delay_profile_resource)
-        print("The response of DelayProfileApi->update_delayprofile:\n")
+        api_response = api_instance.update_delay_profile(id, delay_profile_resource=delay_profile_resource)
+        print("The response of DelayProfileApi->update_delay_profile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling DelayProfileApi->update_delayprofile: %s\n" % e)
+        print("Exception when calling DelayProfileApi->update_delay_profile: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -587,11 +587,11 @@ with sonarr.ApiClient(configuration) as api_client:
     delay_profile_resource = sonarr.DelayProfileResource() # DelayProfileResource |  (optional)
 
     try:
-        api_response = api_instance.update_delayprofile(id, delay_profile_resource=delay_profile_resource)
-        print("The response of DelayProfileApi->update_delayprofile:\n")
+        api_response = api_instance.update_delay_profile(id, delay_profile_resource=delay_profile_resource)
+        print("The response of DelayProfileApi->update_delay_profile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling DelayProfileApi->update_delayprofile: %s\n" % e)
+        print("Exception when calling DelayProfileApi->update_delay_profile: %s\n" % e)
 ```
 
 ### Parameters
@@ -621,8 +621,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **update_delayprofile_reorder**
-> List[DelayProfileResource] update_delayprofile_reorder(id, after=after)
+# **update_delay_profile_reorder**
+> List[DelayProfileResource] update_delay_profile_reorder(id, after=after)
 
 
 
@@ -667,11 +667,11 @@ with sonarr.ApiClient(configuration) as api_client:
     after = 56 # int |  (optional)
 
     try:
-        api_response = api_instance.update_delayprofile_reorder(id, after=after)
-        print("The response of DelayProfileApi->update_delayprofile_reorder:\n")
+        api_response = api_instance.update_delay_profile_reorder(id, after=after)
+        print("The response of DelayProfileApi->update_delay_profile_reorder:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling DelayProfileApi->update_delayprofile_reorder: %s\n" % e)
+        print("Exception when calling DelayProfileApi->update_delay_profile_reorder: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -713,11 +713,11 @@ with sonarr.ApiClient(configuration) as api_client:
     after = 56 # int |  (optional)
 
     try:
-        api_response = api_instance.update_delayprofile_reorder(id, after=after)
-        print("The response of DelayProfileApi->update_delayprofile_reorder:\n")
+        api_response = api_instance.update_delay_profile_reorder(id, after=after)
+        print("The response of DelayProfileApi->update_delay_profile_reorder:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling DelayProfileApi->update_delayprofile_reorder: %s\n" % e)
+        print("Exception when calling DelayProfileApi->update_delay_profile_reorder: %s\n" % e)
 ```
 
 ### Parameters

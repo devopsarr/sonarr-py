@@ -4,13 +4,13 @@ All URIs are relative to *http://localhost:8989*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_config_host**](HostConfigApi.md#get_config_host) | **GET** /api/v3/config/host | 
-[**get_config_host_by_id**](HostConfigApi.md#get_config_host_by_id) | **GET** /api/v3/config/host/{id} | 
-[**update_config_host**](HostConfigApi.md#update_config_host) | **PUT** /api/v3/config/host/{id} | 
+[**get_host_config**](HostConfigApi.md#get_host_config) | **GET** /api/v3/config/host | 
+[**get_host_config_by_id**](HostConfigApi.md#get_host_config_by_id) | **GET** /api/v3/config/host/{id} | 
+[**update_host_config**](HostConfigApi.md#update_host_config) | **PUT** /api/v3/config/host/{id} | 
 
 
-# **get_config_host**
-> HostConfigResource get_config_host()
+# **get_host_config**
+> HostConfigResource get_host_config()
 
 
 
@@ -53,11 +53,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.HostConfigApi(api_client)
 
     try:
-        api_response = api_instance.get_config_host()
-        print("The response of HostConfigApi->get_config_host:\n")
+        api_response = api_instance.get_host_config()
+        print("The response of HostConfigApi->get_host_config:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling HostConfigApi->get_config_host: %s\n" % e)
+        print("Exception when calling HostConfigApi->get_host_config: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -97,11 +97,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.HostConfigApi(api_client)
 
     try:
-        api_response = api_instance.get_config_host()
-        print("The response of HostConfigApi->get_config_host:\n")
+        api_response = api_instance.get_host_config()
+        print("The response of HostConfigApi->get_host_config:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling HostConfigApi->get_config_host: %s\n" % e)
+        print("Exception when calling HostConfigApi->get_host_config: %s\n" % e)
 ```
 
 ### Parameters
@@ -127,8 +127,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_config_host_by_id**
-> HostConfigResource get_config_host_by_id(id)
+# **get_host_config_by_id**
+> HostConfigResource get_host_config_by_id(id)
 
 
 
@@ -172,11 +172,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_config_host_by_id(id)
-        print("The response of HostConfigApi->get_config_host_by_id:\n")
+        api_response = api_instance.get_host_config_by_id(id)
+        print("The response of HostConfigApi->get_host_config_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling HostConfigApi->get_config_host_by_id: %s\n" % e)
+        print("Exception when calling HostConfigApi->get_host_config_by_id: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -217,11 +217,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_config_host_by_id(id)
-        print("The response of HostConfigApi->get_config_host_by_id:\n")
+        api_response = api_instance.get_host_config_by_id(id)
+        print("The response of HostConfigApi->get_host_config_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling HostConfigApi->get_config_host_by_id: %s\n" % e)
+        print("Exception when calling HostConfigApi->get_host_config_by_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -250,8 +250,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **update_config_host**
-> HostConfigResource update_config_host(id, host_config_resource=host_config_resource)
+# **update_host_config**
+> HostConfigResource update_host_config(id, host_config_resource=host_config_resource)
 
 
 
@@ -296,11 +296,11 @@ with sonarr.ApiClient(configuration) as api_client:
     host_config_resource = sonarr.HostConfigResource() # HostConfigResource |  (optional)
 
     try:
-        api_response = api_instance.update_config_host(id, host_config_resource=host_config_resource)
-        print("The response of HostConfigApi->update_config_host:\n")
+        api_response = api_instance.update_host_config(id, host_config_resource=host_config_resource)
+        print("The response of HostConfigApi->update_host_config:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling HostConfigApi->update_config_host: %s\n" % e)
+        print("Exception when calling HostConfigApi->update_host_config: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -342,11 +342,11 @@ with sonarr.ApiClient(configuration) as api_client:
     host_config_resource = sonarr.HostConfigResource() # HostConfigResource |  (optional)
 
     try:
-        api_response = api_instance.update_config_host(id, host_config_resource=host_config_resource)
-        print("The response of HostConfigApi->update_config_host:\n")
+        api_response = api_instance.update_host_config(id, host_config_resource=host_config_resource)
+        print("The response of HostConfigApi->update_host_config:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling HostConfigApi->update_config_host: %s\n" % e)
+        print("Exception when calling HostConfigApi->update_host_config: %s\n" % e)
 ```
 
 ### Parameters

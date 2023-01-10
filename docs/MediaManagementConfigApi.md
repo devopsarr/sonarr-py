@@ -4,13 +4,13 @@ All URIs are relative to *http://localhost:8989*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_config_mediamanagement**](MediaManagementConfigApi.md#get_config_mediamanagement) | **GET** /api/v3/config/mediamanagement | 
-[**get_config_mediamanagement_by_id**](MediaManagementConfigApi.md#get_config_mediamanagement_by_id) | **GET** /api/v3/config/mediamanagement/{id} | 
-[**update_config_mediamanagement**](MediaManagementConfigApi.md#update_config_mediamanagement) | **PUT** /api/v3/config/mediamanagement/{id} | 
+[**get_media_management_config**](MediaManagementConfigApi.md#get_media_management_config) | **GET** /api/v3/config/mediamanagement | 
+[**get_media_management_config_by_id**](MediaManagementConfigApi.md#get_media_management_config_by_id) | **GET** /api/v3/config/mediamanagement/{id} | 
+[**update_media_management_config**](MediaManagementConfigApi.md#update_media_management_config) | **PUT** /api/v3/config/mediamanagement/{id} | 
 
 
-# **get_config_mediamanagement**
-> MediaManagementConfigResource get_config_mediamanagement()
+# **get_media_management_config**
+> MediaManagementConfigResource get_media_management_config()
 
 
 
@@ -53,11 +53,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.MediaManagementConfigApi(api_client)
 
     try:
-        api_response = api_instance.get_config_mediamanagement()
-        print("The response of MediaManagementConfigApi->get_config_mediamanagement:\n")
+        api_response = api_instance.get_media_management_config()
+        print("The response of MediaManagementConfigApi->get_media_management_config:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling MediaManagementConfigApi->get_config_mediamanagement: %s\n" % e)
+        print("Exception when calling MediaManagementConfigApi->get_media_management_config: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -97,11 +97,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.MediaManagementConfigApi(api_client)
 
     try:
-        api_response = api_instance.get_config_mediamanagement()
-        print("The response of MediaManagementConfigApi->get_config_mediamanagement:\n")
+        api_response = api_instance.get_media_management_config()
+        print("The response of MediaManagementConfigApi->get_media_management_config:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling MediaManagementConfigApi->get_config_mediamanagement: %s\n" % e)
+        print("Exception when calling MediaManagementConfigApi->get_media_management_config: %s\n" % e)
 ```
 
 ### Parameters
@@ -127,8 +127,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_config_mediamanagement_by_id**
-> MediaManagementConfigResource get_config_mediamanagement_by_id(id)
+# **get_media_management_config_by_id**
+> MediaManagementConfigResource get_media_management_config_by_id(id)
 
 
 
@@ -172,11 +172,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_config_mediamanagement_by_id(id)
-        print("The response of MediaManagementConfigApi->get_config_mediamanagement_by_id:\n")
+        api_response = api_instance.get_media_management_config_by_id(id)
+        print("The response of MediaManagementConfigApi->get_media_management_config_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling MediaManagementConfigApi->get_config_mediamanagement_by_id: %s\n" % e)
+        print("Exception when calling MediaManagementConfigApi->get_media_management_config_by_id: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -217,11 +217,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_config_mediamanagement_by_id(id)
-        print("The response of MediaManagementConfigApi->get_config_mediamanagement_by_id:\n")
+        api_response = api_instance.get_media_management_config_by_id(id)
+        print("The response of MediaManagementConfigApi->get_media_management_config_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling MediaManagementConfigApi->get_config_mediamanagement_by_id: %s\n" % e)
+        print("Exception when calling MediaManagementConfigApi->get_media_management_config_by_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -250,8 +250,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **update_config_mediamanagement**
-> MediaManagementConfigResource update_config_mediamanagement(id, media_management_config_resource=media_management_config_resource)
+# **update_media_management_config**
+> MediaManagementConfigResource update_media_management_config(id, media_management_config_resource=media_management_config_resource)
 
 
 
@@ -296,11 +296,11 @@ with sonarr.ApiClient(configuration) as api_client:
     media_management_config_resource = sonarr.MediaManagementConfigResource() # MediaManagementConfigResource |  (optional)
 
     try:
-        api_response = api_instance.update_config_mediamanagement(id, media_management_config_resource=media_management_config_resource)
-        print("The response of MediaManagementConfigApi->update_config_mediamanagement:\n")
+        api_response = api_instance.update_media_management_config(id, media_management_config_resource=media_management_config_resource)
+        print("The response of MediaManagementConfigApi->update_media_management_config:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling MediaManagementConfigApi->update_config_mediamanagement: %s\n" % e)
+        print("Exception when calling MediaManagementConfigApi->update_media_management_config: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -342,11 +342,11 @@ with sonarr.ApiClient(configuration) as api_client:
     media_management_config_resource = sonarr.MediaManagementConfigResource() # MediaManagementConfigResource |  (optional)
 
     try:
-        api_response = api_instance.update_config_mediamanagement(id, media_management_config_resource=media_management_config_resource)
-        print("The response of MediaManagementConfigApi->update_config_mediamanagement:\n")
+        api_response = api_instance.update_media_management_config(id, media_management_config_resource=media_management_config_resource)
+        print("The response of MediaManagementConfigApi->update_media_management_config:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling MediaManagementConfigApi->update_config_mediamanagement: %s\n" % e)
+        print("Exception when calling MediaManagementConfigApi->update_media_management_config: %s\n" % e)
 ```
 
 ### Parameters

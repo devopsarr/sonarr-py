@@ -43,13 +43,13 @@ class CustomFormatApi(object):
         self.api_client = api_client
 
     @validate_arguments
-    def create_customformat(self, custom_format_resource : Optional[CustomFormatResource] = None, **kwargs) -> CustomFormatResource:  # noqa: E501
-        """create_customformat  # noqa: E501
+    def create_custom_format(self, custom_format_resource : Optional[CustomFormatResource] = None, **kwargs) -> CustomFormatResource:  # noqa: E501
+        """create_custom_format  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_customformat(custom_format_resource, async_req=True)
+        >>> thread = api.create_custom_format(custom_format_resource, async_req=True)
         >>> result = thread.get()
 
         :param custom_format_resource:
@@ -70,16 +70,16 @@ class CustomFormatApi(object):
         :rtype: CustomFormatResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.create_customformat_with_http_info(custom_format_resource, **kwargs)  # noqa: E501
+        return self.create_custom_format_with_http_info(custom_format_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def create_customformat_with_http_info(self, custom_format_resource : Optional[CustomFormatResource] = None, **kwargs):  # noqa: E501
-        """create_customformat  # noqa: E501
+    def create_custom_format_with_http_info(self, custom_format_resource : Optional[CustomFormatResource] = None, **kwargs):  # noqa: E501
+        """create_custom_format  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_customformat_with_http_info(custom_format_resource, async_req=True)
+        >>> thread = api.create_custom_format_with_http_info(custom_format_resource, async_req=True)
         >>> result = thread.get()
 
         :param custom_format_resource:
@@ -130,7 +130,7 @@ class CustomFormatApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method create_customformat" % _key
+                    " to method create_custom_format" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -191,13 +191,13 @@ class CustomFormatApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def delete_customformat(self, id : StrictInt, **kwargs) -> None:  # noqa: E501
-        """delete_customformat  # noqa: E501
+    def delete_custom_format(self, id : StrictInt, **kwargs) -> None:  # noqa: E501
+        """delete_custom_format  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_customformat(id, async_req=True)
+        >>> thread = api.delete_custom_format(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -218,16 +218,16 @@ class CustomFormatApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.delete_customformat_with_http_info(id, **kwargs)  # noqa: E501
+        return self.delete_custom_format_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def delete_customformat_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """delete_customformat  # noqa: E501
+    def delete_custom_format_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """delete_custom_format  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_customformat_with_http_info(id, async_req=True)
+        >>> thread = api.delete_custom_format_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -278,7 +278,7 @@ class CustomFormatApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method delete_customformat" % _key
+                    " to method delete_custom_format" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -326,13 +326,13 @@ class CustomFormatApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def get_customformat_by_id(self, id : StrictInt, **kwargs) -> CustomFormatResource:  # noqa: E501
-        """get_customformat_by_id  # noqa: E501
+    def get_custom_format_by_id(self, id : StrictInt, **kwargs) -> CustomFormatResource:  # noqa: E501
+        """get_custom_format_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_customformat_by_id(id, async_req=True)
+        >>> thread = api.get_custom_format_by_id(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -353,16 +353,16 @@ class CustomFormatApi(object):
         :rtype: CustomFormatResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_customformat_by_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.get_custom_format_by_id_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_customformat_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """get_customformat_by_id  # noqa: E501
+    def get_custom_format_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """get_custom_format_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_customformat_by_id_with_http_info(id, async_req=True)
+        >>> thread = api.get_custom_format_by_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -413,7 +413,7 @@ class CustomFormatApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_customformat_by_id" % _key
+                    " to method get_custom_format_by_id" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -467,13 +467,13 @@ class CustomFormatApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def get_customformat_schema(self, **kwargs) -> None:  # noqa: E501
-        """get_customformat_schema  # noqa: E501
+    def get_custom_format_schema(self, **kwargs) -> None:  # noqa: E501
+        """get_custom_format_schema  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_customformat_schema(async_req=True)
+        >>> thread = api.get_custom_format_schema(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -492,16 +492,16 @@ class CustomFormatApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_customformat_schema_with_http_info(**kwargs)  # noqa: E501
+        return self.get_custom_format_schema_with_http_info(**kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_customformat_schema_with_http_info(self, **kwargs):  # noqa: E501
-        """get_customformat_schema  # noqa: E501
+    def get_custom_format_schema_with_http_info(self, **kwargs):  # noqa: E501
+        """get_custom_format_schema  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_customformat_schema_with_http_info(async_req=True)
+        >>> thread = api.get_custom_format_schema_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -549,7 +549,7 @@ class CustomFormatApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_customformat_schema" % _key
+                    " to method get_custom_format_schema" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -595,13 +595,13 @@ class CustomFormatApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def list_customformat(self, **kwargs) -> List[CustomFormatResource]:  # noqa: E501
-        """list_customformat  # noqa: E501
+    def list_custom_format(self, **kwargs) -> List[CustomFormatResource]:  # noqa: E501
+        """list_custom_format  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_customformat(async_req=True)
+        >>> thread = api.list_custom_format(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -620,16 +620,16 @@ class CustomFormatApi(object):
         :rtype: List[CustomFormatResource]
         """
         kwargs['_return_http_data_only'] = True
-        return self.list_customformat_with_http_info(**kwargs)  # noqa: E501
+        return self.list_custom_format_with_http_info(**kwargs)  # noqa: E501
 
     @validate_arguments
-    def list_customformat_with_http_info(self, **kwargs):  # noqa: E501
-        """list_customformat  # noqa: E501
+    def list_custom_format_with_http_info(self, **kwargs):  # noqa: E501
+        """list_custom_format  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_customformat_with_http_info(async_req=True)
+        >>> thread = api.list_custom_format_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -677,7 +677,7 @@ class CustomFormatApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method list_customformat" % _key
+                    " to method list_custom_format" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -729,13 +729,13 @@ class CustomFormatApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def update_customformat(self, id : StrictStr, custom_format_resource : Optional[CustomFormatResource] = None, **kwargs) -> CustomFormatResource:  # noqa: E501
-        """update_customformat  # noqa: E501
+    def update_custom_format(self, id : StrictStr, custom_format_resource : Optional[CustomFormatResource] = None, **kwargs) -> CustomFormatResource:  # noqa: E501
+        """update_custom_format  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_customformat(id, custom_format_resource, async_req=True)
+        >>> thread = api.update_custom_format(id, custom_format_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -758,16 +758,16 @@ class CustomFormatApi(object):
         :rtype: CustomFormatResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.update_customformat_with_http_info(id, custom_format_resource, **kwargs)  # noqa: E501
+        return self.update_custom_format_with_http_info(id, custom_format_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def update_customformat_with_http_info(self, id : StrictStr, custom_format_resource : Optional[CustomFormatResource] = None, **kwargs):  # noqa: E501
-        """update_customformat  # noqa: E501
+    def update_custom_format_with_http_info(self, id : StrictStr, custom_format_resource : Optional[CustomFormatResource] = None, **kwargs):  # noqa: E501
+        """update_custom_format  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_customformat_with_http_info(id, custom_format_resource, async_req=True)
+        >>> thread = api.update_custom_format_with_http_info(id, custom_format_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -821,7 +821,7 @@ class CustomFormatApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method update_customformat" % _key
+                    " to method update_custom_format" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']

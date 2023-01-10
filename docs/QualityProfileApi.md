@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost:8989*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_qualityprofile**](QualityProfileApi.md#create_qualityprofile) | **POST** /api/v3/qualityprofile | 
-[**delete_qualityprofile**](QualityProfileApi.md#delete_qualityprofile) | **DELETE** /api/v3/qualityprofile/{id} | 
-[**get_qualityprofile_by_id**](QualityProfileApi.md#get_qualityprofile_by_id) | **GET** /api/v3/qualityprofile/{id} | 
-[**list_qualityprofile**](QualityProfileApi.md#list_qualityprofile) | **GET** /api/v3/qualityprofile | 
-[**update_qualityprofile**](QualityProfileApi.md#update_qualityprofile) | **PUT** /api/v3/qualityprofile/{id} | 
+[**create_quality_profile**](QualityProfileApi.md#create_quality_profile) | **POST** /api/v3/qualityprofile | 
+[**delete_quality_profile**](QualityProfileApi.md#delete_quality_profile) | **DELETE** /api/v3/qualityprofile/{id} | 
+[**get_quality_profile_by_id**](QualityProfileApi.md#get_quality_profile_by_id) | **GET** /api/v3/qualityprofile/{id} | 
+[**list_quality_profile**](QualityProfileApi.md#list_quality_profile) | **GET** /api/v3/qualityprofile | 
+[**update_quality_profile**](QualityProfileApi.md#update_quality_profile) | **PUT** /api/v3/qualityprofile/{id} | 
 
 
-# **create_qualityprofile**
-> QualityProfileResource create_qualityprofile(quality_profile_resource=quality_profile_resource)
+# **create_quality_profile**
+> QualityProfileResource create_quality_profile(quality_profile_resource=quality_profile_resource)
 
 
 
@@ -56,11 +56,11 @@ with sonarr.ApiClient(configuration) as api_client:
     quality_profile_resource = sonarr.QualityProfileResource() # QualityProfileResource |  (optional)
 
     try:
-        api_response = api_instance.create_qualityprofile(quality_profile_resource=quality_profile_resource)
-        print("The response of QualityProfileApi->create_qualityprofile:\n")
+        api_response = api_instance.create_quality_profile(quality_profile_resource=quality_profile_resource)
+        print("The response of QualityProfileApi->create_quality_profile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling QualityProfileApi->create_qualityprofile: %s\n" % e)
+        print("Exception when calling QualityProfileApi->create_quality_profile: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -101,11 +101,11 @@ with sonarr.ApiClient(configuration) as api_client:
     quality_profile_resource = sonarr.QualityProfileResource() # QualityProfileResource |  (optional)
 
     try:
-        api_response = api_instance.create_qualityprofile(quality_profile_resource=quality_profile_resource)
-        print("The response of QualityProfileApi->create_qualityprofile:\n")
+        api_response = api_instance.create_quality_profile(quality_profile_resource=quality_profile_resource)
+        print("The response of QualityProfileApi->create_quality_profile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling QualityProfileApi->create_qualityprofile: %s\n" % e)
+        print("Exception when calling QualityProfileApi->create_quality_profile: %s\n" % e)
 ```
 
 ### Parameters
@@ -134,8 +134,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **delete_qualityprofile**
-> delete_qualityprofile(id)
+# **delete_quality_profile**
+> delete_quality_profile(id)
 
 
 
@@ -179,9 +179,9 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_instance.delete_qualityprofile(id)
+        api_instance.delete_quality_profile(id)
     except Exception as e:
-        print("Exception when calling QualityProfileApi->delete_qualityprofile: %s\n" % e)
+        print("Exception when calling QualityProfileApi->delete_quality_profile: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -222,9 +222,9 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_instance.delete_qualityprofile(id)
+        api_instance.delete_quality_profile(id)
     except Exception as e:
-        print("Exception when calling QualityProfileApi->delete_qualityprofile: %s\n" % e)
+        print("Exception when calling QualityProfileApi->delete_quality_profile: %s\n" % e)
 ```
 
 ### Parameters
@@ -253,8 +253,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_qualityprofile_by_id**
-> QualityProfileResource get_qualityprofile_by_id(id)
+# **get_quality_profile_by_id**
+> QualityProfileResource get_quality_profile_by_id(id)
 
 
 
@@ -298,11 +298,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_qualityprofile_by_id(id)
-        print("The response of QualityProfileApi->get_qualityprofile_by_id:\n")
+        api_response = api_instance.get_quality_profile_by_id(id)
+        print("The response of QualityProfileApi->get_quality_profile_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling QualityProfileApi->get_qualityprofile_by_id: %s\n" % e)
+        print("Exception when calling QualityProfileApi->get_quality_profile_by_id: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -343,11 +343,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_qualityprofile_by_id(id)
-        print("The response of QualityProfileApi->get_qualityprofile_by_id:\n")
+        api_response = api_instance.get_quality_profile_by_id(id)
+        print("The response of QualityProfileApi->get_quality_profile_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling QualityProfileApi->get_qualityprofile_by_id: %s\n" % e)
+        print("Exception when calling QualityProfileApi->get_quality_profile_by_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -376,8 +376,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **list_qualityprofile**
-> List[QualityProfileResource] list_qualityprofile()
+# **list_quality_profile**
+> List[QualityProfileResource] list_quality_profile()
 
 
 
@@ -420,11 +420,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.QualityProfileApi(api_client)
 
     try:
-        api_response = api_instance.list_qualityprofile()
-        print("The response of QualityProfileApi->list_qualityprofile:\n")
+        api_response = api_instance.list_quality_profile()
+        print("The response of QualityProfileApi->list_quality_profile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling QualityProfileApi->list_qualityprofile: %s\n" % e)
+        print("Exception when calling QualityProfileApi->list_quality_profile: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -464,11 +464,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.QualityProfileApi(api_client)
 
     try:
-        api_response = api_instance.list_qualityprofile()
-        print("The response of QualityProfileApi->list_qualityprofile:\n")
+        api_response = api_instance.list_quality_profile()
+        print("The response of QualityProfileApi->list_quality_profile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling QualityProfileApi->list_qualityprofile: %s\n" % e)
+        print("Exception when calling QualityProfileApi->list_quality_profile: %s\n" % e)
 ```
 
 ### Parameters
@@ -494,8 +494,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **update_qualityprofile**
-> QualityProfileResource update_qualityprofile(id, quality_profile_resource=quality_profile_resource)
+# **update_quality_profile**
+> QualityProfileResource update_quality_profile(id, quality_profile_resource=quality_profile_resource)
 
 
 
@@ -540,11 +540,11 @@ with sonarr.ApiClient(configuration) as api_client:
     quality_profile_resource = sonarr.QualityProfileResource() # QualityProfileResource |  (optional)
 
     try:
-        api_response = api_instance.update_qualityprofile(id, quality_profile_resource=quality_profile_resource)
-        print("The response of QualityProfileApi->update_qualityprofile:\n")
+        api_response = api_instance.update_quality_profile(id, quality_profile_resource=quality_profile_resource)
+        print("The response of QualityProfileApi->update_quality_profile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling QualityProfileApi->update_qualityprofile: %s\n" % e)
+        print("Exception when calling QualityProfileApi->update_quality_profile: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -586,11 +586,11 @@ with sonarr.ApiClient(configuration) as api_client:
     quality_profile_resource = sonarr.QualityProfileResource() # QualityProfileResource |  (optional)
 
     try:
-        api_response = api_instance.update_qualityprofile(id, quality_profile_resource=quality_profile_resource)
-        print("The response of QualityProfileApi->update_qualityprofile:\n")
+        api_response = api_instance.update_quality_profile(id, quality_profile_resource=quality_profile_resource)
+        print("The response of QualityProfileApi->update_quality_profile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling QualityProfileApi->update_qualityprofile: %s\n" % e)
+        print("Exception when calling QualityProfileApi->update_quality_profile: %s\n" % e)
 ```
 
 ### Parameters

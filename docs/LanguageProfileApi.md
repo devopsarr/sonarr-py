@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost:8989*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_languageprofile**](LanguageProfileApi.md#create_languageprofile) | **POST** /api/v3/languageprofile | 
-[**delete_languageprofile**](LanguageProfileApi.md#delete_languageprofile) | **DELETE** /api/v3/languageprofile/{id} | 
-[**get_languageprofile_by_id**](LanguageProfileApi.md#get_languageprofile_by_id) | **GET** /api/v3/languageprofile/{id} | 
-[**list_languageprofile**](LanguageProfileApi.md#list_languageprofile) | **GET** /api/v3/languageprofile | 
-[**update_languageprofile**](LanguageProfileApi.md#update_languageprofile) | **PUT** /api/v3/languageprofile/{id} | 
+[**create_language_profile**](LanguageProfileApi.md#create_language_profile) | **POST** /api/v3/languageprofile | 
+[**delete_language_profile**](LanguageProfileApi.md#delete_language_profile) | **DELETE** /api/v3/languageprofile/{id} | 
+[**get_language_profile_by_id**](LanguageProfileApi.md#get_language_profile_by_id) | **GET** /api/v3/languageprofile/{id} | 
+[**list_language_profile**](LanguageProfileApi.md#list_language_profile) | **GET** /api/v3/languageprofile | 
+[**update_language_profile**](LanguageProfileApi.md#update_language_profile) | **PUT** /api/v3/languageprofile/{id} | 
 
 
-# **create_languageprofile**
-> LanguageProfileResource create_languageprofile(language_profile_resource=language_profile_resource)
+# **create_language_profile**
+> LanguageProfileResource create_language_profile(language_profile_resource=language_profile_resource)
 
 
 
@@ -56,11 +56,11 @@ with sonarr.ApiClient(configuration) as api_client:
     language_profile_resource = sonarr.LanguageProfileResource() # LanguageProfileResource |  (optional)
 
     try:
-        api_response = api_instance.create_languageprofile(language_profile_resource=language_profile_resource)
-        print("The response of LanguageProfileApi->create_languageprofile:\n")
+        api_response = api_instance.create_language_profile(language_profile_resource=language_profile_resource)
+        print("The response of LanguageProfileApi->create_language_profile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling LanguageProfileApi->create_languageprofile: %s\n" % e)
+        print("Exception when calling LanguageProfileApi->create_language_profile: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -101,11 +101,11 @@ with sonarr.ApiClient(configuration) as api_client:
     language_profile_resource = sonarr.LanguageProfileResource() # LanguageProfileResource |  (optional)
 
     try:
-        api_response = api_instance.create_languageprofile(language_profile_resource=language_profile_resource)
-        print("The response of LanguageProfileApi->create_languageprofile:\n")
+        api_response = api_instance.create_language_profile(language_profile_resource=language_profile_resource)
+        print("The response of LanguageProfileApi->create_language_profile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling LanguageProfileApi->create_languageprofile: %s\n" % e)
+        print("Exception when calling LanguageProfileApi->create_language_profile: %s\n" % e)
 ```
 
 ### Parameters
@@ -134,8 +134,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **delete_languageprofile**
-> delete_languageprofile(id)
+# **delete_language_profile**
+> delete_language_profile(id)
 
 
 
@@ -179,9 +179,9 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_instance.delete_languageprofile(id)
+        api_instance.delete_language_profile(id)
     except Exception as e:
-        print("Exception when calling LanguageProfileApi->delete_languageprofile: %s\n" % e)
+        print("Exception when calling LanguageProfileApi->delete_language_profile: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -222,9 +222,9 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_instance.delete_languageprofile(id)
+        api_instance.delete_language_profile(id)
     except Exception as e:
-        print("Exception when calling LanguageProfileApi->delete_languageprofile: %s\n" % e)
+        print("Exception when calling LanguageProfileApi->delete_language_profile: %s\n" % e)
 ```
 
 ### Parameters
@@ -253,8 +253,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_languageprofile_by_id**
-> LanguageProfileResource get_languageprofile_by_id(id)
+# **get_language_profile_by_id**
+> LanguageProfileResource get_language_profile_by_id(id)
 
 
 
@@ -298,11 +298,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_languageprofile_by_id(id)
-        print("The response of LanguageProfileApi->get_languageprofile_by_id:\n")
+        api_response = api_instance.get_language_profile_by_id(id)
+        print("The response of LanguageProfileApi->get_language_profile_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling LanguageProfileApi->get_languageprofile_by_id: %s\n" % e)
+        print("Exception when calling LanguageProfileApi->get_language_profile_by_id: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -343,11 +343,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_languageprofile_by_id(id)
-        print("The response of LanguageProfileApi->get_languageprofile_by_id:\n")
+        api_response = api_instance.get_language_profile_by_id(id)
+        print("The response of LanguageProfileApi->get_language_profile_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling LanguageProfileApi->get_languageprofile_by_id: %s\n" % e)
+        print("Exception when calling LanguageProfileApi->get_language_profile_by_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -376,8 +376,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **list_languageprofile**
-> List[LanguageProfileResource] list_languageprofile()
+# **list_language_profile**
+> List[LanguageProfileResource] list_language_profile()
 
 
 
@@ -420,11 +420,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.LanguageProfileApi(api_client)
 
     try:
-        api_response = api_instance.list_languageprofile()
-        print("The response of LanguageProfileApi->list_languageprofile:\n")
+        api_response = api_instance.list_language_profile()
+        print("The response of LanguageProfileApi->list_language_profile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling LanguageProfileApi->list_languageprofile: %s\n" % e)
+        print("Exception when calling LanguageProfileApi->list_language_profile: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -464,11 +464,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.LanguageProfileApi(api_client)
 
     try:
-        api_response = api_instance.list_languageprofile()
-        print("The response of LanguageProfileApi->list_languageprofile:\n")
+        api_response = api_instance.list_language_profile()
+        print("The response of LanguageProfileApi->list_language_profile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling LanguageProfileApi->list_languageprofile: %s\n" % e)
+        print("Exception when calling LanguageProfileApi->list_language_profile: %s\n" % e)
 ```
 
 ### Parameters
@@ -494,8 +494,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **update_languageprofile**
-> LanguageProfileResource update_languageprofile(id, language_profile_resource=language_profile_resource)
+# **update_language_profile**
+> LanguageProfileResource update_language_profile(id, language_profile_resource=language_profile_resource)
 
 
 
@@ -540,11 +540,11 @@ with sonarr.ApiClient(configuration) as api_client:
     language_profile_resource = sonarr.LanguageProfileResource() # LanguageProfileResource |  (optional)
 
     try:
-        api_response = api_instance.update_languageprofile(id, language_profile_resource=language_profile_resource)
-        print("The response of LanguageProfileApi->update_languageprofile:\n")
+        api_response = api_instance.update_language_profile(id, language_profile_resource=language_profile_resource)
+        print("The response of LanguageProfileApi->update_language_profile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling LanguageProfileApi->update_languageprofile: %s\n" % e)
+        print("Exception when calling LanguageProfileApi->update_language_profile: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -586,11 +586,11 @@ with sonarr.ApiClient(configuration) as api_client:
     language_profile_resource = sonarr.LanguageProfileResource() # LanguageProfileResource |  (optional)
 
     try:
-        api_response = api_instance.update_languageprofile(id, language_profile_resource=language_profile_resource)
-        print("The response of LanguageProfileApi->update_languageprofile:\n")
+        api_response = api_instance.update_language_profile(id, language_profile_resource=language_profile_resource)
+        print("The response of LanguageProfileApi->update_language_profile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling LanguageProfileApi->update_languageprofile: %s\n" % e)
+        print("Exception when calling LanguageProfileApi->update_language_profile: %s\n" % e)
 ```
 
 ### Parameters

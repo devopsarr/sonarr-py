@@ -43,13 +43,13 @@ class QualityDefinitionApi(object):
         self.api_client = api_client
 
     @validate_arguments
-    def get_qualitydefinition_by_id(self, id : StrictInt, **kwargs) -> QualityDefinitionResource:  # noqa: E501
-        """get_qualitydefinition_by_id  # noqa: E501
+    def get_quality_definition_by_id(self, id : StrictInt, **kwargs) -> QualityDefinitionResource:  # noqa: E501
+        """get_quality_definition_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_qualitydefinition_by_id(id, async_req=True)
+        >>> thread = api.get_quality_definition_by_id(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -70,16 +70,16 @@ class QualityDefinitionApi(object):
         :rtype: QualityDefinitionResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_qualitydefinition_by_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.get_quality_definition_by_id_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_qualitydefinition_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """get_qualitydefinition_by_id  # noqa: E501
+    def get_quality_definition_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """get_quality_definition_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_qualitydefinition_by_id_with_http_info(id, async_req=True)
+        >>> thread = api.get_quality_definition_by_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -130,7 +130,7 @@ class QualityDefinitionApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_qualitydefinition_by_id" % _key
+                    " to method get_quality_definition_by_id" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -184,13 +184,13 @@ class QualityDefinitionApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def list_qualitydefinition(self, **kwargs) -> List[QualityDefinitionResource]:  # noqa: E501
-        """list_qualitydefinition  # noqa: E501
+    def list_quality_definition(self, **kwargs) -> List[QualityDefinitionResource]:  # noqa: E501
+        """list_quality_definition  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_qualitydefinition(async_req=True)
+        >>> thread = api.list_quality_definition(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -209,16 +209,16 @@ class QualityDefinitionApi(object):
         :rtype: List[QualityDefinitionResource]
         """
         kwargs['_return_http_data_only'] = True
-        return self.list_qualitydefinition_with_http_info(**kwargs)  # noqa: E501
+        return self.list_quality_definition_with_http_info(**kwargs)  # noqa: E501
 
     @validate_arguments
-    def list_qualitydefinition_with_http_info(self, **kwargs):  # noqa: E501
-        """list_qualitydefinition  # noqa: E501
+    def list_quality_definition_with_http_info(self, **kwargs):  # noqa: E501
+        """list_quality_definition  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_qualitydefinition_with_http_info(async_req=True)
+        >>> thread = api.list_quality_definition_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -266,7 +266,7 @@ class QualityDefinitionApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method list_qualitydefinition" % _key
+                    " to method list_quality_definition" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -318,13 +318,13 @@ class QualityDefinitionApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def put_qualitydefinition_update(self, quality_definition_resource : Optional[List[QualityDefinitionResource]] = None, **kwargs) -> None:  # noqa: E501
-        """put_qualitydefinition_update  # noqa: E501
+    def put_quality_definition_update(self, quality_definition_resource : Optional[List[QualityDefinitionResource]] = None, **kwargs) -> None:  # noqa: E501
+        """put_quality_definition_update  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.put_qualitydefinition_update(quality_definition_resource, async_req=True)
+        >>> thread = api.put_quality_definition_update(quality_definition_resource, async_req=True)
         >>> result = thread.get()
 
         :param quality_definition_resource:
@@ -345,16 +345,16 @@ class QualityDefinitionApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.put_qualitydefinition_update_with_http_info(quality_definition_resource, **kwargs)  # noqa: E501
+        return self.put_quality_definition_update_with_http_info(quality_definition_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def put_qualitydefinition_update_with_http_info(self, quality_definition_resource : Optional[List[QualityDefinitionResource]] = None, **kwargs):  # noqa: E501
-        """put_qualitydefinition_update  # noqa: E501
+    def put_quality_definition_update_with_http_info(self, quality_definition_resource : Optional[List[QualityDefinitionResource]] = None, **kwargs):  # noqa: E501
+        """put_quality_definition_update  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.put_qualitydefinition_update_with_http_info(quality_definition_resource, async_req=True)
+        >>> thread = api.put_quality_definition_update_with_http_info(quality_definition_resource, async_req=True)
         >>> result = thread.get()
 
         :param quality_definition_resource:
@@ -405,7 +405,7 @@ class QualityDefinitionApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method put_qualitydefinition_update" % _key
+                    " to method put_quality_definition_update" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -460,13 +460,13 @@ class QualityDefinitionApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def update_qualitydefinition(self, id : StrictStr, quality_definition_resource : Optional[QualityDefinitionResource] = None, **kwargs) -> QualityDefinitionResource:  # noqa: E501
-        """update_qualitydefinition  # noqa: E501
+    def update_quality_definition(self, id : StrictStr, quality_definition_resource : Optional[QualityDefinitionResource] = None, **kwargs) -> QualityDefinitionResource:  # noqa: E501
+        """update_quality_definition  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_qualitydefinition(id, quality_definition_resource, async_req=True)
+        >>> thread = api.update_quality_definition(id, quality_definition_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -489,16 +489,16 @@ class QualityDefinitionApi(object):
         :rtype: QualityDefinitionResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.update_qualitydefinition_with_http_info(id, quality_definition_resource, **kwargs)  # noqa: E501
+        return self.update_quality_definition_with_http_info(id, quality_definition_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def update_qualitydefinition_with_http_info(self, id : StrictStr, quality_definition_resource : Optional[QualityDefinitionResource] = None, **kwargs):  # noqa: E501
-        """update_qualitydefinition  # noqa: E501
+    def update_quality_definition_with_http_info(self, id : StrictStr, quality_definition_resource : Optional[QualityDefinitionResource] = None, **kwargs):  # noqa: E501
+        """update_quality_definition  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_qualitydefinition_with_http_info(id, quality_definition_resource, async_req=True)
+        >>> thread = api.update_quality_definition_with_http_info(id, quality_definition_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -552,7 +552,7 @@ class QualityDefinitionApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method update_qualitydefinition" % _key
+                    " to method update_quality_definition" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']

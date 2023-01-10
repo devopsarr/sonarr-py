@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost:8989*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_customfilter**](CustomFilterApi.md#create_customfilter) | **POST** /api/v3/customfilter | 
-[**delete_customfilter**](CustomFilterApi.md#delete_customfilter) | **DELETE** /api/v3/customfilter/{id} | 
-[**get_customfilter_by_id**](CustomFilterApi.md#get_customfilter_by_id) | **GET** /api/v3/customfilter/{id} | 
-[**list_customfilter**](CustomFilterApi.md#list_customfilter) | **GET** /api/v3/customfilter | 
-[**update_customfilter**](CustomFilterApi.md#update_customfilter) | **PUT** /api/v3/customfilter/{id} | 
+[**create_custom_filter**](CustomFilterApi.md#create_custom_filter) | **POST** /api/v3/customfilter | 
+[**delete_custom_filter**](CustomFilterApi.md#delete_custom_filter) | **DELETE** /api/v3/customfilter/{id} | 
+[**get_custom_filter_by_id**](CustomFilterApi.md#get_custom_filter_by_id) | **GET** /api/v3/customfilter/{id} | 
+[**list_custom_filter**](CustomFilterApi.md#list_custom_filter) | **GET** /api/v3/customfilter | 
+[**update_custom_filter**](CustomFilterApi.md#update_custom_filter) | **PUT** /api/v3/customfilter/{id} | 
 
 
-# **create_customfilter**
-> CustomFilterResource create_customfilter(custom_filter_resource=custom_filter_resource)
+# **create_custom_filter**
+> CustomFilterResource create_custom_filter(custom_filter_resource=custom_filter_resource)
 
 
 
@@ -56,11 +56,11 @@ with sonarr.ApiClient(configuration) as api_client:
     custom_filter_resource = sonarr.CustomFilterResource() # CustomFilterResource |  (optional)
 
     try:
-        api_response = api_instance.create_customfilter(custom_filter_resource=custom_filter_resource)
-        print("The response of CustomFilterApi->create_customfilter:\n")
+        api_response = api_instance.create_custom_filter(custom_filter_resource=custom_filter_resource)
+        print("The response of CustomFilterApi->create_custom_filter:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CustomFilterApi->create_customfilter: %s\n" % e)
+        print("Exception when calling CustomFilterApi->create_custom_filter: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -101,11 +101,11 @@ with sonarr.ApiClient(configuration) as api_client:
     custom_filter_resource = sonarr.CustomFilterResource() # CustomFilterResource |  (optional)
 
     try:
-        api_response = api_instance.create_customfilter(custom_filter_resource=custom_filter_resource)
-        print("The response of CustomFilterApi->create_customfilter:\n")
+        api_response = api_instance.create_custom_filter(custom_filter_resource=custom_filter_resource)
+        print("The response of CustomFilterApi->create_custom_filter:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CustomFilterApi->create_customfilter: %s\n" % e)
+        print("Exception when calling CustomFilterApi->create_custom_filter: %s\n" % e)
 ```
 
 ### Parameters
@@ -134,8 +134,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **delete_customfilter**
-> delete_customfilter(id)
+# **delete_custom_filter**
+> delete_custom_filter(id)
 
 
 
@@ -179,9 +179,9 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_instance.delete_customfilter(id)
+        api_instance.delete_custom_filter(id)
     except Exception as e:
-        print("Exception when calling CustomFilterApi->delete_customfilter: %s\n" % e)
+        print("Exception when calling CustomFilterApi->delete_custom_filter: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -222,9 +222,9 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_instance.delete_customfilter(id)
+        api_instance.delete_custom_filter(id)
     except Exception as e:
-        print("Exception when calling CustomFilterApi->delete_customfilter: %s\n" % e)
+        print("Exception when calling CustomFilterApi->delete_custom_filter: %s\n" % e)
 ```
 
 ### Parameters
@@ -253,8 +253,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_customfilter_by_id**
-> CustomFilterResource get_customfilter_by_id(id)
+# **get_custom_filter_by_id**
+> CustomFilterResource get_custom_filter_by_id(id)
 
 
 
@@ -298,11 +298,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_customfilter_by_id(id)
-        print("The response of CustomFilterApi->get_customfilter_by_id:\n")
+        api_response = api_instance.get_custom_filter_by_id(id)
+        print("The response of CustomFilterApi->get_custom_filter_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CustomFilterApi->get_customfilter_by_id: %s\n" % e)
+        print("Exception when calling CustomFilterApi->get_custom_filter_by_id: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -343,11 +343,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_customfilter_by_id(id)
-        print("The response of CustomFilterApi->get_customfilter_by_id:\n")
+        api_response = api_instance.get_custom_filter_by_id(id)
+        print("The response of CustomFilterApi->get_custom_filter_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CustomFilterApi->get_customfilter_by_id: %s\n" % e)
+        print("Exception when calling CustomFilterApi->get_custom_filter_by_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -376,8 +376,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **list_customfilter**
-> List[CustomFilterResource] list_customfilter()
+# **list_custom_filter**
+> List[CustomFilterResource] list_custom_filter()
 
 
 
@@ -420,11 +420,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.CustomFilterApi(api_client)
 
     try:
-        api_response = api_instance.list_customfilter()
-        print("The response of CustomFilterApi->list_customfilter:\n")
+        api_response = api_instance.list_custom_filter()
+        print("The response of CustomFilterApi->list_custom_filter:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CustomFilterApi->list_customfilter: %s\n" % e)
+        print("Exception when calling CustomFilterApi->list_custom_filter: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -464,11 +464,11 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.CustomFilterApi(api_client)
 
     try:
-        api_response = api_instance.list_customfilter()
-        print("The response of CustomFilterApi->list_customfilter:\n")
+        api_response = api_instance.list_custom_filter()
+        print("The response of CustomFilterApi->list_custom_filter:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CustomFilterApi->list_customfilter: %s\n" % e)
+        print("Exception when calling CustomFilterApi->list_custom_filter: %s\n" % e)
 ```
 
 ### Parameters
@@ -494,8 +494,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **update_customfilter**
-> CustomFilterResource update_customfilter(id, custom_filter_resource=custom_filter_resource)
+# **update_custom_filter**
+> CustomFilterResource update_custom_filter(id, custom_filter_resource=custom_filter_resource)
 
 
 
@@ -540,11 +540,11 @@ with sonarr.ApiClient(configuration) as api_client:
     custom_filter_resource = sonarr.CustomFilterResource() # CustomFilterResource |  (optional)
 
     try:
-        api_response = api_instance.update_customfilter(id, custom_filter_resource=custom_filter_resource)
-        print("The response of CustomFilterApi->update_customfilter:\n")
+        api_response = api_instance.update_custom_filter(id, custom_filter_resource=custom_filter_resource)
+        print("The response of CustomFilterApi->update_custom_filter:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CustomFilterApi->update_customfilter: %s\n" % e)
+        print("Exception when calling CustomFilterApi->update_custom_filter: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -586,11 +586,11 @@ with sonarr.ApiClient(configuration) as api_client:
     custom_filter_resource = sonarr.CustomFilterResource() # CustomFilterResource |  (optional)
 
     try:
-        api_response = api_instance.update_customfilter(id, custom_filter_resource=custom_filter_resource)
-        print("The response of CustomFilterApi->update_customfilter:\n")
+        api_response = api_instance.update_custom_filter(id, custom_filter_resource=custom_filter_resource)
+        print("The response of CustomFilterApi->update_custom_filter:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CustomFilterApi->update_customfilter: %s\n" % e)
+        print("Exception when calling CustomFilterApi->update_custom_filter: %s\n" % e)
 ```
 
 ### Parameters

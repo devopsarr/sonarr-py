@@ -4,13 +4,13 @@ All URIs are relative to *http://localhost:8989*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_filesystem**](FileSystemApi.md#get_filesystem) | **GET** /api/v3/filesystem | 
-[**get_filesystem_mediafiles**](FileSystemApi.md#get_filesystem_mediafiles) | **GET** /api/v3/filesystem/mediafiles | 
-[**get_filesystem_type**](FileSystemApi.md#get_filesystem_type) | **GET** /api/v3/filesystem/type | 
+[**get_file_system**](FileSystemApi.md#get_file_system) | **GET** /api/v3/filesystem | 
+[**get_file_system_mediafiles**](FileSystemApi.md#get_file_system_mediafiles) | **GET** /api/v3/filesystem/mediafiles | 
+[**get_file_system_type**](FileSystemApi.md#get_file_system_type) | **GET** /api/v3/filesystem/type | 
 
 
-# **get_filesystem**
-> get_filesystem(path=path, include_files=include_files, allow_folders_without_trailing_slashes=allow_folders_without_trailing_slashes)
+# **get_file_system**
+> get_file_system(path=path, include_files=include_files, allow_folders_without_trailing_slashes=allow_folders_without_trailing_slashes)
 
 
 
@@ -56,9 +56,9 @@ with sonarr.ApiClient(configuration) as api_client:
     allow_folders_without_trailing_slashes = False # bool |  (optional) (default to False)
 
     try:
-        api_instance.get_filesystem(path=path, include_files=include_files, allow_folders_without_trailing_slashes=allow_folders_without_trailing_slashes)
+        api_instance.get_file_system(path=path, include_files=include_files, allow_folders_without_trailing_slashes=allow_folders_without_trailing_slashes)
     except Exception as e:
-        print("Exception when calling FileSystemApi->get_filesystem: %s\n" % e)
+        print("Exception when calling FileSystemApi->get_file_system: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -101,9 +101,9 @@ with sonarr.ApiClient(configuration) as api_client:
     allow_folders_without_trailing_slashes = False # bool |  (optional) (default to False)
 
     try:
-        api_instance.get_filesystem(path=path, include_files=include_files, allow_folders_without_trailing_slashes=allow_folders_without_trailing_slashes)
+        api_instance.get_file_system(path=path, include_files=include_files, allow_folders_without_trailing_slashes=allow_folders_without_trailing_slashes)
     except Exception as e:
-        print("Exception when calling FileSystemApi->get_filesystem: %s\n" % e)
+        print("Exception when calling FileSystemApi->get_file_system: %s\n" % e)
 ```
 
 ### Parameters
@@ -134,8 +134,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_filesystem_mediafiles**
-> get_filesystem_mediafiles(path=path)
+# **get_file_system_mediafiles**
+> get_file_system_mediafiles(path=path)
 
 
 
@@ -179,9 +179,9 @@ with sonarr.ApiClient(configuration) as api_client:
     path = 'path_example' # str |  (optional)
 
     try:
-        api_instance.get_filesystem_mediafiles(path=path)
+        api_instance.get_file_system_mediafiles(path=path)
     except Exception as e:
-        print("Exception when calling FileSystemApi->get_filesystem_mediafiles: %s\n" % e)
+        print("Exception when calling FileSystemApi->get_file_system_mediafiles: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -222,9 +222,9 @@ with sonarr.ApiClient(configuration) as api_client:
     path = 'path_example' # str |  (optional)
 
     try:
-        api_instance.get_filesystem_mediafiles(path=path)
+        api_instance.get_file_system_mediafiles(path=path)
     except Exception as e:
-        print("Exception when calling FileSystemApi->get_filesystem_mediafiles: %s\n" % e)
+        print("Exception when calling FileSystemApi->get_file_system_mediafiles: %s\n" % e)
 ```
 
 ### Parameters
@@ -253,8 +253,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_filesystem_type**
-> get_filesystem_type(path=path)
+# **get_file_system_type**
+> get_file_system_type(path=path)
 
 
 
@@ -298,9 +298,9 @@ with sonarr.ApiClient(configuration) as api_client:
     path = 'path_example' # str |  (optional)
 
     try:
-        api_instance.get_filesystem_type(path=path)
+        api_instance.get_file_system_type(path=path)
     except Exception as e:
-        print("Exception when calling FileSystemApi->get_filesystem_type: %s\n" % e)
+        print("Exception when calling FileSystemApi->get_file_system_type: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -341,9 +341,9 @@ with sonarr.ApiClient(configuration) as api_client:
     path = 'path_example' # str |  (optional)
 
     try:
-        api_instance.get_filesystem_type(path=path)
+        api_instance.get_file_system_type(path=path)
     except Exception as e:
-        print("Exception when calling FileSystemApi->get_filesystem_type: %s\n" % e)
+        print("Exception when calling FileSystemApi->get_file_system_type: %s\n" % e)
 ```
 
 ### Parameters

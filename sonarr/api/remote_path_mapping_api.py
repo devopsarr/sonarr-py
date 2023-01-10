@@ -43,13 +43,13 @@ class RemotePathMappingApi(object):
         self.api_client = api_client
 
     @validate_arguments
-    def create_remotepathmapping(self, remote_path_mapping_resource : Optional[RemotePathMappingResource] = None, **kwargs) -> RemotePathMappingResource:  # noqa: E501
-        """create_remotepathmapping  # noqa: E501
+    def create_remote_path_mapping(self, remote_path_mapping_resource : Optional[RemotePathMappingResource] = None, **kwargs) -> RemotePathMappingResource:  # noqa: E501
+        """create_remote_path_mapping  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_remotepathmapping(remote_path_mapping_resource, async_req=True)
+        >>> thread = api.create_remote_path_mapping(remote_path_mapping_resource, async_req=True)
         >>> result = thread.get()
 
         :param remote_path_mapping_resource:
@@ -70,16 +70,16 @@ class RemotePathMappingApi(object):
         :rtype: RemotePathMappingResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.create_remotepathmapping_with_http_info(remote_path_mapping_resource, **kwargs)  # noqa: E501
+        return self.create_remote_path_mapping_with_http_info(remote_path_mapping_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def create_remotepathmapping_with_http_info(self, remote_path_mapping_resource : Optional[RemotePathMappingResource] = None, **kwargs):  # noqa: E501
-        """create_remotepathmapping  # noqa: E501
+    def create_remote_path_mapping_with_http_info(self, remote_path_mapping_resource : Optional[RemotePathMappingResource] = None, **kwargs):  # noqa: E501
+        """create_remote_path_mapping  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_remotepathmapping_with_http_info(remote_path_mapping_resource, async_req=True)
+        >>> thread = api.create_remote_path_mapping_with_http_info(remote_path_mapping_resource, async_req=True)
         >>> result = thread.get()
 
         :param remote_path_mapping_resource:
@@ -130,7 +130,7 @@ class RemotePathMappingApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method create_remotepathmapping" % _key
+                    " to method create_remote_path_mapping" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -191,13 +191,13 @@ class RemotePathMappingApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def delete_remotepathmapping(self, id : StrictInt, **kwargs) -> None:  # noqa: E501
-        """delete_remotepathmapping  # noqa: E501
+    def delete_remote_path_mapping(self, id : StrictInt, **kwargs) -> None:  # noqa: E501
+        """delete_remote_path_mapping  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_remotepathmapping(id, async_req=True)
+        >>> thread = api.delete_remote_path_mapping(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -218,16 +218,16 @@ class RemotePathMappingApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.delete_remotepathmapping_with_http_info(id, **kwargs)  # noqa: E501
+        return self.delete_remote_path_mapping_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def delete_remotepathmapping_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """delete_remotepathmapping  # noqa: E501
+    def delete_remote_path_mapping_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """delete_remote_path_mapping  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_remotepathmapping_with_http_info(id, async_req=True)
+        >>> thread = api.delete_remote_path_mapping_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -278,7 +278,7 @@ class RemotePathMappingApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method delete_remotepathmapping" % _key
+                    " to method delete_remote_path_mapping" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -326,13 +326,13 @@ class RemotePathMappingApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def get_remotepathmapping_by_id(self, id : StrictInt, **kwargs) -> RemotePathMappingResource:  # noqa: E501
-        """get_remotepathmapping_by_id  # noqa: E501
+    def get_remote_path_mapping_by_id(self, id : StrictInt, **kwargs) -> RemotePathMappingResource:  # noqa: E501
+        """get_remote_path_mapping_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_remotepathmapping_by_id(id, async_req=True)
+        >>> thread = api.get_remote_path_mapping_by_id(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -353,16 +353,16 @@ class RemotePathMappingApi(object):
         :rtype: RemotePathMappingResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_remotepathmapping_by_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.get_remote_path_mapping_by_id_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_remotepathmapping_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """get_remotepathmapping_by_id  # noqa: E501
+    def get_remote_path_mapping_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """get_remote_path_mapping_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_remotepathmapping_by_id_with_http_info(id, async_req=True)
+        >>> thread = api.get_remote_path_mapping_by_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -413,7 +413,7 @@ class RemotePathMappingApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_remotepathmapping_by_id" % _key
+                    " to method get_remote_path_mapping_by_id" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -467,13 +467,13 @@ class RemotePathMappingApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def list_remotepathmapping(self, **kwargs) -> List[RemotePathMappingResource]:  # noqa: E501
-        """list_remotepathmapping  # noqa: E501
+    def list_remote_path_mapping(self, **kwargs) -> List[RemotePathMappingResource]:  # noqa: E501
+        """list_remote_path_mapping  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_remotepathmapping(async_req=True)
+        >>> thread = api.list_remote_path_mapping(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -492,16 +492,16 @@ class RemotePathMappingApi(object):
         :rtype: List[RemotePathMappingResource]
         """
         kwargs['_return_http_data_only'] = True
-        return self.list_remotepathmapping_with_http_info(**kwargs)  # noqa: E501
+        return self.list_remote_path_mapping_with_http_info(**kwargs)  # noqa: E501
 
     @validate_arguments
-    def list_remotepathmapping_with_http_info(self, **kwargs):  # noqa: E501
-        """list_remotepathmapping  # noqa: E501
+    def list_remote_path_mapping_with_http_info(self, **kwargs):  # noqa: E501
+        """list_remote_path_mapping  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_remotepathmapping_with_http_info(async_req=True)
+        >>> thread = api.list_remote_path_mapping_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -549,7 +549,7 @@ class RemotePathMappingApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method list_remotepathmapping" % _key
+                    " to method list_remote_path_mapping" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -601,13 +601,13 @@ class RemotePathMappingApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def update_remotepathmapping(self, id : StrictStr, remote_path_mapping_resource : Optional[RemotePathMappingResource] = None, **kwargs) -> RemotePathMappingResource:  # noqa: E501
-        """update_remotepathmapping  # noqa: E501
+    def update_remote_path_mapping(self, id : StrictStr, remote_path_mapping_resource : Optional[RemotePathMappingResource] = None, **kwargs) -> RemotePathMappingResource:  # noqa: E501
+        """update_remote_path_mapping  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_remotepathmapping(id, remote_path_mapping_resource, async_req=True)
+        >>> thread = api.update_remote_path_mapping(id, remote_path_mapping_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -630,16 +630,16 @@ class RemotePathMappingApi(object):
         :rtype: RemotePathMappingResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.update_remotepathmapping_with_http_info(id, remote_path_mapping_resource, **kwargs)  # noqa: E501
+        return self.update_remote_path_mapping_with_http_info(id, remote_path_mapping_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def update_remotepathmapping_with_http_info(self, id : StrictStr, remote_path_mapping_resource : Optional[RemotePathMappingResource] = None, **kwargs):  # noqa: E501
-        """update_remotepathmapping  # noqa: E501
+    def update_remote_path_mapping_with_http_info(self, id : StrictStr, remote_path_mapping_resource : Optional[RemotePathMappingResource] = None, **kwargs):  # noqa: E501
+        """update_remote_path_mapping  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_remotepathmapping_with_http_info(id, remote_path_mapping_resource, async_req=True)
+        >>> thread = api.update_remote_path_mapping_with_http_info(id, remote_path_mapping_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -693,7 +693,7 @@ class RemotePathMappingApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method update_remotepathmapping" % _key
+                    " to method update_remote_path_mapping" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']

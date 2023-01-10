@@ -4,17 +4,17 @@ All URIs are relative to *http://localhost:8989*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**delete_episodefile**](EpisodeFileApi.md#delete_episodefile) | **DELETE** /api/v3/episodefile/{id} | 
-[**delete_episodefile_bulk**](EpisodeFileApi.md#delete_episodefile_bulk) | **DELETE** /api/v3/episodefile/bulk | 
-[**get_episodefile_by_id**](EpisodeFileApi.md#get_episodefile_by_id) | **GET** /api/v3/episodefile/{id} | 
-[**list_episodefile**](EpisodeFileApi.md#list_episodefile) | **GET** /api/v3/episodefile | 
-[**put_episodefile_bulk**](EpisodeFileApi.md#put_episodefile_bulk) | **PUT** /api/v3/episodefile/bulk | 
-[**put_episodefile_editor**](EpisodeFileApi.md#put_episodefile_editor) | **PUT** /api/v3/episodefile/editor | 
-[**update_episodefile**](EpisodeFileApi.md#update_episodefile) | **PUT** /api/v3/episodefile/{id} | 
+[**delete_episode_file**](EpisodeFileApi.md#delete_episode_file) | **DELETE** /api/v3/episodefile/{id} | 
+[**delete_episode_file_bulk**](EpisodeFileApi.md#delete_episode_file_bulk) | **DELETE** /api/v3/episodefile/bulk | 
+[**get_episode_file_by_id**](EpisodeFileApi.md#get_episode_file_by_id) | **GET** /api/v3/episodefile/{id} | 
+[**list_episode_file**](EpisodeFileApi.md#list_episode_file) | **GET** /api/v3/episodefile | 
+[**put_episode_file_bulk**](EpisodeFileApi.md#put_episode_file_bulk) | **PUT** /api/v3/episodefile/bulk | 
+[**put_episode_file_editor**](EpisodeFileApi.md#put_episode_file_editor) | **PUT** /api/v3/episodefile/editor | 
+[**update_episode_file**](EpisodeFileApi.md#update_episode_file) | **PUT** /api/v3/episodefile/{id} | 
 
 
-# **delete_episodefile**
-> delete_episodefile(id)
+# **delete_episode_file**
+> delete_episode_file(id)
 
 
 
@@ -58,9 +58,9 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_instance.delete_episodefile(id)
+        api_instance.delete_episode_file(id)
     except Exception as e:
-        print("Exception when calling EpisodeFileApi->delete_episodefile: %s\n" % e)
+        print("Exception when calling EpisodeFileApi->delete_episode_file: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -101,9 +101,9 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_instance.delete_episodefile(id)
+        api_instance.delete_episode_file(id)
     except Exception as e:
-        print("Exception when calling EpisodeFileApi->delete_episodefile: %s\n" % e)
+        print("Exception when calling EpisodeFileApi->delete_episode_file: %s\n" % e)
 ```
 
 ### Parameters
@@ -132,8 +132,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **delete_episodefile_bulk**
-> delete_episodefile_bulk(episode_file_list_resource=episode_file_list_resource)
+# **delete_episode_file_bulk**
+> delete_episode_file_bulk(episode_file_list_resource=episode_file_list_resource)
 
 
 
@@ -177,9 +177,9 @@ with sonarr.ApiClient(configuration) as api_client:
     episode_file_list_resource = sonarr.EpisodeFileListResource() # EpisodeFileListResource |  (optional)
 
     try:
-        api_instance.delete_episodefile_bulk(episode_file_list_resource=episode_file_list_resource)
+        api_instance.delete_episode_file_bulk(episode_file_list_resource=episode_file_list_resource)
     except Exception as e:
-        print("Exception when calling EpisodeFileApi->delete_episodefile_bulk: %s\n" % e)
+        print("Exception when calling EpisodeFileApi->delete_episode_file_bulk: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -220,9 +220,9 @@ with sonarr.ApiClient(configuration) as api_client:
     episode_file_list_resource = sonarr.EpisodeFileListResource() # EpisodeFileListResource |  (optional)
 
     try:
-        api_instance.delete_episodefile_bulk(episode_file_list_resource=episode_file_list_resource)
+        api_instance.delete_episode_file_bulk(episode_file_list_resource=episode_file_list_resource)
     except Exception as e:
-        print("Exception when calling EpisodeFileApi->delete_episodefile_bulk: %s\n" % e)
+        print("Exception when calling EpisodeFileApi->delete_episode_file_bulk: %s\n" % e)
 ```
 
 ### Parameters
@@ -251,8 +251,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_episodefile_by_id**
-> EpisodeFileResource get_episodefile_by_id(id)
+# **get_episode_file_by_id**
+> EpisodeFileResource get_episode_file_by_id(id)
 
 
 
@@ -296,11 +296,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_episodefile_by_id(id)
-        print("The response of EpisodeFileApi->get_episodefile_by_id:\n")
+        api_response = api_instance.get_episode_file_by_id(id)
+        print("The response of EpisodeFileApi->get_episode_file_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling EpisodeFileApi->get_episodefile_by_id: %s\n" % e)
+        print("Exception when calling EpisodeFileApi->get_episode_file_by_id: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -341,11 +341,11 @@ with sonarr.ApiClient(configuration) as api_client:
     id = 56 # int | 
 
     try:
-        api_response = api_instance.get_episodefile_by_id(id)
-        print("The response of EpisodeFileApi->get_episodefile_by_id:\n")
+        api_response = api_instance.get_episode_file_by_id(id)
+        print("The response of EpisodeFileApi->get_episode_file_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling EpisodeFileApi->get_episodefile_by_id: %s\n" % e)
+        print("Exception when calling EpisodeFileApi->get_episode_file_by_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -374,8 +374,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **list_episodefile**
-> List[EpisodeFileResource] list_episodefile(series_id=series_id, episode_file_ids=episode_file_ids)
+# **list_episode_file**
+> List[EpisodeFileResource] list_episode_file(series_id=series_id, episode_file_ids=episode_file_ids)
 
 
 
@@ -420,11 +420,11 @@ with sonarr.ApiClient(configuration) as api_client:
     episode_file_ids = [56] # List[int] |  (optional)
 
     try:
-        api_response = api_instance.list_episodefile(series_id=series_id, episode_file_ids=episode_file_ids)
-        print("The response of EpisodeFileApi->list_episodefile:\n")
+        api_response = api_instance.list_episode_file(series_id=series_id, episode_file_ids=episode_file_ids)
+        print("The response of EpisodeFileApi->list_episode_file:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling EpisodeFileApi->list_episodefile: %s\n" % e)
+        print("Exception when calling EpisodeFileApi->list_episode_file: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -466,11 +466,11 @@ with sonarr.ApiClient(configuration) as api_client:
     episode_file_ids = [56] # List[int] |  (optional)
 
     try:
-        api_response = api_instance.list_episodefile(series_id=series_id, episode_file_ids=episode_file_ids)
-        print("The response of EpisodeFileApi->list_episodefile:\n")
+        api_response = api_instance.list_episode_file(series_id=series_id, episode_file_ids=episode_file_ids)
+        print("The response of EpisodeFileApi->list_episode_file:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling EpisodeFileApi->list_episodefile: %s\n" % e)
+        print("Exception when calling EpisodeFileApi->list_episode_file: %s\n" % e)
 ```
 
 ### Parameters
@@ -500,8 +500,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **put_episodefile_bulk**
-> put_episodefile_bulk(episode_file_resource=episode_file_resource)
+# **put_episode_file_bulk**
+> put_episode_file_bulk(episode_file_resource=episode_file_resource)
 
 
 
@@ -545,9 +545,9 @@ with sonarr.ApiClient(configuration) as api_client:
     episode_file_resource = [sonarr.EpisodeFileResource()] # List[EpisodeFileResource] |  (optional)
 
     try:
-        api_instance.put_episodefile_bulk(episode_file_resource=episode_file_resource)
+        api_instance.put_episode_file_bulk(episode_file_resource=episode_file_resource)
     except Exception as e:
-        print("Exception when calling EpisodeFileApi->put_episodefile_bulk: %s\n" % e)
+        print("Exception when calling EpisodeFileApi->put_episode_file_bulk: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -588,9 +588,9 @@ with sonarr.ApiClient(configuration) as api_client:
     episode_file_resource = [sonarr.EpisodeFileResource()] # List[EpisodeFileResource] |  (optional)
 
     try:
-        api_instance.put_episodefile_bulk(episode_file_resource=episode_file_resource)
+        api_instance.put_episode_file_bulk(episode_file_resource=episode_file_resource)
     except Exception as e:
-        print("Exception when calling EpisodeFileApi->put_episodefile_bulk: %s\n" % e)
+        print("Exception when calling EpisodeFileApi->put_episode_file_bulk: %s\n" % e)
 ```
 
 ### Parameters
@@ -619,8 +619,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **put_episodefile_editor**
-> put_episodefile_editor(episode_file_list_resource=episode_file_list_resource)
+# **put_episode_file_editor**
+> put_episode_file_editor(episode_file_list_resource=episode_file_list_resource)
 
 
 
@@ -664,9 +664,9 @@ with sonarr.ApiClient(configuration) as api_client:
     episode_file_list_resource = sonarr.EpisodeFileListResource() # EpisodeFileListResource |  (optional)
 
     try:
-        api_instance.put_episodefile_editor(episode_file_list_resource=episode_file_list_resource)
+        api_instance.put_episode_file_editor(episode_file_list_resource=episode_file_list_resource)
     except Exception as e:
-        print("Exception when calling EpisodeFileApi->put_episodefile_editor: %s\n" % e)
+        print("Exception when calling EpisodeFileApi->put_episode_file_editor: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -707,9 +707,9 @@ with sonarr.ApiClient(configuration) as api_client:
     episode_file_list_resource = sonarr.EpisodeFileListResource() # EpisodeFileListResource |  (optional)
 
     try:
-        api_instance.put_episodefile_editor(episode_file_list_resource=episode_file_list_resource)
+        api_instance.put_episode_file_editor(episode_file_list_resource=episode_file_list_resource)
     except Exception as e:
-        print("Exception when calling EpisodeFileApi->put_episodefile_editor: %s\n" % e)
+        print("Exception when calling EpisodeFileApi->put_episode_file_editor: %s\n" % e)
 ```
 
 ### Parameters
@@ -738,8 +738,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **update_episodefile**
-> EpisodeFileResource update_episodefile(id, episode_file_resource=episode_file_resource)
+# **update_episode_file**
+> EpisodeFileResource update_episode_file(id, episode_file_resource=episode_file_resource)
 
 
 
@@ -784,11 +784,11 @@ with sonarr.ApiClient(configuration) as api_client:
     episode_file_resource = sonarr.EpisodeFileResource() # EpisodeFileResource |  (optional)
 
     try:
-        api_response = api_instance.update_episodefile(id, episode_file_resource=episode_file_resource)
-        print("The response of EpisodeFileApi->update_episodefile:\n")
+        api_response = api_instance.update_episode_file(id, episode_file_resource=episode_file_resource)
+        print("The response of EpisodeFileApi->update_episode_file:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling EpisodeFileApi->update_episodefile: %s\n" % e)
+        print("Exception when calling EpisodeFileApi->update_episode_file: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -830,11 +830,11 @@ with sonarr.ApiClient(configuration) as api_client:
     episode_file_resource = sonarr.EpisodeFileResource() # EpisodeFileResource |  (optional)
 
     try:
-        api_response = api_instance.update_episodefile(id, episode_file_resource=episode_file_resource)
-        print("The response of EpisodeFileApi->update_episodefile:\n")
+        api_response = api_instance.update_episode_file(id, episode_file_resource=episode_file_resource)
+        print("The response of EpisodeFileApi->update_episode_file:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling EpisodeFileApi->update_episodefile: %s\n" % e)
+        print("Exception when calling EpisodeFileApi->update_episode_file: %s\n" % e)
 ```
 
 ### Parameters

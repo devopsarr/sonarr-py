@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost:8989*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_manualimport**](ManualImportApi.md#create_manualimport) | **POST** /api/v3/manualimport | 
-[**list_manualimport**](ManualImportApi.md#list_manualimport) | **GET** /api/v3/manualimport | 
+[**create_manual_import**](ManualImportApi.md#create_manual_import) | **POST** /api/v3/manualimport | 
+[**list_manual_import**](ManualImportApi.md#list_manual_import) | **GET** /api/v3/manualimport | 
 
 
-# **create_manualimport**
-> create_manualimport(manual_import_reprocess_resource=manual_import_reprocess_resource)
+# **create_manual_import**
+> create_manual_import(manual_import_reprocess_resource=manual_import_reprocess_resource)
 
 
 
@@ -53,9 +53,9 @@ with sonarr.ApiClient(configuration) as api_client:
     manual_import_reprocess_resource = [sonarr.ManualImportReprocessResource()] # List[ManualImportReprocessResource] |  (optional)
 
     try:
-        api_instance.create_manualimport(manual_import_reprocess_resource=manual_import_reprocess_resource)
+        api_instance.create_manual_import(manual_import_reprocess_resource=manual_import_reprocess_resource)
     except Exception as e:
-        print("Exception when calling ManualImportApi->create_manualimport: %s\n" % e)
+        print("Exception when calling ManualImportApi->create_manual_import: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -96,9 +96,9 @@ with sonarr.ApiClient(configuration) as api_client:
     manual_import_reprocess_resource = [sonarr.ManualImportReprocessResource()] # List[ManualImportReprocessResource] |  (optional)
 
     try:
-        api_instance.create_manualimport(manual_import_reprocess_resource=manual_import_reprocess_resource)
+        api_instance.create_manual_import(manual_import_reprocess_resource=manual_import_reprocess_resource)
     except Exception as e:
-        print("Exception when calling ManualImportApi->create_manualimport: %s\n" % e)
+        print("Exception when calling ManualImportApi->create_manual_import: %s\n" % e)
 ```
 
 ### Parameters
@@ -127,8 +127,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **list_manualimport**
-> List[ManualImportResource] list_manualimport(folder=folder, download_id=download_id, series_id=series_id, season_number=season_number, filter_existing_files=filter_existing_files)
+# **list_manual_import**
+> List[ManualImportResource] list_manual_import(folder=folder, download_id=download_id, series_id=series_id, season_number=season_number, filter_existing_files=filter_existing_files)
 
 
 
@@ -176,11 +176,11 @@ with sonarr.ApiClient(configuration) as api_client:
     filter_existing_files = True # bool |  (optional) (default to True)
 
     try:
-        api_response = api_instance.list_manualimport(folder=folder, download_id=download_id, series_id=series_id, season_number=season_number, filter_existing_files=filter_existing_files)
-        print("The response of ManualImportApi->list_manualimport:\n")
+        api_response = api_instance.list_manual_import(folder=folder, download_id=download_id, series_id=series_id, season_number=season_number, filter_existing_files=filter_existing_files)
+        print("The response of ManualImportApi->list_manual_import:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ManualImportApi->list_manualimport: %s\n" % e)
+        print("Exception when calling ManualImportApi->list_manual_import: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -225,11 +225,11 @@ with sonarr.ApiClient(configuration) as api_client:
     filter_existing_files = True # bool |  (optional) (default to True)
 
     try:
-        api_response = api_instance.list_manualimport(folder=folder, download_id=download_id, series_id=series_id, season_number=season_number, filter_existing_files=filter_existing_files)
-        print("The response of ManualImportApi->list_manualimport:\n")
+        api_response = api_instance.list_manual_import(folder=folder, download_id=download_id, series_id=series_id, season_number=season_number, filter_existing_files=filter_existing_files)
+        print("The response of ManualImportApi->list_manual_import:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ManualImportApi->list_manualimport: %s\n" % e)
+        print("Exception when calling ManualImportApi->list_manual_import: %s\n" % e)
 ```
 
 ### Parameters

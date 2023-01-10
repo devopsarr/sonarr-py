@@ -43,13 +43,13 @@ class ImportListExclusionApi(object):
         self.api_client = api_client
 
     @validate_arguments
-    def create_importlistexclusion(self, import_list_exclusion_resource : Optional[ImportListExclusionResource] = None, **kwargs) -> ImportListExclusionResource:  # noqa: E501
-        """create_importlistexclusion  # noqa: E501
+    def create_import_list_exclusion(self, import_list_exclusion_resource : Optional[ImportListExclusionResource] = None, **kwargs) -> ImportListExclusionResource:  # noqa: E501
+        """create_import_list_exclusion  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_importlistexclusion(import_list_exclusion_resource, async_req=True)
+        >>> thread = api.create_import_list_exclusion(import_list_exclusion_resource, async_req=True)
         >>> result = thread.get()
 
         :param import_list_exclusion_resource:
@@ -70,16 +70,16 @@ class ImportListExclusionApi(object):
         :rtype: ImportListExclusionResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.create_importlistexclusion_with_http_info(import_list_exclusion_resource, **kwargs)  # noqa: E501
+        return self.create_import_list_exclusion_with_http_info(import_list_exclusion_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def create_importlistexclusion_with_http_info(self, import_list_exclusion_resource : Optional[ImportListExclusionResource] = None, **kwargs):  # noqa: E501
-        """create_importlistexclusion  # noqa: E501
+    def create_import_list_exclusion_with_http_info(self, import_list_exclusion_resource : Optional[ImportListExclusionResource] = None, **kwargs):  # noqa: E501
+        """create_import_list_exclusion  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_importlistexclusion_with_http_info(import_list_exclusion_resource, async_req=True)
+        >>> thread = api.create_import_list_exclusion_with_http_info(import_list_exclusion_resource, async_req=True)
         >>> result = thread.get()
 
         :param import_list_exclusion_resource:
@@ -130,7 +130,7 @@ class ImportListExclusionApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method create_importlistexclusion" % _key
+                    " to method create_import_list_exclusion" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -191,13 +191,13 @@ class ImportListExclusionApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def delete_importlistexclusion(self, id : StrictInt, **kwargs) -> None:  # noqa: E501
-        """delete_importlistexclusion  # noqa: E501
+    def delete_import_list_exclusion(self, id : StrictInt, **kwargs) -> None:  # noqa: E501
+        """delete_import_list_exclusion  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_importlistexclusion(id, async_req=True)
+        >>> thread = api.delete_import_list_exclusion(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -218,16 +218,16 @@ class ImportListExclusionApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.delete_importlistexclusion_with_http_info(id, **kwargs)  # noqa: E501
+        return self.delete_import_list_exclusion_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def delete_importlistexclusion_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """delete_importlistexclusion  # noqa: E501
+    def delete_import_list_exclusion_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """delete_import_list_exclusion  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.delete_importlistexclusion_with_http_info(id, async_req=True)
+        >>> thread = api.delete_import_list_exclusion_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -278,7 +278,7 @@ class ImportListExclusionApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method delete_importlistexclusion" % _key
+                    " to method delete_import_list_exclusion" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -326,13 +326,13 @@ class ImportListExclusionApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def get_importlistexclusion_by_id(self, id : StrictInt, **kwargs) -> ImportListExclusionResource:  # noqa: E501
-        """get_importlistexclusion_by_id  # noqa: E501
+    def get_import_list_exclusion_by_id(self, id : StrictInt, **kwargs) -> ImportListExclusionResource:  # noqa: E501
+        """get_import_list_exclusion_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_importlistexclusion_by_id(id, async_req=True)
+        >>> thread = api.get_import_list_exclusion_by_id(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -353,16 +353,16 @@ class ImportListExclusionApi(object):
         :rtype: ImportListExclusionResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_importlistexclusion_by_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.get_import_list_exclusion_by_id_with_http_info(id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_importlistexclusion_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
-        """get_importlistexclusion_by_id  # noqa: E501
+    def get_import_list_exclusion_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+        """get_import_list_exclusion_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_importlistexclusion_by_id_with_http_info(id, async_req=True)
+        >>> thread = api.get_import_list_exclusion_by_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -413,7 +413,7 @@ class ImportListExclusionApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_importlistexclusion_by_id" % _key
+                    " to method get_import_list_exclusion_by_id" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -467,13 +467,13 @@ class ImportListExclusionApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def list_importlistexclusion(self, **kwargs) -> List[ImportListExclusionResource]:  # noqa: E501
-        """list_importlistexclusion  # noqa: E501
+    def list_import_list_exclusion(self, **kwargs) -> List[ImportListExclusionResource]:  # noqa: E501
+        """list_import_list_exclusion  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_importlistexclusion(async_req=True)
+        >>> thread = api.list_import_list_exclusion(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -492,16 +492,16 @@ class ImportListExclusionApi(object):
         :rtype: List[ImportListExclusionResource]
         """
         kwargs['_return_http_data_only'] = True
-        return self.list_importlistexclusion_with_http_info(**kwargs)  # noqa: E501
+        return self.list_import_list_exclusion_with_http_info(**kwargs)  # noqa: E501
 
     @validate_arguments
-    def list_importlistexclusion_with_http_info(self, **kwargs):  # noqa: E501
-        """list_importlistexclusion  # noqa: E501
+    def list_import_list_exclusion_with_http_info(self, **kwargs):  # noqa: E501
+        """list_import_list_exclusion  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_importlistexclusion_with_http_info(async_req=True)
+        >>> thread = api.list_import_list_exclusion_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req: Whether to execute the request asynchronously.
@@ -549,7 +549,7 @@ class ImportListExclusionApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method list_importlistexclusion" % _key
+                    " to method list_import_list_exclusion" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
@@ -601,13 +601,13 @@ class ImportListExclusionApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def update_importlistexclusion(self, id : StrictStr, import_list_exclusion_resource : Optional[ImportListExclusionResource] = None, **kwargs) -> ImportListExclusionResource:  # noqa: E501
-        """update_importlistexclusion  # noqa: E501
+    def update_import_list_exclusion(self, id : StrictStr, import_list_exclusion_resource : Optional[ImportListExclusionResource] = None, **kwargs) -> ImportListExclusionResource:  # noqa: E501
+        """update_import_list_exclusion  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_importlistexclusion(id, import_list_exclusion_resource, async_req=True)
+        >>> thread = api.update_import_list_exclusion(id, import_list_exclusion_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -630,16 +630,16 @@ class ImportListExclusionApi(object):
         :rtype: ImportListExclusionResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.update_importlistexclusion_with_http_info(id, import_list_exclusion_resource, **kwargs)  # noqa: E501
+        return self.update_import_list_exclusion_with_http_info(id, import_list_exclusion_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def update_importlistexclusion_with_http_info(self, id : StrictStr, import_list_exclusion_resource : Optional[ImportListExclusionResource] = None, **kwargs):  # noqa: E501
-        """update_importlistexclusion  # noqa: E501
+    def update_import_list_exclusion_with_http_info(self, id : StrictStr, import_list_exclusion_resource : Optional[ImportListExclusionResource] = None, **kwargs):  # noqa: E501
+        """update_import_list_exclusion  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.update_importlistexclusion_with_http_info(id, import_list_exclusion_resource, async_req=True)
+        >>> thread = api.update_import_list_exclusion_with_http_info(id, import_list_exclusion_resource, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
@@ -693,7 +693,7 @@ class ImportListExclusionApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method update_importlistexclusion" % _key
+                    " to method update_import_list_exclusion" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
