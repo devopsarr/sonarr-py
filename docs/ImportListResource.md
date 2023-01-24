@@ -22,7 +22,6 @@ Name | Type | Description | Notes
 **season_folder** | **bool** |  | [optional] 
 **list_type** | [**ImportListType**](ImportListType.md) |  | [optional] 
 **list_order** | **int** |  | [optional] 
-**language_profile_id** | **int** |  | [optional] 
 
 ## Example
 

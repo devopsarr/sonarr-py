@@ -49,8 +49,7 @@ class ImportListResource(BaseModel):
     season_folder: Optional[bool]
     list_type: Optional[ImportListType]
     list_order: Optional[int]
-    language_profile_id: Optional[int]
-    __properties = ["id", "name", "fields", "implementationName", "implementation", "configContract", "infoLink", "message", "tags", "presets", "enableAutomaticAdd", "shouldMonitor", "rootFolderPath", "qualityProfileId", "seriesType", "seasonFolder", "listType", "listOrder", "languageProfileId"]
+    __properties = ["id", "name", "fields", "implementationName", "implementation", "configContract", "infoLink", "message", "tags", "presets", "enableAutomaticAdd", "shouldMonitor", "rootFolderPath", "qualityProfileId", "seriesType", "seasonFolder", "listType", "listOrder"]
 
     class Config:
         allow_population_by_field_name = True
@@ -161,8 +160,7 @@ class ImportListResource(BaseModel):
             "series_type": obj.get("seriesType"),
             "season_folder": obj.get("seasonFolder"),
             "list_type": obj.get("listType"),
-            "list_order": obj.get("listOrder"),
-            "language_profile_id": obj.get("languageProfileId")
+            "list_order": obj.get("listOrder")
         })
         return _obj
 
