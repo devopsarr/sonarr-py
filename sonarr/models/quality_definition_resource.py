@@ -33,7 +33,8 @@ class QualityDefinitionResource(BaseModel):
     weight: Optional[int]
     min_size: Optional[float]
     max_size: Optional[float]
-    __properties = ["id", "quality", "title", "weight", "minSize", "maxSize"]
+    preferred_size: Optional[float]
+    __properties = ["id", "quality", "title", "weight", "minSize", "maxSize", "preferredSize"]
 
     class Config:
         allow_population_by_field_name = True
@@ -77,6 +78,10 @@ class QualityDefinitionResource(BaseModel):
         if self.max_size is None:
             _dict['maxSize'] = None
 
+        # set to None if preferred_size (nullable) is None
+        if self.preferred_size is None:
+            _dict['preferredSize'] = None
+
         return _dict
 
     @classmethod
@@ -94,7 +99,8 @@ class QualityDefinitionResource(BaseModel):
             "title": obj.get("title"),
             "weight": obj.get("weight"),
             "min_size": obj.get("minSize"),
-            "max_size": obj.get("maxSize")
+            "max_size": obj.get("maxSize"),
+            "preferred_size": obj.get("preferredSize")
         })
         return _obj
 

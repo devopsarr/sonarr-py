@@ -20,6 +20,8 @@ from sonarr.models.alternate_title_resource import AlternateTitleResource
 from sonarr.models.apply_tags import ApplyTags
 from sonarr.models.authentication_required_type import AuthenticationRequiredType
 from sonarr.models.authentication_type import AuthenticationType
+from sonarr.models.auto_tagging_resource import AutoTaggingResource
+from sonarr.models.auto_tagging_specification_schema import AutoTaggingSpecificationSchema
 from sonarr.models.backup_resource import BackupResource
 from sonarr.models.backup_type import BackupType
 from sonarr.models.blocklist_bulk_resource import BlocklistBulkResource
@@ -63,6 +65,7 @@ from sonarr.models.language import Language
 from sonarr.models.language_profile_item_resource import LanguageProfileItemResource
 from sonarr.models.language_profile_resource import LanguageProfileResource
 from sonarr.models.language_resource import LanguageResource
+from sonarr.models.localization_language_resource import LocalizationLanguageResource
 from sonarr.models.localization_resource import LocalizationResource
 from sonarr.models.log_file_resource import LogFileResource
 from sonarr.models.log_resource import LogResource

@@ -9,7 +9,9 @@ Name | Type | Description | Notes
 **task_name** | **str** |  | [optional] 
 **interval** | **int** |  | [optional] 
 **last_execution** | **datetime** |  | [optional] 
+**last_start_time** | **datetime** |  | [optional] 
 **next_execution** | **datetime** |  | [optional] 
+**last_duration** | [**TimeSpan**](TimeSpan.md) |  | [optional] 
 
 ## Example
 

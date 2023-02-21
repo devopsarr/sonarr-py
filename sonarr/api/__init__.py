@@ -15,6 +15,7 @@
 # import apis into api package
 from sonarr.api.api_info_api import ApiInfoApi
 from sonarr.api.authentication_api import AuthenticationApi
+from sonarr.api.auto_tagging_api import AutoTaggingApi
 from sonarr.api.backup_api import BackupApi
 from sonarr.api.blocklist_api import BlocklistApi
 from sonarr.api.calendar_api import CalendarApi

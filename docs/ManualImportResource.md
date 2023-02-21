@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **languages** | [**List[Language]**](Language.md) |  | [optional] 
 **quality_weight** | **int** |  | [optional] 
 **download_id** | **str** |  | [optional] 
+**custom_formats** | [**List[CustomFormatResource]**](CustomFormatResource.md) |  | [optional] 
 **rejections** | [**List[Rejection]**](Rejection.md) |  | [optional] 
 
 ## Example

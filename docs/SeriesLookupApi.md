@@ -4,11 +4,11 @@ All URIs are relative to *http://localhost:8989*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**list_series_lookup**](SeriesLookupApi.md#list_series_lookup) | **GET** /api/v3/series/lookup | 
+[**get_series_lookup**](SeriesLookupApi.md#get_series_lookup) | **GET** /api/v3/series/lookup | 
 
 
-# **list_series_lookup**
-> List[SeriesResource] list_series_lookup(term=term)
+# **get_series_lookup**
+> List[SeriesResource] get_series_lookup(term=term)
 
 
 
@@ -52,11 +52,11 @@ with sonarr.ApiClient(configuration) as api_client:
     term = 'term_example' # str |  (optional)
 
     try:
-        api_response = api_instance.list_series_lookup(term=term)
-        print("The response of SeriesLookupApi->list_series_lookup:\n")
+        api_response = api_instance.get_series_lookup(term=term)
+        print("The response of SeriesLookupApi->get_series_lookup:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling SeriesLookupApi->list_series_lookup: %s\n" % e)
+        print("Exception when calling SeriesLookupApi->get_series_lookup: %s\n" % e)
 ```
 
 * Api Key Authentication (apikey):
@@ -97,11 +97,11 @@ with sonarr.ApiClient(configuration) as api_client:
     term = 'term_example' # str |  (optional)
 
     try:
-        api_response = api_instance.list_series_lookup(term=term)
-        print("The response of SeriesLookupApi->list_series_lookup:\n")
+        api_response = api_instance.get_series_lookup(term=term)
+        print("The response of SeriesLookupApi->get_series_lookup:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling SeriesLookupApi->list_series_lookup: %s\n" % e)
+        print("Exception when calling SeriesLookupApi->get_series_lookup: %s\n" % e)
 ```
 
 ### Parameters

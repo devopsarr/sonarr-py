@@ -8,6 +8,9 @@ docs/ApplyTags.md
 docs/AuthenticationApi.md
 docs/AuthenticationRequiredType.md
 docs/AuthenticationType.md
+docs/AutoTaggingApi.md
+docs/AutoTaggingResource.md
+docs/AutoTaggingSpecificationSchema.md
 docs/BackupApi.md
 docs/BackupResource.md
 docs/BackupType.md
@@ -78,6 +81,7 @@ docs/LanguageProfileResource.md
 docs/LanguageProfileSchemaApi.md
 docs/LanguageResource.md
 docs/LocalizationApi.md
+docs/LocalizationLanguageResource.md
 docs/LocalizationResource.md
 docs/LogApi.md
 docs/LogFileApi.md
@@ -193,6 +197,7 @@ sonarr/__init__.py
 sonarr/api/__init__.py
 sonarr/api/api_info_api.py
 sonarr/api/authentication_api.py
+sonarr/api/auto_tagging_api.py
 sonarr/api/backup_api.py
 sonarr/api/blocklist_api.py
 sonarr/api/calendar_api.py
@@ -266,6 +271,8 @@ sonarr/models/alternate_title_resource.py
 sonarr/models/apply_tags.py
 sonarr/models/authentication_required_type.py
 sonarr/models/authentication_type.py
+sonarr/models/auto_tagging_resource.py
+sonarr/models/auto_tagging_specification_schema.py
 sonarr/models/backup_resource.py
 sonarr/models/backup_type.py
 sonarr/models/blocklist_bulk_resource.py
@@ -309,6 +316,7 @@ sonarr/models/language.py
 sonarr/models/language_profile_item_resource.py
 sonarr/models/language_profile_resource.py
 sonarr/models/language_resource.py
+sonarr/models/localization_language_resource.py
 sonarr/models/localization_resource.py
 sonarr/models/log_file_resource.py
 sonarr/models/log_resource.py

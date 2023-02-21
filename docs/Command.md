@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **is_long_running** | **bool** |  | [optional] [readonly] 
 **name** | **str** |  | [optional] [readonly] 
 **last_execution_time** | **datetime** |  | [optional] 
+**last_start_time** | **datetime** |  | [optional] 
 **trigger** | [**CommandTrigger**](CommandTrigger.md) |  | [optional] 
 **suppress_messages** | **bool** |  | [optional] 
 **client_user_agent** | **str** |  | [optional] 

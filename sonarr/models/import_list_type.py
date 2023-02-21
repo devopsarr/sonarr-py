@@ -33,6 +33,7 @@ class ImportListType(str, Enum):
     PROGRAM = 'program'
     PLEX = 'plex'
     TRAKT = 'trakt'
+    SIMKL = 'simkl'
     OTHER = 'other'
     ADVANCED = 'advanced'
 
