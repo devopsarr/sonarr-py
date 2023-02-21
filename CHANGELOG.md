@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/devopsarr/sonarr-py/compare/v0.4.0...v0.5.0) (2023-02-21)
+
+
+### Features
+
+* add autotagging ([2164d37](https://github.com/devopsarr/sonarr-py/commit/2164d3798cbc25841b2272645caf20df881d8bcb))
+
 ## 0.4.0 (2023-01-24)
 
 
