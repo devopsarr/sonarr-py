@@ -14,7 +14,7 @@
 
 from __future__ import absolute_import
 
-__version__ = "0.5.1"
+__version__ = "0.6.0"
 
 # import apis into sdk package
 from sonarr.api.api_info_api import ApiInfoApi
