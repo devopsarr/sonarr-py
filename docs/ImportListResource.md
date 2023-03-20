@@ -22,7 +22,7 @@ Name | Type | Description | Notes
 **season_folder** | **bool** |  | [optional] 
 **list_type** | [**ImportListType**](ImportListType.md) |  | [optional] 
 **list_order** | **int** |  | [optional] 
-**min_refresh_interval** | [**TimeSpan**](TimeSpan.md) |  | [optional] 
+**min_refresh_interval** | **str** |  | [optional] 
 
 ## Example
 
