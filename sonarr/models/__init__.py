@@ -55,7 +55,6 @@ from sonarr.models.health_resource import HealthResource
 from sonarr.models.history_resource import HistoryResource
 from sonarr.models.history_resource_paging_resource import HistoryResourcePagingResource
 from sonarr.models.host_config_resource import HostConfigResource
-from sonarr.models.http_uri import HttpUri
 from sonarr.models.import_list_exclusion_resource import ImportListExclusionResource
 from sonarr.models.import_list_resource import ImportListResource
 from sonarr.models.import_list_type import ImportListType
