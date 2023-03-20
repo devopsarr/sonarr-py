@@ -18,7 +18,7 @@ import json
 
 from datetime import datetime
 from typing import Optional
-from pydantic import BaseModel
+from pydantic import BaseModel, validator
 from sonarr.models.command import Command
 from sonarr.models.command_priority import CommandPriority
 from sonarr.models.command_status import CommandStatus

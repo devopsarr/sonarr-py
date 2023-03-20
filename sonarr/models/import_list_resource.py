@@ -18,7 +18,7 @@ import json
 
 
 from typing import List, Optional
-from pydantic import BaseModel
+from pydantic import BaseModel, validator
 from sonarr.models.field import Field
 from sonarr.models.import_list_type import ImportListType
 from sonarr.models.monitor_types import MonitorTypes
