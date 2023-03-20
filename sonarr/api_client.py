@@ -77,7 +77,7 @@ class ApiClient(object):
             self.default_headers[header_name] = header_value
         self.cookie = cookie
         # Set default User-Agent.
-        self.user_agent = 'Sonarr-py/v0.0.1'
+        self.user_agent = 'sonarr-py/v0.5.1'
         self.client_side_validation = configuration.client_side_validation
 
     def __enter__(self):
@@ -543,7 +543,7 @@ class ApiClient(object):
             else:
                 new_params.append((k, v))
 
-        return "&".join(["=".join(item) for item in new_params])
+        return "&".join(["=".join(repr(item)) for item in new_params])
 
     def files_parameters(self, files=None):
         """Builds form parameters.
