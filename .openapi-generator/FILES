@@ -62,7 +62,6 @@ docs/HistoryResource.md
 docs/HistoryResourcePagingResource.md
 docs/HostConfigApi.md
 docs/HostConfigResource.md
-docs/HttpUri.md
 docs/ImportListApi.md
 docs/ImportListExclusionApi.md
 docs/ImportListExclusionResource.md
@@ -178,7 +177,6 @@ docs/TagDetailsResource.md
 docs/TagResource.md
 docs/TaskApi.md
 docs/TaskResource.md
-docs/TimeSpan.md
 docs/TrackedDownloadState.md
 docs/TrackedDownloadStatus.md
 docs/TrackedDownloadStatusMessage.md
@@ -306,7 +304,6 @@ sonarr/models/health_resource.py
 sonarr/models/history_resource.py
 sonarr/models/history_resource_paging_resource.py
 sonarr/models/host_config_resource.py
-sonarr/models/http_uri.py
 sonarr/models/import_list_exclusion_resource.py
 sonarr/models/import_list_resource.py
 sonarr/models/import_list_type.py
@@ -379,7 +376,6 @@ sonarr/models/system_resource.py
 sonarr/models/tag_details_resource.py
 sonarr/models/tag_resource.py
 sonarr/models/task_resource.py
-sonarr/models/time_span.py
 sonarr/models/tracked_download_state.py
 sonarr/models/tracked_download_status.py
 sonarr/models/tracked_download_status_message.py

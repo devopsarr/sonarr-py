@@ -43,13 +43,13 @@ class SeriesLookupApi(object):
         self.api_client = api_client
 
     @validate_arguments
-    def get_series_lookup(self, term : Optional[StrictStr] = None, **kwargs) -> List[SeriesResource]:  # noqa: E501
-        """get_series_lookup  # noqa: E501
+    def list_series_lookup(self, term : Optional[StrictStr] = None, **kwargs) -> List[SeriesResource]:  # noqa: E501
+        """list_series_lookup  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_series_lookup(term, async_req=True)
+        >>> thread = api.list_series_lookup(term, async_req=True)
         >>> result = thread.get()
 
         :param term:
@@ -70,16 +70,16 @@ class SeriesLookupApi(object):
         :rtype: List[SeriesResource]
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_series_lookup_with_http_info(term, **kwargs)  # noqa: E501
+        return self.list_series_lookup_with_http_info(term, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_series_lookup_with_http_info(self, term : Optional[StrictStr] = None, **kwargs):  # noqa: E501
-        """get_series_lookup  # noqa: E501
+    def list_series_lookup_with_http_info(self, term : Optional[StrictStr] = None, **kwargs):  # noqa: E501
+        """list_series_lookup  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_series_lookup_with_http_info(term, async_req=True)
+        >>> thread = api.list_series_lookup_with_http_info(term, async_req=True)
         >>> result = thread.get()
 
         :param term:
@@ -130,7 +130,7 @@ class SeriesLookupApi(object):
             if _key not in _all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_series_lookup" % _key
+                    " to method list_series_lookup" % _key
                 )
             _params[_key] = _val
         del _params['kwargs']
