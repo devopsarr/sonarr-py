@@ -55,7 +55,6 @@ from sonarr.models.health_resource import HealthResource
 from sonarr.models.history_resource import HistoryResource
 from sonarr.models.history_resource_paging_resource import HistoryResourcePagingResource
 from sonarr.models.host_config_resource import HostConfigResource
-from sonarr.models.http_uri import HttpUri
 from sonarr.models.import_list_exclusion_resource import ImportListExclusionResource
 from sonarr.models.import_list_resource import ImportListResource
 from sonarr.models.import_list_type import ImportListType
@@ -128,7 +127,6 @@ from sonarr.models.system_resource import SystemResource
 from sonarr.models.tag_details_resource import TagDetailsResource
 from sonarr.models.tag_resource import TagResource
 from sonarr.models.task_resource import TaskResource
-from sonarr.models.time_span import TimeSpan
 from sonarr.models.tracked_download_state import TrackedDownloadState
 from sonarr.models.tracked_download_status import TrackedDownloadStatus
 from sonarr.models.tracked_download_status_message import TrackedDownloadStatusMessage
