@@ -17,7 +17,7 @@ import re  # noqa: F401
 from pydantic import validate_arguments, ValidationError
 from typing_extensions import Annotated
 
-from pydantic import StrictBool, StrictInt
+from pydantic import StrictBool, StrictInt, conlist
 
 from typing import List, Optional
 
@@ -161,7 +161,7 @@ class EpisodeApi(object):
             ['application/json'])  # noqa: E501
 
         # authentication setting
-        _auth_settings = ['X-Api-Key', 'apikey']  # noqa: E501
+        _auth_settings = ['apikey', 'X-Api-Key']  # noqa: E501
 
         _response_types_map = {
             '200': "EpisodeResource",
@@ -185,7 +185,7 @@ class EpisodeApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def list_episode(self, series_id : Optional[StrictInt] = None, season_number : Optional[StrictInt] = None, episode_ids : Optional[List[StrictInt]] = None, episode_file_id : Optional[StrictInt] = None, include_images : Optional[StrictBool] = None, **kwargs) -> List[EpisodeResource]:  # noqa: E501
+    def list_episode(self, series_id : Optional[StrictInt] = None, season_number : Optional[StrictInt] = None, episode_ids : Optional[conlist(StrictInt)] = None, episode_file_id : Optional[StrictInt] = None, include_images : Optional[StrictBool] = None, **kwargs) -> List[EpisodeResource]:  # noqa: E501
         """list_episode  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
@@ -223,7 +223,7 @@ class EpisodeApi(object):
         return self.list_episode_with_http_info(series_id, season_number, episode_ids, episode_file_id, include_images, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def list_episode_with_http_info(self, series_id : Optional[StrictInt] = None, season_number : Optional[StrictInt] = None, episode_ids : Optional[List[StrictInt]] = None, episode_file_id : Optional[StrictInt] = None, include_images : Optional[StrictBool] = None, **kwargs):  # noqa: E501
+    def list_episode_with_http_info(self, series_id : Optional[StrictInt] = None, season_number : Optional[StrictInt] = None, episode_ids : Optional[conlist(StrictInt)] = None, episode_file_id : Optional[StrictInt] = None, include_images : Optional[StrictBool] = None, **kwargs):  # noqa: E501
         """list_episode  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
@@ -331,7 +331,7 @@ class EpisodeApi(object):
             ['application/json'])  # noqa: E501
 
         # authentication setting
-        _auth_settings = ['X-Api-Key', 'apikey']  # noqa: E501
+        _auth_settings = ['apikey', 'X-Api-Key']  # noqa: E501
 
         _response_types_map = {
             '200': "List[EpisodeResource]",
@@ -475,7 +475,7 @@ class EpisodeApi(object):
                 _header_params['Content-Type'] = _content_types_list
 
         # authentication setting
-        _auth_settings = ['X-Api-Key', 'apikey']  # noqa: E501
+        _auth_settings = ['apikey', 'X-Api-Key']  # noqa: E501
 
         _response_types_map = {}
 
@@ -628,7 +628,7 @@ class EpisodeApi(object):
                 _header_params['Content-Type'] = _content_types_list
 
         # authentication setting
-        _auth_settings = ['X-Api-Key', 'apikey']  # noqa: E501
+        _auth_settings = ['apikey', 'X-Api-Key']  # noqa: E501
 
         _response_types_map = {
             '200': "EpisodeResource",

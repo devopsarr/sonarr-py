@@ -32,10 +32,10 @@ class EpisodeHistoryEventType(str, Enum):
 
     UNKNOWN = 'unknown'
     GRABBED = 'grabbed'
-    SERIES_FOLDER_IMPORTED = 'seriesFolderImported'
-    DOWNLOAD_FOLDER_IMPORTED = 'downloadFolderImported'
-    DOWNLOAD_FAILED = 'downloadFailed'
-    EPISODE_FILE_DELETED = 'episodeFileDeleted'
-    EPISODE_FILE_RENAMED = 'episodeFileRenamed'
-    DOWNLOAD_IGNORED = 'downloadIgnored'
+    SERIESFOLDERIMPORTED = 'seriesFolderImported'
+    DOWNLOADFOLDERIMPORTED = 'downloadFolderImported'
+    DOWNLOADFAILED = 'downloadFailed'
+    EPISODEFILEDELETED = 'episodeFileDeleted'
+    EPISODEFILERENAMED = 'episodeFileRenamed'
+    DOWNLOADIGNORED = 'downloadIgnored'
 
