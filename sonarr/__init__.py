@@ -14,7 +14,9 @@
 
 from __future__ import absolute_import
 
-__version__ = "0.6.0"
+# x-release-please-start-version
+__version__ = "0.5.0"
+# x-release-please-end
 
 # import apis into sdk package
 from sonarr.api.api_info_api import ApiInfoApi
@@ -215,4 +217,3 @@ from sonarr.models.unmapped_folder import UnmappedFolder
 from sonarr.models.update_changes import UpdateChanges
 from sonarr.models.update_mechanism import UpdateMechanism
 from sonarr.models.update_resource import UpdateResource
-from sonarr.models.version import Version

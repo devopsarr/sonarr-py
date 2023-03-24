@@ -135,4 +135,3 @@ from sonarr.models.unmapped_folder import UnmappedFolder
 from sonarr.models.update_changes import UpdateChanges
 from sonarr.models.update_mechanism import UpdateMechanism
 from sonarr.models.update_resource import UpdateResource
-from sonarr.models.version import Version

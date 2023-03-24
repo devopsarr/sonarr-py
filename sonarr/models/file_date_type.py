@@ -30,7 +30,7 @@ class FileDateType(str, Enum):
     allowed enum values
     """
 
-    var_NONE = 'none'
-    LOCAL_AIR_DATE = 'localAirDate'
-    UTC_AIR_DATE = 'utcAirDate'
+    NONE = 'none'
+    LOCALAIRDATE = 'localAirDate'
+    UTCAIRDATE = 'utcAirDate'
 

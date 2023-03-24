@@ -31,6 +31,6 @@ class EpisodeTitleRequiredType(str, Enum):
     """
 
     ALWAYS = 'always'
-    BULK_SEASON_RELEASES = 'bulkSeasonReleases'
+    BULKSEASONRELEASES = 'bulkSeasonReleases'
     NEVER = 'never'
 
