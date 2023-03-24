@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.1](https://github.com/devopsarr/sonarr-py/compare/v0.6.0...v0.6.1) (2023-03-24)
+
+
+### Bug Fixes
+
+* **devopsarr/radarr-py#6:** indentation error on config ([32b69f6](https://github.com/devopsarr/sonarr-py/commit/32b69f6819c24b19d1ff6c26fa6ab539676f9a6b))
+
 ## [0.6.0](https://github.com/devopsarr/sonarr-py/compare/v0.5.0...v0.6.0) (2023-03-24)
 
 

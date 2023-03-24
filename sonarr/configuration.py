@@ -425,7 +425,7 @@ conf = sonarr.Configuration(
         :return: The report for debugging.
         """
         # x-release-please-start-version
-        sdkversion = '0.6.0'
+        sdkversion = '0.6.1'
         # x-release-please-end
         return "Python SDK Debug Report:\n"\
                "OS: {env}\n"\
