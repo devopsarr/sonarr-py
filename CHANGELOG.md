@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.6.0](https://github.com/devopsarr/sonarr-py/compare/v0.5.0...v0.6.0) (2023-03-24)
+
+
+### Features
+
+* sdk generation alignment ([456dd81](https://github.com/devopsarr/sonarr-py/commit/456dd81ec9935886201efa9ca876b31db6fc5cc5))
+* series lookup get to list ([b7c863e](https://github.com/devopsarr/sonarr-py/commit/b7c863e80d66e407fb98ad1557b7c97108618f28))
+
+
+### Bug Fixes
+
+* **#5:** httpuri to string ([4042f23](https://github.com/devopsarr/sonarr-py/commit/4042f237b3532aea2f75cdc1d7e3be4215d3f7b5))
+* **#6:** use repr of query parameters ([9ebb6af](https://github.com/devopsarr/sonarr-py/commit/9ebb6afaae82678681e92f4ec89920ca0a561b8c))
+* import validator for components with pattern ([e168f25](https://github.com/devopsarr/sonarr-py/commit/e168f2569b27c8c2bf333e931d9b4468d6aabcc3))
+* timespan to string ([2091423](https://github.com/devopsarr/sonarr-py/commit/20914237b8aaf2e971772e26edecf8c20893db9a))
+
 ## [0.5.0](https://github.com/devopsarr/sonarr-py/compare/v0.4.0...v0.5.0) (2023-02-21)
 
 
