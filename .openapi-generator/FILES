@@ -188,7 +188,7 @@ docs/UpdateChanges.md
 docs/UpdateLogFileApi.md
 docs/UpdateMechanism.md
 docs/UpdateResource.md
-docs/Version.md
+pyproject.toml
 setup.cfg
 setup.py
 sonarr/__init__.py
@@ -384,5 +384,4 @@ sonarr/models/unmapped_folder.py
 sonarr/models/update_changes.py
 sonarr/models/update_mechanism.py
 sonarr/models/update_resource.py
-sonarr/models/version.py
 sonarr/rest.py

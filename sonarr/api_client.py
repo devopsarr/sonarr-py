@@ -77,7 +77,9 @@ class ApiClient(object):
             self.default_headers[header_name] = header_value
         self.cookie = cookie
         # Set default User-Agent.
-        self.user_agent = 'sonarr-py/v0.6.0'
+        # x-release-please-start-version
+        self.user_agent = 'sonarr-py/v0.5.0'
+        # x-release-please-end
         self.client_side_validation = configuration.client_side_validation
 
     def __enter__(self):

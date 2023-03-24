@@ -35,8 +35,8 @@ class MonitorTypes(str, Enum):
     FUTURE = 'future'
     MISSING = 'missing'
     EXISTING = 'existing'
-    FIRST_SEASON = 'firstSeason'
-    LATEST_SEASON = 'latestSeason'
+    FIRSTSEASON = 'firstSeason'
+    LATESTSEASON = 'latestSeason'
     PILOT = 'pilot'
-    var_NONE = 'none'
+    NONE = 'none'
 

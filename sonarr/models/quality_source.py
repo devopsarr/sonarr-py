@@ -32,10 +32,10 @@ class QualitySource(str, Enum):
 
     UNKNOWN = 'unknown'
     TELEVISION = 'television'
-    TELEVISION_RAW = 'televisionRaw'
+    TELEVISIONRAW = 'televisionRaw'
     WEB = 'web'
-    WEB_RIP = 'webRip'
+    WEBRIP = 'webRip'
     DVD = 'dvd'
     BLURAY = 'bluray'
-    BLURAY_RAW = 'blurayRaw'
+    BLURAYRAW = 'blurayRaw'
 
