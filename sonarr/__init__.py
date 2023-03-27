@@ -15,7 +15,7 @@
 from __future__ import absolute_import
 
 # x-release-please-start-version
-__version__ = "0.6.1"
+__version__ = "0.6.2"
 # x-release-please-end
 
 # import apis into sdk package
