@@ -18,7 +18,7 @@ import json
 
 
 from typing import List, Optional
-from pydantic import BaseModel, validator
+from pydantic import BaseModel
 from sonarr.models.field import Field
 from sonarr.models.import_list_type import ImportListType
 from sonarr.models.monitor_types import MonitorTypes
@@ -51,12 +51,6 @@ class ImportListResource(BaseModel):
     list_order: Optional[int]
     min_refresh_interval: Optional[str]
     __properties = ["id", "name", "fields", "implementationName", "implementation", "configContract", "infoLink", "message", "tags", "presets", "enableAutomaticAdd", "shouldMonitor", "rootFolderPath", "qualityProfileId", "seriesType", "seasonFolder", "listType", "listOrder", "minRefreshInterval"]
-
-    @validator('min_refresh_interval')
-    def min_refresh_interval_validate_regular_expression(cls, v):
-        if not re.match(r"\d{2}:\d{2}:\d{2}", v):
-            raise ValueError(r"must validate the regular expression /\d{2}:\d{2}:\d{2}/")
-        return v
 
     class Config:
         allow_population_by_field_name = True
