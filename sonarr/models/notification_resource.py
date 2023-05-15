@@ -43,23 +43,29 @@ class NotificationResource(BaseModel):
     on_download: Optional[bool]
     on_upgrade: Optional[bool]
     on_rename: Optional[bool]
+    on_series_add: Optional[bool]
     on_series_delete: Optional[bool]
     on_episode_file_delete: Optional[bool]
     on_episode_file_delete_for_upgrade: Optional[bool]
     on_health_issue: Optional[bool]
+    on_health_restored: Optional[bool]
     on_application_update: Optional[bool]
+    on_manual_interaction_required: Optional[bool]
     supports_on_grab: Optional[bool]
     supports_on_download: Optional[bool]
     supports_on_upgrade: Optional[bool]
     supports_on_rename: Optional[bool]
+    supports_on_series_add: Optional[bool]
     supports_on_series_delete: Optional[bool]
     supports_on_episode_file_delete: Optional[bool]
     supports_on_episode_file_delete_for_upgrade: Optional[bool]
     supports_on_health_issue: Optional[bool]
+    supports_on_health_restored: Optional[bool]
     supports_on_application_update: Optional[bool]
+    supports_on_manual_interaction_required: Optional[bool]
     include_health_warnings: Optional[bool]
     test_command: Optional[str]
-    __properties = ["id", "name", "fields", "implementationName", "implementation", "configContract", "infoLink", "message", "tags", "presets", "link", "onGrab", "onDownload", "onUpgrade", "onRename", "onSeriesDelete", "onEpisodeFileDelete", "onEpisodeFileDeleteForUpgrade", "onHealthIssue", "onApplicationUpdate", "supportsOnGrab", "supportsOnDownload", "supportsOnUpgrade", "supportsOnRename", "supportsOnSeriesDelete", "supportsOnEpisodeFileDelete", "supportsOnEpisodeFileDeleteForUpgrade", "supportsOnHealthIssue", "supportsOnApplicationUpdate", "includeHealthWarnings", "testCommand"]
+    __properties = ["id", "name", "fields", "implementationName", "implementation", "configContract", "infoLink", "message", "tags", "presets", "link", "onGrab", "onDownload", "onUpgrade", "onRename", "onSeriesAdd", "onSeriesDelete", "onEpisodeFileDelete", "onEpisodeFileDeleteForUpgrade", "onHealthIssue", "onHealthRestored", "onApplicationUpdate", "onManualInteractionRequired", "supportsOnGrab", "supportsOnDownload", "supportsOnUpgrade", "supportsOnRename", "supportsOnSeriesAdd", "supportsOnSeriesDelete", "supportsOnEpisodeFileDelete", "supportsOnEpisodeFileDeleteForUpgrade", "supportsOnHealthIssue", "supportsOnHealthRestored", "supportsOnApplicationUpdate", "supportsOnManualInteractionRequired", "includeHealthWarnings", "testCommand"]
 
     class Config:
         allow_population_by_field_name = True
@@ -172,20 +178,26 @@ class NotificationResource(BaseModel):
             "on_download": obj.get("onDownload"),
             "on_upgrade": obj.get("onUpgrade"),
             "on_rename": obj.get("onRename"),
+            "on_series_add": obj.get("onSeriesAdd"),
             "on_series_delete": obj.get("onSeriesDelete"),
             "on_episode_file_delete": obj.get("onEpisodeFileDelete"),
             "on_episode_file_delete_for_upgrade": obj.get("onEpisodeFileDeleteForUpgrade"),
             "on_health_issue": obj.get("onHealthIssue"),
+            "on_health_restored": obj.get("onHealthRestored"),
             "on_application_update": obj.get("onApplicationUpdate"),
+            "on_manual_interaction_required": obj.get("onManualInteractionRequired"),
             "supports_on_grab": obj.get("supportsOnGrab"),
             "supports_on_download": obj.get("supportsOnDownload"),
             "supports_on_upgrade": obj.get("supportsOnUpgrade"),
             "supports_on_rename": obj.get("supportsOnRename"),
+            "supports_on_series_add": obj.get("supportsOnSeriesAdd"),
             "supports_on_series_delete": obj.get("supportsOnSeriesDelete"),
             "supports_on_episode_file_delete": obj.get("supportsOnEpisodeFileDelete"),
             "supports_on_episode_file_delete_for_upgrade": obj.get("supportsOnEpisodeFileDeleteForUpgrade"),
             "supports_on_health_issue": obj.get("supportsOnHealthIssue"),
+            "supports_on_health_restored": obj.get("supportsOnHealthRestored"),
             "supports_on_application_update": obj.get("supportsOnApplicationUpdate"),
+            "supports_on_manual_interaction_required": obj.get("supportsOnManualInteractionRequired"),
             "include_health_warnings": obj.get("includeHealthWarnings"),
             "test_command": obj.get("testCommand")
         })
