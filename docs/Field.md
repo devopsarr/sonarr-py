@@ -18,7 +18,6 @@ Name | Type | Description | Notes
 **section** | **str** |  | [optional] 
 **hidden** | **str** |  | [optional] 
 **privacy** | [**PrivacyLevel**](PrivacyLevel.md) |  | [optional] 
-**placeholder** | **str** |  | [optional] 
 
 ## Example
 

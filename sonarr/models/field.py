@@ -42,8 +42,7 @@ class Field(BaseModel):
     section: Optional[str]
     hidden: Optional[str]
     privacy: Optional[PrivacyLevel]
-    placeholder: Optional[str]
-    __properties = ["order", "name", "label", "unit", "helpText", "helpLink", "value", "type", "advanced", "selectOptions", "selectOptionsProviderAction", "section", "hidden", "privacy", "placeholder"]
+    __properties = ["order", "name", "label", "unit", "helpText", "helpLink", "value", "type", "advanced", "selectOptions", "selectOptionsProviderAction", "section", "hidden", "privacy"]
 
     class Config:
         allow_population_by_field_name = True
@@ -123,10 +122,6 @@ class Field(BaseModel):
         if self.hidden is None:
             _dict['hidden'] = None
 
-        # set to None if placeholder (nullable) is None
-        if self.placeholder is None:
-            _dict['placeholder'] = None
-
         return _dict
 
     @classmethod
@@ -152,8 +147,7 @@ class Field(BaseModel):
             "select_options_provider_action": obj.get("selectOptionsProviderAction"),
             "section": obj.get("section"),
             "hidden": obj.get("hidden"),
-            "privacy": obj.get("privacy"),
-            "placeholder": obj.get("placeholder")
+            "privacy": obj.get("privacy")
         })
         return _obj
 

@@ -19,7 +19,7 @@ from typing_extensions import Annotated
 
 from datetime import datetime
 
-from pydantic import StrictBool, StrictInt, StrictStr
+from pydantic import StrictBool, StrictInt
 
 from typing import List, Optional
 
@@ -186,13 +186,13 @@ class CalendarApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def list_calendar(self, start : Optional[datetime] = None, end : Optional[datetime] = None, unmonitored : Optional[StrictBool] = None, include_series : Optional[StrictBool] = None, include_episode_file : Optional[StrictBool] = None, include_episode_images : Optional[StrictBool] = None, tags : Optional[StrictStr] = None, **kwargs) -> List[EpisodeResource]:  # noqa: E501
+    def list_calendar(self, start : Optional[datetime] = None, end : Optional[datetime] = None, unmonitored : Optional[StrictBool] = None, include_series : Optional[StrictBool] = None, include_episode_file : Optional[StrictBool] = None, include_episode_images : Optional[StrictBool] = None, **kwargs) -> List[EpisodeResource]:  # noqa: E501
         """list_calendar  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_calendar(start, end, unmonitored, include_series, include_episode_file, include_episode_images, tags, async_req=True)
+        >>> thread = api.list_calendar(start, end, unmonitored, include_series, include_episode_file, include_episode_images, async_req=True)
         >>> result = thread.get()
 
         :param start:
@@ -207,8 +207,6 @@ class CalendarApi(object):
         :type include_episode_file: bool
         :param include_episode_images:
         :type include_episode_images: bool
-        :param tags:
-        :type tags: str
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -225,16 +223,16 @@ class CalendarApi(object):
         :rtype: List[EpisodeResource]
         """
         kwargs['_return_http_data_only'] = True
-        return self.list_calendar_with_http_info(start, end, unmonitored, include_series, include_episode_file, include_episode_images, tags, **kwargs)  # noqa: E501
+        return self.list_calendar_with_http_info(start, end, unmonitored, include_series, include_episode_file, include_episode_images, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def list_calendar_with_http_info(self, start : Optional[datetime] = None, end : Optional[datetime] = None, unmonitored : Optional[StrictBool] = None, include_series : Optional[StrictBool] = None, include_episode_file : Optional[StrictBool] = None, include_episode_images : Optional[StrictBool] = None, tags : Optional[StrictStr] = None, **kwargs):  # noqa: E501
+    def list_calendar_with_http_info(self, start : Optional[datetime] = None, end : Optional[datetime] = None, unmonitored : Optional[StrictBool] = None, include_series : Optional[StrictBool] = None, include_episode_file : Optional[StrictBool] = None, include_episode_images : Optional[StrictBool] = None, **kwargs):  # noqa: E501
         """list_calendar  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_calendar_with_http_info(start, end, unmonitored, include_series, include_episode_file, include_episode_images, tags, async_req=True)
+        >>> thread = api.list_calendar_with_http_info(start, end, unmonitored, include_series, include_episode_file, include_episode_images, async_req=True)
         >>> result = thread.get()
 
         :param start:
@@ -249,8 +247,6 @@ class CalendarApi(object):
         :type include_episode_file: bool
         :param include_episode_images:
         :type include_episode_images: bool
-        :param tags:
-        :type tags: str
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
         :param _return_http_data_only: response data without head status code
@@ -283,8 +279,7 @@ class CalendarApi(object):
             'unmonitored',
             'include_series',
             'include_episode_file',
-            'include_episode_images',
-            'tags'
+            'include_episode_images'
         ]
         _all_params.extend(
             [
@@ -327,8 +322,6 @@ class CalendarApi(object):
             _query_params.append(('includeEpisodeFile', _params['include_episode_file']))
         if _params.get('include_episode_images') is not None:  # noqa: E501
             _query_params.append(('includeEpisodeImages', _params['include_episode_images']))
-        if _params.get('tags') is not None:  # noqa: E501
-            _query_params.append(('tags', _params['tags']))
 
         # process the header parameters
         _header_params = dict(_params.get('_headers', {}))

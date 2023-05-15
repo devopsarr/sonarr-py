@@ -135,7 +135,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_series**
-> delete_series(id, delete_files=delete_files, add_import_list_exclusion=add_import_list_exclusion)
+> delete_series(id)
 
 
 
@@ -177,11 +177,9 @@ with sonarr.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = sonarr.SeriesApi(api_client)
     id = 56 # int | 
-    delete_files = False # bool |  (optional) (default to False)
-    add_import_list_exclusion = False # bool |  (optional) (default to False)
 
     try:
-        api_instance.delete_series(id, delete_files=delete_files, add_import_list_exclusion=add_import_list_exclusion)
+        api_instance.delete_series(id)
     except Exception as e:
         print("Exception when calling SeriesApi->delete_series: %s\n" % e)
 ```
@@ -222,11 +220,9 @@ with sonarr.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = sonarr.SeriesApi(api_client)
     id = 56 # int | 
-    delete_files = False # bool |  (optional) (default to False)
-    add_import_list_exclusion = False # bool |  (optional) (default to False)
 
     try:
-        api_instance.delete_series(id, delete_files=delete_files, add_import_list_exclusion=add_import_list_exclusion)
+        api_instance.delete_series(id)
     except Exception as e:
         print("Exception when calling SeriesApi->delete_series: %s\n" % e)
 ```
@@ -236,8 +232,6 @@ with sonarr.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  | 
- **delete_files** | **bool**|  | [optional] [default to False]
- **add_import_list_exclusion** | **bool**|  | [optional] [default to False]
 
 ### Return type
 
@@ -509,7 +503,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_series**
-> SeriesResource update_series(id, move_files=move_files, series_resource=series_resource)
+> SeriesResource update_series(id, series_resource=series_resource)
 
 
 
@@ -551,11 +545,10 @@ with sonarr.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = sonarr.SeriesApi(api_client)
     id = 'id_example' # str | 
-    move_files = False # bool |  (optional) (default to False)
     series_resource = sonarr.SeriesResource() # SeriesResource |  (optional)
 
     try:
-        api_response = api_instance.update_series(id, move_files=move_files, series_resource=series_resource)
+        api_response = api_instance.update_series(id, series_resource=series_resource)
         print("The response of SeriesApi->update_series:\n")
         pprint(api_response)
     except Exception as e:
@@ -598,11 +591,10 @@ with sonarr.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = sonarr.SeriesApi(api_client)
     id = 'id_example' # str | 
-    move_files = False # bool |  (optional) (default to False)
     series_resource = sonarr.SeriesResource() # SeriesResource |  (optional)
 
     try:
-        api_response = api_instance.update_series(id, move_files=move_files, series_resource=series_resource)
+        api_response = api_instance.update_series(id, series_resource=series_resource)
         print("The response of SeriesApi->update_series:\n")
         pprint(api_response)
     except Exception as e:
@@ -614,7 +606,6 @@ with sonarr.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **move_files** | **bool**|  | [optional] [default to False]
  **series_resource** | [**SeriesResource**](SeriesResource.md)|  | [optional] 
 
 ### Return type

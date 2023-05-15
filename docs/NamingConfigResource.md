@@ -7,7 +7,6 @@ Name | Type | Description | Notes
 **id** | **int** |  | [optional] 
 **rename_episodes** | **bool** |  | [optional] 
 **replace_illegal_characters** | **bool** |  | [optional] 
-**colon_replacement_format** | **int** |  | [optional] 
 **multi_episode_style** | **int** |  | [optional] 
 **standard_episode_format** | **str** |  | [optional] 
 **daily_episode_format** | **str** |  | [optional] 

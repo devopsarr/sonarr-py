@@ -355,17 +355,15 @@ class EpisodeApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def put_episode_monitor(self, include_images : Optional[StrictBool] = None, episodes_monitored_resource : Optional[EpisodesMonitoredResource] = None, **kwargs) -> None:  # noqa: E501
+    def put_episode_monitor(self, episodes_monitored_resource : Optional[EpisodesMonitoredResource] = None, **kwargs) -> None:  # noqa: E501
         """put_episode_monitor  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.put_episode_monitor(include_images, episodes_monitored_resource, async_req=True)
+        >>> thread = api.put_episode_monitor(episodes_monitored_resource, async_req=True)
         >>> result = thread.get()
 
-        :param include_images:
-        :type include_images: bool
         :param episodes_monitored_resource:
         :type episodes_monitored_resource: EpisodesMonitoredResource
         :param async_req: Whether to execute the request asynchronously.
@@ -384,20 +382,18 @@ class EpisodeApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.put_episode_monitor_with_http_info(include_images, episodes_monitored_resource, **kwargs)  # noqa: E501
+        return self.put_episode_monitor_with_http_info(episodes_monitored_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def put_episode_monitor_with_http_info(self, include_images : Optional[StrictBool] = None, episodes_monitored_resource : Optional[EpisodesMonitoredResource] = None, **kwargs):  # noqa: E501
+    def put_episode_monitor_with_http_info(self, episodes_monitored_resource : Optional[EpisodesMonitoredResource] = None, **kwargs):  # noqa: E501
         """put_episode_monitor  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.put_episode_monitor_with_http_info(include_images, episodes_monitored_resource, async_req=True)
+        >>> thread = api.put_episode_monitor_with_http_info(episodes_monitored_resource, async_req=True)
         >>> result = thread.get()
 
-        :param include_images:
-        :type include_images: bool
         :param episodes_monitored_resource:
         :type episodes_monitored_resource: EpisodesMonitoredResource
         :param async_req: Whether to execute the request asynchronously.
@@ -427,7 +423,6 @@ class EpisodeApi(object):
         _params = locals()
 
         _all_params = [
-            'include_images',
             'episodes_monitored_resource'
         ]
         _all_params.extend(
@@ -459,8 +454,6 @@ class EpisodeApi(object):
 
         # process the query parameters
         _query_params = []
-        if _params.get('include_images') is not None:  # noqa: E501
-            _query_params.append(('includeImages', _params['include_images']))
 
         # process the header parameters
         _header_params = dict(_params.get('_headers', {}))

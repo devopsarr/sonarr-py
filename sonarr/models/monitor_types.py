@@ -38,7 +38,5 @@ class MonitorTypes(str, Enum):
     FIRSTSEASON = 'firstSeason'
     LATESTSEASON = 'latestSeason'
     PILOT = 'pilot'
-    MONITORSPECIALS = 'monitorSpecials'
-    UNMONITORSPECIALS = 'unmonitorSpecials'
     NONE = 'none'
 
