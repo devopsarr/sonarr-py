@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **id** | **int** |  | [optional] 
 **series_id** | **int** |  | [optional] 
 **episode_id** | **int** |  | [optional] 
+**season_number** | **int** |  | [optional] 
 **series** | [**SeriesResource**](SeriesResource.md) |  | [optional] 
 **episode** | [**EpisodeResource**](EpisodeResource.md) |  | [optional] 
 **languages** | [**List[Language]**](Language.md) |  | [optional] 
@@ -27,6 +28,7 @@ Name | Type | Description | Notes
 **download_client** | **str** |  | [optional] 
 **indexer** | **str** |  | [optional] 
 **output_path** | **str** |  | [optional] 
+**episode_has_file** | **bool** |  | [optional] 
 
 ## Example
 

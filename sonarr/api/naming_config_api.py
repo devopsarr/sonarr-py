@@ -318,19 +318,21 @@ class NamingConfigApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def get_naming_config_examples(self, rename_episodes : Optional[StrictBool] = None, replace_illegal_characters : Optional[StrictBool] = None, multi_episode_style : Optional[StrictInt] = None, standard_episode_format : Optional[StrictStr] = None, daily_episode_format : Optional[StrictStr] = None, anime_episode_format : Optional[StrictStr] = None, series_folder_format : Optional[StrictStr] = None, season_folder_format : Optional[StrictStr] = None, specials_folder_format : Optional[StrictStr] = None, include_series_title : Optional[StrictBool] = None, include_episode_title : Optional[StrictBool] = None, include_quality : Optional[StrictBool] = None, replace_spaces : Optional[StrictBool] = None, separator : Optional[StrictStr] = None, number_style : Optional[StrictStr] = None, id : Optional[StrictInt] = None, resource_name : Optional[StrictStr] = None, **kwargs) -> None:  # noqa: E501
+    def get_naming_config_examples(self, rename_episodes : Optional[StrictBool] = None, replace_illegal_characters : Optional[StrictBool] = None, colon_replacement_format : Optional[StrictInt] = None, multi_episode_style : Optional[StrictInt] = None, standard_episode_format : Optional[StrictStr] = None, daily_episode_format : Optional[StrictStr] = None, anime_episode_format : Optional[StrictStr] = None, series_folder_format : Optional[StrictStr] = None, season_folder_format : Optional[StrictStr] = None, specials_folder_format : Optional[StrictStr] = None, include_series_title : Optional[StrictBool] = None, include_episode_title : Optional[StrictBool] = None, include_quality : Optional[StrictBool] = None, replace_spaces : Optional[StrictBool] = None, separator : Optional[StrictStr] = None, number_style : Optional[StrictStr] = None, id : Optional[StrictInt] = None, resource_name : Optional[StrictStr] = None, **kwargs) -> None:  # noqa: E501
         """get_naming_config_examples  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_naming_config_examples(rename_episodes, replace_illegal_characters, multi_episode_style, standard_episode_format, daily_episode_format, anime_episode_format, series_folder_format, season_folder_format, specials_folder_format, include_series_title, include_episode_title, include_quality, replace_spaces, separator, number_style, id, resource_name, async_req=True)
+        >>> thread = api.get_naming_config_examples(rename_episodes, replace_illegal_characters, colon_replacement_format, multi_episode_style, standard_episode_format, daily_episode_format, anime_episode_format, series_folder_format, season_folder_format, specials_folder_format, include_series_title, include_episode_title, include_quality, replace_spaces, separator, number_style, id, resource_name, async_req=True)
         >>> result = thread.get()
 
         :param rename_episodes:
         :type rename_episodes: bool
         :param replace_illegal_characters:
         :type replace_illegal_characters: bool
+        :param colon_replacement_format:
+        :type colon_replacement_format: int
         :param multi_episode_style:
         :type multi_episode_style: int
         :param standard_episode_format:
@@ -377,22 +379,24 @@ class NamingConfigApi(object):
         :rtype: None
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_naming_config_examples_with_http_info(rename_episodes, replace_illegal_characters, multi_episode_style, standard_episode_format, daily_episode_format, anime_episode_format, series_folder_format, season_folder_format, specials_folder_format, include_series_title, include_episode_title, include_quality, replace_spaces, separator, number_style, id, resource_name, **kwargs)  # noqa: E501
+        return self.get_naming_config_examples_with_http_info(rename_episodes, replace_illegal_characters, colon_replacement_format, multi_episode_style, standard_episode_format, daily_episode_format, anime_episode_format, series_folder_format, season_folder_format, specials_folder_format, include_series_title, include_episode_title, include_quality, replace_spaces, separator, number_style, id, resource_name, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_naming_config_examples_with_http_info(self, rename_episodes : Optional[StrictBool] = None, replace_illegal_characters : Optional[StrictBool] = None, multi_episode_style : Optional[StrictInt] = None, standard_episode_format : Optional[StrictStr] = None, daily_episode_format : Optional[StrictStr] = None, anime_episode_format : Optional[StrictStr] = None, series_folder_format : Optional[StrictStr] = None, season_folder_format : Optional[StrictStr] = None, specials_folder_format : Optional[StrictStr] = None, include_series_title : Optional[StrictBool] = None, include_episode_title : Optional[StrictBool] = None, include_quality : Optional[StrictBool] = None, replace_spaces : Optional[StrictBool] = None, separator : Optional[StrictStr] = None, number_style : Optional[StrictStr] = None, id : Optional[StrictInt] = None, resource_name : Optional[StrictStr] = None, **kwargs):  # noqa: E501
+    def get_naming_config_examples_with_http_info(self, rename_episodes : Optional[StrictBool] = None, replace_illegal_characters : Optional[StrictBool] = None, colon_replacement_format : Optional[StrictInt] = None, multi_episode_style : Optional[StrictInt] = None, standard_episode_format : Optional[StrictStr] = None, daily_episode_format : Optional[StrictStr] = None, anime_episode_format : Optional[StrictStr] = None, series_folder_format : Optional[StrictStr] = None, season_folder_format : Optional[StrictStr] = None, specials_folder_format : Optional[StrictStr] = None, include_series_title : Optional[StrictBool] = None, include_episode_title : Optional[StrictBool] = None, include_quality : Optional[StrictBool] = None, replace_spaces : Optional[StrictBool] = None, separator : Optional[StrictStr] = None, number_style : Optional[StrictStr] = None, id : Optional[StrictInt] = None, resource_name : Optional[StrictStr] = None, **kwargs):  # noqa: E501
         """get_naming_config_examples  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_naming_config_examples_with_http_info(rename_episodes, replace_illegal_characters, multi_episode_style, standard_episode_format, daily_episode_format, anime_episode_format, series_folder_format, season_folder_format, specials_folder_format, include_series_title, include_episode_title, include_quality, replace_spaces, separator, number_style, id, resource_name, async_req=True)
+        >>> thread = api.get_naming_config_examples_with_http_info(rename_episodes, replace_illegal_characters, colon_replacement_format, multi_episode_style, standard_episode_format, daily_episode_format, anime_episode_format, series_folder_format, season_folder_format, specials_folder_format, include_series_title, include_episode_title, include_quality, replace_spaces, separator, number_style, id, resource_name, async_req=True)
         >>> result = thread.get()
 
         :param rename_episodes:
         :type rename_episodes: bool
         :param replace_illegal_characters:
         :type replace_illegal_characters: bool
+        :param colon_replacement_format:
+        :type colon_replacement_format: int
         :param multi_episode_style:
         :type multi_episode_style: int
         :param standard_episode_format:
@@ -452,6 +456,7 @@ class NamingConfigApi(object):
         _all_params = [
             'rename_episodes',
             'replace_illegal_characters',
+            'colon_replacement_format',
             'multi_episode_style',
             'standard_episode_format',
             'daily_episode_format',
@@ -501,6 +506,8 @@ class NamingConfigApi(object):
             _query_params.append(('RenameEpisodes', _params['rename_episodes']))
         if _params.get('replace_illegal_characters') is not None:  # noqa: E501
             _query_params.append(('ReplaceIllegalCharacters', _params['replace_illegal_characters']))
+        if _params.get('colon_replacement_format') is not None:  # noqa: E501
+            _query_params.append(('ColonReplacementFormat', _params['colon_replacement_format']))
         if _params.get('multi_episode_style') is not None:  # noqa: E501
             _query_params.append(('MultiEpisodeStyle', _params['multi_episode_style']))
         if _params.get('standard_episode_format') is not None:  # noqa: E501

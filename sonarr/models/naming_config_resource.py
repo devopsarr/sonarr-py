@@ -29,6 +29,7 @@ class NamingConfigResource(BaseModel):
     id: Optional[int]
     rename_episodes: Optional[bool]
     replace_illegal_characters: Optional[bool]
+    colon_replacement_format: Optional[int]
     multi_episode_style: Optional[int]
     standard_episode_format: Optional[str]
     daily_episode_format: Optional[str]
@@ -42,7 +43,7 @@ class NamingConfigResource(BaseModel):
     replace_spaces: Optional[bool]
     separator: Optional[str]
     number_style: Optional[str]
-    __properties = ["id", "renameEpisodes", "replaceIllegalCharacters", "multiEpisodeStyle", "standardEpisodeFormat", "dailyEpisodeFormat", "animeEpisodeFormat", "seriesFolderFormat", "seasonFolderFormat", "specialsFolderFormat", "includeSeriesTitle", "includeEpisodeTitle", "includeQuality", "replaceSpaces", "separator", "numberStyle"]
+    __properties = ["id", "renameEpisodes", "replaceIllegalCharacters", "colonReplacementFormat", "multiEpisodeStyle", "standardEpisodeFormat", "dailyEpisodeFormat", "animeEpisodeFormat", "seriesFolderFormat", "seasonFolderFormat", "specialsFolderFormat", "includeSeriesTitle", "includeEpisodeTitle", "includeQuality", "replaceSpaces", "separator", "numberStyle"]
 
     class Config:
         allow_population_by_field_name = True
@@ -118,6 +119,7 @@ class NamingConfigResource(BaseModel):
             "id": obj.get("id"),
             "rename_episodes": obj.get("renameEpisodes"),
             "replace_illegal_characters": obj.get("replaceIllegalCharacters"),
+            "colon_replacement_format": obj.get("colonReplacementFormat"),
             "multi_episode_style": obj.get("multiEpisodeStyle"),
             "standard_episode_format": obj.get("standardEpisodeFormat"),
             "daily_episode_format": obj.get("dailyEpisodeFormat"),

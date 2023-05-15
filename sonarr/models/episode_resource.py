@@ -38,6 +38,7 @@ class EpisodeResource(BaseModel):
     title: Optional[str]
     air_date: Optional[str]
     air_date_utc: Optional[datetime]
+    runtime: Optional[int]
     overview: Optional[str]
     episode_file: Optional[EpisodeFileResource]
     has_file: Optional[bool]
@@ -53,7 +54,7 @@ class EpisodeResource(BaseModel):
     series: Optional[SeriesResource]
     images: Optional[List]
     grabbed: Optional[bool]
-    __properties = ["id", "seriesId", "tvdbId", "episodeFileId", "seasonNumber", "episodeNumber", "title", "airDate", "airDateUtc", "overview", "episodeFile", "hasFile", "monitored", "absoluteEpisodeNumber", "sceneAbsoluteEpisodeNumber", "sceneEpisodeNumber", "sceneSeasonNumber", "unverifiedSceneNumbering", "endTime", "grabDate", "seriesTitle", "series", "images", "grabbed"]
+    __properties = ["id", "seriesId", "tvdbId", "episodeFileId", "seasonNumber", "episodeNumber", "title", "airDate", "airDateUtc", "runtime", "overview", "episodeFile", "hasFile", "monitored", "absoluteEpisodeNumber", "sceneAbsoluteEpisodeNumber", "sceneEpisodeNumber", "sceneSeasonNumber", "unverifiedSceneNumbering", "endTime", "grabDate", "seriesTitle", "series", "images", "grabbed"]
 
     class Config:
         allow_population_by_field_name = True
@@ -164,6 +165,7 @@ class EpisodeResource(BaseModel):
             "title": obj.get("title"),
             "air_date": obj.get("airDate"),
             "air_date_utc": obj.get("airDateUtc"),
+            "runtime": obj.get("runtime"),
             "overview": obj.get("overview"),
             "episode_file": EpisodeFileResource.from_dict(obj.get("episodeFile")) if obj.get("episodeFile") is not None else None,
             "has_file": obj.get("hasFile"),

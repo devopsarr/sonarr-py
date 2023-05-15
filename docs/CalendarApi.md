@@ -132,7 +132,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_calendar**
-> List[EpisodeResource] list_calendar(start=start, end=end, unmonitored=unmonitored, include_series=include_series, include_episode_file=include_episode_file, include_episode_images=include_episode_images)
+> List[EpisodeResource] list_calendar(start=start, end=end, unmonitored=unmonitored, include_series=include_series, include_episode_file=include_episode_file, include_episode_images=include_episode_images, tags=tags)
 
 
 
@@ -179,9 +179,10 @@ with sonarr.ApiClient(configuration) as api_client:
     include_series = False # bool |  (optional) (default to False)
     include_episode_file = False # bool |  (optional) (default to False)
     include_episode_images = False # bool |  (optional) (default to False)
+    tags = '' # str |  (optional) (default to '')
 
     try:
-        api_response = api_instance.list_calendar(start=start, end=end, unmonitored=unmonitored, include_series=include_series, include_episode_file=include_episode_file, include_episode_images=include_episode_images)
+        api_response = api_instance.list_calendar(start=start, end=end, unmonitored=unmonitored, include_series=include_series, include_episode_file=include_episode_file, include_episode_images=include_episode_images, tags=tags)
         print("The response of CalendarApi->list_calendar:\n")
         pprint(api_response)
     except Exception as e:
@@ -229,9 +230,10 @@ with sonarr.ApiClient(configuration) as api_client:
     include_series = False # bool |  (optional) (default to False)
     include_episode_file = False # bool |  (optional) (default to False)
     include_episode_images = False # bool |  (optional) (default to False)
+    tags = '' # str |  (optional) (default to '')
 
     try:
-        api_response = api_instance.list_calendar(start=start, end=end, unmonitored=unmonitored, include_series=include_series, include_episode_file=include_episode_file, include_episode_images=include_episode_images)
+        api_response = api_instance.list_calendar(start=start, end=end, unmonitored=unmonitored, include_series=include_series, include_episode_file=include_episode_file, include_episode_images=include_episode_images, tags=tags)
         print("The response of CalendarApi->list_calendar:\n")
         pprint(api_response)
     except Exception as e:
@@ -248,6 +250,7 @@ Name | Type | Description  | Notes
  **include_series** | **bool**|  | [optional] [default to False]
  **include_episode_file** | **bool**|  | [optional] [default to False]
  **include_episode_images** | **bool**|  | [optional] [default to False]
+ **tags** | **str**|  | [optional] [default to &#39;&#39;]
 
 ### Return type
 
