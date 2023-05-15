@@ -252,7 +252,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_naming_config_examples**
-> get_naming_config_examples(rename_episodes=rename_episodes, replace_illegal_characters=replace_illegal_characters, multi_episode_style=multi_episode_style, standard_episode_format=standard_episode_format, daily_episode_format=daily_episode_format, anime_episode_format=anime_episode_format, series_folder_format=series_folder_format, season_folder_format=season_folder_format, specials_folder_format=specials_folder_format, include_series_title=include_series_title, include_episode_title=include_episode_title, include_quality=include_quality, replace_spaces=replace_spaces, separator=separator, number_style=number_style, id=id, resource_name=resource_name)
+> get_naming_config_examples(rename_episodes=rename_episodes, replace_illegal_characters=replace_illegal_characters, colon_replacement_format=colon_replacement_format, multi_episode_style=multi_episode_style, standard_episode_format=standard_episode_format, daily_episode_format=daily_episode_format, anime_episode_format=anime_episode_format, series_folder_format=series_folder_format, season_folder_format=season_folder_format, specials_folder_format=specials_folder_format, include_series_title=include_series_title, include_episode_title=include_episode_title, include_quality=include_quality, replace_spaces=replace_spaces, separator=separator, number_style=number_style, id=id, resource_name=resource_name)
 
 
 
@@ -295,6 +295,7 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.NamingConfigApi(api_client)
     rename_episodes = True # bool |  (optional)
     replace_illegal_characters = True # bool |  (optional)
+    colon_replacement_format = 56 # int |  (optional)
     multi_episode_style = 56 # int |  (optional)
     standard_episode_format = 'standard_episode_format_example' # str |  (optional)
     daily_episode_format = 'daily_episode_format_example' # str |  (optional)
@@ -312,7 +313,7 @@ with sonarr.ApiClient(configuration) as api_client:
     resource_name = 'resource_name_example' # str |  (optional)
 
     try:
-        api_instance.get_naming_config_examples(rename_episodes=rename_episodes, replace_illegal_characters=replace_illegal_characters, multi_episode_style=multi_episode_style, standard_episode_format=standard_episode_format, daily_episode_format=daily_episode_format, anime_episode_format=anime_episode_format, series_folder_format=series_folder_format, season_folder_format=season_folder_format, specials_folder_format=specials_folder_format, include_series_title=include_series_title, include_episode_title=include_episode_title, include_quality=include_quality, replace_spaces=replace_spaces, separator=separator, number_style=number_style, id=id, resource_name=resource_name)
+        api_instance.get_naming_config_examples(rename_episodes=rename_episodes, replace_illegal_characters=replace_illegal_characters, colon_replacement_format=colon_replacement_format, multi_episode_style=multi_episode_style, standard_episode_format=standard_episode_format, daily_episode_format=daily_episode_format, anime_episode_format=anime_episode_format, series_folder_format=series_folder_format, season_folder_format=season_folder_format, specials_folder_format=specials_folder_format, include_series_title=include_series_title, include_episode_title=include_episode_title, include_quality=include_quality, replace_spaces=replace_spaces, separator=separator, number_style=number_style, id=id, resource_name=resource_name)
     except Exception as e:
         print("Exception when calling NamingConfigApi->get_naming_config_examples: %s\n" % e)
 ```
@@ -354,6 +355,7 @@ with sonarr.ApiClient(configuration) as api_client:
     api_instance = sonarr.NamingConfigApi(api_client)
     rename_episodes = True # bool |  (optional)
     replace_illegal_characters = True # bool |  (optional)
+    colon_replacement_format = 56 # int |  (optional)
     multi_episode_style = 56 # int |  (optional)
     standard_episode_format = 'standard_episode_format_example' # str |  (optional)
     daily_episode_format = 'daily_episode_format_example' # str |  (optional)
@@ -371,7 +373,7 @@ with sonarr.ApiClient(configuration) as api_client:
     resource_name = 'resource_name_example' # str |  (optional)
 
     try:
-        api_instance.get_naming_config_examples(rename_episodes=rename_episodes, replace_illegal_characters=replace_illegal_characters, multi_episode_style=multi_episode_style, standard_episode_format=standard_episode_format, daily_episode_format=daily_episode_format, anime_episode_format=anime_episode_format, series_folder_format=series_folder_format, season_folder_format=season_folder_format, specials_folder_format=specials_folder_format, include_series_title=include_series_title, include_episode_title=include_episode_title, include_quality=include_quality, replace_spaces=replace_spaces, separator=separator, number_style=number_style, id=id, resource_name=resource_name)
+        api_instance.get_naming_config_examples(rename_episodes=rename_episodes, replace_illegal_characters=replace_illegal_characters, colon_replacement_format=colon_replacement_format, multi_episode_style=multi_episode_style, standard_episode_format=standard_episode_format, daily_episode_format=daily_episode_format, anime_episode_format=anime_episode_format, series_folder_format=series_folder_format, season_folder_format=season_folder_format, specials_folder_format=specials_folder_format, include_series_title=include_series_title, include_episode_title=include_episode_title, include_quality=include_quality, replace_spaces=replace_spaces, separator=separator, number_style=number_style, id=id, resource_name=resource_name)
     except Exception as e:
         print("Exception when calling NamingConfigApi->get_naming_config_examples: %s\n" % e)
 ```
@@ -382,6 +384,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **rename_episodes** | **bool**|  | [optional] 
  **replace_illegal_characters** | **bool**|  | [optional] 
+ **colon_replacement_format** | **int**|  | [optional] 
  **multi_episode_style** | **int**|  | [optional] 
  **standard_episode_format** | **str**|  | [optional] 
  **daily_episode_format** | **str**|  | [optional] 

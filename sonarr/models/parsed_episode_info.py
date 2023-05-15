@@ -17,7 +17,7 @@ import re  # noqa: F401
 import json
 
 
-from typing import List, Optional
+from typing import List, Optional, Union
 from pydantic import BaseModel
 from sonarr.models.language import Language
 from sonarr.models.quality_model import QualityModel

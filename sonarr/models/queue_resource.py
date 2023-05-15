@@ -17,7 +17,7 @@ import re  # noqa: F401
 import json
 
 from datetime import datetime
-from typing import List, Optional
+from typing import List, Optional, Union
 from pydantic import BaseModel
 from sonarr.models.custom_format_resource import CustomFormatResource
 from sonarr.models.download_protocol import DownloadProtocol
@@ -38,6 +38,7 @@ class QueueResource(BaseModel):
     id: Optional[int]
     series_id: Optional[int]
     episode_id: Optional[int]
+    season_number: Optional[int]
     series: Optional[SeriesResource]
     episode: Optional[EpisodeResource]
     languages: Optional[List]
@@ -58,7 +59,8 @@ class QueueResource(BaseModel):
     download_client: Optional[str]
     indexer: Optional[str]
     output_path: Optional[str]
-    __properties = ["id", "seriesId", "episodeId", "series", "episode", "languages", "quality", "customFormats", "size", "title", "sizeleft", "timeleft", "estimatedCompletionTime", "status", "trackedDownloadStatus", "trackedDownloadState", "statusMessages", "errorMessage", "downloadId", "protocol", "downloadClient", "indexer", "outputPath"]
+    episode_has_file: Optional[bool]
+    __properties = ["id", "seriesId", "episodeId", "seasonNumber", "series", "episode", "languages", "quality", "customFormats", "size", "title", "sizeleft", "timeleft", "estimatedCompletionTime", "status", "trackedDownloadStatus", "trackedDownloadState", "statusMessages", "errorMessage", "downloadId", "protocol", "downloadClient", "indexer", "outputPath", "episodeHasFile"]
 
     class Config:
         allow_population_by_field_name = True
@@ -125,6 +127,10 @@ class QueueResource(BaseModel):
         if self.episode_id is None:
             _dict['episodeId'] = None
 
+        # set to None if season_number (nullable) is None
+        if self.season_number is None:
+            _dict['seasonNumber'] = None
+
         # set to None if languages (nullable) is None
         if self.languages is None:
             _dict['languages'] = None
@@ -184,6 +190,7 @@ class QueueResource(BaseModel):
             "id": obj.get("id"),
             "series_id": obj.get("seriesId"),
             "episode_id": obj.get("episodeId"),
+            "season_number": obj.get("seasonNumber"),
             "series": SeriesResource.from_dict(obj.get("series")) if obj.get("series") is not None else None,
             "episode": EpisodeResource.from_dict(obj.get("episode")) if obj.get("episode") is not None else None,
             "languages": [Language.from_dict(_item) for _item in obj.get("languages")] if obj.get("languages") is not None else None,
@@ -203,7 +210,8 @@ class QueueResource(BaseModel):
             "protocol": obj.get("protocol"),
             "download_client": obj.get("downloadClient"),
             "indexer": obj.get("indexer"),
-            "output_path": obj.get("outputPath")
+            "output_path": obj.get("outputPath"),
+            "episode_has_file": obj.get("episodeHasFile")
         })
         return _obj
 

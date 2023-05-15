@@ -25,6 +25,7 @@ docs/Command.md
 docs/CommandApi.md
 docs/CommandPriority.md
 docs/CommandResource.md
+docs/CommandResult.md
 docs/CommandStatus.md
 docs/CommandTrigger.md
 docs/CustomFilterApi.md
@@ -138,6 +139,7 @@ docs/Ratings.md
 docs/Rejection.md
 docs/RejectionType.md
 docs/ReleaseApi.md
+docs/ReleaseEpisodeResource.md
 docs/ReleaseProfileApi.md
 docs/ReleaseProfileResource.md
 docs/ReleasePushApi.md
@@ -261,6 +263,7 @@ sonarr/api/ui_config_api.py
 sonarr/api/update_api.py
 sonarr/api/update_log_file_api.py
 sonarr/api_client.py
+sonarr/api_response.py
 sonarr/configuration.py
 sonarr/exceptions.py
 sonarr/models/__init__.py
@@ -280,6 +283,7 @@ sonarr/models/certificate_validation_type.py
 sonarr/models/command.py
 sonarr/models/command_priority.py
 sonarr/models/command_resource.py
+sonarr/models/command_result.py
 sonarr/models/command_status.py
 sonarr/models/command_trigger.py
 sonarr/models/custom_filter_resource.py
@@ -352,6 +356,7 @@ sonarr/models/queue_status_resource.py
 sonarr/models/ratings.py
 sonarr/models/rejection.py
 sonarr/models/rejection_type.py
+sonarr/models/release_episode_resource.py
 sonarr/models/release_profile_resource.py
 sonarr/models/release_resource.py
 sonarr/models/remote_path_mapping_resource.py
