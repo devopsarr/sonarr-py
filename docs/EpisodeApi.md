@@ -269,7 +269,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **put_episode_monitor**
-> put_episode_monitor(include_images=include_images, episodes_monitored_resource=episodes_monitored_resource)
+> put_episode_monitor(episodes_monitored_resource=episodes_monitored_resource)
 
 
 
@@ -310,11 +310,10 @@ configuration.api_key['X-Api-Key'] = os.environ["API_KEY"]
 with sonarr.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = sonarr.EpisodeApi(api_client)
-    include_images = False # bool |  (optional) (default to False)
     episodes_monitored_resource = sonarr.EpisodesMonitoredResource() # EpisodesMonitoredResource |  (optional)
 
     try:
-        api_instance.put_episode_monitor(include_images=include_images, episodes_monitored_resource=episodes_monitored_resource)
+        api_instance.put_episode_monitor(episodes_monitored_resource=episodes_monitored_resource)
     except Exception as e:
         print("Exception when calling EpisodeApi->put_episode_monitor: %s\n" % e)
 ```
@@ -354,11 +353,10 @@ configuration.api_key['X-Api-Key'] = os.environ["API_KEY"]
 with sonarr.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = sonarr.EpisodeApi(api_client)
-    include_images = False # bool |  (optional) (default to False)
     episodes_monitored_resource = sonarr.EpisodesMonitoredResource() # EpisodesMonitoredResource |  (optional)
 
     try:
-        api_instance.put_episode_monitor(include_images=include_images, episodes_monitored_resource=episodes_monitored_resource)
+        api_instance.put_episode_monitor(episodes_monitored_resource=episodes_monitored_resource)
     except Exception as e:
         print("Exception when calling EpisodeApi->put_episode_monitor: %s\n" % e)
 ```
@@ -367,7 +365,6 @@ with sonarr.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **include_images** | **bool**|  | [optional] [default to False]
  **episodes_monitored_resource** | [**EpisodesMonitoredResource**](EpisodesMonitoredResource.md)|  | [optional] 
 
 ### Return type

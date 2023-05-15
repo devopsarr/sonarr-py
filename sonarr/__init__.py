@@ -113,7 +113,6 @@ from sonarr.models.certificate_validation_type import CertificateValidationType
 from sonarr.models.command import Command
 from sonarr.models.command_priority import CommandPriority
 from sonarr.models.command_resource import CommandResource
-from sonarr.models.command_result import CommandResult
 from sonarr.models.command_status import CommandStatus
 from sonarr.models.command_trigger import CommandTrigger
 from sonarr.models.custom_filter_resource import CustomFilterResource
@@ -186,7 +185,6 @@ from sonarr.models.queue_status_resource import QueueStatusResource
 from sonarr.models.ratings import Ratings
 from sonarr.models.rejection import Rejection
 from sonarr.models.rejection_type import RejectionType
-from sonarr.models.release_episode_resource import ReleaseEpisodeResource
 from sonarr.models.release_profile_resource import ReleaseProfileResource
 from sonarr.models.release_resource import ReleaseResource
 from sonarr.models.remote_path_mapping_resource import RemotePathMappingResource

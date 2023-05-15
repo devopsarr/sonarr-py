@@ -21,7 +21,6 @@ from typing import Optional
 from pydantic import BaseModel
 from sonarr.models.command import Command
 from sonarr.models.command_priority import CommandPriority
-from sonarr.models.command_result import CommandResult
 from sonarr.models.command_status import CommandStatus
 from sonarr.models.command_trigger import CommandTrigger
 
@@ -38,7 +37,6 @@ class CommandResource(BaseModel):
     body: Optional[Command]
     priority: Optional[CommandPriority]
     status: Optional[CommandStatus]
-    result: Optional[CommandResult]
     queued: Optional[datetime]
     started: Optional[datetime]
     ended: Optional[datetime]
@@ -50,7 +48,7 @@ class CommandResource(BaseModel):
     send_updates_to_client: Optional[bool]
     update_scheduled_task: Optional[bool]
     last_execution_time: Optional[datetime]
-    __properties = ["id", "name", "commandName", "message", "body", "priority", "status", "result", "queued", "started", "ended", "duration", "exception", "trigger", "clientUserAgent", "stateChangeTime", "sendUpdatesToClient", "updateScheduledTask", "lastExecutionTime"]
+    __properties = ["id", "name", "commandName", "message", "body", "priority", "status", "queued", "started", "ended", "duration", "exception", "trigger", "clientUserAgent", "stateChangeTime", "sendUpdatesToClient", "updateScheduledTask", "lastExecutionTime"]
 
     class Config:
         allow_population_by_field_name = True
@@ -137,7 +135,6 @@ class CommandResource(BaseModel):
             "body": Command.from_dict(obj.get("body")) if obj.get("body") is not None else None,
             "priority": obj.get("priority"),
             "status": obj.get("status"),
-            "result": obj.get("result"),
             "queued": obj.get("queued"),
             "started": obj.get("started"),
             "ended": obj.get("ended"),

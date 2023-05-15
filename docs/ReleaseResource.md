@@ -30,8 +30,6 @@ Name | Type | Description | Notes
 **mapped_season_number** | **int** |  | [optional] 
 **mapped_episode_numbers** | **List[int]** |  | [optional] 
 **mapped_absolute_episode_numbers** | **List[int]** |  | [optional] 
-**mapped_series_id** | **int** |  | [optional] 
-**mapped_episode_info** | [**List[ReleaseEpisodeResource]**](ReleaseEpisodeResource.md) |  | [optional] 
 **approved** | **bool** |  | [optional] 
 **temporarily_rejected** | **bool** |  | [optional] 
 **rejected** | **bool** |  | [optional] 
@@ -59,9 +57,6 @@ Name | Type | Description | Notes
 **special** | **bool** |  | [optional] 
 **series_id** | **int** |  | [optional] 
 **episode_id** | **int** |  | [optional] 
-**episode_ids** | **List[int]** |  | [optional] 
-**download_client_id** | **int** |  | [optional] 
-**should_override** | **bool** |  | [optional] 
 
 ## Example
 
