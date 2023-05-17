@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.7.0](https://github.com/devopsarr/sonarr-py/compare/v0.6.2...v0.7.0) (2023-05-17)
+
+
+### Features
+
+* **devopsarr/prowlarr-py#11:** add request timeout to config ([ff03ca7](https://github.com/devopsarr/sonarr-py/commit/ff03ca7014593f5d53a2346c16106602e3213aa6))
+* pin openapi version and add version management ([0ea6441](https://github.com/devopsarr/sonarr-py/commit/0ea6441677bfcf51b0393fa61bb7dd173e9129f4))
+
 ## [0.6.2](https://github.com/devopsarr/sonarr-py/compare/v0.6.1...v0.6.2) (2023-03-27)
 
 
