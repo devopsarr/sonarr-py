@@ -46,10 +46,12 @@ class MediaManagementConfigResource(BaseModel):
     skip_free_space_check_when_importing: Optional[bool]
     minimum_free_space_when_importing: Optional[int]
     copy_using_hardlinks: Optional[bool]
+    use_script_import: Optional[bool]
+    script_import_path: Optional[str]
     import_extra_files: Optional[bool]
     extra_file_extensions: Optional[str]
     enable_media_info: Optional[bool]
-    __properties = ["id", "autoUnmonitorPreviouslyDownloadedEpisodes", "recycleBin", "recycleBinCleanupDays", "downloadPropersAndRepacks", "createEmptySeriesFolders", "deleteEmptyFolders", "fileDate", "rescanAfterRefresh", "setPermissionsLinux", "chmodFolder", "chownGroup", "episodeTitleRequired", "skipFreeSpaceCheckWhenImporting", "minimumFreeSpaceWhenImporting", "copyUsingHardlinks", "importExtraFiles", "extraFileExtensions", "enableMediaInfo"]
+    __properties = ["id", "autoUnmonitorPreviouslyDownloadedEpisodes", "recycleBin", "recycleBinCleanupDays", "downloadPropersAndRepacks", "createEmptySeriesFolders", "deleteEmptyFolders", "fileDate", "rescanAfterRefresh", "setPermissionsLinux", "chmodFolder", "chownGroup", "episodeTitleRequired", "skipFreeSpaceCheckWhenImporting", "minimumFreeSpaceWhenImporting", "copyUsingHardlinks", "useScriptImport", "scriptImportPath", "importExtraFiles", "extraFileExtensions", "enableMediaInfo"]
 
     class Config:
         allow_population_by_field_name = True
@@ -122,6 +124,8 @@ class MediaManagementConfigResource(BaseModel):
             "skip_free_space_check_when_importing": obj.get("skipFreeSpaceCheckWhenImporting"),
             "minimum_free_space_when_importing": obj.get("minimumFreeSpaceWhenImporting"),
             "copy_using_hardlinks": obj.get("copyUsingHardlinks"),
+            "use_script_import": obj.get("useScriptImport"),
+            "script_import_path": obj.get("scriptImportPath"),
             "import_extra_files": obj.get("importExtraFiles"),
             "extra_file_extensions": obj.get("extraFileExtensions"),
             "enable_media_info": obj.get("enableMediaInfo")
