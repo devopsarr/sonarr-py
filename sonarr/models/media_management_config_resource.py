@@ -92,6 +92,10 @@ class MediaManagementConfigResource(BaseModel):
         if self.chown_group is None:
             _dict['chownGroup'] = None
 
+        # set to None if script_import_path (nullable) is None
+        if self.script_import_path is None:
+            _dict['scriptImportPath'] = None
+
         # set to None if extra_file_extensions (nullable) is None
         if self.extra_file_extensions is None:
             _dict['extraFileExtensions'] = None
