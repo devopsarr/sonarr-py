@@ -39,6 +39,7 @@ from sonarr.models.custom_format_resource import CustomFormatResource
 from sonarr.models.custom_format_specification_schema import CustomFormatSpecificationSchema
 from sonarr.models.delay_profile_resource import DelayProfileResource
 from sonarr.models.disk_space_resource import DiskSpaceResource
+from sonarr.models.download_client_bulk_resource import DownloadClientBulkResource
 from sonarr.models.download_client_config_resource import DownloadClientConfigResource
 from sonarr.models.download_client_resource import DownloadClientResource
 from sonarr.models.download_protocol import DownloadProtocol
@@ -56,9 +57,11 @@ from sonarr.models.health_resource import HealthResource
 from sonarr.models.history_resource import HistoryResource
 from sonarr.models.history_resource_paging_resource import HistoryResourcePagingResource
 from sonarr.models.host_config_resource import HostConfigResource
+from sonarr.models.import_list_bulk_resource import ImportListBulkResource
 from sonarr.models.import_list_exclusion_resource import ImportListExclusionResource
 from sonarr.models.import_list_resource import ImportListResource
 from sonarr.models.import_list_type import ImportListType
+from sonarr.models.indexer_bulk_resource import IndexerBulkResource
 from sonarr.models.indexer_config_resource import IndexerConfigResource
 from sonarr.models.indexer_resource import IndexerResource
 from sonarr.models.language import Language
@@ -76,10 +79,12 @@ from sonarr.models.media_cover import MediaCover
 from sonarr.models.media_cover_types import MediaCoverTypes
 from sonarr.models.media_info_resource import MediaInfoResource
 from sonarr.models.media_management_config_resource import MediaManagementConfigResource
+from sonarr.models.metadata_bulk_resource import MetadataBulkResource
 from sonarr.models.metadata_resource import MetadataResource
 from sonarr.models.monitor_types import MonitorTypes
 from sonarr.models.monitoring_options import MonitoringOptions
 from sonarr.models.naming_config_resource import NamingConfigResource
+from sonarr.models.notification_bulk_resource import NotificationBulkResource
 from sonarr.models.notification_resource import NotificationResource
 from sonarr.models.paging_resource_filter import PagingResourceFilter
 from sonarr.models.parse_resource import ParseResource
