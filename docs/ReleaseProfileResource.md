@@ -7,8 +7,8 @@ Name | Type | Description | Notes
 **id** | **int** |  | [optional] 
 **name** | **str** |  | [optional] 
 **enabled** | **bool** |  | [optional] 
-**required** | **object** |  | [optional] 
-**ignored** | **object** |  | [optional] 
+**required** | **List[str]** |  | [optional] 
+**ignored** | **List[str]** |  | [optional] 
 **indexer_id** | **int** |  | [optional] 
 **tags** | **List[int]** |  | [optional] 
 
