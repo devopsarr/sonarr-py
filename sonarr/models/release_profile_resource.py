@@ -17,7 +17,7 @@ import re  # noqa: F401
 import json
 
 
-from typing import Any, List, Optional
+from typing import List, Optional
 from pydantic import BaseModel
 
 class ReleaseProfileResource(BaseModel):
@@ -29,8 +29,8 @@ class ReleaseProfileResource(BaseModel):
     id: Optional[int]
     name: Optional[str]
     enabled: Optional[bool]
-    required: Optional[object]
-    ignored: Optional[object]
+    required: Optional[List]
+    ignored: Optional[List]
     indexer_id: Optional[int]
     tags: Optional[List]
     __properties = ["id", "name", "enabled", "required", "ignored", "indexerId", "tags"]
