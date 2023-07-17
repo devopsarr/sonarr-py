@@ -101,7 +101,6 @@ docs/MediaInfoResource.md
 docs/MediaManagementConfigApi.md
 docs/MediaManagementConfigResource.md
 docs/MetadataApi.md
-docs/MetadataBulkResource.md
 docs/MetadataResource.md
 docs/MissingApi.md
 docs/MonitorTypes.md
@@ -109,7 +108,6 @@ docs/MonitoringOptions.md
 docs/NamingConfigApi.md
 docs/NamingConfigResource.md
 docs/NotificationApi.md
-docs/NotificationBulkResource.md
 docs/NotificationResource.md
 docs/PagingResourceFilter.md
 docs/ParseApi.md
@@ -336,12 +334,10 @@ sonarr/models/media_cover.py
 sonarr/models/media_cover_types.py
 sonarr/models/media_info_resource.py
 sonarr/models/media_management_config_resource.py
-sonarr/models/metadata_bulk_resource.py
 sonarr/models/metadata_resource.py
 sonarr/models/monitor_types.py
 sonarr/models/monitoring_options.py
 sonarr/models/naming_config_resource.py
-sonarr/models/notification_bulk_resource.py
 sonarr/models/notification_resource.py
 sonarr/models/paging_resource_filter.py
 sonarr/models/parse_resource.py

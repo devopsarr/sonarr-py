@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **notification_ids** | **List[int]** |  | [optional] 
 **restriction_ids** | **List[int]** |  | [optional] 
 **indexer_ids** | **List[int]** |  | [optional] 
+**download_client_ids** | **List[int]** |  | [optional] 
 **auto_tag_ids** | **List[int]** |  | [optional] 
 **series_ids** | **List[int]** |  | [optional] 
 

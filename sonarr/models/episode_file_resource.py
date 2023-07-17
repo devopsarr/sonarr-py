@@ -42,9 +42,10 @@ class EpisodeFileResource(BaseModel):
     languages: Optional[List]
     quality: Optional[QualityModel]
     custom_formats: Optional[List]
+    custom_format_score: Optional[int]
     media_info: Optional[MediaInfoResource]
     quality_cutoff_not_met: Optional[bool]
-    __properties = ["id", "seriesId", "seasonNumber", "relativePath", "path", "size", "dateAdded", "sceneName", "releaseGroup", "languages", "quality", "customFormats", "mediaInfo", "qualityCutoffNotMet"]
+    __properties = ["id", "seriesId", "seasonNumber", "relativePath", "path", "size", "dateAdded", "sceneName", "releaseGroup", "languages", "quality", "customFormats", "customFormatScore", "mediaInfo", "qualityCutoffNotMet"]
 
     class Config:
         allow_population_by_field_name = True
@@ -141,6 +142,7 @@ class EpisodeFileResource(BaseModel):
             "languages": [Language.from_dict(_item) for _item in obj.get("languages")] if obj.get("languages") is not None else None,
             "quality": QualityModel.from_dict(obj.get("quality")) if obj.get("quality") is not None else None,
             "custom_formats": [CustomFormatResource.from_dict(_item) for _item in obj.get("customFormats")] if obj.get("customFormats") is not None else None,
+            "custom_format_score": obj.get("customFormatScore"),
             "media_info": MediaInfoResource.from_dict(obj.get("mediaInfo")) if obj.get("mediaInfo") is not None else None,
             "quality_cutoff_not_met": obj.get("qualityCutoffNotMet")
         })

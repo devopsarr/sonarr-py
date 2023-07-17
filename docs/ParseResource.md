@@ -9,6 +9,9 @@ Name | Type | Description | Notes
 **parsed_episode_info** | [**ParsedEpisodeInfo**](ParsedEpisodeInfo.md) |  | [optional] 
 **series** | [**SeriesResource**](SeriesResource.md) |  | [optional] 
 **episodes** | [**List[EpisodeResource]**](EpisodeResource.md) |  | [optional] 
+**languages** | [**List[Language]**](Language.md) |  | [optional] 
+**custom_formats** | [**List[CustomFormatResource]**](CustomFormatResource.md) |  | [optional] 
+**custom_format_score** | **int** |  | [optional] 
 
 ## Example
 
