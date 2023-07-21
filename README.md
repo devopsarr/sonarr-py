@@ -129,8 +129,8 @@ Class | Method | HTTP request | Description
 *CustomFormatApi* | [**create_custom_format**](docs/CustomFormatApi.md#create_custom_format) | **POST** /api/v3/customformat | 
 *CustomFormatApi* | [**delete_custom_format**](docs/CustomFormatApi.md#delete_custom_format) | **DELETE** /api/v3/customformat/{id} | 
 *CustomFormatApi* | [**get_custom_format_by_id**](docs/CustomFormatApi.md#get_custom_format_by_id) | **GET** /api/v3/customformat/{id} | 
-*CustomFormatApi* | [**get_custom_format_schema**](docs/CustomFormatApi.md#get_custom_format_schema) | **GET** /api/v3/customformat/schema | 
 *CustomFormatApi* | [**list_custom_format**](docs/CustomFormatApi.md#list_custom_format) | **GET** /api/v3/customformat | 
+*CustomFormatApi* | [**list_custom_format_schema**](docs/CustomFormatApi.md#list_custom_format_schema) | **GET** /api/v3/customformat/schema | 
 *CustomFormatApi* | [**update_custom_format**](docs/CustomFormatApi.md#update_custom_format) | **PUT** /api/v3/customformat/{id} | 
 *CutoffApi* | [**get_wanted_cutoff**](docs/CutoffApi.md#get_wanted_cutoff) | **GET** /api/v3/wanted/cutoff | 
 *CutoffApi* | [**get_wanted_cutoff_by_id**](docs/CutoffApi.md#get_wanted_cutoff_by_id) | **GET** /api/v3/wanted/cutoff/{id} | 
@@ -207,7 +207,6 @@ Class | Method | HTTP request | Description
 *IndexerConfigApi* | [**get_indexer_config**](docs/IndexerConfigApi.md#get_indexer_config) | **GET** /api/v3/config/indexer | 
 *IndexerConfigApi* | [**get_indexer_config_by_id**](docs/IndexerConfigApi.md#get_indexer_config_by_id) | **GET** /api/v3/config/indexer/{id} | 
 *IndexerConfigApi* | [**update_indexer_config**](docs/IndexerConfigApi.md#update_indexer_config) | **PUT** /api/v3/config/indexer/{id} | 
-*InitializeJsApi* | [**get_initialize_js**](docs/InitializeJsApi.md#get_initialize_js) | **GET** /initialize.js | 
 *LanguageApi* | [**get_language_by_id**](docs/LanguageApi.md#get_language_by_id) | **GET** /api/v3/language/{id} | 
 *LanguageApi* | [**list_language**](docs/LanguageApi.md#list_language) | **GET** /api/v3/language | 
 *LanguageProfileApi* | [**create_language_profile**](docs/LanguageProfileApi.md#create_language_profile) | **POST** /api/v3/languageprofile | 
