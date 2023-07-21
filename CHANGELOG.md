@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.8.0](https://github.com/devopsarr/sonarr-py/compare/v0.7.0...v0.8.0) (2023-07-21)
+
+
+### Features
+
+* **sonarr:** add response type to custom format ([99990e8](https://github.com/devopsarr/sonarr-py/commit/99990e8b215d1e03d3d715ce5fa1a001a586791b))
+
+
+### Bug Fixes
+
+* set pydantic version ([6a01f14](https://github.com/devopsarr/sonarr-py/commit/6a01f14a8a7db2d196395291dae6f9bdc605a626))
+* sonarr release profile required and ignored list ([1933ddc](https://github.com/devopsarr/sonarr-py/commit/1933ddc8f727f8f35f643fd4886a7f034fcd6273))
+
 ## [0.7.0](https://github.com/devopsarr/sonarr-py/compare/v0.6.2...v0.7.0) (2023-05-17)
 
 
