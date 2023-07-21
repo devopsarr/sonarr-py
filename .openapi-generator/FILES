@@ -75,7 +75,6 @@ docs/IndexerBulkResource.md
 docs/IndexerConfigApi.md
 docs/IndexerConfigResource.md
 docs/IndexerResource.md
-docs/InitializeJsApi.md
 docs/Language.md
 docs/LanguageApi.md
 docs/LanguageProfileApi.md
@@ -223,7 +222,6 @@ sonarr/api/import_list_api.py
 sonarr/api/import_list_exclusion_api.py
 sonarr/api/indexer_api.py
 sonarr/api/indexer_config_api.py
-sonarr/api/initialize_js_api.py
 sonarr/api/language_api.py
 sonarr/api/language_profile_api.py
 sonarr/api/language_profile_schema_api.py

@@ -44,7 +44,6 @@ from sonarr.api.import_list_api import ImportListApi
 from sonarr.api.import_list_exclusion_api import ImportListExclusionApi
 from sonarr.api.indexer_api import IndexerApi
 from sonarr.api.indexer_config_api import IndexerConfigApi
-from sonarr.api.initialize_js_api import InitializeJsApi
 from sonarr.api.language_api import LanguageApi
 from sonarr.api.language_profile_api import LanguageProfileApi
 from sonarr.api.language_profile_schema_api import LanguageProfileSchemaApi
