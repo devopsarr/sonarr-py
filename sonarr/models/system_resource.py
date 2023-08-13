@@ -20,6 +20,7 @@ from datetime import datetime
 from typing import Optional
 from pydantic import BaseModel
 from sonarr.models.authentication_type import AuthenticationType
+from sonarr.models.database_type import DatabaseType
 from sonarr.models.runtime_mode import RuntimeMode
 from sonarr.models.update_mechanism import UpdateMechanism
 
@@ -59,7 +60,9 @@ class SystemResource(BaseModel):
     package_author: Optional[str]
     package_update_mechanism: Optional[UpdateMechanism]
     package_update_mechanism_message: Optional[str]
-    __properties = ["appName", "instanceName", "version", "buildTime", "isDebug", "isProduction", "isAdmin", "isUserInteractive", "startupPath", "appData", "osName", "osVersion", "isNetCore", "isLinux", "isOsx", "isWindows", "isDocker", "mode", "branch", "authentication", "sqliteVersion", "migrationVersion", "urlBase", "runtimeVersion", "runtimeName", "startTime", "packageVersion", "packageAuthor", "packageUpdateMechanism", "packageUpdateMechanismMessage"]
+    database_version: Optional[str]
+    database_type: Optional[DatabaseType]
+    __properties = ["appName", "instanceName", "version", "buildTime", "isDebug", "isProduction", "isAdmin", "isUserInteractive", "startupPath", "appData", "osName", "osVersion", "isNetCore", "isLinux", "isOsx", "isWindows", "isDocker", "mode", "branch", "authentication", "sqliteVersion", "migrationVersion", "urlBase", "runtimeVersion", "runtimeName", "startTime", "packageVersion", "packageAuthor", "packageUpdateMechanism", "packageUpdateMechanismMessage", "databaseVersion", "databaseType"]
 
     class Config:
         allow_population_by_field_name = True
@@ -181,7 +184,9 @@ class SystemResource(BaseModel):
             "package_version": obj.get("packageVersion"),
             "package_author": obj.get("packageAuthor"),
             "package_update_mechanism": obj.get("packageUpdateMechanism"),
-            "package_update_mechanism_message": obj.get("packageUpdateMechanismMessage")
+            "package_update_mechanism_message": obj.get("packageUpdateMechanismMessage"),
+            "database_version": obj.get("databaseVersion"),
+            "database_type": obj.get("databaseType")
         })
         return _obj
 

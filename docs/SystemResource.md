@@ -34,6 +34,8 @@ Name | Type | Description | Notes
 **package_author** | **str** |  | [optional] 
 **package_update_mechanism** | [**UpdateMechanism**](UpdateMechanism.md) |  | [optional] 
 **package_update_mechanism_message** | **str** |  | [optional] 
+**database_version** | **str** |  | [optional] 
+**database_type** | [**DatabaseType**](DatabaseType.md) |  | [optional] 
 
 ## Example
 
