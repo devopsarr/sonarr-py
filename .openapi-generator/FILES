@@ -34,6 +34,7 @@ docs/CustomFormatApi.md
 docs/CustomFormatResource.md
 docs/CustomFormatSpecificationSchema.md
 docs/CutoffApi.md
+docs/DatabaseType.md
 docs/DelayProfileApi.md
 docs/DelayProfileResource.md
 docs/DiskSpaceApi.md
@@ -290,6 +291,7 @@ sonarr/models/command_trigger.py
 sonarr/models/custom_filter_resource.py
 sonarr/models/custom_format_resource.py
 sonarr/models/custom_format_specification_schema.py
+sonarr/models/database_type.py
 sonarr/models/delay_profile_resource.py
 sonarr/models/disk_space_resource.py
 sonarr/models/download_client_bulk_resource.py

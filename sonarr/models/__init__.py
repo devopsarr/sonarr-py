@@ -37,6 +37,7 @@ from sonarr.models.command_trigger import CommandTrigger
 from sonarr.models.custom_filter_resource import CustomFilterResource
 from sonarr.models.custom_format_resource import CustomFormatResource
 from sonarr.models.custom_format_specification_schema import CustomFormatSpecificationSchema
+from sonarr.models.database_type import DatabaseType
 from sonarr.models.delay_profile_resource import DelayProfileResource
 from sonarr.models.disk_space_resource import DiskSpaceResource
 from sonarr.models.download_client_bulk_resource import DownloadClientBulkResource
