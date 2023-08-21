@@ -39,6 +39,7 @@ class EpisodeResource(BaseModel):
     air_date: Optional[str]
     air_date_utc: Optional[datetime]
     runtime: Optional[int]
+    finale_type: Optional[str]
     overview: Optional[str]
     episode_file: Optional[EpisodeFileResource]
     has_file: Optional[bool]
@@ -54,7 +55,7 @@ class EpisodeResource(BaseModel):
     series: Optional[SeriesResource]
     images: Optional[List]
     grabbed: Optional[bool]
-    __properties = ["id", "seriesId", "tvdbId", "episodeFileId", "seasonNumber", "episodeNumber", "title", "airDate", "airDateUtc", "runtime", "overview", "episodeFile", "hasFile", "monitored", "absoluteEpisodeNumber", "sceneAbsoluteEpisodeNumber", "sceneEpisodeNumber", "sceneSeasonNumber", "unverifiedSceneNumbering", "endTime", "grabDate", "seriesTitle", "series", "images", "grabbed"]
+    __properties = ["id", "seriesId", "tvdbId", "episodeFileId", "seasonNumber", "episodeNumber", "title", "airDate", "airDateUtc", "runtime", "finaleType", "overview", "episodeFile", "hasFile", "monitored", "absoluteEpisodeNumber", "sceneAbsoluteEpisodeNumber", "sceneEpisodeNumber", "sceneSeasonNumber", "unverifiedSceneNumbering", "endTime", "grabDate", "seriesTitle", "series", "images", "grabbed"]
 
     class Config:
         allow_population_by_field_name = True
@@ -107,6 +108,10 @@ class EpisodeResource(BaseModel):
         # set to None if air_date_utc (nullable) is None
         if self.air_date_utc is None:
             _dict['airDateUtc'] = None
+
+        # set to None if finale_type (nullable) is None
+        if self.finale_type is None:
+            _dict['finaleType'] = None
 
         # set to None if overview (nullable) is None
         if self.overview is None:
@@ -166,6 +171,7 @@ class EpisodeResource(BaseModel):
             "air_date": obj.get("airDate"),
             "air_date_utc": obj.get("airDateUtc"),
             "runtime": obj.get("runtime"),
+            "finale_type": obj.get("finaleType"),
             "overview": obj.get("overview"),
             "episode_file": EpisodeFileResource.from_dict(obj.get("episodeFile")) if obj.get("episodeFile") is not None else None,
             "has_file": obj.get("hasFile"),

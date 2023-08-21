@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **air_date** | **str** |  | [optional] 
 **air_date_utc** | **datetime** |  | [optional] 
 **runtime** | **int** |  | [optional] 
+**finale_type** | **str** |  | [optional] 
 **overview** | **str** |  | [optional] 
 **episode_file** | [**EpisodeFileResource**](EpisodeFileResource.md) |  | [optional] 
 **has_file** | **bool** |  | [optional] 
