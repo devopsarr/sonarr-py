@@ -104,8 +104,8 @@ Class | Method | HTTP request | Description
 *AutoTaggingApi* | [**create_auto_tagging**](docs/AutoTaggingApi.md#create_auto_tagging) | **POST** /api/v3/autotagging | 
 *AutoTaggingApi* | [**delete_auto_tagging**](docs/AutoTaggingApi.md#delete_auto_tagging) | **DELETE** /api/v3/autotagging/{id} | 
 *AutoTaggingApi* | [**get_auto_tagging_by_id**](docs/AutoTaggingApi.md#get_auto_tagging_by_id) | **GET** /api/v3/autotagging/{id} | 
-*AutoTaggingApi* | [**get_auto_tagging_schema**](docs/AutoTaggingApi.md#get_auto_tagging_schema) | **GET** /api/v3/autotagging/schema | 
 *AutoTaggingApi* | [**list_auto_tagging**](docs/AutoTaggingApi.md#list_auto_tagging) | **GET** /api/v3/autotagging | 
+*AutoTaggingApi* | [**list_auto_tagging_schema**](docs/AutoTaggingApi.md#list_auto_tagging_schema) | **GET** /api/v3/autotagging/schema | 
 *AutoTaggingApi* | [**update_auto_tagging**](docs/AutoTaggingApi.md#update_auto_tagging) | **PUT** /api/v3/autotagging/{id} | 
 *BackupApi* | [**create_system_backup_restore_by_id**](docs/BackupApi.md#create_system_backup_restore_by_id) | **POST** /api/v3/system/backup/restore/{id} | 
 *BackupApi* | [**create_system_backup_restore_upload**](docs/BackupApi.md#create_system_backup_restore_upload) | **POST** /api/v3/system/backup/restore/upload | 
