@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.0](https://github.com/devopsarr/sonarr-py/compare/v0.8.0...v0.9.0) (2023-08-23)
+
+
+### Features
+
+* add sonarr auto tagging schema return type ([feeea7c](https://github.com/devopsarr/sonarr-py/commit/feeea7c43dcef2f2a0b3216b67de2d22dfed8f44))
+
 ## [0.8.0](https://github.com/devopsarr/sonarr-py/compare/v0.7.0...v0.8.0) (2023-07-21)
 
 
