@@ -340,17 +340,19 @@ class SeriesApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def get_series_by_id(self, id : StrictInt, **kwargs) -> SeriesResource:  # noqa: E501
+    def get_series_by_id(self, id : StrictInt, include_season_images : Optional[StrictBool] = None, **kwargs) -> SeriesResource:  # noqa: E501
         """get_series_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_series_by_id(id, async_req=True)
+        >>> thread = api.get_series_by_id(id, include_season_images, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
         :type id: int
+        :param include_season_images:
+        :type include_season_images: bool
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -367,20 +369,22 @@ class SeriesApi(object):
         :rtype: SeriesResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_series_by_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.get_series_by_id_with_http_info(id, include_season_images, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_series_by_id_with_http_info(self, id : StrictInt, **kwargs):  # noqa: E501
+    def get_series_by_id_with_http_info(self, id : StrictInt, include_season_images : Optional[StrictBool] = None, **kwargs):  # noqa: E501
         """get_series_by_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_series_by_id_with_http_info(id, async_req=True)
+        >>> thread = api.get_series_by_id_with_http_info(id, include_season_images, async_req=True)
         >>> result = thread.get()
 
         :param id: (required)
         :type id: int
+        :param include_season_images:
+        :type include_season_images: bool
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
         :param _return_http_data_only: response data without head status code
@@ -408,7 +412,8 @@ class SeriesApi(object):
         _params = locals()
 
         _all_params = [
-            'id'
+            'id',
+            'include_season_images'
         ]
         _all_params.extend(
             [
@@ -441,6 +446,8 @@ class SeriesApi(object):
 
         # process the query parameters
         _query_params = []
+        if _params.get('include_season_images') is not None:  # noqa: E501
+            _query_params.append(('includeSeasonImages', _params['include_season_images']))
 
         # process the header parameters
         _header_params = dict(_params.get('_headers', {}))
