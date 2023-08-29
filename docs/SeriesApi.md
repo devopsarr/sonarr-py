@@ -260,7 +260,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_series_by_id**
-> SeriesResource get_series_by_id(id)
+> SeriesResource get_series_by_id(id, include_season_images=include_season_images)
 
 
 
@@ -302,9 +302,10 @@ with sonarr.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = sonarr.SeriesApi(api_client)
     id = 56 # int | 
+    include_season_images = False # bool |  (optional) (default to False)
 
     try:
-        api_response = api_instance.get_series_by_id(id)
+        api_response = api_instance.get_series_by_id(id, include_season_images=include_season_images)
         print("The response of SeriesApi->get_series_by_id:\n")
         pprint(api_response)
     except Exception as e:
@@ -347,9 +348,10 @@ with sonarr.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = sonarr.SeriesApi(api_client)
     id = 56 # int | 
+    include_season_images = False # bool |  (optional) (default to False)
 
     try:
-        api_response = api_instance.get_series_by_id(id)
+        api_response = api_instance.get_series_by_id(id, include_season_images=include_season_images)
         print("The response of SeriesApi->get_series_by_id:\n")
         pprint(api_response)
     except Exception as e:
@@ -361,6 +363,7 @@ with sonarr.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  | 
+ **include_season_images** | **bool**|  | [optional] [default to False]
 
 ### Return type
 
