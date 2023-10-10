@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **get_wanted_missing**
-> EpisodeResourcePagingResource get_wanted_missing(include_series=include_series, include_images=include_images)
+> EpisodeResourcePagingResource get_wanted_missing(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, include_series=include_series, include_images=include_images, monitored=monitored)
 
 
 
@@ -50,11 +50,16 @@ configuration.api_key['X-Api-Key'] = os.environ["API_KEY"]
 with sonarr.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = sonarr.MissingApi(api_client)
+    page = 1 # int |  (optional) (default to 1)
+    page_size = 10 # int |  (optional) (default to 10)
+    sort_key = 'sort_key_example' # str |  (optional)
+    sort_direction = sonarr.SortDirection() # SortDirection |  (optional)
     include_series = False # bool |  (optional) (default to False)
     include_images = False # bool |  (optional) (default to False)
+    monitored = True # bool |  (optional) (default to True)
 
     try:
-        api_response = api_instance.get_wanted_missing(include_series=include_series, include_images=include_images)
+        api_response = api_instance.get_wanted_missing(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, include_series=include_series, include_images=include_images, monitored=monitored)
         print("The response of MissingApi->get_wanted_missing:\n")
         pprint(api_response)
     except Exception as e:
@@ -96,11 +101,16 @@ configuration.api_key['X-Api-Key'] = os.environ["API_KEY"]
 with sonarr.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = sonarr.MissingApi(api_client)
+    page = 1 # int |  (optional) (default to 1)
+    page_size = 10 # int |  (optional) (default to 10)
+    sort_key = 'sort_key_example' # str |  (optional)
+    sort_direction = sonarr.SortDirection() # SortDirection |  (optional)
     include_series = False # bool |  (optional) (default to False)
     include_images = False # bool |  (optional) (default to False)
+    monitored = True # bool |  (optional) (default to True)
 
     try:
-        api_response = api_instance.get_wanted_missing(include_series=include_series, include_images=include_images)
+        api_response = api_instance.get_wanted_missing(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, include_series=include_series, include_images=include_images, monitored=monitored)
         print("The response of MissingApi->get_wanted_missing:\n")
         pprint(api_response)
     except Exception as e:
@@ -111,8 +121,13 @@ with sonarr.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **page** | **int**|  | [optional] [default to 1]
+ **page_size** | **int**|  | [optional] [default to 10]
+ **sort_key** | **str**|  | [optional] 
+ **sort_direction** | [**SortDirection**](.md)|  | [optional] 
  **include_series** | **bool**|  | [optional] [default to False]
  **include_images** | **bool**|  | [optional] [default to False]
+ **monitored** | **bool**|  | [optional] [default to True]
 
 ### Return type
 

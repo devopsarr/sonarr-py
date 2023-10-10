@@ -130,7 +130,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_history**
-> HistoryResourcePagingResource get_history(include_series=include_series, include_episode=include_episode)
+> HistoryResourcePagingResource get_history(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, include_series=include_series, include_episode=include_episode, event_type=event_type, episode_id=episode_id, download_id=download_id)
 
 
 
@@ -171,11 +171,18 @@ configuration.api_key['X-Api-Key'] = os.environ["API_KEY"]
 with sonarr.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = sonarr.HistoryApi(api_client)
+    page = 1 # int |  (optional) (default to 1)
+    page_size = 10 # int |  (optional) (default to 10)
+    sort_key = 'sort_key_example' # str |  (optional)
+    sort_direction = sonarr.SortDirection() # SortDirection |  (optional)
     include_series = True # bool |  (optional)
     include_episode = True # bool |  (optional)
+    event_type = 56 # int |  (optional)
+    episode_id = 56 # int |  (optional)
+    download_id = 'download_id_example' # str |  (optional)
 
     try:
-        api_response = api_instance.get_history(include_series=include_series, include_episode=include_episode)
+        api_response = api_instance.get_history(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, include_series=include_series, include_episode=include_episode, event_type=event_type, episode_id=episode_id, download_id=download_id)
         print("The response of HistoryApi->get_history:\n")
         pprint(api_response)
     except Exception as e:
@@ -217,11 +224,18 @@ configuration.api_key['X-Api-Key'] = os.environ["API_KEY"]
 with sonarr.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = sonarr.HistoryApi(api_client)
+    page = 1 # int |  (optional) (default to 1)
+    page_size = 10 # int |  (optional) (default to 10)
+    sort_key = 'sort_key_example' # str |  (optional)
+    sort_direction = sonarr.SortDirection() # SortDirection |  (optional)
     include_series = True # bool |  (optional)
     include_episode = True # bool |  (optional)
+    event_type = 56 # int |  (optional)
+    episode_id = 56 # int |  (optional)
+    download_id = 'download_id_example' # str |  (optional)
 
     try:
-        api_response = api_instance.get_history(include_series=include_series, include_episode=include_episode)
+        api_response = api_instance.get_history(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, include_series=include_series, include_episode=include_episode, event_type=event_type, episode_id=episode_id, download_id=download_id)
         print("The response of HistoryApi->get_history:\n")
         pprint(api_response)
     except Exception as e:
@@ -232,8 +246,15 @@ with sonarr.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **page** | **int**|  | [optional] [default to 1]
+ **page_size** | **int**|  | [optional] [default to 10]
+ **sort_key** | **str**|  | [optional] 
+ **sort_direction** | [**SortDirection**](.md)|  | [optional] 
  **include_series** | **bool**|  | [optional] 
  **include_episode** | **bool**|  | [optional] 
+ **event_type** | **int**|  | [optional] 
+ **episode_id** | **int**|  | [optional] 
+ **download_id** | **str**|  | [optional] 
 
 ### Return type
 

@@ -503,41 +503,41 @@ class NamingConfigApi(object):
         # process the query parameters
         _query_params = []
         if _params.get('rename_episodes') is not None:  # noqa: E501
-            _query_params.append(('RenameEpisodes', _params['rename_episodes']))
+            _query_params.append(('renameEpisodes', _params['rename_episodes']))
         if _params.get('replace_illegal_characters') is not None:  # noqa: E501
-            _query_params.append(('ReplaceIllegalCharacters', _params['replace_illegal_characters']))
+            _query_params.append(('replaceIllegalCharacters', _params['replace_illegal_characters']))
         if _params.get('colon_replacement_format') is not None:  # noqa: E501
-            _query_params.append(('ColonReplacementFormat', _params['colon_replacement_format']))
+            _query_params.append(('colonReplacementFormat', _params['colon_replacement_format']))
         if _params.get('multi_episode_style') is not None:  # noqa: E501
-            _query_params.append(('MultiEpisodeStyle', _params['multi_episode_style']))
+            _query_params.append(('multiEpisodeStyle', _params['multi_episode_style']))
         if _params.get('standard_episode_format') is not None:  # noqa: E501
-            _query_params.append(('StandardEpisodeFormat', _params['standard_episode_format']))
+            _query_params.append(('standardEpisodeFormat', _params['standard_episode_format']))
         if _params.get('daily_episode_format') is not None:  # noqa: E501
-            _query_params.append(('DailyEpisodeFormat', _params['daily_episode_format']))
+            _query_params.append(('dailyEpisodeFormat', _params['daily_episode_format']))
         if _params.get('anime_episode_format') is not None:  # noqa: E501
-            _query_params.append(('AnimeEpisodeFormat', _params['anime_episode_format']))
+            _query_params.append(('animeEpisodeFormat', _params['anime_episode_format']))
         if _params.get('series_folder_format') is not None:  # noqa: E501
-            _query_params.append(('SeriesFolderFormat', _params['series_folder_format']))
+            _query_params.append(('seriesFolderFormat', _params['series_folder_format']))
         if _params.get('season_folder_format') is not None:  # noqa: E501
-            _query_params.append(('SeasonFolderFormat', _params['season_folder_format']))
+            _query_params.append(('seasonFolderFormat', _params['season_folder_format']))
         if _params.get('specials_folder_format') is not None:  # noqa: E501
-            _query_params.append(('SpecialsFolderFormat', _params['specials_folder_format']))
+            _query_params.append(('specialsFolderFormat', _params['specials_folder_format']))
         if _params.get('include_series_title') is not None:  # noqa: E501
-            _query_params.append(('IncludeSeriesTitle', _params['include_series_title']))
+            _query_params.append(('includeSeriesTitle', _params['include_series_title']))
         if _params.get('include_episode_title') is not None:  # noqa: E501
-            _query_params.append(('IncludeEpisodeTitle', _params['include_episode_title']))
+            _query_params.append(('includeEpisodeTitle', _params['include_episode_title']))
         if _params.get('include_quality') is not None:  # noqa: E501
-            _query_params.append(('IncludeQuality', _params['include_quality']))
+            _query_params.append(('includeQuality', _params['include_quality']))
         if _params.get('replace_spaces') is not None:  # noqa: E501
-            _query_params.append(('ReplaceSpaces', _params['replace_spaces']))
+            _query_params.append(('replaceSpaces', _params['replace_spaces']))
         if _params.get('separator') is not None:  # noqa: E501
-            _query_params.append(('Separator', _params['separator']))
+            _query_params.append(('separator', _params['separator']))
         if _params.get('number_style') is not None:  # noqa: E501
-            _query_params.append(('NumberStyle', _params['number_style']))
+            _query_params.append(('numberStyle', _params['number_style']))
         if _params.get('id') is not None:  # noqa: E501
-            _query_params.append(('Id', _params['id']))
+            _query_params.append(('id', _params['id']))
         if _params.get('resource_name') is not None:  # noqa: E501
-            _query_params.append(('ResourceName', _params['resource_name']))
+            _query_params.append(('resourceName', _params['resource_name']))
 
         # process the header parameters
         _header_params = dict(_params.get('_headers', {}))

@@ -17,12 +17,13 @@ import re  # noqa: F401
 from pydantic import validate_arguments, ValidationError
 from typing_extensions import Annotated
 
-from pydantic import StrictBool, StrictInt
+from pydantic import StrictBool, StrictInt, StrictStr
 
 from typing import Optional
 
 from sonarr.models.episode_resource import EpisodeResource
 from sonarr.models.episode_resource_paging_resource import EpisodeResourcePagingResource
+from sonarr.models.sort_direction import SortDirection
 
 from sonarr.api_client import ApiClient
 from sonarr.exceptions import (  # noqa: F401
@@ -44,21 +45,31 @@ class CutoffApi(object):
         self.api_client = api_client
 
     @validate_arguments
-    def get_wanted_cutoff(self, include_series : Optional[StrictBool] = None, include_episode_file : Optional[StrictBool] = None, include_images : Optional[StrictBool] = None, **kwargs) -> EpisodeResourcePagingResource:  # noqa: E501
+    def get_wanted_cutoff(self, page : Optional[StrictInt] = None, page_size : Optional[StrictInt] = None, sort_key : Optional[StrictStr] = None, sort_direction : Optional[SortDirection] = None, include_series : Optional[StrictBool] = None, include_episode_file : Optional[StrictBool] = None, include_images : Optional[StrictBool] = None, monitored : Optional[StrictBool] = None, **kwargs) -> EpisodeResourcePagingResource:  # noqa: E501
         """get_wanted_cutoff  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_wanted_cutoff(include_series, include_episode_file, include_images, async_req=True)
+        >>> thread = api.get_wanted_cutoff(page, page_size, sort_key, sort_direction, include_series, include_episode_file, include_images, monitored, async_req=True)
         >>> result = thread.get()
 
+        :param page:
+        :type page: int
+        :param page_size:
+        :type page_size: int
+        :param sort_key:
+        :type sort_key: str
+        :param sort_direction:
+        :type sort_direction: SortDirection
         :param include_series:
         :type include_series: bool
         :param include_episode_file:
         :type include_episode_file: bool
         :param include_images:
         :type include_images: bool
+        :param monitored:
+        :type monitored: bool
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -75,24 +86,34 @@ class CutoffApi(object):
         :rtype: EpisodeResourcePagingResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_wanted_cutoff_with_http_info(include_series, include_episode_file, include_images, **kwargs)  # noqa: E501
+        return self.get_wanted_cutoff_with_http_info(page, page_size, sort_key, sort_direction, include_series, include_episode_file, include_images, monitored, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_wanted_cutoff_with_http_info(self, include_series : Optional[StrictBool] = None, include_episode_file : Optional[StrictBool] = None, include_images : Optional[StrictBool] = None, **kwargs):  # noqa: E501
+    def get_wanted_cutoff_with_http_info(self, page : Optional[StrictInt] = None, page_size : Optional[StrictInt] = None, sort_key : Optional[StrictStr] = None, sort_direction : Optional[SortDirection] = None, include_series : Optional[StrictBool] = None, include_episode_file : Optional[StrictBool] = None, include_images : Optional[StrictBool] = None, monitored : Optional[StrictBool] = None, **kwargs):  # noqa: E501
         """get_wanted_cutoff  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_wanted_cutoff_with_http_info(include_series, include_episode_file, include_images, async_req=True)
+        >>> thread = api.get_wanted_cutoff_with_http_info(page, page_size, sort_key, sort_direction, include_series, include_episode_file, include_images, monitored, async_req=True)
         >>> result = thread.get()
 
+        :param page:
+        :type page: int
+        :param page_size:
+        :type page_size: int
+        :param sort_key:
+        :type sort_key: str
+        :param sort_direction:
+        :type sort_direction: SortDirection
         :param include_series:
         :type include_series: bool
         :param include_episode_file:
         :type include_episode_file: bool
         :param include_images:
         :type include_images: bool
+        :param monitored:
+        :type monitored: bool
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
         :param _return_http_data_only: response data without head status code
@@ -120,9 +141,14 @@ class CutoffApi(object):
         _params = locals()
 
         _all_params = [
+            'page',
+            'page_size',
+            'sort_key',
+            'sort_direction',
             'include_series',
             'include_episode_file',
-            'include_images'
+            'include_images',
+            'monitored'
         ]
         _all_params.extend(
             [
@@ -153,12 +179,22 @@ class CutoffApi(object):
 
         # process the query parameters
         _query_params = []
+        if _params.get('page') is not None:  # noqa: E501
+            _query_params.append(('page', _params['page']))
+        if _params.get('page_size') is not None:  # noqa: E501
+            _query_params.append(('pageSize', _params['page_size']))
+        if _params.get('sort_key') is not None:  # noqa: E501
+            _query_params.append(('sortKey', _params['sort_key']))
+        if _params.get('sort_direction') is not None:  # noqa: E501
+            _query_params.append(('sortDirection', _params['sort_direction']))
         if _params.get('include_series') is not None:  # noqa: E501
             _query_params.append(('includeSeries', _params['include_series']))
         if _params.get('include_episode_file') is not None:  # noqa: E501
             _query_params.append(('includeEpisodeFile', _params['include_episode_file']))
         if _params.get('include_images') is not None:  # noqa: E501
             _query_params.append(('includeImages', _params['include_images']))
+        if _params.get('monitored') is not None:  # noqa: E501
+            _query_params.append(('monitored', _params['monitored']))
 
         # process the header parameters
         _header_params = dict(_params.get('_headers', {}))

@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **download_client_working_folders** | **str** |  | [optional] 
 **enable_completed_download_handling** | **bool** |  | [optional] 
 **auto_redownload_failed** | **bool** |  | [optional] 
+**auto_redownload_failed_from_interactive_search** | **bool** |  | [optional] 
 
 ## Example
 

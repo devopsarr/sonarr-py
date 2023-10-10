@@ -15,6 +15,7 @@ Name | Type | Description | Notes
 **tags** | **List[int]** |  | [optional] 
 **presets** | [**List[ImportListResource]**](ImportListResource.md) |  | [optional] 
 **enable_automatic_add** | **bool** |  | [optional] 
+**search_for_missing_episodes** | **bool** |  | [optional] 
 **should_monitor** | [**MonitorTypes**](MonitorTypes.md) |  | [optional] 
 **root_folder_path** | **str** |  | [optional] 
 **quality_profile_id** | **int** |  | [optional] 
