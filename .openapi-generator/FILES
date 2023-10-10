@@ -109,7 +109,6 @@ docs/NamingConfigApi.md
 docs/NamingConfigResource.md
 docs/NotificationApi.md
 docs/NotificationResource.md
-docs/PagingResourceFilter.md
 docs/ParseApi.md
 docs/ParseResource.md
 docs/ParsedEpisodeInfo.md
@@ -339,7 +338,6 @@ sonarr/models/monitor_types.py
 sonarr/models/monitoring_options.py
 sonarr/models/naming_config_resource.py
 sonarr/models/notification_resource.py
-sonarr/models/paging_resource_filter.py
 sonarr/models/parse_resource.py
 sonarr/models/parsed_episode_info.py
 sonarr/models/ping_resource.py

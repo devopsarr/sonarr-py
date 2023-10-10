@@ -42,6 +42,7 @@ class ImportListResource(BaseModel):
     tags: Optional[List]
     presets: Optional[List]
     enable_automatic_add: Optional[bool]
+    search_for_missing_episodes: Optional[bool]
     should_monitor: Optional[MonitorTypes]
     root_folder_path: Optional[str]
     quality_profile_id: Optional[int]
@@ -50,7 +51,7 @@ class ImportListResource(BaseModel):
     list_type: Optional[ImportListType]
     list_order: Optional[int]
     min_refresh_interval: Optional[str]
-    __properties = ["id", "name", "fields", "implementationName", "implementation", "configContract", "infoLink", "message", "tags", "presets", "enableAutomaticAdd", "shouldMonitor", "rootFolderPath", "qualityProfileId", "seriesType", "seasonFolder", "listType", "listOrder", "minRefreshInterval"]
+    __properties = ["id", "name", "fields", "implementationName", "implementation", "configContract", "infoLink", "message", "tags", "presets", "enableAutomaticAdd", "searchForMissingEpisodes", "shouldMonitor", "rootFolderPath", "qualityProfileId", "seriesType", "seasonFolder", "listType", "listOrder", "minRefreshInterval"]
 
     class Config:
         allow_population_by_field_name = True
@@ -155,6 +156,7 @@ class ImportListResource(BaseModel):
             "tags": obj.get("tags"),
             "presets": [ImportListResource.from_dict(_item) for _item in obj.get("presets")] if obj.get("presets") is not None else None,
             "enable_automatic_add": obj.get("enableAutomaticAdd"),
+            "search_for_missing_episodes": obj.get("searchForMissingEpisodes"),
             "should_monitor": obj.get("shouldMonitor"),
             "root_folder_path": obj.get("rootFolderPath"),
             "quality_profile_id": obj.get("qualityProfileId"),

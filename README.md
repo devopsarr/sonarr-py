@@ -396,7 +396,6 @@ Class | Method | HTTP request | Description
  - [MonitoringOptions](docs/MonitoringOptions.md)
  - [NamingConfigResource](docs/NamingConfigResource.md)
  - [NotificationResource](docs/NotificationResource.md)
- - [PagingResourceFilter](docs/PagingResourceFilter.md)
  - [ParseResource](docs/ParseResource.md)
  - [ParsedEpisodeInfo](docs/ParsedEpisodeInfo.md)
  - [PingResource](docs/PingResource.md)
