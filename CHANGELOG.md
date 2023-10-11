@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.0](https://github.com/devopsarr/sonarr-py/compare/v0.9.0...v0.10.0) (2023-10-11)
+
+
+### Miscellaneous Chores
+
+* **#41:** release 0.10.0 ([18d494e](https://github.com/devopsarr/sonarr-py/commit/18d494ef2e8a8fb5108c83765943cab663c0ef70))
+
 ## [0.9.0](https://github.com/devopsarr/sonarr-py/compare/v0.8.0...v0.9.0) (2023-08-23)
 
 
