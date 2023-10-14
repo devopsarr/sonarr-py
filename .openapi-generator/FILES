@@ -393,4 +393,5 @@ sonarr/models/unmapped_folder.py
 sonarr/models/update_changes.py
 sonarr/models/update_mechanism.py
 sonarr/models/update_resource.py
+sonarr/py.typed
 sonarr/rest.py

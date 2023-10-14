@@ -17,7 +17,7 @@ import re  # noqa: F401
 import json
 
 
-from typing import List, Optional
+from typing import Any, Dict, List, Optional
 from pydantic import BaseModel
 from sonarr.models.monitoring_options import MonitoringOptions
 from sonarr.models.season_pass_series_resource import SeasonPassSeriesResource

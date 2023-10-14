@@ -17,7 +17,7 @@ import re  # noqa: F401
 import json
 
 from datetime import datetime
-from typing import List, Optional, Union
+from typing import Any, Dict, List, Optional, Union
 from pydantic import BaseModel
 from sonarr.models.alternate_title_resource import AlternateTitleResource
 from sonarr.models.custom_format_resource import CustomFormatResource
