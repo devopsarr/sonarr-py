@@ -266,7 +266,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_queue**
-> QueueResourcePagingResource get_queue(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, include_unknown_series_items=include_unknown_series_items, include_series=include_series, include_episode=include_episode)
+> QueueResourcePagingResource get_queue(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, include_unknown_series_items=include_unknown_series_items, include_series=include_series, include_episode=include_episode, series_ids=series_ids, protocol=protocol, languages=languages, quality=quality)
 
 
 
@@ -314,9 +314,13 @@ with sonarr.ApiClient(configuration) as api_client:
     include_unknown_series_items = False # bool |  (optional) (default to False)
     include_series = False # bool |  (optional) (default to False)
     include_episode = False # bool |  (optional) (default to False)
+    series_ids = [56] # List[int] |  (optional)
+    protocol = sonarr.DownloadProtocol() # DownloadProtocol |  (optional)
+    languages = [56] # List[int] |  (optional)
+    quality = 56 # int |  (optional)
 
     try:
-        api_response = api_instance.get_queue(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, include_unknown_series_items=include_unknown_series_items, include_series=include_series, include_episode=include_episode)
+        api_response = api_instance.get_queue(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, include_unknown_series_items=include_unknown_series_items, include_series=include_series, include_episode=include_episode, series_ids=series_ids, protocol=protocol, languages=languages, quality=quality)
         print("The response of QueueApi->get_queue:\n")
         pprint(api_response)
     except Exception as e:
@@ -365,9 +369,13 @@ with sonarr.ApiClient(configuration) as api_client:
     include_unknown_series_items = False # bool |  (optional) (default to False)
     include_series = False # bool |  (optional) (default to False)
     include_episode = False # bool |  (optional) (default to False)
+    series_ids = [56] # List[int] |  (optional)
+    protocol = sonarr.DownloadProtocol() # DownloadProtocol |  (optional)
+    languages = [56] # List[int] |  (optional)
+    quality = 56 # int |  (optional)
 
     try:
-        api_response = api_instance.get_queue(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, include_unknown_series_items=include_unknown_series_items, include_series=include_series, include_episode=include_episode)
+        api_response = api_instance.get_queue(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, include_unknown_series_items=include_unknown_series_items, include_series=include_series, include_episode=include_episode, series_ids=series_ids, protocol=protocol, languages=languages, quality=quality)
         print("The response of QueueApi->get_queue:\n")
         pprint(api_response)
     except Exception as e:
@@ -385,6 +393,10 @@ Name | Type | Description  | Notes
  **include_unknown_series_items** | **bool**|  | [optional] [default to False]
  **include_series** | **bool**|  | [optional] [default to False]
  **include_episode** | **bool**|  | [optional] [default to False]
+ **series_ids** | [**List[int]**](int.md)|  | [optional] 
+ **protocol** | [**DownloadProtocol**](.md)|  | [optional] 
+ **languages** | [**List[int]**](int.md)|  | [optional] 
+ **quality** | **int**|  | [optional] 
 
 ### Return type
 

@@ -130,7 +130,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_history**
-> HistoryResourcePagingResource get_history(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, include_series=include_series, include_episode=include_episode, event_type=event_type, episode_id=episode_id, download_id=download_id)
+> HistoryResourcePagingResource get_history(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, include_series=include_series, include_episode=include_episode, event_type=event_type, episode_id=episode_id, download_id=download_id, series_ids=series_ids, languages=languages, quality=quality)
 
 
 
@@ -180,9 +180,12 @@ with sonarr.ApiClient(configuration) as api_client:
     event_type = 56 # int |  (optional)
     episode_id = 56 # int |  (optional)
     download_id = 'download_id_example' # str |  (optional)
+    series_ids = [56] # List[int] |  (optional)
+    languages = [56] # List[int] |  (optional)
+    quality = [56] # List[int] |  (optional)
 
     try:
-        api_response = api_instance.get_history(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, include_series=include_series, include_episode=include_episode, event_type=event_type, episode_id=episode_id, download_id=download_id)
+        api_response = api_instance.get_history(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, include_series=include_series, include_episode=include_episode, event_type=event_type, episode_id=episode_id, download_id=download_id, series_ids=series_ids, languages=languages, quality=quality)
         print("The response of HistoryApi->get_history:\n")
         pprint(api_response)
     except Exception as e:
@@ -233,9 +236,12 @@ with sonarr.ApiClient(configuration) as api_client:
     event_type = 56 # int |  (optional)
     episode_id = 56 # int |  (optional)
     download_id = 'download_id_example' # str |  (optional)
+    series_ids = [56] # List[int] |  (optional)
+    languages = [56] # List[int] |  (optional)
+    quality = [56] # List[int] |  (optional)
 
     try:
-        api_response = api_instance.get_history(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, include_series=include_series, include_episode=include_episode, event_type=event_type, episode_id=episode_id, download_id=download_id)
+        api_response = api_instance.get_history(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, include_series=include_series, include_episode=include_episode, event_type=event_type, episode_id=episode_id, download_id=download_id, series_ids=series_ids, languages=languages, quality=quality)
         print("The response of HistoryApi->get_history:\n")
         pprint(api_response)
     except Exception as e:
@@ -255,6 +261,9 @@ Name | Type | Description  | Notes
  **event_type** | **int**|  | [optional] 
  **episode_id** | **int**|  | [optional] 
  **download_id** | **str**|  | [optional] 
+ **series_ids** | [**List[int]**](int.md)|  | [optional] 
+ **languages** | [**List[int]**](int.md)|  | [optional] 
+ **quality** | [**List[int]**](int.md)|  | [optional] 
 
 ### Return type
 

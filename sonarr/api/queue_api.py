@@ -17,10 +17,11 @@ import re  # noqa: F401
 from pydantic import validate_arguments, ValidationError
 from typing_extensions import Annotated
 
-from pydantic import StrictBool, StrictInt, StrictStr
+from pydantic import StrictBool, StrictInt, StrictStr, conlist
 
 from typing import Optional
 
+from sonarr.models.download_protocol import DownloadProtocol
 from sonarr.models.queue_bulk_resource import QueueBulkResource
 from sonarr.models.queue_resource_paging_resource import QueueResourcePagingResource
 from sonarr.models.sort_direction import SortDirection
@@ -364,13 +365,13 @@ class QueueApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def get_queue(self, page : Optional[StrictInt] = None, page_size : Optional[StrictInt] = None, sort_key : Optional[StrictStr] = None, sort_direction : Optional[SortDirection] = None, include_unknown_series_items : Optional[StrictBool] = None, include_series : Optional[StrictBool] = None, include_episode : Optional[StrictBool] = None, **kwargs) -> QueueResourcePagingResource:  # noqa: E501
+    def get_queue(self, page : Optional[StrictInt] = None, page_size : Optional[StrictInt] = None, sort_key : Optional[StrictStr] = None, sort_direction : Optional[SortDirection] = None, include_unknown_series_items : Optional[StrictBool] = None, include_series : Optional[StrictBool] = None, include_episode : Optional[StrictBool] = None, series_ids : Optional[conlist(StrictInt)] = None, protocol : Optional[DownloadProtocol] = None, languages : Optional[conlist(StrictInt)] = None, quality : Optional[StrictInt] = None, **kwargs) -> QueueResourcePagingResource:  # noqa: E501
         """get_queue  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_queue(page, page_size, sort_key, sort_direction, include_unknown_series_items, include_series, include_episode, async_req=True)
+        >>> thread = api.get_queue(page, page_size, sort_key, sort_direction, include_unknown_series_items, include_series, include_episode, series_ids, protocol, languages, quality, async_req=True)
         >>> result = thread.get()
 
         :param page:
@@ -387,6 +388,14 @@ class QueueApi(object):
         :type include_series: bool
         :param include_episode:
         :type include_episode: bool
+        :param series_ids:
+        :type series_ids: List[int]
+        :param protocol:
+        :type protocol: DownloadProtocol
+        :param languages:
+        :type languages: List[int]
+        :param quality:
+        :type quality: int
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -403,16 +412,16 @@ class QueueApi(object):
         :rtype: QueueResourcePagingResource
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_queue_with_http_info(page, page_size, sort_key, sort_direction, include_unknown_series_items, include_series, include_episode, **kwargs)  # noqa: E501
+        return self.get_queue_with_http_info(page, page_size, sort_key, sort_direction, include_unknown_series_items, include_series, include_episode, series_ids, protocol, languages, quality, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_queue_with_http_info(self, page : Optional[StrictInt] = None, page_size : Optional[StrictInt] = None, sort_key : Optional[StrictStr] = None, sort_direction : Optional[SortDirection] = None, include_unknown_series_items : Optional[StrictBool] = None, include_series : Optional[StrictBool] = None, include_episode : Optional[StrictBool] = None, **kwargs):  # noqa: E501
+    def get_queue_with_http_info(self, page : Optional[StrictInt] = None, page_size : Optional[StrictInt] = None, sort_key : Optional[StrictStr] = None, sort_direction : Optional[SortDirection] = None, include_unknown_series_items : Optional[StrictBool] = None, include_series : Optional[StrictBool] = None, include_episode : Optional[StrictBool] = None, series_ids : Optional[conlist(StrictInt)] = None, protocol : Optional[DownloadProtocol] = None, languages : Optional[conlist(StrictInt)] = None, quality : Optional[StrictInt] = None, **kwargs):  # noqa: E501
         """get_queue  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_queue_with_http_info(page, page_size, sort_key, sort_direction, include_unknown_series_items, include_series, include_episode, async_req=True)
+        >>> thread = api.get_queue_with_http_info(page, page_size, sort_key, sort_direction, include_unknown_series_items, include_series, include_episode, series_ids, protocol, languages, quality, async_req=True)
         >>> result = thread.get()
 
         :param page:
@@ -429,6 +438,14 @@ class QueueApi(object):
         :type include_series: bool
         :param include_episode:
         :type include_episode: bool
+        :param series_ids:
+        :type series_ids: List[int]
+        :param protocol:
+        :type protocol: DownloadProtocol
+        :param languages:
+        :type languages: List[int]
+        :param quality:
+        :type quality: int
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
         :param _return_http_data_only: response data without head status code
@@ -462,7 +479,11 @@ class QueueApi(object):
             'sort_direction',
             'include_unknown_series_items',
             'include_series',
-            'include_episode'
+            'include_episode',
+            'series_ids',
+            'protocol',
+            'languages',
+            'quality'
         ]
         _all_params.extend(
             [
@@ -507,6 +528,16 @@ class QueueApi(object):
             _query_params.append(('includeSeries', _params['include_series']))
         if _params.get('include_episode') is not None:  # noqa: E501
             _query_params.append(('includeEpisode', _params['include_episode']))
+        if _params.get('series_ids') is not None:  # noqa: E501
+            _query_params.append(('seriesIds', _params['series_ids']))
+            _collection_formats['seriesIds'] = 'multi'
+        if _params.get('protocol') is not None:  # noqa: E501
+            _query_params.append(('protocol', _params['protocol']))
+        if _params.get('languages') is not None:  # noqa: E501
+            _query_params.append(('languages', _params['languages']))
+            _collection_formats['languages'] = 'multi'
+        if _params.get('quality') is not None:  # noqa: E501
+            _query_params.append(('quality', _params['quality']))
 
         # process the header parameters
         _header_params = dict(_params.get('_headers', {}))
