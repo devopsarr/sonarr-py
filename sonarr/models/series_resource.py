@@ -62,6 +62,7 @@ class SeriesResource(BaseModel):
     tv_rage_id: Optional[int]
     tv_maze_id: Optional[int]
     first_aired: Optional[datetime]
+    last_aired: Optional[datetime]
     series_type: Optional[SeriesTypes]
     clean_title: Optional[str]
     imdb_id: Optional[str]
@@ -77,7 +78,7 @@ class SeriesResource(BaseModel):
     statistics: Optional[SeriesStatisticsResource]
     episodes_changed: Optional[bool]
     language_profile_id: Optional[int]
-    __properties = ["id", "title", "alternateTitles", "sortTitle", "status", "ended", "profileName", "overview", "nextAiring", "previousAiring", "network", "airTime", "images", "originalLanguage", "remotePoster", "seasons", "year", "path", "qualityProfileId", "seasonFolder", "monitored", "useSceneNumbering", "runtime", "tvdbId", "tvRageId", "tvMazeId", "firstAired", "seriesType", "cleanTitle", "imdbId", "titleSlug", "rootFolderPath", "folder", "certification", "genres", "tags", "added", "addOptions", "ratings", "statistics", "episodesChanged", "languageProfileId"]
+    __properties = ["id", "title", "alternateTitles", "sortTitle", "status", "ended", "profileName", "overview", "nextAiring", "previousAiring", "network", "airTime", "images", "originalLanguage", "remotePoster", "seasons", "year", "path", "qualityProfileId", "seasonFolder", "monitored", "useSceneNumbering", "runtime", "tvdbId", "tvRageId", "tvMazeId", "firstAired", "lastAired", "seriesType", "cleanTitle", "imdbId", "titleSlug", "rootFolderPath", "folder", "certification", "genres", "tags", "added", "addOptions", "ratings", "statistics", "episodesChanged", "languageProfileId"]
 
     class Config:
         allow_population_by_field_name = True
@@ -197,6 +198,10 @@ class SeriesResource(BaseModel):
         if self.first_aired is None:
             _dict['firstAired'] = None
 
+        # set to None if last_aired (nullable) is None
+        if self.last_aired is None:
+            _dict['lastAired'] = None
+
         # set to None if clean_title (nullable) is None
         if self.clean_title is None:
             _dict['cleanTitle'] = None
@@ -272,6 +277,7 @@ class SeriesResource(BaseModel):
             "tv_rage_id": obj.get("tvRageId"),
             "tv_maze_id": obj.get("tvMazeId"),
             "first_aired": obj.get("firstAired"),
+            "last_aired": obj.get("lastAired"),
             "series_type": obj.get("seriesType"),
             "clean_title": obj.get("cleanTitle"),
             "imdb_id": obj.get("imdbId"),
