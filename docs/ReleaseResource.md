@@ -61,6 +61,7 @@ Name | Type | Description | Notes
 **episode_id** | **int** |  | [optional] 
 **episode_ids** | **List[int]** |  | [optional] 
 **download_client_id** | **int** |  | [optional] 
+**download_client** | **str** |  | [optional] 
 **should_override** | **bool** |  | [optional] 
 
 ## Example
