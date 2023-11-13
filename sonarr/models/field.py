@@ -17,7 +17,7 @@ import re  # noqa: F401
 import json
 
 
-from typing import Any, Dict, List, Optional
+from typing import Any, ClassVar, Dict, List, Optional
 from pydantic import BaseModel
 from sonarr.models.privacy_level import PrivacyLevel
 from sonarr.models.select_option import SelectOption

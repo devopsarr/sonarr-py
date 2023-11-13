@@ -17,9 +17,7 @@ import re  # noqa: F401
 from pydantic import validate_arguments, ValidationError
 from typing_extensions import Annotated
 
-from pydantic import conlist
-
-from typing import Optional
+from typing import List, Optional
 
 from sonarr.models.series_resource import SeriesResource
 
@@ -43,7 +41,7 @@ class SeriesImportApi(object):
         self.api_client = api_client
 
     @validate_arguments
-    def create_series_import(self, series_resource : Optional[conlist(SeriesResource)] = None, **kwargs) -> None:  # noqa: E501
+    def create_series_import(self, series_resource : Optional[List[SeriesResource]] = None, **kwargs) -> None:  # noqa: E501
         """create_series_import  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
@@ -73,7 +71,7 @@ class SeriesImportApi(object):
         return self.create_series_import_with_http_info(series_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def create_series_import_with_http_info(self, series_resource : Optional[conlist(SeriesResource)] = None, **kwargs):  # noqa: E501
+    def create_series_import_with_http_info(self, series_resource : Optional[List[SeriesResource]] = None, **kwargs):  # noqa: E501
         """create_series_import  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
