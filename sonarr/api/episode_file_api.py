@@ -17,7 +17,7 @@ import re  # noqa: F401
 from pydantic import validate_arguments, ValidationError
 from typing_extensions import Annotated
 
-from pydantic import StrictInt, StrictStr, conlist
+from pydantic import StrictInt, StrictStr
 
 from typing import List, Optional
 
@@ -462,7 +462,7 @@ class EpisodeFileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def list_episode_file(self, series_id : Optional[StrictInt] = None, episode_file_ids : Optional[conlist(StrictInt)] = None, **kwargs) -> List[EpisodeFileResource]:  # noqa: E501
+    def list_episode_file(self, series_id : Optional[StrictInt] = None, episode_file_ids : Optional[List[StrictInt]] = None, **kwargs) -> List[EpisodeFileResource]:  # noqa: E501
         """list_episode_file  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
@@ -494,7 +494,7 @@ class EpisodeFileApi(object):
         return self.list_episode_file_with_http_info(series_id, episode_file_ids, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def list_episode_file_with_http_info(self, series_id : Optional[StrictInt] = None, episode_file_ids : Optional[conlist(StrictInt)] = None, **kwargs):  # noqa: E501
+    def list_episode_file_with_http_info(self, series_id : Optional[StrictInt] = None, episode_file_ids : Optional[List[StrictInt]] = None, **kwargs):  # noqa: E501
         """list_episode_file  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
@@ -611,7 +611,7 @@ class EpisodeFileApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def put_episode_file_bulk(self, episode_file_resource : Optional[conlist(EpisodeFileResource)] = None, **kwargs) -> None:  # noqa: E501
+    def put_episode_file_bulk(self, episode_file_resource : Optional[List[EpisodeFileResource]] = None, **kwargs) -> None:  # noqa: E501
         """put_episode_file_bulk  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
@@ -641,7 +641,7 @@ class EpisodeFileApi(object):
         return self.put_episode_file_bulk_with_http_info(episode_file_resource, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def put_episode_file_bulk_with_http_info(self, episode_file_resource : Optional[conlist(EpisodeFileResource)] = None, **kwargs):  # noqa: E501
+    def put_episode_file_bulk_with_http_info(self, episode_file_resource : Optional[List[EpisodeFileResource]] = None, **kwargs):  # noqa: E501
         """put_episode_file_bulk  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an

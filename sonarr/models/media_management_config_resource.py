@@ -17,7 +17,7 @@ import re  # noqa: F401
 import json
 
 
-from typing import Any, Dict, Optional
+from typing import Any, ClassVar, Dict, Optional
 from pydantic import BaseModel
 from sonarr.models.episode_title_required_type import EpisodeTitleRequiredType
 from sonarr.models.file_date_type import FileDateType
