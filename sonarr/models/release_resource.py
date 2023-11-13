@@ -89,8 +89,9 @@ class ReleaseResource(BaseModel):
     episode_id: Optional[int]
     episode_ids: Optional[List]
     download_client_id: Optional[int]
+    download_client: Optional[str]
     should_override: Optional[bool]
-    __properties = ["id", "guid", "quality", "qualityWeight", "age", "ageHours", "ageMinutes", "size", "indexerId", "indexer", "releaseGroup", "subGroup", "releaseHash", "title", "fullSeason", "sceneSource", "seasonNumber", "languages", "languageWeight", "airDate", "seriesTitle", "episodeNumbers", "absoluteEpisodeNumbers", "mappedSeasonNumber", "mappedEpisodeNumbers", "mappedAbsoluteEpisodeNumbers", "mappedSeriesId", "mappedEpisodeInfo", "approved", "temporarilyRejected", "rejected", "tvdbId", "tvRageId", "rejections", "publishDate", "commentUrl", "downloadUrl", "infoUrl", "episodeRequested", "downloadAllowed", "releaseWeight", "customFormats", "customFormatScore", "sceneMapping", "magnetUrl", "infoHash", "seeders", "leechers", "protocol", "isDaily", "isAbsoluteNumbering", "isPossibleSpecialEpisode", "special", "seriesId", "episodeId", "episodeIds", "downloadClientId", "shouldOverride"]
+    __properties = ["id", "guid", "quality", "qualityWeight", "age", "ageHours", "ageMinutes", "size", "indexerId", "indexer", "releaseGroup", "subGroup", "releaseHash", "title", "fullSeason", "sceneSource", "seasonNumber", "languages", "languageWeight", "airDate", "seriesTitle", "episodeNumbers", "absoluteEpisodeNumbers", "mappedSeasonNumber", "mappedEpisodeNumbers", "mappedAbsoluteEpisodeNumbers", "mappedSeriesId", "mappedEpisodeInfo", "approved", "temporarilyRejected", "rejected", "tvdbId", "tvRageId", "rejections", "publishDate", "commentUrl", "downloadUrl", "infoUrl", "episodeRequested", "downloadAllowed", "releaseWeight", "customFormats", "customFormatScore", "sceneMapping", "magnetUrl", "infoHash", "seeders", "leechers", "protocol", "isDaily", "isAbsoluteNumbering", "isPossibleSpecialEpisode", "special", "seriesId", "episodeId", "episodeIds", "downloadClientId", "downloadClient", "shouldOverride"]
 
     class Config:
         allow_population_by_field_name = True
@@ -262,6 +263,10 @@ class ReleaseResource(BaseModel):
         if self.download_client_id is None:
             _dict['downloadClientId'] = None
 
+        # set to None if download_client (nullable) is None
+        if self.download_client is None:
+            _dict['downloadClient'] = None
+
         # set to None if should_override (nullable) is None
         if self.should_override is None:
             _dict['shouldOverride'] = None
@@ -335,6 +340,7 @@ class ReleaseResource(BaseModel):
             "episode_id": obj.get("episodeId"),
             "episode_ids": obj.get("episodeIds"),
             "download_client_id": obj.get("downloadClientId"),
+            "download_client": obj.get("downloadClient"),
             "should_override": obj.get("shouldOverride")
         })
         return _obj
