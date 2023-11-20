@@ -22,6 +22,7 @@ from pydantic import BaseModel
 from sonarr.models.field import Field
 from sonarr.models.import_list_type import ImportListType
 from sonarr.models.monitor_types import MonitorTypes
+from sonarr.models.new_item_monitor_types import NewItemMonitorTypes
 from sonarr.models.provider_message import ProviderMessage
 from sonarr.models.series_types import SeriesTypes
 
@@ -44,6 +45,7 @@ class ImportListResource(BaseModel):
     enable_automatic_add: Optional[bool]
     search_for_missing_episodes: Optional[bool]
     should_monitor: Optional[MonitorTypes]
+    monitor_new_items: Optional[NewItemMonitorTypes]
     root_folder_path: Optional[str]
     quality_profile_id: Optional[int]
     series_type: Optional[SeriesTypes]
@@ -51,7 +53,7 @@ class ImportListResource(BaseModel):
     list_type: Optional[ImportListType]
     list_order: Optional[int]
     min_refresh_interval: Optional[str]
-    __properties = ["id", "name", "fields", "implementationName", "implementation", "configContract", "infoLink", "message", "tags", "presets", "enableAutomaticAdd", "searchForMissingEpisodes", "shouldMonitor", "rootFolderPath", "qualityProfileId", "seriesType", "seasonFolder", "listType", "listOrder", "minRefreshInterval"]
+    __properties = ["id", "name", "fields", "implementationName", "implementation", "configContract", "infoLink", "message", "tags", "presets", "enableAutomaticAdd", "searchForMissingEpisodes", "shouldMonitor", "monitorNewItems", "rootFolderPath", "qualityProfileId", "seriesType", "seasonFolder", "listType", "listOrder", "minRefreshInterval"]
 
     class Config:
         allow_population_by_field_name = True
@@ -158,6 +160,7 @@ class ImportListResource(BaseModel):
             "enable_automatic_add": obj.get("enableAutomaticAdd"),
             "search_for_missing_episodes": obj.get("searchForMissingEpisodes"),
             "should_monitor": obj.get("shouldMonitor"),
+            "monitor_new_items": obj.get("monitorNewItems"),
             "root_folder_path": obj.get("rootFolderPath"),
             "quality_profile_id": obj.get("qualityProfileId"),
             "series_type": obj.get("seriesType"),

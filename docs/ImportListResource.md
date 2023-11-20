@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **enable_automatic_add** | **bool** |  | [optional] 
 **search_for_missing_episodes** | **bool** |  | [optional] 
 **should_monitor** | [**MonitorTypes**](MonitorTypes.md) |  | [optional] 
+**monitor_new_items** | [**NewItemMonitorTypes**](NewItemMonitorTypes.md) |  | [optional] 
 **root_folder_path** | **str** |  | [optional] 
 **quality_profile_id** | **int** |  | [optional] 
 **series_type** | [**SeriesTypes**](SeriesTypes.md) |  | [optional] 

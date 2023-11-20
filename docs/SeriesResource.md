@@ -25,6 +25,7 @@ Name | Type | Description | Notes
 **quality_profile_id** | **int** |  | [optional] 
 **season_folder** | **bool** |  | [optional] 
 **monitored** | **bool** |  | [optional] 
+**monitor_new_items** | [**NewItemMonitorTypes**](NewItemMonitorTypes.md) |  | [optional] 
 **use_scene_numbering** | **bool** |  | [optional] 
 **runtime** | **int** |  | [optional] 
 **tvdb_id** | **int** |  | [optional] 

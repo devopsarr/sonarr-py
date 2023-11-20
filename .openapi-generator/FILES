@@ -107,6 +107,7 @@ docs/MonitorTypes.md
 docs/MonitoringOptions.md
 docs/NamingConfigApi.md
 docs/NamingConfigResource.md
+docs/NewItemMonitorTypes.md
 docs/NotificationApi.md
 docs/NotificationResource.md
 docs/ParseApi.md
@@ -337,6 +338,7 @@ sonarr/models/metadata_resource.py
 sonarr/models/monitor_types.py
 sonarr/models/monitoring_options.py
 sonarr/models/naming_config_resource.py
+sonarr/models/new_item_monitor_types.py
 sonarr/models/notification_resource.py
 sonarr/models/parse_resource.py
 sonarr/models/parsed_episode_info.py

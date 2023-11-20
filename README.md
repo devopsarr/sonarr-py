@@ -395,6 +395,7 @@ Class | Method | HTTP request | Description
  - [MonitorTypes](docs/MonitorTypes.md)
  - [MonitoringOptions](docs/MonitoringOptions.md)
  - [NamingConfigResource](docs/NamingConfigResource.md)
+ - [NewItemMonitorTypes](docs/NewItemMonitorTypes.md)
  - [NotificationResource](docs/NotificationResource.md)
  - [ParseResource](docs/ParseResource.md)
  - [ParsedEpisodeInfo](docs/ParsedEpisodeInfo.md)

@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **series_ids** | **List[int]** |  | [optional] 
 **monitored** | **bool** |  | [optional] 
+**monitor_new_items** | [**NewItemMonitorTypes**](NewItemMonitorTypes.md) |  | [optional] 
 **quality_profile_id** | **int** |  | [optional] 
 **series_type** | [**SeriesTypes**](SeriesTypes.md) |  | [optional] 
 **season_folder** | **bool** |  | [optional] 
