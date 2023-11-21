@@ -23,6 +23,7 @@ from sonarr.models.add_series_options import AddSeriesOptions
 from sonarr.models.alternate_title_resource import AlternateTitleResource
 from sonarr.models.language import Language
 from sonarr.models.media_cover import MediaCover
+from sonarr.models.new_item_monitor_types import NewItemMonitorTypes
 from sonarr.models.ratings import Ratings
 from sonarr.models.season_resource import SeasonResource
 from sonarr.models.series_statistics_resource import SeriesStatisticsResource
@@ -56,6 +57,7 @@ class SeriesResource(BaseModel):
     quality_profile_id: Optional[int]
     season_folder: Optional[bool]
     monitored: Optional[bool]
+    monitor_new_items: Optional[NewItemMonitorTypes]
     use_scene_numbering: Optional[bool]
     runtime: Optional[int]
     tvdb_id: Optional[int]
@@ -78,7 +80,7 @@ class SeriesResource(BaseModel):
     statistics: Optional[SeriesStatisticsResource]
     episodes_changed: Optional[bool]
     language_profile_id: Optional[int]
-    __properties = ["id", "title", "alternateTitles", "sortTitle", "status", "ended", "profileName", "overview", "nextAiring", "previousAiring", "network", "airTime", "images", "originalLanguage", "remotePoster", "seasons", "year", "path", "qualityProfileId", "seasonFolder", "monitored", "useSceneNumbering", "runtime", "tvdbId", "tvRageId", "tvMazeId", "firstAired", "lastAired", "seriesType", "cleanTitle", "imdbId", "titleSlug", "rootFolderPath", "folder", "certification", "genres", "tags", "added", "addOptions", "ratings", "statistics", "episodesChanged", "languageProfileId"]
+    __properties = ["id", "title", "alternateTitles", "sortTitle", "status", "ended", "profileName", "overview", "nextAiring", "previousAiring", "network", "airTime", "images", "originalLanguage", "remotePoster", "seasons", "year", "path", "qualityProfileId", "seasonFolder", "monitored", "monitorNewItems", "useSceneNumbering", "runtime", "tvdbId", "tvRageId", "tvMazeId", "firstAired", "lastAired", "seriesType", "cleanTitle", "imdbId", "titleSlug", "rootFolderPath", "folder", "certification", "genres", "tags", "added", "addOptions", "ratings", "statistics", "episodesChanged", "languageProfileId"]
 
     class Config:
         allow_population_by_field_name = True
@@ -271,6 +273,7 @@ class SeriesResource(BaseModel):
             "quality_profile_id": obj.get("qualityProfileId"),
             "season_folder": obj.get("seasonFolder"),
             "monitored": obj.get("monitored"),
+            "monitor_new_items": obj.get("monitorNewItems"),
             "use_scene_numbering": obj.get("useSceneNumbering"),
             "runtime": obj.get("runtime"),
             "tvdb_id": obj.get("tvdbId"),

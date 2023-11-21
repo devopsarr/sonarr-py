@@ -165,6 +165,7 @@ from sonarr.models.metadata_resource import MetadataResource
 from sonarr.models.monitor_types import MonitorTypes
 from sonarr.models.monitoring_options import MonitoringOptions
 from sonarr.models.naming_config_resource import NamingConfigResource
+from sonarr.models.new_item_monitor_types import NewItemMonitorTypes
 from sonarr.models.notification_resource import NotificationResource
 from sonarr.models.parse_resource import ParseResource
 from sonarr.models.parsed_episode_info import ParsedEpisodeInfo

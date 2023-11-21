@@ -20,6 +20,7 @@ import json
 from typing import Any, ClassVar, Dict, List, Optional
 from pydantic import BaseModel
 from sonarr.models.apply_tags import ApplyTags
+from sonarr.models.new_item_monitor_types import NewItemMonitorTypes
 from sonarr.models.series_types import SeriesTypes
 
 class SeriesEditorResource(BaseModel):
@@ -30,6 +31,7 @@ class SeriesEditorResource(BaseModel):
     """
     series_ids: Optional[List]
     monitored: Optional[bool]
+    monitor_new_items: Optional[NewItemMonitorTypes]
     quality_profile_id: Optional[int]
     series_type: Optional[SeriesTypes]
     season_folder: Optional[bool]
@@ -39,7 +41,7 @@ class SeriesEditorResource(BaseModel):
     move_files: Optional[bool]
     delete_files: Optional[bool]
     add_import_list_exclusion: Optional[bool]
-    __properties = ["seriesIds", "monitored", "qualityProfileId", "seriesType", "seasonFolder", "rootFolderPath", "tags", "applyTags", "moveFiles", "deleteFiles", "addImportListExclusion"]
+    __properties = ["seriesIds", "monitored", "monitorNewItems", "qualityProfileId", "seriesType", "seasonFolder", "rootFolderPath", "tags", "applyTags", "moveFiles", "deleteFiles", "addImportListExclusion"]
 
     class Config:
         allow_population_by_field_name = True
@@ -106,6 +108,7 @@ class SeriesEditorResource(BaseModel):
         _obj = SeriesEditorResource.parse_obj({
             "series_ids": obj.get("seriesIds"),
             "monitored": obj.get("monitored"),
+            "monitor_new_items": obj.get("monitorNewItems"),
             "quality_profile_id": obj.get("qualityProfileId"),
             "series_type": obj.get("seriesType"),
             "season_folder": obj.get("seasonFolder"),
