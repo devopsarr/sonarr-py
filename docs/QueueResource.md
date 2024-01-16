@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **sizeleft** | **float** |  | [optional] 
 **timeleft** | **str** |  | [optional] 
 **estimated_completion_time** | **datetime** |  | [optional] 
+**added** | **datetime** |  | [optional] 
 **status** | **str** |  | [optional] 
 **tracked_download_status** | [**TrackedDownloadStatus**](TrackedDownloadStatus.md) |  | [optional] 
 **tracked_download_state** | [**TrackedDownloadState**](TrackedDownloadState.md) |  | [optional] 

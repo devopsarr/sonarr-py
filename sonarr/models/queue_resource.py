@@ -50,6 +50,7 @@ class QueueResource(BaseModel):
     sizeleft: Optional[float]
     timeleft: Optional[str]
     estimated_completion_time: Optional[datetime]
+    added: Optional[datetime]
     status: Optional[str]
     tracked_download_status: Optional[TrackedDownloadStatus]
     tracked_download_state: Optional[TrackedDownloadState]
@@ -61,7 +62,7 @@ class QueueResource(BaseModel):
     indexer: Optional[str]
     output_path: Optional[str]
     episode_has_file: Optional[bool]
-    __properties = ["id", "seriesId", "episodeId", "seasonNumber", "series", "episode", "languages", "quality", "customFormats", "customFormatScore", "size", "title", "sizeleft", "timeleft", "estimatedCompletionTime", "status", "trackedDownloadStatus", "trackedDownloadState", "statusMessages", "errorMessage", "downloadId", "protocol", "downloadClient", "indexer", "outputPath", "episodeHasFile"]
+    __properties = ["id", "seriesId", "episodeId", "seasonNumber", "series", "episode", "languages", "quality", "customFormats", "customFormatScore", "size", "title", "sizeleft", "timeleft", "estimatedCompletionTime", "added", "status", "trackedDownloadStatus", "trackedDownloadState", "statusMessages", "errorMessage", "downloadId", "protocol", "downloadClient", "indexer", "outputPath", "episodeHasFile"]
 
     class Config:
         allow_population_by_field_name = True
@@ -148,6 +149,10 @@ class QueueResource(BaseModel):
         if self.estimated_completion_time is None:
             _dict['estimatedCompletionTime'] = None
 
+        # set to None if added (nullable) is None
+        if self.added is None:
+            _dict['added'] = None
+
         # set to None if status (nullable) is None
         if self.status is None:
             _dict['status'] = None
@@ -203,6 +208,7 @@ class QueueResource(BaseModel):
             "sizeleft": obj.get("sizeleft"),
             "timeleft": obj.get("timeleft"),
             "estimated_completion_time": obj.get("estimatedCompletionTime"),
+            "added": obj.get("added"),
             "status": obj.get("status"),
             "tracked_download_status": obj.get("trackedDownloadStatus"),
             "tracked_download_state": obj.get("trackedDownloadState"),
