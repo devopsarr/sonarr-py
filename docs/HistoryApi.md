@@ -177,7 +177,7 @@ with sonarr.ApiClient(configuration) as api_client:
     sort_direction = sonarr.SortDirection() # SortDirection |  (optional)
     include_series = True # bool |  (optional)
     include_episode = True # bool |  (optional)
-    event_type = 56 # int |  (optional)
+    event_type = [56] # List[int] |  (optional)
     episode_id = 56 # int |  (optional)
     download_id = 'download_id_example' # str |  (optional)
     series_ids = [56] # List[int] |  (optional)
@@ -233,7 +233,7 @@ with sonarr.ApiClient(configuration) as api_client:
     sort_direction = sonarr.SortDirection() # SortDirection |  (optional)
     include_series = True # bool |  (optional)
     include_episode = True # bool |  (optional)
-    event_type = 56 # int |  (optional)
+    event_type = [56] # List[int] |  (optional)
     episode_id = 56 # int |  (optional)
     download_id = 'download_id_example' # str |  (optional)
     series_ids = [56] # List[int] |  (optional)
@@ -258,7 +258,7 @@ Name | Type | Description  | Notes
  **sort_direction** | [**SortDirection**](.md)|  | [optional] 
  **include_series** | **bool**|  | [optional] 
  **include_episode** | **bool**|  | [optional] 
- **event_type** | **int**|  | [optional] 
+ **event_type** | [**List[int]**](int.md)|  | [optional] 
  **episode_id** | **int**|  | [optional] 
  **download_id** | **str**|  | [optional] 
  **series_ids** | [**List[int]**](int.md)|  | [optional] 

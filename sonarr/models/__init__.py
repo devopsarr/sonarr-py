@@ -59,6 +59,7 @@ from sonarr.models.history_resource import HistoryResource
 from sonarr.models.history_resource_paging_resource import HistoryResourcePagingResource
 from sonarr.models.host_config_resource import HostConfigResource
 from sonarr.models.import_list_bulk_resource import ImportListBulkResource
+from sonarr.models.import_list_config_resource import ImportListConfigResource
 from sonarr.models.import_list_exclusion_resource import ImportListExclusionResource
 from sonarr.models.import_list_resource import ImportListResource
 from sonarr.models.import_list_type import ImportListType
@@ -69,6 +70,7 @@ from sonarr.models.language import Language
 from sonarr.models.language_profile_item_resource import LanguageProfileItemResource
 from sonarr.models.language_profile_resource import LanguageProfileResource
 from sonarr.models.language_resource import LanguageResource
+from sonarr.models.list_sync_level_type import ListSyncLevelType
 from sonarr.models.localization_language_resource import LocalizationLanguageResource
 from sonarr.models.localization_resource import LocalizationResource
 from sonarr.models.log_file_resource import LogFileResource

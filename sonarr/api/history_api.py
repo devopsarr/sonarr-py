@@ -183,7 +183,7 @@ class HistoryApi(object):
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def get_history(self, page : Optional[StrictInt] = None, page_size : Optional[StrictInt] = None, sort_key : Optional[StrictStr] = None, sort_direction : Optional[SortDirection] = None, include_series : Optional[StrictBool] = None, include_episode : Optional[StrictBool] = None, event_type : Optional[StrictInt] = None, episode_id : Optional[StrictInt] = None, download_id : Optional[StrictStr] = None, series_ids : Optional[List[StrictInt]] = None, languages : Optional[List[StrictInt]] = None, quality : Optional[List[StrictInt]] = None, **kwargs) -> HistoryResourcePagingResource:  # noqa: E501
+    def get_history(self, page : Optional[StrictInt] = None, page_size : Optional[StrictInt] = None, sort_key : Optional[StrictStr] = None, sort_direction : Optional[SortDirection] = None, include_series : Optional[StrictBool] = None, include_episode : Optional[StrictBool] = None, event_type : Optional[List[StrictInt]] = None, episode_id : Optional[StrictInt] = None, download_id : Optional[StrictStr] = None, series_ids : Optional[List[StrictInt]] = None, languages : Optional[List[StrictInt]] = None, quality : Optional[List[StrictInt]] = None, **kwargs) -> HistoryResourcePagingResource:  # noqa: E501
         """get_history  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
@@ -205,7 +205,7 @@ class HistoryApi(object):
         :param include_episode:
         :type include_episode: bool
         :param event_type:
-        :type event_type: int
+        :type event_type: List[int]
         :param episode_id:
         :type episode_id: int
         :param download_id:
@@ -235,7 +235,7 @@ class HistoryApi(object):
         return self.get_history_with_http_info(page, page_size, sort_key, sort_direction, include_series, include_episode, event_type, episode_id, download_id, series_ids, languages, quality, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_history_with_http_info(self, page : Optional[StrictInt] = None, page_size : Optional[StrictInt] = None, sort_key : Optional[StrictStr] = None, sort_direction : Optional[SortDirection] = None, include_series : Optional[StrictBool] = None, include_episode : Optional[StrictBool] = None, event_type : Optional[StrictInt] = None, episode_id : Optional[StrictInt] = None, download_id : Optional[StrictStr] = None, series_ids : Optional[List[StrictInt]] = None, languages : Optional[List[StrictInt]] = None, quality : Optional[List[StrictInt]] = None, **kwargs):  # noqa: E501
+    def get_history_with_http_info(self, page : Optional[StrictInt] = None, page_size : Optional[StrictInt] = None, sort_key : Optional[StrictStr] = None, sort_direction : Optional[SortDirection] = None, include_series : Optional[StrictBool] = None, include_episode : Optional[StrictBool] = None, event_type : Optional[List[StrictInt]] = None, episode_id : Optional[StrictInt] = None, download_id : Optional[StrictStr] = None, series_ids : Optional[List[StrictInt]] = None, languages : Optional[List[StrictInt]] = None, quality : Optional[List[StrictInt]] = None, **kwargs):  # noqa: E501
         """get_history  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
@@ -257,7 +257,7 @@ class HistoryApi(object):
         :param include_episode:
         :type include_episode: bool
         :param event_type:
-        :type event_type: int
+        :type event_type: List[int]
         :param episode_id:
         :type episode_id: int
         :param download_id:
@@ -351,6 +351,7 @@ class HistoryApi(object):
             _query_params.append(('includeEpisode', _params['include_episode']))
         if _params.get('event_type') is not None:  # noqa: E501
             _query_params.append(('eventType', _params['event_type']))
+            _collection_formats['eventType'] = 'multi'
         if _params.get('episode_id') is not None:  # noqa: E501
             _query_params.append(('episodeId', _params['episode_id']))
         if _params.get('download_id') is not None:  # noqa: E501
