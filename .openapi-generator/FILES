@@ -67,8 +67,6 @@ docs/HostConfigApi.md
 docs/HostConfigResource.md
 docs/ImportListApi.md
 docs/ImportListBulkResource.md
-docs/ImportListConfigApi.md
-docs/ImportListConfigResource.md
 docs/ImportListExclusionApi.md
 docs/ImportListExclusionResource.md
 docs/ImportListResource.md
@@ -85,7 +83,6 @@ docs/LanguageProfileItemResource.md
 docs/LanguageProfileResource.md
 docs/LanguageProfileSchemaApi.md
 docs/LanguageResource.md
-docs/ListSyncLevelType.md
 docs/LocalizationApi.md
 docs/LocalizationLanguageResource.md
 docs/LocalizationResource.md
@@ -223,7 +220,6 @@ sonarr/api/health_api.py
 sonarr/api/history_api.py
 sonarr/api/host_config_api.py
 sonarr/api/import_list_api.py
-sonarr/api/import_list_config_api.py
 sonarr/api/import_list_exclusion_api.py
 sonarr/api/indexer_api.py
 sonarr/api/indexer_config_api.py
@@ -317,7 +313,6 @@ sonarr/models/history_resource.py
 sonarr/models/history_resource_paging_resource.py
 sonarr/models/host_config_resource.py
 sonarr/models/import_list_bulk_resource.py
-sonarr/models/import_list_config_resource.py
 sonarr/models/import_list_exclusion_resource.py
 sonarr/models/import_list_resource.py
 sonarr/models/import_list_type.py
@@ -328,7 +323,6 @@ sonarr/models/language.py
 sonarr/models/language_profile_item_resource.py
 sonarr/models/language_profile_resource.py
 sonarr/models/language_resource.py
-sonarr/models/list_sync_level_type.py
 sonarr/models/localization_language_resource.py
 sonarr/models/localization_resource.py
 sonarr/models/log_file_resource.py
