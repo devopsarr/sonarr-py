@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **delete_queue**
-> delete_queue(id, remove_from_client=remove_from_client, blocklist=blocklist, skip_redownload=skip_redownload)
+> delete_queue(id, remove_from_client=remove_from_client, blocklist=blocklist, skip_redownload=skip_redownload, change_category=change_category)
 
 
 
@@ -55,9 +55,10 @@ with sonarr.ApiClient(configuration) as api_client:
     remove_from_client = True # bool |  (optional) (default to True)
     blocklist = False # bool |  (optional) (default to False)
     skip_redownload = False # bool |  (optional) (default to False)
+    change_category = False # bool |  (optional) (default to False)
 
     try:
-        api_instance.delete_queue(id, remove_from_client=remove_from_client, blocklist=blocklist, skip_redownload=skip_redownload)
+        api_instance.delete_queue(id, remove_from_client=remove_from_client, blocklist=blocklist, skip_redownload=skip_redownload, change_category=change_category)
     except Exception as e:
         print("Exception when calling QueueApi->delete_queue: %s\n" % e)
 ```
@@ -101,9 +102,10 @@ with sonarr.ApiClient(configuration) as api_client:
     remove_from_client = True # bool |  (optional) (default to True)
     blocklist = False # bool |  (optional) (default to False)
     skip_redownload = False # bool |  (optional) (default to False)
+    change_category = False # bool |  (optional) (default to False)
 
     try:
-        api_instance.delete_queue(id, remove_from_client=remove_from_client, blocklist=blocklist, skip_redownload=skip_redownload)
+        api_instance.delete_queue(id, remove_from_client=remove_from_client, blocklist=blocklist, skip_redownload=skip_redownload, change_category=change_category)
     except Exception as e:
         print("Exception when calling QueueApi->delete_queue: %s\n" % e)
 ```
@@ -116,6 +118,7 @@ Name | Type | Description  | Notes
  **remove_from_client** | **bool**|  | [optional] [default to True]
  **blocklist** | **bool**|  | [optional] [default to False]
  **skip_redownload** | **bool**|  | [optional] [default to False]
+ **change_category** | **bool**|  | [optional] [default to False]
 
 ### Return type
 
@@ -138,7 +141,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_queue_bulk**
-> delete_queue_bulk(remove_from_client=remove_from_client, blocklist=blocklist, skip_redownload=skip_redownload, queue_bulk_resource=queue_bulk_resource)
+> delete_queue_bulk(remove_from_client=remove_from_client, blocklist=blocklist, skip_redownload=skip_redownload, change_category=change_category, queue_bulk_resource=queue_bulk_resource)
 
 
 
@@ -182,10 +185,11 @@ with sonarr.ApiClient(configuration) as api_client:
     remove_from_client = True # bool |  (optional) (default to True)
     blocklist = False # bool |  (optional) (default to False)
     skip_redownload = False # bool |  (optional) (default to False)
+    change_category = False # bool |  (optional) (default to False)
     queue_bulk_resource = sonarr.QueueBulkResource() # QueueBulkResource |  (optional)
 
     try:
-        api_instance.delete_queue_bulk(remove_from_client=remove_from_client, blocklist=blocklist, skip_redownload=skip_redownload, queue_bulk_resource=queue_bulk_resource)
+        api_instance.delete_queue_bulk(remove_from_client=remove_from_client, blocklist=blocklist, skip_redownload=skip_redownload, change_category=change_category, queue_bulk_resource=queue_bulk_resource)
     except Exception as e:
         print("Exception when calling QueueApi->delete_queue_bulk: %s\n" % e)
 ```
@@ -228,10 +232,11 @@ with sonarr.ApiClient(configuration) as api_client:
     remove_from_client = True # bool |  (optional) (default to True)
     blocklist = False # bool |  (optional) (default to False)
     skip_redownload = False # bool |  (optional) (default to False)
+    change_category = False # bool |  (optional) (default to False)
     queue_bulk_resource = sonarr.QueueBulkResource() # QueueBulkResource |  (optional)
 
     try:
-        api_instance.delete_queue_bulk(remove_from_client=remove_from_client, blocklist=blocklist, skip_redownload=skip_redownload, queue_bulk_resource=queue_bulk_resource)
+        api_instance.delete_queue_bulk(remove_from_client=remove_from_client, blocklist=blocklist, skip_redownload=skip_redownload, change_category=change_category, queue_bulk_resource=queue_bulk_resource)
     except Exception as e:
         print("Exception when calling QueueApi->delete_queue_bulk: %s\n" % e)
 ```
@@ -243,6 +248,7 @@ Name | Type | Description  | Notes
  **remove_from_client** | **bool**|  | [optional] [default to True]
  **blocklist** | **bool**|  | [optional] [default to False]
  **skip_redownload** | **bool**|  | [optional] [default to False]
+ **change_category** | **bool**|  | [optional] [default to False]
  **queue_bulk_resource** | [**QueueBulkResource**](QueueBulkResource.md)|  | [optional] 
 
 ### Return type
