@@ -188,9 +188,6 @@ Class | Method | HTTP request | Description
 *ImportListApi* | [**test_import_list**](docs/ImportListApi.md#test_import_list) | **POST** /api/v3/importlist/test | 
 *ImportListApi* | [**testall_import_list**](docs/ImportListApi.md#testall_import_list) | **POST** /api/v3/importlist/testall | 
 *ImportListApi* | [**update_import_list**](docs/ImportListApi.md#update_import_list) | **PUT** /api/v3/importlist/{id} | 
-*ImportListConfigApi* | [**get_import_list_config**](docs/ImportListConfigApi.md#get_import_list_config) | **GET** /api/v3/config/importlist | 
-*ImportListConfigApi* | [**get_import_list_config_by_id**](docs/ImportListConfigApi.md#get_import_list_config_by_id) | **GET** /api/v3/config/importlist/{id} | 
-*ImportListConfigApi* | [**update_import_list_config**](docs/ImportListConfigApi.md#update_import_list_config) | **PUT** /api/v3/config/importlist/{id} | 
 *ImportListExclusionApi* | [**create_import_list_exclusion**](docs/ImportListExclusionApi.md#create_import_list_exclusion) | **POST** /api/v3/importlistexclusion | 
 *ImportListExclusionApi* | [**delete_import_list_exclusion**](docs/ImportListExclusionApi.md#delete_import_list_exclusion) | **DELETE** /api/v3/importlistexclusion/{id} | 
 *ImportListExclusionApi* | [**get_import_list_exclusion_by_id**](docs/ImportListExclusionApi.md#get_import_list_exclusion_by_id) | **GET** /api/v3/importlistexclusion/{id} | 
@@ -373,7 +370,6 @@ Class | Method | HTTP request | Description
  - [HistoryResourcePagingResource](docs/HistoryResourcePagingResource.md)
  - [HostConfigResource](docs/HostConfigResource.md)
  - [ImportListBulkResource](docs/ImportListBulkResource.md)
- - [ImportListConfigResource](docs/ImportListConfigResource.md)
  - [ImportListExclusionResource](docs/ImportListExclusionResource.md)
  - [ImportListResource](docs/ImportListResource.md)
  - [ImportListType](docs/ImportListType.md)
@@ -384,7 +380,6 @@ Class | Method | HTTP request | Description
  - [LanguageProfileItemResource](docs/LanguageProfileItemResource.md)
  - [LanguageProfileResource](docs/LanguageProfileResource.md)
  - [LanguageResource](docs/LanguageResource.md)
- - [ListSyncLevelType](docs/ListSyncLevelType.md)
  - [LocalizationLanguageResource](docs/LocalizationLanguageResource.md)
  - [LocalizationResource](docs/LocalizationResource.md)
  - [LogFileResource](docs/LogFileResource.md)
