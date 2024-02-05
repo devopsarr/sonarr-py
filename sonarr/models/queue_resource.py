@@ -59,11 +59,10 @@ class QueueResource(BaseModel):
     download_id: Optional[str]
     protocol: Optional[DownloadProtocol]
     download_client: Optional[str]
-    download_client_has_post_import_category: Optional[bool]
     indexer: Optional[str]
     output_path: Optional[str]
     episode_has_file: Optional[bool]
-    __properties = ["id", "seriesId", "episodeId", "seasonNumber", "series", "episode", "languages", "quality", "customFormats", "customFormatScore", "size", "title", "sizeleft", "timeleft", "estimatedCompletionTime", "added", "status", "trackedDownloadStatus", "trackedDownloadState", "statusMessages", "errorMessage", "downloadId", "protocol", "downloadClient", "downloadClientHasPostImportCategory", "indexer", "outputPath", "episodeHasFile"]
+    __properties = ["id", "seriesId", "episodeId", "seasonNumber", "series", "episode", "languages", "quality", "customFormats", "customFormatScore", "size", "title", "sizeleft", "timeleft", "estimatedCompletionTime", "added", "status", "trackedDownloadStatus", "trackedDownloadState", "statusMessages", "errorMessage", "downloadId", "protocol", "downloadClient", "indexer", "outputPath", "episodeHasFile"]
 
     class Config:
         allow_population_by_field_name = True
@@ -218,7 +217,6 @@ class QueueResource(BaseModel):
             "download_id": obj.get("downloadId"),
             "protocol": obj.get("protocol"),
             "download_client": obj.get("downloadClient"),
-            "download_client_has_post_import_category": obj.get("downloadClientHasPostImportCategory"),
             "indexer": obj.get("indexer"),
             "output_path": obj.get("outputPath"),
             "episode_has_file": obj.get("episodeHasFile")
