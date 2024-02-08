@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [optional] 
-**strings** | **Dict[str, str]** |  | [optional] 
+**strings** | **Dict[str, Optional[str]]** |  | [optional] 
 
 ## Example
 

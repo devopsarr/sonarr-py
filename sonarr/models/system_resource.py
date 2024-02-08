@@ -16,8 +16,8 @@ import pprint
 import re  # noqa: F401
 import json
 
-from datetime import datetime
-from typing import Any, ClassVar, Dict, Optional
+
+
 from pydantic import BaseModel
 from sonarr.models.authentication_type import AuthenticationType
 from sonarr.models.database_type import DatabaseType

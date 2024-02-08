@@ -17,8 +17,7 @@ import re  # noqa: F401
 from pydantic import validate_arguments, ValidationError
 from typing_extensions import Annotated
 
-from typing import List, Optional
-
+from typing import Optional
 from sonarr.models.release_resource import ReleaseResource
 
 from sonarr.api_client import ApiClient
