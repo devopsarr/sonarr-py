@@ -17,7 +17,7 @@ import re  # noqa: F401
 import json
 
 
-from typing import Any, ClassVar, Dict, Optional
+
 from pydantic import BaseModel
 from sonarr.models.authentication_required_type import AuthenticationRequiredType
 from sonarr.models.authentication_type import AuthenticationType

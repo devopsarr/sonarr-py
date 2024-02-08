@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **var_date** | **datetime** |  | [optional] 
 **download_id** | **str** |  | [optional] 
 **event_type** | [**EpisodeHistoryEventType**](EpisodeHistoryEventType.md) |  | [optional] 
-**data** | **Dict[str, str]** |  | [optional] 
+**data** | **Dict[str, Optional[str]]** |  | [optional] 
 **episode** | [**EpisodeResource**](EpisodeResource.md) |  | [optional] 
 **series** | [**SeriesResource**](SeriesResource.md) |  | [optional] 
 

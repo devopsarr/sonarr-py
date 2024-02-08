@@ -18,11 +18,8 @@ from pydantic import validate_arguments, ValidationError
 from typing_extensions import Annotated
 
 from datetime import datetime
-
 from pydantic import StrictBool, StrictInt, StrictStr
-
 from typing import List, Optional
-
 from sonarr.models.episode_history_event_type import EpisodeHistoryEventType
 from sonarr.models.history_resource import HistoryResource
 from sonarr.models.history_resource_paging_resource import HistoryResourcePagingResource

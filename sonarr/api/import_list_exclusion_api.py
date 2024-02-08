@@ -18,9 +18,7 @@ from pydantic import validate_arguments, ValidationError
 from typing_extensions import Annotated
 
 from pydantic import StrictInt, StrictStr
-
-from typing import List, Optional
-
+from typing import Optional
 from sonarr.models.import_list_exclusion_resource import ImportListExclusionResource
 
 from sonarr.api_client import ApiClient

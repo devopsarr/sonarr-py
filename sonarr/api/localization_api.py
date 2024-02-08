@@ -18,7 +18,6 @@ from pydantic import validate_arguments, ValidationError
 from typing_extensions import Annotated
 
 from pydantic import StrictInt
-
 from sonarr.models.localization_language_resource import LocalizationLanguageResource
 from sonarr.models.localization_resource import LocalizationResource
 

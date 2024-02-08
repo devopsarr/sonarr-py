@@ -18,9 +18,7 @@ from pydantic import validate_arguments, ValidationError
 from typing_extensions import Annotated
 
 from pydantic import StrictStr
-
 from typing import Optional
-
 
 from sonarr.api_client import ApiClient
 from sonarr.exceptions import (  # noqa: F401

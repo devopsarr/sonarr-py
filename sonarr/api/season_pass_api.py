@@ -18,7 +18,6 @@ from pydantic import validate_arguments, ValidationError
 from typing_extensions import Annotated
 
 from typing import Optional
-
 from sonarr.models.season_pass_resource import SeasonPassResource
 
 from sonarr.api_client import ApiClient

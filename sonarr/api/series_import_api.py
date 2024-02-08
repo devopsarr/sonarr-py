@@ -18,7 +18,6 @@ from pydantic import validate_arguments, ValidationError
 from typing_extensions import Annotated
 
 from typing import List, Optional
-
 from sonarr.models.series_resource import SeriesResource
 
 from sonarr.api_client import ApiClient

@@ -16,8 +16,8 @@ import pprint
 import re  # noqa: F401
 import json
 
-from datetime import datetime
-from typing import Any, ClassVar, Dict, List, Optional
+
+
 from pydantic import BaseModel
 from sonarr.models.custom_format_resource import CustomFormatResource
 from sonarr.models.episode_history_event_type import EpisodeHistoryEventType
