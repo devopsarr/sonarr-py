@@ -2,6 +2,7 @@
 
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **series** | [**List[SeasonPassSeriesResource]**](SeasonPassSeriesResource.md) |  | [optional] 
