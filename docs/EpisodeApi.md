@@ -18,58 +18,14 @@ Method | HTTP request | Description
 ### Example
 
 * Api Key Authentication (apikey):
-```python
-from __future__ import print_function
-import time
-import os
-import sonarr
-from sonarr.rest import ApiException
-from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8989
-# See configuration.py for a list of all supported configuration parameters.
-configuration = sonarr.Configuration(
-    host = "http://localhost:8989"
-)
-
-# The client must configure the authentication and authorization parameters
-# in accordance with the API server security policy.
-# Examples for each auth method are provided below, use the example that
-# satisfies your auth use case.
-
-# Configure API key authorization: apikey
-configuration.api_key['apikey'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['apikey'] = 'Bearer'
-
-# Configure API key authorization: X-Api-Key
-configuration.api_key['X-Api-Key'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['X-Api-Key'] = 'Bearer'
-
-# Enter a context with an instance of the API client
-with sonarr.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
-    api_instance = sonarr.EpisodeApi(api_client)
-    id = 56 # int | 
-
-    try:
-        api_response = api_instance.get_episode_by_id(id)
-        print("The response of EpisodeApi->get_episode_by_id:\n")
-        pprint(api_response)
-    except Exception as e:
-        print("Exception when calling EpisodeApi->get_episode_by_id: %s\n" % e)
-```
-
 * Api Key Authentication (X-Api-Key):
+
 ```python
-from __future__ import print_function
-import time
-import os
 import sonarr
+from sonarr.models.episode_resource import EpisodeResource
 from sonarr.rest import ApiException
 from pprint import pprint
+
 # Defining the host is optional and defaults to http://localhost:8989
 # See configuration.py for a list of all supported configuration parameters.
 configuration = sonarr.Configuration(
@@ -106,8 +62,11 @@ with sonarr.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling EpisodeApi->get_episode_by_id: %s\n" % e)
 ```
+
+
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -127,9 +86,10 @@ Name | Type | Description  | Notes
  - **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Success |  -  |
+**2XX** | Success |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -141,62 +101,14 @@ Name | Type | Description  | Notes
 ### Example
 
 * Api Key Authentication (apikey):
-```python
-from __future__ import print_function
-import time
-import os
-import sonarr
-from sonarr.rest import ApiException
-from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8989
-# See configuration.py for a list of all supported configuration parameters.
-configuration = sonarr.Configuration(
-    host = "http://localhost:8989"
-)
-
-# The client must configure the authentication and authorization parameters
-# in accordance with the API server security policy.
-# Examples for each auth method are provided below, use the example that
-# satisfies your auth use case.
-
-# Configure API key authorization: apikey
-configuration.api_key['apikey'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['apikey'] = 'Bearer'
-
-# Configure API key authorization: X-Api-Key
-configuration.api_key['X-Api-Key'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['X-Api-Key'] = 'Bearer'
-
-# Enter a context with an instance of the API client
-with sonarr.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
-    api_instance = sonarr.EpisodeApi(api_client)
-    series_id = 56 # int |  (optional)
-    season_number = 56 # int |  (optional)
-    episode_ids = [56] # List[int] |  (optional)
-    episode_file_id = 56 # int |  (optional)
-    include_images = False # bool |  (optional) (default to False)
-
-    try:
-        api_response = api_instance.list_episode(series_id=series_id, season_number=season_number, episode_ids=episode_ids, episode_file_id=episode_file_id, include_images=include_images)
-        print("The response of EpisodeApi->list_episode:\n")
-        pprint(api_response)
-    except Exception as e:
-        print("Exception when calling EpisodeApi->list_episode: %s\n" % e)
-```
-
 * Api Key Authentication (X-Api-Key):
+
 ```python
-from __future__ import print_function
-import time
-import os
 import sonarr
+from sonarr.models.episode_resource import EpisodeResource
 from sonarr.rest import ApiException
 from pprint import pprint
+
 # Defining the host is optional and defaults to http://localhost:8989
 # See configuration.py for a list of all supported configuration parameters.
 configuration = sonarr.Configuration(
@@ -237,8 +149,11 @@ with sonarr.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling EpisodeApi->list_episode: %s\n" % e)
 ```
+
+
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -262,9 +177,10 @@ Name | Type | Description  | Notes
  - **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Success |  -  |
+**2XX** | Success |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -276,57 +192,14 @@ Name | Type | Description  | Notes
 ### Example
 
 * Api Key Authentication (apikey):
-```python
-from __future__ import print_function
-import time
-import os
-import sonarr
-from sonarr.rest import ApiException
-from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8989
-# See configuration.py for a list of all supported configuration parameters.
-configuration = sonarr.Configuration(
-    host = "http://localhost:8989"
-)
-
-# The client must configure the authentication and authorization parameters
-# in accordance with the API server security policy.
-# Examples for each auth method are provided below, use the example that
-# satisfies your auth use case.
-
-# Configure API key authorization: apikey
-configuration.api_key['apikey'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['apikey'] = 'Bearer'
-
-# Configure API key authorization: X-Api-Key
-configuration.api_key['X-Api-Key'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['X-Api-Key'] = 'Bearer'
-
-# Enter a context with an instance of the API client
-with sonarr.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
-    api_instance = sonarr.EpisodeApi(api_client)
-    include_images = False # bool |  (optional) (default to False)
-    episodes_monitored_resource = sonarr.EpisodesMonitoredResource() # EpisodesMonitoredResource |  (optional)
-
-    try:
-        api_instance.put_episode_monitor(include_images=include_images, episodes_monitored_resource=episodes_monitored_resource)
-    except Exception as e:
-        print("Exception when calling EpisodeApi->put_episode_monitor: %s\n" % e)
-```
-
 * Api Key Authentication (X-Api-Key):
+
 ```python
-from __future__ import print_function
-import time
-import os
 import sonarr
+from sonarr.models.episodes_monitored_resource import EpisodesMonitoredResource
 from sonarr.rest import ApiException
 from pprint import pprint
+
 # Defining the host is optional and defaults to http://localhost:8989
 # See configuration.py for a list of all supported configuration parameters.
 configuration = sonarr.Configuration(
@@ -362,8 +235,11 @@ with sonarr.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling EpisodeApi->put_episode_monitor: %s\n" % e)
 ```
+
+
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -384,9 +260,10 @@ void (empty response body)
  - **Accept**: Not defined
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Success |  -  |
+**2XX** | Success |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -398,59 +275,14 @@ void (empty response body)
 ### Example
 
 * Api Key Authentication (apikey):
-```python
-from __future__ import print_function
-import time
-import os
-import sonarr
-from sonarr.rest import ApiException
-from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8989
-# See configuration.py for a list of all supported configuration parameters.
-configuration = sonarr.Configuration(
-    host = "http://localhost:8989"
-)
-
-# The client must configure the authentication and authorization parameters
-# in accordance with the API server security policy.
-# Examples for each auth method are provided below, use the example that
-# satisfies your auth use case.
-
-# Configure API key authorization: apikey
-configuration.api_key['apikey'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['apikey'] = 'Bearer'
-
-# Configure API key authorization: X-Api-Key
-configuration.api_key['X-Api-Key'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['X-Api-Key'] = 'Bearer'
-
-# Enter a context with an instance of the API client
-with sonarr.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
-    api_instance = sonarr.EpisodeApi(api_client)
-    id = 56 # int | 
-    episode_resource = sonarr.EpisodeResource() # EpisodeResource |  (optional)
-
-    try:
-        api_response = api_instance.update_episode(id, episode_resource=episode_resource)
-        print("The response of EpisodeApi->update_episode:\n")
-        pprint(api_response)
-    except Exception as e:
-        print("Exception when calling EpisodeApi->update_episode: %s\n" % e)
-```
-
 * Api Key Authentication (X-Api-Key):
+
 ```python
-from __future__ import print_function
-import time
-import os
 import sonarr
+from sonarr.models.episode_resource import EpisodeResource
 from sonarr.rest import ApiException
 from pprint import pprint
+
 # Defining the host is optional and defaults to http://localhost:8989
 # See configuration.py for a list of all supported configuration parameters.
 configuration = sonarr.Configuration(
@@ -488,8 +320,11 @@ with sonarr.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling EpisodeApi->update_episode: %s\n" % e)
 ```
+
+
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -510,9 +345,10 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Success |  -  |
+**2XX** | Success |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
