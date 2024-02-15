@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "sonarr"
-version = "0.10.0" # x-release-please-version
+version = "1.0.0" # x-release-please-version
 description = "Sonarr"
 authors = ["OpenAPI Generator Community <team@openapitools.org>"]
 license = "GPL-3.0"
