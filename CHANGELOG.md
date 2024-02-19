@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.0.0](https://github.com/devopsarr/sonarr-py/compare/v0.10.0...v1.0.0) (2024-02-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* **devopsarr/prowlarr-py#39:** update sdk generator to use pydantic 2.x
+
+### Features
+
+* **devopsarr/prowlarr-py#39:** update sdk generator to use pydantic 2.x ([8884625](https://github.com/devopsarr/sonarr-py/commit/8884625e16f41709364cc1a181b13eaaba82db01))
+* inject api version into readme ([231b4e4](https://github.com/devopsarr/sonarr-py/commit/231b4e4febec0565cdc2290a7afe4d303ceed07a))
+
+
+### Bug Fixes
+
+* **python:** wrong release versioning on configuration.py ([6b70b2c](https://github.com/devopsarr/sonarr-py/commit/6b70b2ccc69b14896ade9522166d49c75fc3bf01))
+* release please commented lines ([550cb93](https://github.com/devopsarr/sonarr-py/commit/550cb93525935553f0627ae5e69dfaf229f191da))
+* remove middle elements from method name ([b235b41](https://github.com/devopsarr/sonarr-py/commit/b235b4140846448fea51cf17313f68153a276752))
+
 ## [0.10.0](https://github.com/devopsarr/sonarr-py/compare/v0.9.0...v0.10.0) (2023-10-11)
 
 
