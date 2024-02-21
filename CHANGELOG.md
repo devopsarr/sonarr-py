@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/devopsarr/sonarr-py/compare/v1.0.0...v1.0.1) (2024-02-21)
+
+
+### Bug Fixes
+
+* map Field to ContractField to avoid pydantic issue ([73829ad](https://github.com/devopsarr/sonarr-py/commit/73829adcd102d9fdbb6fd10c719da33ee28cdfdb))
+
 ## [1.0.0](https://github.com/devopsarr/sonarr-py/compare/v1.0.0...v1.0.0) (2024-02-20)
 
 
