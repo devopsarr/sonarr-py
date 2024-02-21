@@ -19,7 +19,7 @@ import json
 
 from pydantic import BaseModel, Field, StrictBool, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
-from sonarr.models.field import Field
+from sonarr.models.contract_field import ContractField
 from sonarr.models.import_list_type import ImportListType
 from sonarr.models.monitor_types import MonitorTypes
 from sonarr.models.new_item_monitor_types import NewItemMonitorTypes
@@ -34,7 +34,7 @@ class ImportListResource(BaseModel):
     """ # noqa: E501
     id: Optional[StrictInt] = None
     name: Optional[StrictStr] = None
-    fields: Optional[List[Field]] = None
+    fields: Optional[List[ContractField]] = None
     implementation_name: Optional[StrictStr] = Field(default=None, alias="implementationName")
     implementation: Optional[StrictStr] = None
     config_contract: Optional[StrictStr] = Field(default=None, alias="configContract")
@@ -170,7 +170,7 @@ class ImportListResource(BaseModel):
         _obj = cls.model_validate({
             "id": obj.get("id"),
             "name": obj.get("name"),
-            "fields": [Field.from_dict(_item) for _item in obj["fields"]] if obj.get("fields") is not None else None,
+            "fields": [ContractField.from_dict(_item) for _item in obj["fields"]] if obj.get("fields") is not None else None,
             "implementationName": obj.get("implementationName"),
             "implementation": obj.get("implementation"),
             "configContract": obj.get("configContract"),

@@ -33,6 +33,7 @@ from sonarr.models.command_resource import CommandResource
 from sonarr.models.command_result import CommandResult
 from sonarr.models.command_status import CommandStatus
 from sonarr.models.command_trigger import CommandTrigger
+from sonarr.models.contract_field import ContractField
 from sonarr.models.custom_filter_resource import CustomFilterResource
 from sonarr.models.custom_format_resource import CustomFormatResource
 from sonarr.models.custom_format_specification_schema import CustomFormatSpecificationSchema
@@ -50,7 +51,6 @@ from sonarr.models.episode_resource import EpisodeResource
 from sonarr.models.episode_resource_paging_resource import EpisodeResourcePagingResource
 from sonarr.models.episode_title_required_type import EpisodeTitleRequiredType
 from sonarr.models.episodes_monitored_resource import EpisodesMonitoredResource
-from sonarr.models.field import Field
 from sonarr.models.file_date_type import FileDateType
 from sonarr.models.health_check_result import HealthCheckResult
 from sonarr.models.health_resource import HealthResource
