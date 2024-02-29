@@ -54,6 +54,7 @@ Name | Type | Description | Notes
 **seeders** | **int** |  | [optional] 
 **leechers** | **int** |  | [optional] 
 **protocol** | [**DownloadProtocol**](DownloadProtocol.md) |  | [optional] 
+**indexer_flags** | **int** |  | [optional] 
 **is_daily** | **bool** |  | [optional] 
 **is_absolute_numbering** | **bool** |  | [optional] 
 **is_possible_special_episode** | **bool** |  | [optional] 

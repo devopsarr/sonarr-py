@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **is_partial_season** | **bool** |  | [optional] 
 **is_multi_season** | **bool** |  | [optional] 
 **is_season_extra** | **bool** |  | [optional] 
+**is_split_episode** | **bool** |  | [optional] 
 **special** | **bool** |  | [optional] 
 **release_group** | **str** |  | [optional] 
 **release_hash** | **str** |  | [optional] 

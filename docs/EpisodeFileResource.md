@@ -18,6 +18,7 @@ Name | Type | Description | Notes
 **quality** | [**QualityModel**](QualityModel.md) |  | [optional] 
 **custom_formats** | [**List[CustomFormatResource]**](CustomFormatResource.md) |  | [optional] 
 **custom_format_score** | **int** |  | [optional] 
+**indexer_flags** | **int** |  | [optional] 
 **media_info** | [**MediaInfoResource**](MediaInfoResource.md) |  | [optional] 
 **quality_cutoff_not_met** | **bool** |  | [optional] 
 
