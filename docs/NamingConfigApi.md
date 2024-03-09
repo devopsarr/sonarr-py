@@ -173,7 +173,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_naming_config_examples**
-> get_naming_config_examples(rename_episodes=rename_episodes, replace_illegal_characters=replace_illegal_characters, colon_replacement_format=colon_replacement_format, multi_episode_style=multi_episode_style, standard_episode_format=standard_episode_format, daily_episode_format=daily_episode_format, anime_episode_format=anime_episode_format, series_folder_format=series_folder_format, season_folder_format=season_folder_format, specials_folder_format=specials_folder_format, include_series_title=include_series_title, include_episode_title=include_episode_title, include_quality=include_quality, replace_spaces=replace_spaces, separator=separator, number_style=number_style, id=id, resource_name=resource_name)
+> get_naming_config_examples(rename_episodes=rename_episodes, replace_illegal_characters=replace_illegal_characters, colon_replacement_format=colon_replacement_format, multi_episode_style=multi_episode_style, standard_episode_format=standard_episode_format, daily_episode_format=daily_episode_format, anime_episode_format=anime_episode_format, series_folder_format=series_folder_format, season_folder_format=season_folder_format, specials_folder_format=specials_folder_format, id=id, resource_name=resource_name)
 
 
 
@@ -224,17 +224,11 @@ with sonarr.ApiClient(configuration) as api_client:
     series_folder_format = 'series_folder_format_example' # str |  (optional)
     season_folder_format = 'season_folder_format_example' # str |  (optional)
     specials_folder_format = 'specials_folder_format_example' # str |  (optional)
-    include_series_title = True # bool |  (optional)
-    include_episode_title = True # bool |  (optional)
-    include_quality = True # bool |  (optional)
-    replace_spaces = True # bool |  (optional)
-    separator = 'separator_example' # str |  (optional)
-    number_style = 'number_style_example' # str |  (optional)
     id = 56 # int |  (optional)
     resource_name = 'resource_name_example' # str |  (optional)
 
     try:
-        api_instance.get_naming_config_examples(rename_episodes=rename_episodes, replace_illegal_characters=replace_illegal_characters, colon_replacement_format=colon_replacement_format, multi_episode_style=multi_episode_style, standard_episode_format=standard_episode_format, daily_episode_format=daily_episode_format, anime_episode_format=anime_episode_format, series_folder_format=series_folder_format, season_folder_format=season_folder_format, specials_folder_format=specials_folder_format, include_series_title=include_series_title, include_episode_title=include_episode_title, include_quality=include_quality, replace_spaces=replace_spaces, separator=separator, number_style=number_style, id=id, resource_name=resource_name)
+        api_instance.get_naming_config_examples(rename_episodes=rename_episodes, replace_illegal_characters=replace_illegal_characters, colon_replacement_format=colon_replacement_format, multi_episode_style=multi_episode_style, standard_episode_format=standard_episode_format, daily_episode_format=daily_episode_format, anime_episode_format=anime_episode_format, series_folder_format=series_folder_format, season_folder_format=season_folder_format, specials_folder_format=specials_folder_format, id=id, resource_name=resource_name)
     except Exception as e:
         print("Exception when calling NamingConfigApi->get_naming_config_examples: %s\n" % e)
 ```
@@ -256,12 +250,6 @@ Name | Type | Description  | Notes
  **series_folder_format** | **str**|  | [optional] 
  **season_folder_format** | **str**|  | [optional] 
  **specials_folder_format** | **str**|  | [optional] 
- **include_series_title** | **bool**|  | [optional] 
- **include_episode_title** | **bool**|  | [optional] 
- **include_quality** | **bool**|  | [optional] 
- **replace_spaces** | **bool**|  | [optional] 
- **separator** | **str**|  | [optional] 
- **number_style** | **str**|  | [optional] 
  **id** | **int**|  | [optional] 
  **resource_name** | **str**|  | [optional] 
 

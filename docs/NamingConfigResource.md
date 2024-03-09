@@ -16,12 +16,6 @@ Name | Type | Description | Notes
 **series_folder_format** | **str** |  | [optional] 
 **season_folder_format** | **str** |  | [optional] 
 **specials_folder_format** | **str** |  | [optional] 
-**include_series_title** | **bool** |  | [optional] 
-**include_episode_title** | **bool** |  | [optional] 
-**include_quality** | **bool** |  | [optional] 
-**replace_spaces** | **bool** |  | [optional] 
-**separator** | **str** |  | [optional] 
-**number_style** | **str** |  | [optional] 
 
 ## Example
 

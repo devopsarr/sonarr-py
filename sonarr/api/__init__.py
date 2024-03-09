@@ -23,9 +23,11 @@ from sonarr.api.health_api import HealthApi
 from sonarr.api.history_api import HistoryApi
 from sonarr.api.host_config_api import HostConfigApi
 from sonarr.api.import_list_api import ImportListApi
+from sonarr.api.import_list_config_api import ImportListConfigApi
 from sonarr.api.import_list_exclusion_api import ImportListExclusionApi
 from sonarr.api.indexer_api import IndexerApi
 from sonarr.api.indexer_config_api import IndexerConfigApi
+from sonarr.api.indexer_flag_api import IndexerFlagApi
 from sonarr.api.language_api import LanguageApi
 from sonarr.api.language_profile_api import LanguageProfileApi
 from sonarr.api.language_profile_schema_api import LanguageProfileSchemaApi
