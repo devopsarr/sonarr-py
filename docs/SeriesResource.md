@@ -60,7 +60,7 @@ json = "{}"
 # create an instance of SeriesResource from a JSON string
 series_resource_instance = SeriesResource.from_json(json)
 # print the JSON string representation of the object
-print SeriesResource.to_json()
+print(SeriesResource.to_json())
 
 # convert the object into a dict
 series_resource_dict = series_resource_instance.to_dict()

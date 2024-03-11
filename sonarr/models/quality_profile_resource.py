@@ -17,7 +17,7 @@ import pprint
 import re  # noqa: F401
 import json
 
-from pydantic import BaseModel, Field, StrictBool, StrictInt, StrictStr
+from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
 from sonarr.models.profile_format_item_resource import ProfileFormatItemResource
 from sonarr.models.quality_profile_quality_item_resource import QualityProfileQualityItemResource
@@ -38,11 +38,11 @@ class QualityProfileResource(BaseModel):
     format_items: Optional[List[ProfileFormatItemResource]] = Field(default=None, alias="formatItems")
     __properties: ClassVar[List[str]] = ["id", "name", "upgradeAllowed", "cutoff", "items", "minFormatScore", "cutoffFormatScore", "formatItems"]
 
-    model_config = {
-        "populate_by_name": True,
-        "validate_assignment": True,
-        "protected_namespaces": (),
-    }
+    model_config = ConfigDict(
+        populate_by_name=True,
+        validate_assignment=True,
+        protected_namespaces=(),
+    )
 
 
     def to_str(self) -> str:

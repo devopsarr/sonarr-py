@@ -18,7 +18,7 @@ import re  # noqa: F401
 import json
 
 from datetime import datetime
-from pydantic import BaseModel, Field, StrictBool, StrictInt, StrictStr
+from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, Optional
 from sonarr.models.authentication_type import AuthenticationType
 from sonarr.models.database_type import DatabaseType
@@ -65,11 +65,11 @@ class SystemResource(BaseModel):
     database_type: Optional[DatabaseType] = Field(default=None, alias="databaseType")
     __properties: ClassVar[List[str]] = ["appName", "instanceName", "version", "buildTime", "isDebug", "isProduction", "isAdmin", "isUserInteractive", "startupPath", "appData", "osName", "osVersion", "isNetCore", "isLinux", "isOsx", "isWindows", "isDocker", "mode", "branch", "authentication", "sqliteVersion", "migrationVersion", "urlBase", "runtimeVersion", "runtimeName", "startTime", "packageVersion", "packageAuthor", "packageUpdateMechanism", "packageUpdateMechanismMessage", "databaseVersion", "databaseType"]
 
-    model_config = {
-        "populate_by_name": True,
-        "validate_assignment": True,
-        "protected_namespaces": (),
-    }
+    model_config = ConfigDict(
+        populate_by_name=True,
+        validate_assignment=True,
+        protected_namespaces=(),
+    )
 
 
     def to_str(self) -> str:

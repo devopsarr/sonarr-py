@@ -17,7 +17,7 @@ import pprint
 import re  # noqa: F401
 import json
 
-from pydantic import BaseModel, Field, StrictBool, StrictFloat, StrictInt, StrictStr
+from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictFloat, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional, Union
 from sonarr.models.language import Language
 from sonarr.models.quality_model import QualityModel
@@ -56,11 +56,11 @@ class ParsedEpisodeInfo(BaseModel):
     is_possible_scene_season_special: Optional[StrictBool] = Field(default=None, alias="isPossibleSceneSeasonSpecial")
     __properties: ClassVar[List[str]] = ["releaseTitle", "seriesTitle", "seriesTitleInfo", "quality", "seasonNumber", "episodeNumbers", "absoluteEpisodeNumbers", "specialAbsoluteEpisodeNumbers", "airDate", "languages", "fullSeason", "isPartialSeason", "isMultiSeason", "isSeasonExtra", "isSplitEpisode", "special", "releaseGroup", "releaseHash", "seasonPart", "releaseTokens", "dailyPart", "isDaily", "isAbsoluteNumbering", "isPossibleSpecialEpisode", "isPossibleSceneSeasonSpecial"]
 
-    model_config = {
-        "populate_by_name": True,
-        "validate_assignment": True,
-        "protected_namespaces": (),
-    }
+    model_config = ConfigDict(
+        populate_by_name=True,
+        validate_assignment=True,
+        protected_namespaces=(),
+    )
 
 
     def to_str(self) -> str:

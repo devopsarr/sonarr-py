@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of LocalizationResource from a JSON string
 localization_resource_instance = LocalizationResource.from_json(json)
 # print the JSON string representation of the object
-print LocalizationResource.to_json()
+print(LocalizationResource.to_json())
 
 # convert the object into a dict
 localization_resource_dict = localization_resource_instance.to_dict()

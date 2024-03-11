@@ -22,7 +22,7 @@ json = "{}"
 # create an instance of EpisodeResourcePagingResource from a JSON string
 episode_resource_paging_resource_instance = EpisodeResourcePagingResource.from_json(json)
 # print the JSON string representation of the object
-print EpisodeResourcePagingResource.to_json()
+print(EpisodeResourcePagingResource.to_json())
 
 # convert the object into a dict
 episode_resource_paging_resource_dict = episode_resource_paging_resource_instance.to_dict()

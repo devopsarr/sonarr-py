@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of LanguageProfileItemResource from a JSON string
 language_profile_item_resource_instance = LanguageProfileItemResource.from_json(json)
 # print the JSON string representation of the object
-print LanguageProfileItemResource.to_json()
+print(LanguageProfileItemResource.to_json())
 
 # convert the object into a dict
 language_profile_item_resource_dict = language_profile_item_resource_instance.to_dict()

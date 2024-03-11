@@ -32,7 +32,7 @@ json = "{}"
 # create an instance of EpisodeFileResource from a JSON string
 episode_file_resource_instance = EpisodeFileResource.from_json(json)
 # print the JSON string representation of the object
-print EpisodeFileResource.to_json()
+print(EpisodeFileResource.to_json())
 
 # convert the object into a dict
 episode_file_resource_dict = episode_file_resource_instance.to_dict()

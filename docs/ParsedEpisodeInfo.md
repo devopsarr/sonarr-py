@@ -41,7 +41,7 @@ json = "{}"
 # create an instance of ParsedEpisodeInfo from a JSON string
 parsed_episode_info_instance = ParsedEpisodeInfo.from_json(json)
 # print the JSON string representation of the object
-print ParsedEpisodeInfo.to_json()
+print(ParsedEpisodeInfo.to_json())
 
 # convert the object into a dict
 parsed_episode_info_dict = parsed_episode_info_instance.to_dict()

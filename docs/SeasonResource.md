@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of SeasonResource from a JSON string
 season_resource_instance = SeasonResource.from_json(json)
 # print the JSON string representation of the object
-print SeasonResource.to_json()
+print(SeasonResource.to_json())
 
 # convert the object into a dict
 season_resource_dict = season_resource_instance.to_dict()

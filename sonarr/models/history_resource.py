@@ -18,7 +18,7 @@ import re  # noqa: F401
 import json
 
 from datetime import datetime
-from pydantic import BaseModel, Field, StrictBool, StrictInt, StrictStr
+from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
 from sonarr.models.custom_format_resource import CustomFormatResource
 from sonarr.models.episode_history_event_type import EpisodeHistoryEventType
@@ -50,11 +50,11 @@ class HistoryResource(BaseModel):
     series: Optional[SeriesResource] = None
     __properties: ClassVar[List[str]] = ["id", "episodeId", "seriesId", "sourceTitle", "languages", "quality", "customFormats", "customFormatScore", "qualityCutoffNotMet", "date", "downloadId", "eventType", "data", "episode", "series"]
 
-    model_config = {
-        "populate_by_name": True,
-        "validate_assignment": True,
-        "protected_namespaces": (),
-    }
+    model_config = ConfigDict(
+        populate_by_name=True,
+        validate_assignment=True,
+        protected_namespaces=(),
+    )
 
 
     def to_str(self) -> str:

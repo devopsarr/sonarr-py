@@ -17,7 +17,7 @@ import pprint
 import re  # noqa: F401
 import json
 
-from pydantic import BaseModel, Field, StrictBool, StrictInt, StrictStr
+from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, Optional
 from sonarr.models.episode_title_required_type import EpisodeTitleRequiredType
 from sonarr.models.file_date_type import FileDateType
@@ -53,11 +53,11 @@ class MediaManagementConfigResource(BaseModel):
     enable_media_info: Optional[StrictBool] = Field(default=None, alias="enableMediaInfo")
     __properties: ClassVar[List[str]] = ["id", "autoUnmonitorPreviouslyDownloadedEpisodes", "recycleBin", "recycleBinCleanupDays", "downloadPropersAndRepacks", "createEmptySeriesFolders", "deleteEmptyFolders", "fileDate", "rescanAfterRefresh", "setPermissionsLinux", "chmodFolder", "chownGroup", "episodeTitleRequired", "skipFreeSpaceCheckWhenImporting", "minimumFreeSpaceWhenImporting", "copyUsingHardlinks", "useScriptImport", "scriptImportPath", "importExtraFiles", "extraFileExtensions", "enableMediaInfo"]
 
-    model_config = {
-        "populate_by_name": True,
-        "validate_assignment": True,
-        "protected_namespaces": (),
-    }
+    model_config = ConfigDict(
+        populate_by_name=True,
+        validate_assignment=True,
+        protected_namespaces=(),
+    )
 
 
     def to_str(self) -> str:
