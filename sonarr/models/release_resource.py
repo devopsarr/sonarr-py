@@ -18,7 +18,7 @@ import re  # noqa: F401
 import json
 
 from datetime import datetime
-from pydantic import BaseModel, Field, StrictBool, StrictFloat, StrictInt, StrictStr
+from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictFloat, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional, Union
 from sonarr.models.alternate_title_resource import AlternateTitleResource
 from sonarr.models.custom_format_resource import CustomFormatResource
@@ -95,11 +95,11 @@ class ReleaseResource(BaseModel):
     should_override: Optional[StrictBool] = Field(default=None, alias="shouldOverride")
     __properties: ClassVar[List[str]] = ["id", "guid", "quality", "qualityWeight", "age", "ageHours", "ageMinutes", "size", "indexerId", "indexer", "releaseGroup", "subGroup", "releaseHash", "title", "fullSeason", "sceneSource", "seasonNumber", "languages", "languageWeight", "airDate", "seriesTitle", "episodeNumbers", "absoluteEpisodeNumbers", "mappedSeasonNumber", "mappedEpisodeNumbers", "mappedAbsoluteEpisodeNumbers", "mappedSeriesId", "mappedEpisodeInfo", "approved", "temporarilyRejected", "rejected", "tvdbId", "tvRageId", "rejections", "publishDate", "commentUrl", "downloadUrl", "infoUrl", "episodeRequested", "downloadAllowed", "releaseWeight", "customFormats", "customFormatScore", "sceneMapping", "magnetUrl", "infoHash", "seeders", "leechers", "protocol", "indexerFlags", "isDaily", "isAbsoluteNumbering", "isPossibleSpecialEpisode", "special", "seriesId", "episodeId", "episodeIds", "downloadClientId", "downloadClient", "shouldOverride"]
 
-    model_config = {
-        "populate_by_name": True,
-        "validate_assignment": True,
-        "protected_namespaces": (),
-    }
+    model_config = ConfigDict(
+        populate_by_name=True,
+        validate_assignment=True,
+        protected_namespaces=(),
+    )
 
 
     def to_str(self) -> str:

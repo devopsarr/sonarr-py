@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of AddSeriesOptions from a JSON string
 add_series_options_instance = AddSeriesOptions.from_json(json)
 # print the JSON string representation of the object
-print AddSeriesOptions.to_json()
+print(AddSeriesOptions.to_json())
 
 # convert the object into a dict
 add_series_options_dict = add_series_options_instance.to_dict()

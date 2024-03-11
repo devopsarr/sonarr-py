@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of ImportListExclusionResource from a JSON string
 import_list_exclusion_resource_instance = ImportListExclusionResource.from_json(json)
 # print the JSON string representation of the object
-print ImportListExclusionResource.to_json()
+print(ImportListExclusionResource.to_json())
 
 # convert the object into a dict
 import_list_exclusion_resource_dict = import_list_exclusion_resource_instance.to_dict()

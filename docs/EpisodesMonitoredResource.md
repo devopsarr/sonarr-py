@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of EpisodesMonitoredResource from a JSON string
 episodes_monitored_resource_instance = EpisodesMonitoredResource.from_json(json)
 # print the JSON string representation of the object
-print EpisodesMonitoredResource.to_json()
+print(EpisodesMonitoredResource.to_json())
 
 # convert the object into a dict
 episodes_monitored_resource_dict = episodes_monitored_resource_instance.to_dict()

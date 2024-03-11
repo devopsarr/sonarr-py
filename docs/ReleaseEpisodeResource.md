@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of ReleaseEpisodeResource from a JSON string
 release_episode_resource_instance = ReleaseEpisodeResource.from_json(json)
 # print the JSON string representation of the object
-print ReleaseEpisodeResource.to_json()
+print(ReleaseEpisodeResource.to_json())
 
 # convert the object into a dict
 release_episode_resource_dict = release_episode_resource_instance.to_dict()

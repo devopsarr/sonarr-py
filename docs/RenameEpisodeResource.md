@@ -23,7 +23,7 @@ json = "{}"
 # create an instance of RenameEpisodeResource from a JSON string
 rename_episode_resource_instance = RenameEpisodeResource.from_json(json)
 # print the JSON string representation of the object
-print RenameEpisodeResource.to_json()
+print(RenameEpisodeResource.to_json())
 
 # convert the object into a dict
 rename_episode_resource_dict = rename_episode_resource_instance.to_dict()

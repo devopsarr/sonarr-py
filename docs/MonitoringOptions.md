@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of MonitoringOptions from a JSON string
 monitoring_options_instance = MonitoringOptions.from_json(json)
 # print the JSON string representation of the object
-print MonitoringOptions.to_json()
+print(MonitoringOptions.to_json())
 
 # convert the object into a dict
 monitoring_options_dict = monitoring_options_instance.to_dict()

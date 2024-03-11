@@ -17,7 +17,7 @@ import pprint
 import re  # noqa: F401
 import json
 
-from pydantic import BaseModel, Field, StrictBool
+from pydantic import BaseModel, ConfigDict, Field, StrictBool
 from typing import Any, ClassVar, Dict, Optional
 from sonarr.models.monitor_types import MonitorTypes
 from typing import Optional, Set
@@ -34,11 +34,11 @@ class AddSeriesOptions(BaseModel):
     search_for_cutoff_unmet_episodes: Optional[StrictBool] = Field(default=None, alias="searchForCutoffUnmetEpisodes")
     __properties: ClassVar[List[str]] = ["ignoreEpisodesWithFiles", "ignoreEpisodesWithoutFiles", "monitor", "searchForMissingEpisodes", "searchForCutoffUnmetEpisodes"]
 
-    model_config = {
-        "populate_by_name": True,
-        "validate_assignment": True,
-        "protected_namespaces": (),
-    }
+    model_config = ConfigDict(
+        populate_by_name=True,
+        validate_assignment=True,
+        protected_namespaces=(),
+    )
 
 
     def to_str(self) -> str:

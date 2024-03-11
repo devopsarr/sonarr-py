@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of SeasonPassResource from a JSON string
 season_pass_resource_instance = SeasonPassResource.from_json(json)
 # print the JSON string representation of the object
-print SeasonPassResource.to_json()
+print(SeasonPassResource.to_json())
 
 # convert the object into a dict
 season_pass_resource_dict = season_pass_resource_instance.to_dict()

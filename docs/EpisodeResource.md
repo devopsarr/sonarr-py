@@ -42,7 +42,7 @@ json = "{}"
 # create an instance of EpisodeResource from a JSON string
 episode_resource_instance = EpisodeResource.from_json(json)
 # print the JSON string representation of the object
-print EpisodeResource.to_json()
+print(EpisodeResource.to_json())
 
 # convert the object into a dict
 episode_resource_dict = episode_resource_instance.to_dict()

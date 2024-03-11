@@ -24,7 +24,7 @@ json = "{}"
 # create an instance of SeasonStatisticsResource from a JSON string
 season_statistics_resource_instance = SeasonStatisticsResource.from_json(json)
 # print the JSON string representation of the object
-print SeasonStatisticsResource.to_json()
+print(SeasonStatisticsResource.to_json())
 
 # convert the object into a dict
 season_statistics_resource_dict = season_statistics_resource_instance.to_dict()
