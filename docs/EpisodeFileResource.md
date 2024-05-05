@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **custom_formats** | [**List[CustomFormatResource]**](CustomFormatResource.md) |  | [optional] 
 **custom_format_score** | **int** |  | [optional] 
 **indexer_flags** | **int** |  | [optional] 
+**release_type** | [**ReleaseType**](ReleaseType.md) |  | [optional] 
 **media_info** | [**MediaInfoResource**](MediaInfoResource.md) |  | [optional] 
 **quality_cutoff_not_met** | **bool** |  | [optional] 
 

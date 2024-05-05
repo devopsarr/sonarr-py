@@ -18,25 +18,22 @@ from enum import Enum
 from typing_extensions import Self
 
 
-class CommandStatus(str, Enum):
+class ReleaseType(str, Enum):
     """
-    CommandStatus
+    ReleaseType
     """
 
     """
     allowed enum values
     """
-    QUEUED = 'queued'
-    STARTED = 'started'
-    COMPLETED = 'completed'
-    FAILED = 'failed'
-    ABORTED = 'aborted'
-    CANCELLED = 'cancelled'
-    ORPHANED = 'orphaned'
+    UNKNOWN = 'unknown'
+    SINGLEEPISODE = 'singleEpisode'
+    MULTIEPISODE = 'multiEpisode'
+    SEASONPACK = 'seasonPack'
 
     @classmethod
     def from_json(cls, json_str: str) -> Self:
-        """Create an instance of CommandStatus from a JSON string"""
+        """Create an instance of ReleaseType from a JSON string"""
         return cls(json.loads(json_str))
 
 

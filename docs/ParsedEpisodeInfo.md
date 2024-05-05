@@ -20,6 +20,7 @@ Name | Type | Description | Notes
 **is_multi_season** | **bool** |  | [optional] 
 **is_season_extra** | **bool** |  | [optional] 
 **is_split_episode** | **bool** |  | [optional] 
+**is_mini_series** | **bool** |  | [optional] 
 **special** | **bool** |  | [optional] 
 **release_group** | **str** |  | [optional] 
 **release_hash** | **str** |  | [optional] 
@@ -30,6 +31,7 @@ Name | Type | Description | Notes
 **is_absolute_numbering** | **bool** |  | [optional] [readonly] 
 **is_possible_special_episode** | **bool** |  | [optional] [readonly] 
 **is_possible_scene_season_special** | **bool** |  | [optional] [readonly] 
+**release_type** | [**ReleaseType**](ReleaseType.md) |  | [optional] 
 
 ## Example
 
