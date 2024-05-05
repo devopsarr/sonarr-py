@@ -26,7 +26,7 @@ print(LanguageProfileResource.to_json())
 # convert the object into a dict
 language_profile_resource_dict = language_profile_resource_instance.to_dict()
 # create an instance of LanguageProfileResource from a dict
-language_profile_resource_form_dict = language_profile_resource.from_dict(language_profile_resource_dict)
+language_profile_resource_from_dict = LanguageProfileResource.from_dict(language_profile_resource_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

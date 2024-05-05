@@ -24,7 +24,7 @@ print(MonitoringOptions.to_json())
 # convert the object into a dict
 monitoring_options_dict = monitoring_options_instance.to_dict()
 # create an instance of MonitoringOptions from a dict
-monitoring_options_form_dict = monitoring_options.from_dict(monitoring_options_dict)
+monitoring_options_from_dict = MonitoringOptions.from_dict(monitoring_options_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

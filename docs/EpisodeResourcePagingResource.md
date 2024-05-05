@@ -27,7 +27,7 @@ print(EpisodeResourcePagingResource.to_json())
 # convert the object into a dict
 episode_resource_paging_resource_dict = episode_resource_paging_resource_instance.to_dict()
 # create an instance of EpisodeResourcePagingResource from a dict
-episode_resource_paging_resource_form_dict = episode_resource_paging_resource.from_dict(episode_resource_paging_resource_dict)
+episode_resource_paging_resource_from_dict = EpisodeResourcePagingResource.from_dict(episode_resource_paging_resource_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

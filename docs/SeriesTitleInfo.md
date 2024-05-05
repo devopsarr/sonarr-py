@@ -25,7 +25,7 @@ print(SeriesTitleInfo.to_json())
 # convert the object into a dict
 series_title_info_dict = series_title_info_instance.to_dict()
 # create an instance of SeriesTitleInfo from a dict
-series_title_info_form_dict = series_title_info.from_dict(series_title_info_dict)
+series_title_info_from_dict = SeriesTitleInfo.from_dict(series_title_info_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

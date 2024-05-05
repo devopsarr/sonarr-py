@@ -65,7 +65,7 @@ print(SeriesResource.to_json())
 # convert the object into a dict
 series_resource_dict = series_resource_instance.to_dict()
 # create an instance of SeriesResource from a dict
-series_resource_form_dict = series_resource.from_dict(series_resource_dict)
+series_resource_from_dict = SeriesResource.from_dict(series_resource_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

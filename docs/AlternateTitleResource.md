@@ -26,7 +26,7 @@ print(AlternateTitleResource.to_json())
 # convert the object into a dict
 alternate_title_resource_dict = alternate_title_resource_instance.to_dict()
 # create an instance of AlternateTitleResource from a dict
-alternate_title_resource_form_dict = alternate_title_resource.from_dict(alternate_title_resource_dict)
+alternate_title_resource_from_dict = AlternateTitleResource.from_dict(alternate_title_resource_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

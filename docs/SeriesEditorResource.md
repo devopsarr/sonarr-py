@@ -33,7 +33,7 @@ print(SeriesEditorResource.to_json())
 # convert the object into a dict
 series_editor_resource_dict = series_editor_resource_instance.to_dict()
 # create an instance of SeriesEditorResource from a dict
-series_editor_resource_form_dict = series_editor_resource.from_dict(series_editor_resource_dict)
+series_editor_resource_from_dict = SeriesEditorResource.from_dict(series_editor_resource_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
