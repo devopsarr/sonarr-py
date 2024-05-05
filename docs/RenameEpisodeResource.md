@@ -28,7 +28,7 @@ print(RenameEpisodeResource.to_json())
 # convert the object into a dict
 rename_episode_resource_dict = rename_episode_resource_instance.to_dict()
 # create an instance of RenameEpisodeResource from a dict
-rename_episode_resource_form_dict = rename_episode_resource.from_dict(rename_episode_resource_dict)
+rename_episode_resource_from_dict = RenameEpisodeResource.from_dict(rename_episode_resource_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

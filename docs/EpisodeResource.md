@@ -47,7 +47,7 @@ print(EpisodeResource.to_json())
 # convert the object into a dict
 episode_resource_dict = episode_resource_instance.to_dict()
 # create an instance of EpisodeResource from a dict
-episode_resource_form_dict = episode_resource.from_dict(episode_resource_dict)
+episode_resource_from_dict = EpisodeResource.from_dict(episode_resource_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

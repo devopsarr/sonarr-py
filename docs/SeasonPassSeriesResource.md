@@ -24,7 +24,7 @@ print(SeasonPassSeriesResource.to_json())
 # convert the object into a dict
 season_pass_series_resource_dict = season_pass_series_resource_instance.to_dict()
 # create an instance of SeasonPassSeriesResource from a dict
-season_pass_series_resource_form_dict = season_pass_series_resource.from_dict(season_pass_series_resource_dict)
+season_pass_series_resource_from_dict = SeasonPassSeriesResource.from_dict(season_pass_series_resource_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
