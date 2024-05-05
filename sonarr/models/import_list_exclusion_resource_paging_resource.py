@@ -17,22 +17,24 @@ import pprint
 import re  # noqa: F401
 import json
 
-from datetime import datetime
 from pydantic import BaseModel, ConfigDict, Field, StrictInt, StrictStr
-from typing import Any, ClassVar, Dict, Optional
+from typing import Any, ClassVar, Dict, List, Optional
+from sonarr.models.import_list_exclusion_resource import ImportListExclusionResource
+from sonarr.models.sort_direction import SortDirection
 from typing import Optional, Set
 from typing_extensions import Self
 
-class LogFileResource(BaseModel):
+class ImportListExclusionResourcePagingResource(BaseModel):
     """
-    LogFileResource
+    ImportListExclusionResourcePagingResource
     """ # noqa: E501
-    id: Optional[StrictInt] = None
-    filename: Optional[StrictStr] = None
-    last_write_time: Optional[datetime] = Field(default=None, alias="lastWriteTime")
-    contents_url: Optional[StrictStr] = Field(default=None, alias="contentsUrl")
-    download_url: Optional[StrictStr] = Field(default=None, alias="downloadUrl")
-    __properties: ClassVar[List[str]] = ["id", "filename", "lastWriteTime", "contentsUrl", "downloadUrl"]
+    page: Optional[StrictInt] = None
+    page_size: Optional[StrictInt] = Field(default=None, alias="pageSize")
+    sort_key: Optional[StrictStr] = Field(default=None, alias="sortKey")
+    sort_direction: Optional[SortDirection] = Field(default=None, alias="sortDirection")
+    total_records: Optional[StrictInt] = Field(default=None, alias="totalRecords")
+    records: Optional[List[ImportListExclusionResource]] = None
+    __properties: ClassVar[List[str]] = ["page", "pageSize", "sortKey", "sortDirection", "totalRecords", "records"]
 
     model_config = ConfigDict(
         populate_by_name=True,
@@ -52,7 +54,7 @@ class LogFileResource(BaseModel):
 
     @classmethod
     def from_json(cls, json_str: str) -> Optional[Self]:
-        """Create an instance of LogFileResource from a JSON string"""
+        """Create an instance of ImportListExclusionResourcePagingResource from a JSON string"""
         return cls.from_dict(json.loads(json_str))
 
     def to_dict(self) -> Dict[str, Any]:
@@ -73,26 +75,28 @@ class LogFileResource(BaseModel):
             exclude=excluded_fields,
             exclude_none=True,
         )
-        # set to None if filename (nullable) is None
+        # override the default output from pydantic by calling `to_dict()` of each item in records (list)
+        _items = []
+        if self.records:
+            for _item in self.records:
+                if _item:
+                    _items.append(_item.to_dict())
+            _dict['records'] = _items
+        # set to None if sort_key (nullable) is None
         # and model_fields_set contains the field
-        if self.filename is None and "filename" in self.model_fields_set:
-            _dict['filename'] = None
+        if self.sort_key is None and "sort_key" in self.model_fields_set:
+            _dict['sortKey'] = None
 
-        # set to None if contents_url (nullable) is None
+        # set to None if records (nullable) is None
         # and model_fields_set contains the field
-        if self.contents_url is None and "contents_url" in self.model_fields_set:
-            _dict['contentsUrl'] = None
-
-        # set to None if download_url (nullable) is None
-        # and model_fields_set contains the field
-        if self.download_url is None and "download_url" in self.model_fields_set:
-            _dict['downloadUrl'] = None
+        if self.records is None and "records" in self.model_fields_set:
+            _dict['records'] = None
 
         return _dict
 
     @classmethod
     def from_dict(cls, obj: Optional[Dict[str, Any]]) -> Optional[Self]:
-        """Create an instance of LogFileResource from a dict"""
+        """Create an instance of ImportListExclusionResourcePagingResource from a dict"""
         if obj is None:
             return None
 
@@ -100,11 +104,12 @@ class LogFileResource(BaseModel):
             return cls.model_validate(obj)
 
         _obj = cls.model_validate({
-            "id": obj.get("id"),
-            "filename": obj.get("filename"),
-            "lastWriteTime": obj.get("lastWriteTime"),
-            "contentsUrl": obj.get("contentsUrl"),
-            "downloadUrl": obj.get("downloadUrl")
+            "page": obj.get("page"),
+            "pageSize": obj.get("pageSize"),
+            "sortKey": obj.get("sortKey"),
+            "sortDirection": obj.get("sortDirection"),
+            "totalRecords": obj.get("totalRecords"),
+            "records": [ImportListExclusionResource.from_dict(_item) for _item in obj["records"]] if obj.get("records") is not None else None
         })
         return _obj
 
