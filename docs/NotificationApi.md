@@ -96,7 +96,7 @@ Name | Type | Description  | Notes
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**2XX** | Success |  -  |
+**2XX** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -179,7 +179,7 @@ void (empty response body)
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**2XX** | Success |  -  |
+**2XX** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -259,7 +259,7 @@ void (empty response body)
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**2XX** | Success |  -  |
+**2XX** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -342,7 +342,7 @@ Name | Type | Description  | Notes
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**2XX** | Success |  -  |
+**2XX** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -421,7 +421,7 @@ This endpoint does not need any parameter.
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**2XX** | Success |  -  |
+**2XX** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -500,12 +500,12 @@ This endpoint does not need any parameter.
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**2XX** | Success |  -  |
+**2XX** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **test_notification**
-> test_notification(notification_resource=notification_resource)
+> test_notification(force_test=force_test, notification_resource=notification_resource)
 
 
 
@@ -547,10 +547,11 @@ configuration.api_key['X-Api-Key'] = os.environ["API_KEY"]
 with sonarr.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = sonarr.NotificationApi(api_client)
+    force_test = False # bool |  (optional) (default to False)
     notification_resource = sonarr.NotificationResource() # NotificationResource |  (optional)
 
     try:
-        api_instance.test_notification(notification_resource=notification_resource)
+        api_instance.test_notification(force_test=force_test, notification_resource=notification_resource)
     except Exception as e:
         print("Exception when calling NotificationApi->test_notification: %s\n" % e)
 ```
@@ -562,6 +563,7 @@ with sonarr.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **force_test** | **bool**|  | [optional] [default to False]
  **notification_resource** | [**NotificationResource**](NotificationResource.md)|  | [optional] 
 
 ### Return type
@@ -581,7 +583,7 @@ void (empty response body)
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**2XX** | Success |  -  |
+**2XX** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -657,7 +659,7 @@ void (empty response body)
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**2XX** | Success |  -  |
+**2XX** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -744,7 +746,7 @@ Name | Type | Description  | Notes
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**2XX** | Success |  -  |
+**2XX** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

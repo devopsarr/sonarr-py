@@ -27,10 +27,8 @@ Name | Type | Description | Notes
 **unverified_scene_numbering** | **bool** |  | [optional] 
 **end_time** | **datetime** |  | [optional] 
 **grab_date** | **datetime** |  | [optional] 
-**series_title** | **str** |  | [optional] 
 **series** | [**SeriesResource**](SeriesResource.md) |  | [optional] 
 **images** | [**List[MediaCover]**](MediaCover.md) |  | [optional] 
-**grabbed** | **bool** |  | [optional] 
 
 ## Example
 

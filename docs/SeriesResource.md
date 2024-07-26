@@ -32,6 +32,7 @@ Name | Type | Description | Notes
 **tvdb_id** | **int** |  | [optional] 
 **tv_rage_id** | **int** |  | [optional] 
 **tv_maze_id** | **int** |  | [optional] 
+**tmdb_id** | **int** |  | [optional] 
 **first_aired** | **datetime** |  | [optional] 
 **last_aired** | **datetime** |  | [optional] 
 **series_type** | [**SeriesTypes**](SeriesTypes.md) |  | [optional] 

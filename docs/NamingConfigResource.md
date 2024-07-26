@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **rename_episodes** | **bool** |  | [optional] 
 **replace_illegal_characters** | **bool** |  | [optional] 
 **colon_replacement_format** | **int** |  | [optional] 
+**custom_colon_replacement_format** | **str** |  | [optional] 
 **multi_episode_style** | **int** |  | [optional] 
 **standard_episode_format** | **str** |  | [optional] 
 **daily_episode_format** | **str** |  | [optional] 
