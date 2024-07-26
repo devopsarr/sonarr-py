@@ -85,7 +85,7 @@ void (empty response body)
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**2XX** | Success |  -  |
+**2XX** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -166,12 +166,12 @@ void (empty response body)
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**2XX** | Success |  -  |
+**2XX** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_blocklist**
-> BlocklistResourcePagingResource get_blocklist(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction)
+> BlocklistResourcePagingResource get_blocklist(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, series_ids=series_ids, protocols=protocols)
 
 
 
@@ -183,6 +183,7 @@ void (empty response body)
 ```python
 import sonarr
 from sonarr.models.blocklist_resource_paging_resource import BlocklistResourcePagingResource
+from sonarr.models.download_protocol import DownloadProtocol
 from sonarr.models.sort_direction import SortDirection
 from sonarr.rest import ApiException
 from pprint import pprint
@@ -218,9 +219,11 @@ with sonarr.ApiClient(configuration) as api_client:
     page_size = 10 # int |  (optional) (default to 10)
     sort_key = 'sort_key_example' # str |  (optional)
     sort_direction = sonarr.SortDirection() # SortDirection |  (optional)
+    series_ids = [56] # List[int] |  (optional)
+    protocols = [sonarr.DownloadProtocol()] # List[DownloadProtocol] |  (optional)
 
     try:
-        api_response = api_instance.get_blocklist(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction)
+        api_response = api_instance.get_blocklist(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, series_ids=series_ids, protocols=protocols)
         print("The response of BlocklistApi->get_blocklist:\n")
         pprint(api_response)
     except Exception as e:
@@ -238,6 +241,8 @@ Name | Type | Description  | Notes
  **page_size** | **int**|  | [optional] [default to 10]
  **sort_key** | **str**|  | [optional] 
  **sort_direction** | [**SortDirection**](.md)|  | [optional] 
+ **series_ids** | [**List[int]**](int.md)|  | [optional] 
+ **protocols** | [**List[DownloadProtocol]**](DownloadProtocol.md)|  | [optional] 
 
 ### Return type
 
@@ -256,7 +261,7 @@ Name | Type | Description  | Notes
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**2XX** | Success |  -  |
+**2XX** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
