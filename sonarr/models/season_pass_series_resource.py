@@ -74,9 +74,9 @@ class SeasonPassSeriesResource(BaseModel):
         # override the default output from pydantic by calling `to_dict()` of each item in seasons (list)
         _items = []
         if self.seasons:
-            for _item in self.seasons:
-                if _item:
-                    _items.append(_item.to_dict())
+            for _item_seasons in self.seasons:
+                if _item_seasons:
+                    _items.append(_item_seasons.to_dict())
             _dict['seasons'] = _items
         # set to None if monitored (nullable) is None
         # and model_fields_set contains the field
