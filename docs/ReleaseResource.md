@@ -38,6 +38,7 @@ Name | Type | Description | Notes
 **rejected** | **bool** |  | [optional] 
 **tvdb_id** | **int** |  | [optional] 
 **tv_rage_id** | **int** |  | [optional] 
+**imdb_id** | **str** |  | [optional] 
 **rejections** | **List[str]** |  | [optional] 
 **publish_date** | **datetime** |  | [optional] 
 **comment_url** | **str** |  | [optional] 
