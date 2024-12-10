@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **title** | **str** |  | [optional] 
 **air_date** | **str** |  | [optional] 
 **air_date_utc** | **datetime** |  | [optional] 
+**last_search_time** | **datetime** |  | [optional] 
 **runtime** | **int** |  | [optional] 
 **finale_type** | **str** |  | [optional] 
 **overview** | **str** |  | [optional] 

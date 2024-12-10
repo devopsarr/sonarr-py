@@ -187,7 +187,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_queue**
-> QueueResourcePagingResource get_queue(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, include_unknown_series_items=include_unknown_series_items, include_series=include_series, include_episode=include_episode, series_ids=series_ids, protocol=protocol, languages=languages, quality=quality)
+> QueueResourcePagingResource get_queue(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, include_unknown_series_items=include_unknown_series_items, include_series=include_series, include_episode=include_episode, series_ids=series_ids, protocol=protocol, languages=languages, quality=quality, status=status)
 
 
 
@@ -200,6 +200,7 @@ void (empty response body)
 import sonarr
 from sonarr.models.download_protocol import DownloadProtocol
 from sonarr.models.queue_resource_paging_resource import QueueResourcePagingResource
+from sonarr.models.queue_status import QueueStatus
 from sonarr.models.sort_direction import SortDirection
 from sonarr.rest import ApiException
 from pprint import pprint
@@ -241,10 +242,11 @@ with sonarr.ApiClient(configuration) as api_client:
     series_ids = [56] # List[int] |  (optional)
     protocol = sonarr.DownloadProtocol() # DownloadProtocol |  (optional)
     languages = [56] # List[int] |  (optional)
-    quality = 56 # int |  (optional)
+    quality = [56] # List[int] |  (optional)
+    status = [sonarr.QueueStatus()] # List[QueueStatus] |  (optional)
 
     try:
-        api_response = api_instance.get_queue(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, include_unknown_series_items=include_unknown_series_items, include_series=include_series, include_episode=include_episode, series_ids=series_ids, protocol=protocol, languages=languages, quality=quality)
+        api_response = api_instance.get_queue(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, include_unknown_series_items=include_unknown_series_items, include_series=include_series, include_episode=include_episode, series_ids=series_ids, protocol=protocol, languages=languages, quality=quality, status=status)
         print("The response of QueueApi->get_queue:\n")
         pprint(api_response)
     except Exception as e:
@@ -268,7 +270,8 @@ Name | Type | Description  | Notes
  **series_ids** | [**List[int]**](int.md)|  | [optional] 
  **protocol** | [**DownloadProtocol**](.md)|  | [optional] 
  **languages** | [**List[int]**](int.md)|  | [optional] 
- **quality** | **int**|  | [optional] 
+ **quality** | [**List[int]**](int.md)|  | [optional] 
+ **status** | [**List[QueueStatus]**](QueueStatus.md)|  | [optional] 
 
 ### Return type
 

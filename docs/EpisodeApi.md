@@ -94,7 +94,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_episode**
-> List[EpisodeResource] list_episode(series_id=series_id, season_number=season_number, episode_ids=episode_ids, episode_file_id=episode_file_id, include_images=include_images)
+> List[EpisodeResource] list_episode(series_id=series_id, season_number=season_number, episode_ids=episode_ids, episode_file_id=episode_file_id, include_series=include_series, include_episode_file=include_episode_file, include_images=include_images)
 
 
 
@@ -140,10 +140,12 @@ with sonarr.ApiClient(configuration) as api_client:
     season_number = 56 # int |  (optional)
     episode_ids = [56] # List[int] |  (optional)
     episode_file_id = 56 # int |  (optional)
+    include_series = False # bool |  (optional) (default to False)
+    include_episode_file = False # bool |  (optional) (default to False)
     include_images = False # bool |  (optional) (default to False)
 
     try:
-        api_response = api_instance.list_episode(series_id=series_id, season_number=season_number, episode_ids=episode_ids, episode_file_id=episode_file_id, include_images=include_images)
+        api_response = api_instance.list_episode(series_id=series_id, season_number=season_number, episode_ids=episode_ids, episode_file_id=episode_file_id, include_series=include_series, include_episode_file=include_episode_file, include_images=include_images)
         print("The response of EpisodeApi->list_episode:\n")
         pprint(api_response)
     except Exception as e:
@@ -161,6 +163,8 @@ Name | Type | Description  | Notes
  **season_number** | **int**|  | [optional] 
  **episode_ids** | [**List[int]**](int.md)|  | [optional] 
  **episode_file_id** | **int**|  | [optional] 
+ **include_series** | **bool**|  | [optional] [default to False]
+ **include_episode_file** | **bool**|  | [optional] [default to False]
  **include_images** | **bool**|  | [optional] [default to False]
 
 ### Return type
