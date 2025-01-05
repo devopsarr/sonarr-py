@@ -24,7 +24,7 @@ Name | Type | Description | Notes
 **custom_format_score** | **int** |  | [optional] 
 **indexer_flags** | **int** |  | [optional] 
 **release_type** | [**ReleaseType**](ReleaseType.md) |  | [optional] 
-**rejections** | [**List[Rejection]**](Rejection.md) |  | [optional] 
+**rejections** | [**List[ImportRejectionResource]**](ImportRejectionResource.md) |  | [optional] 
 
 ## Example
 

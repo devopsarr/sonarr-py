@@ -17,8 +17,6 @@ Name | Type | Description | Notes
 **custom_format_score** | **int** |  | [optional] 
 **size** | **float** |  | [optional] 
 **title** | **str** |  | [optional] 
-**sizeleft** | **float** |  | [optional] 
-**timeleft** | **str** |  | [optional] 
 **estimated_completion_time** | **datetime** |  | [optional] 
 **added** | **datetime** |  | [optional] 
 **status** | [**QueueStatus**](QueueStatus.md) |  | [optional] 
@@ -33,6 +31,8 @@ Name | Type | Description | Notes
 **indexer** | **str** |  | [optional] 
 **output_path** | **str** |  | [optional] 
 **episode_has_file** | **bool** |  | [optional] 
+**sizeleft** | **float** |  | [optional] 
+**timeleft** | **str** |  | [optional] 
 
 ## Example
 
