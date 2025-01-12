@@ -59,6 +59,7 @@ from sonarr.api.root_folder_api import RootFolderApi
 from sonarr.api.season_pass_api import SeasonPassApi
 from sonarr.api.series_api import SeriesApi
 from sonarr.api.series_editor_api import SeriesEditorApi
+from sonarr.api.series_folder_api import SeriesFolderApi
 from sonarr.api.series_import_api import SeriesImportApi
 from sonarr.api.series_lookup_api import SeriesLookupApi
 from sonarr.api.static_resource_api import StaticResourceApi
