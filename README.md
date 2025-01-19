@@ -308,7 +308,6 @@ Class | Method | HTTP request | Description
 *SeriesFolderApi* | [**get_series_folder**](docs/SeriesFolderApi.md#get_series_folder) | **GET** /api/v3/series/{id}/folder | 
 *SeriesImportApi* | [**create_series_import**](docs/SeriesImportApi.md#create_series_import) | **POST** /api/v3/series/import | 
 *SeriesLookupApi* | [**list_series_lookup**](docs/SeriesLookupApi.md#list_series_lookup) | **GET** /api/v3/series/lookup | 
-*StaticResourceApi* | [**get**](docs/StaticResourceApi.md#get) | **GET** / | 
 *StaticResourceApi* | [**get_by_path**](docs/StaticResourceApi.md#get_by_path) | **GET** /{path} | 
 *StaticResourceApi* | [**get_content_by_path**](docs/StaticResourceApi.md#get_content_by_path) | **GET** /content/{path} | 
 *StaticResourceApi* | [**get_login**](docs/StaticResourceApi.md#get_login) | **GET** /login | 
