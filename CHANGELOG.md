@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.1.0](https://github.com/devopsarr/sonarr-py/compare/v1.0.2...v1.1.0) (2025-01-20)
+
+
+### Features
+
+* remove broken root api path ([7f7aa0f](https://github.com/devopsarr/sonarr-py/commit/7f7aa0fdee97be86fadf0f9100d9831bd6866edc))
+
+
+### Bug Fixes
+
+* **deps:** update dependency sonarr/sonarr to v4.0.11.2680 ([70a29ba](https://github.com/devopsarr/sonarr-py/commit/70a29baf226724beadbf4171306d636be9ddc296))
+* **deps:** update dependency sonarr/sonarr to v4.0.12.2823 ([93ff710](https://github.com/devopsarr/sonarr-py/commit/93ff7104a684c8e2c26bb0b23865d44bc5db9dc2))
+* **deps:** update openapitools/openapi-generator-cli docker tag to v7.10.0 ([b5dd6f8](https://github.com/devopsarr/sonarr-py/commit/b5dd6f8af0e5c8ce26c2914900703c1cf8f93075))
+* **deps:** update openapitools/openapi-generator-cli docker tag to v7.11.0 ([8a1e7ad](https://github.com/devopsarr/sonarr-py/commit/8a1e7ad0ad3df7361e7ee1767fe0d1beeea55710))
+
 ## [1.0.2](https://github.com/devopsarr/sonarr-py/compare/v1.0.1...v1.0.2) (2024-10-08)
 
 
