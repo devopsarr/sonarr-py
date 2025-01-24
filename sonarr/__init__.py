@@ -14,7 +14,7 @@
 """  # noqa: E501
 
 
-__version__ = "1.1.0" # x-release-please-version
+__version__ = "0.0.1" # x-release-please-version
 
 # import apis into sdk package
 from sonarr.api.api_info_api import ApiInfoApi
