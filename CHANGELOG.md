@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/devopsarr/sonarr-py/compare/v1.1.0...v1.1.1) (2025-02-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency sonarr/sonarr to v4.0.13.2932 ([88879d2](https://github.com/devopsarr/sonarr-py/commit/88879d28b1960198e2c83aa7a6da9c6ca65b2d84))
+
 ## [1.1.0](https://github.com/devopsarr/sonarr-py/compare/v1.0.2...v1.1.0) (2025-01-20)
 
 
