@@ -10,8 +10,6 @@ Method | HTTP request | Description
 # **create_series_import**
 > create_series_import(series_resource=series_resource)
 
-
-
 ### Example
 
 * Api Key Authentication (apikey):

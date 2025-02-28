@@ -10,8 +10,6 @@ Method | HTTP request | Description
 # **list_series_lookup**
 > List[SeriesResource] list_series_lookup(term=term)
 
-
-
 ### Example
 
 * Api Key Authentication (apikey):
