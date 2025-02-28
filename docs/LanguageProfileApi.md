@@ -14,8 +14,6 @@ Method | HTTP request | Description
 # **create_language_profile**
 > LanguageProfileResource create_language_profile(language_profile_resource=language_profile_resource)
 
-
-
 ### Example
 
 * Api Key Authentication (apikey):
@@ -97,8 +95,6 @@ Name | Type | Description  | Notes
 # **delete_language_profile**
 > delete_language_profile(id)
 
-
-
 ### Example
 
 * Api Key Authentication (apikey):
@@ -176,8 +172,6 @@ void (empty response body)
 
 # **get_language_profile_by_id**
 > LanguageProfileResource get_language_profile_by_id(id)
-
-
 
 ### Example
 
@@ -260,8 +254,6 @@ Name | Type | Description  | Notes
 # **list_language_profile**
 > List[LanguageProfileResource] list_language_profile()
 
-
-
 ### Example
 
 * Api Key Authentication (apikey):
@@ -338,8 +330,6 @@ This endpoint does not need any parameter.
 
 # **update_language_profile**
 > LanguageProfileResource update_language_profile(id, language_profile_resource=language_profile_resource)
-
-
 
 ### Example
 

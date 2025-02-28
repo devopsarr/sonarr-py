@@ -10,8 +10,6 @@ Method | HTTP request | Description
 # **list_queue_details**
 > List[QueueResource] list_queue_details(series_id=series_id, episode_ids=episode_ids, include_series=include_series, include_episode=include_episode)
 
-
-
 ### Example
 
 * Api Key Authentication (apikey):

@@ -11,8 +11,6 @@ Method | HTTP request | Description
 # **get_calendar_by_id**
 > EpisodeResource get_calendar_by_id(id)
 
-
-
 ### Example
 
 * Api Key Authentication (apikey):
@@ -93,8 +91,6 @@ Name | Type | Description  | Notes
 
 # **list_calendar**
 > List[EpisodeResource] list_calendar(start=start, end=end, unmonitored=unmonitored, include_series=include_series, include_episode_file=include_episode_file, include_episode_images=include_episode_images, tags=tags)
-
-
 
 ### Example
 

@@ -10,8 +10,6 @@ Method | HTTP request | Description
 # **create_season_pass**
 > create_season_pass(season_pass_resource=season_pass_resource)
 
-
-
 ### Example
 
 * Api Key Authentication (apikey):
