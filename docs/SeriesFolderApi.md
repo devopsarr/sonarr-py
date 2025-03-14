@@ -10,8 +10,6 @@ Method | HTTP request | Description
 # **get_series_folder**
 > get_series_folder(id)
 
-
-
 ### Example
 
 * Api Key Authentication (apikey):

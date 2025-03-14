@@ -10,8 +10,6 @@ Method | HTTP request | Description
 # **list_rename**
 > List[RenameEpisodeResource] list_rename(series_id=series_id, season_number=season_number)
 
-
-
 ### Example
 
 * Api Key Authentication (apikey):

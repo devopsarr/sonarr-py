@@ -12,8 +12,6 @@ Method | HTTP request | Description
 # **get_localization**
 > LocalizationResource get_localization()
 
-
-
 ### Example
 
 * Api Key Authentication (apikey):
@@ -90,8 +88,6 @@ This endpoint does not need any parameter.
 
 # **get_localization_by_id**
 > LocalizationResource get_localization_by_id(id)
-
-
 
 ### Example
 
@@ -173,8 +169,6 @@ Name | Type | Description  | Notes
 
 # **get_localization_language**
 > LocalizationLanguageResource get_localization_language()
-
-
 
 ### Example
 

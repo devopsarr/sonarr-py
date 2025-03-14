@@ -10,8 +10,6 @@ Method | HTTP request | Description
 # **get_parse**
 > ParseResource get_parse(title=title, path=path)
 
-
-
 ### Example
 
 * Api Key Authentication (apikey):

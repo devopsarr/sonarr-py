@@ -11,8 +11,6 @@ Method | HTTP request | Description
 # **delete_series_editor**
 > delete_series_editor(series_editor_resource=series_editor_resource)
 
-
-
 ### Example
 
 * Api Key Authentication (apikey):
@@ -91,8 +89,6 @@ void (empty response body)
 
 # **put_series_editor**
 > put_series_editor(series_editor_resource=series_editor_resource)
-
-
 
 ### Example
 

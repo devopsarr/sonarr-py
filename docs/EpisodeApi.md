@@ -13,8 +13,6 @@ Method | HTTP request | Description
 # **get_episode_by_id**
 > EpisodeResource get_episode_by_id(id)
 
-
-
 ### Example
 
 * Api Key Authentication (apikey):
@@ -95,8 +93,6 @@ Name | Type | Description  | Notes
 
 # **list_episode**
 > List[EpisodeResource] list_episode(series_id=series_id, season_number=season_number, episode_ids=episode_ids, episode_file_id=episode_file_id, include_series=include_series, include_episode_file=include_episode_file, include_images=include_images)
-
-
 
 ### Example
 
@@ -191,8 +187,6 @@ Name | Type | Description  | Notes
 # **put_episode_monitor**
 > put_episode_monitor(include_images=include_images, episodes_monitored_resource=episodes_monitored_resource)
 
-
-
 ### Example
 
 * Api Key Authentication (apikey):
@@ -273,8 +267,6 @@ void (empty response body)
 
 # **update_episode**
 > EpisodeResource update_episode(id, episode_resource=episode_resource)
-
-
 
 ### Example
 
