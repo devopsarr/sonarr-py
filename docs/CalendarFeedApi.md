@@ -10,8 +10,6 @@ Method | HTTP request | Description
 # **get_feed_v3_calendar_sonarr_ics**
 > get_feed_v3_calendar_sonarr_ics(past_days=past_days, future_days=future_days, tags=tags, unmonitored=unmonitored, premieres_only=premieres_only, as_all_day=as_all_day)
 
-
-
 ### Example
 
 * Api Key Authentication (apikey):

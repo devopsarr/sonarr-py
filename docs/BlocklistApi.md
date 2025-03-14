@@ -12,8 +12,6 @@ Method | HTTP request | Description
 # **delete_blocklist**
 > delete_blocklist(id)
 
-
-
 ### Example
 
 * Api Key Authentication (apikey):
@@ -91,8 +89,6 @@ void (empty response body)
 
 # **delete_blocklist_bulk**
 > delete_blocklist_bulk(blocklist_bulk_resource=blocklist_bulk_resource)
-
-
 
 ### Example
 
@@ -172,8 +168,6 @@ void (empty response body)
 
 # **get_blocklist**
 > BlocklistResourcePagingResource get_blocklist(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, series_ids=series_ids, protocols=protocols)
-
-
 
 ### Example
 

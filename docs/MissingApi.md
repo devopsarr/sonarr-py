@@ -11,8 +11,6 @@ Method | HTTP request | Description
 # **get_wanted_missing**
 > EpisodeResourcePagingResource get_wanted_missing(page=page, page_size=page_size, sort_key=sort_key, sort_direction=sort_direction, include_series=include_series, include_images=include_images, monitored=monitored)
 
-
-
 ### Example
 
 * Api Key Authentication (apikey):
@@ -106,8 +104,6 @@ Name | Type | Description  | Notes
 
 # **get_wanted_missing_by_id**
 > EpisodeResource get_wanted_missing_by_id(id)
-
-
 
 ### Example
 

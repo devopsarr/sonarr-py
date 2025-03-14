@@ -14,8 +14,6 @@ Method | HTTP request | Description
 # **create_series**
 > SeriesResource create_series(series_resource=series_resource)
 
-
-
 ### Example
 
 * Api Key Authentication (apikey):
@@ -96,8 +94,6 @@ Name | Type | Description  | Notes
 
 # **delete_series**
 > delete_series(id, delete_files=delete_files, add_import_list_exclusion=add_import_list_exclusion)
-
-
 
 ### Example
 
@@ -180,8 +176,6 @@ void (empty response body)
 
 # **get_series_by_id**
 > SeriesResource get_series_by_id(id, include_season_images=include_season_images)
-
-
 
 ### Example
 
@@ -266,8 +260,6 @@ Name | Type | Description  | Notes
 # **list_series**
 > List[SeriesResource] list_series(tvdb_id=tvdb_id, include_season_images=include_season_images)
 
-
-
 ### Example
 
 * Api Key Authentication (apikey):
@@ -350,8 +342,6 @@ Name | Type | Description  | Notes
 
 # **update_series**
 > SeriesResource update_series(id, move_files=move_files, series_resource=series_resource)
-
-
 
 ### Example
 

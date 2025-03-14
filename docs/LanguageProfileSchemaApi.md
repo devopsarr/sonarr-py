@@ -10,8 +10,6 @@ Method | HTTP request | Description
 # **get_languageprofile_schema**
 > LanguageProfileResource get_languageprofile_schema()
 
-
-
 ### Example
 
 * Api Key Authentication (apikey):

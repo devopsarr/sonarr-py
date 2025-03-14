@@ -16,8 +16,6 @@ Method | HTTP request | Description
 # **delete_episode_file**
 > delete_episode_file(id)
 
-
-
 ### Example
 
 * Api Key Authentication (apikey):
@@ -95,8 +93,6 @@ void (empty response body)
 
 # **delete_episode_file_bulk**
 > delete_episode_file_bulk(episode_file_list_resource=episode_file_list_resource)
-
-
 
 ### Example
 
@@ -176,8 +172,6 @@ void (empty response body)
 
 # **get_episode_file_by_id**
 > EpisodeFileResource get_episode_file_by_id(id)
-
-
 
 ### Example
 
@@ -259,8 +253,6 @@ Name | Type | Description  | Notes
 
 # **list_episode_file**
 > List[EpisodeFileResource] list_episode_file(series_id=series_id, episode_file_ids=episode_file_ids)
-
-
 
 ### Example
 
@@ -345,8 +337,6 @@ Name | Type | Description  | Notes
 # **put_episode_file_bulk**
 > put_episode_file_bulk(episode_file_resource=episode_file_resource)
 
-
-
 ### Example
 
 * Api Key Authentication (apikey):
@@ -426,8 +416,6 @@ void (empty response body)
 # **put_episode_file_editor**
 > put_episode_file_editor(episode_file_list_resource=episode_file_list_resource)
 
-
-
 ### Example
 
 * Api Key Authentication (apikey):
@@ -506,8 +494,6 @@ void (empty response body)
 
 # **update_episode_file**
 > EpisodeFileResource update_episode_file(id, episode_file_resource=episode_file_resource)
-
-
 
 ### Example
 
