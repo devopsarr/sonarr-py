@@ -16,221 +16,672 @@
 
 __version__ = "1.1.0" # x-release-please-version
 
-# import apis into sdk package
-from sonarr.api.api_info_api import ApiInfoApi
-from sonarr.api.authentication_api import AuthenticationApi
-from sonarr.api.auto_tagging_api import AutoTaggingApi
-from sonarr.api.backup_api import BackupApi
-from sonarr.api.blocklist_api import BlocklistApi
-from sonarr.api.calendar_api import CalendarApi
-from sonarr.api.calendar_feed_api import CalendarFeedApi
-from sonarr.api.command_api import CommandApi
-from sonarr.api.custom_filter_api import CustomFilterApi
-from sonarr.api.custom_format_api import CustomFormatApi
-from sonarr.api.cutoff_api import CutoffApi
-from sonarr.api.delay_profile_api import DelayProfileApi
-from sonarr.api.disk_space_api import DiskSpaceApi
-from sonarr.api.download_client_api import DownloadClientApi
-from sonarr.api.download_client_config_api import DownloadClientConfigApi
-from sonarr.api.episode_api import EpisodeApi
-from sonarr.api.episode_file_api import EpisodeFileApi
-from sonarr.api.file_system_api import FileSystemApi
-from sonarr.api.health_api import HealthApi
-from sonarr.api.history_api import HistoryApi
-from sonarr.api.host_config_api import HostConfigApi
-from sonarr.api.import_list_api import ImportListApi
-from sonarr.api.import_list_config_api import ImportListConfigApi
-from sonarr.api.import_list_exclusion_api import ImportListExclusionApi
-from sonarr.api.indexer_api import IndexerApi
-from sonarr.api.indexer_config_api import IndexerConfigApi
-from sonarr.api.indexer_flag_api import IndexerFlagApi
-from sonarr.api.language_api import LanguageApi
-from sonarr.api.language_profile_api import LanguageProfileApi
-from sonarr.api.language_profile_schema_api import LanguageProfileSchemaApi
-from sonarr.api.localization_api import LocalizationApi
-from sonarr.api.log_api import LogApi
-from sonarr.api.log_file_api import LogFileApi
-from sonarr.api.manual_import_api import ManualImportApi
-from sonarr.api.media_cover_api import MediaCoverApi
-from sonarr.api.media_management_config_api import MediaManagementConfigApi
-from sonarr.api.metadata_api import MetadataApi
-from sonarr.api.missing_api import MissingApi
-from sonarr.api.naming_config_api import NamingConfigApi
-from sonarr.api.notification_api import NotificationApi
-from sonarr.api.parse_api import ParseApi
-from sonarr.api.ping_api import PingApi
-from sonarr.api.quality_definition_api import QualityDefinitionApi
-from sonarr.api.quality_profile_api import QualityProfileApi
-from sonarr.api.quality_profile_schema_api import QualityProfileSchemaApi
-from sonarr.api.queue_api import QueueApi
-from sonarr.api.queue_action_api import QueueActionApi
-from sonarr.api.queue_details_api import QueueDetailsApi
-from sonarr.api.queue_status_api import QueueStatusApi
-from sonarr.api.release_api import ReleaseApi
-from sonarr.api.release_profile_api import ReleaseProfileApi
-from sonarr.api.release_push_api import ReleasePushApi
-from sonarr.api.remote_path_mapping_api import RemotePathMappingApi
-from sonarr.api.rename_episode_api import RenameEpisodeApi
-from sonarr.api.root_folder_api import RootFolderApi
-from sonarr.api.season_pass_api import SeasonPassApi
-from sonarr.api.series_api import SeriesApi
-from sonarr.api.series_editor_api import SeriesEditorApi
-from sonarr.api.series_folder_api import SeriesFolderApi
-from sonarr.api.series_import_api import SeriesImportApi
-from sonarr.api.series_lookup_api import SeriesLookupApi
-from sonarr.api.static_resource_api import StaticResourceApi
-from sonarr.api.system_api import SystemApi
-from sonarr.api.tag_api import TagApi
-from sonarr.api.tag_details_api import TagDetailsApi
-from sonarr.api.task_api import TaskApi
-from sonarr.api.ui_config_api import UiConfigApi
-from sonarr.api.update_api import UpdateApi
-from sonarr.api.update_log_file_api import UpdateLogFileApi
+# Define package exports
+__all__ = [
+    "ApiInfoApi",
+    "AuthenticationApi",
+    "AutoTaggingApi",
+    "BackupApi",
+    "BlocklistApi",
+    "CalendarApi",
+    "CalendarFeedApi",
+    "CommandApi",
+    "CustomFilterApi",
+    "CustomFormatApi",
+    "CutoffApi",
+    "DelayProfileApi",
+    "DiskSpaceApi",
+    "DownloadClientApi",
+    "DownloadClientConfigApi",
+    "EpisodeApi",
+    "EpisodeFileApi",
+    "FileSystemApi",
+    "HealthApi",
+    "HistoryApi",
+    "HostConfigApi",
+    "ImportListApi",
+    "ImportListConfigApi",
+    "ImportListExclusionApi",
+    "IndexerApi",
+    "IndexerConfigApi",
+    "IndexerFlagApi",
+    "LanguageApi",
+    "LanguageProfileApi",
+    "LanguageProfileSchemaApi",
+    "LocalizationApi",
+    "LogApi",
+    "LogFileApi",
+    "ManualImportApi",
+    "MediaCoverApi",
+    "MediaManagementConfigApi",
+    "MetadataApi",
+    "MissingApi",
+    "NamingConfigApi",
+    "NotificationApi",
+    "ParseApi",
+    "PingApi",
+    "QualityDefinitionApi",
+    "QualityProfileApi",
+    "QualityProfileSchemaApi",
+    "QueueApi",
+    "QueueActionApi",
+    "QueueDetailsApi",
+    "QueueStatusApi",
+    "ReleaseApi",
+    "ReleaseProfileApi",
+    "ReleasePushApi",
+    "RemotePathMappingApi",
+    "RenameEpisodeApi",
+    "RootFolderApi",
+    "SeasonPassApi",
+    "SeriesApi",
+    "SeriesEditorApi",
+    "SeriesFolderApi",
+    "SeriesImportApi",
+    "SeriesLookupApi",
+    "StaticResourceApi",
+    "SystemApi",
+    "TagApi",
+    "TagDetailsApi",
+    "TaskApi",
+    "UiConfigApi",
+    "UpdateApi",
+    "UpdateLogFileApi",
+    "ApiResponse",
+    "ApiClient",
+    "Configuration",
+    "OpenApiException",
+    "ApiTypeError",
+    "ApiValueError",
+    "ApiKeyError",
+    "ApiAttributeError",
+    "ApiException",
+    "AddSeriesOptions",
+    "AlternateTitleResource",
+    "ApplyTags",
+    "AuthenticationRequiredType",
+    "AuthenticationType",
+    "AutoTaggingResource",
+    "AutoTaggingSpecificationSchema",
+    "BackupResource",
+    "BackupType",
+    "BlocklistBulkResource",
+    "BlocklistResource",
+    "BlocklistResourcePagingResource",
+    "CertificateValidationType",
+    "Command",
+    "CommandPriority",
+    "CommandResource",
+    "CommandResult",
+    "CommandStatus",
+    "CommandTrigger",
+    "ContractField",
+    "CustomFilterResource",
+    "CustomFormatBulkResource",
+    "CustomFormatResource",
+    "CustomFormatSpecificationSchema",
+    "DatabaseType",
+    "DelayProfileResource",
+    "DiskSpaceResource",
+    "DownloadClientBulkResource",
+    "DownloadClientConfigResource",
+    "DownloadClientResource",
+    "DownloadProtocol",
+    "EpisodeFileListResource",
+    "EpisodeFileResource",
+    "EpisodeHistoryEventType",
+    "EpisodeResource",
+    "EpisodeResourcePagingResource",
+    "EpisodeTitleRequiredType",
+    "EpisodesMonitoredResource",
+    "FileDateType",
+    "HealthCheckResult",
+    "HealthResource",
+    "HistoryResource",
+    "HistoryResourcePagingResource",
+    "HostConfigResource",
+    "ImportListBulkResource",
+    "ImportListConfigResource",
+    "ImportListExclusionBulkResource",
+    "ImportListExclusionResource",
+    "ImportListExclusionResourcePagingResource",
+    "ImportListResource",
+    "ImportListType",
+    "ImportRejectionResource",
+    "IndexerBulkResource",
+    "IndexerConfigResource",
+    "IndexerFlagResource",
+    "IndexerResource",
+    "Language",
+    "LanguageProfileItemResource",
+    "LanguageProfileResource",
+    "LanguageResource",
+    "ListSyncLevelType",
+    "LocalizationLanguageResource",
+    "LocalizationResource",
+    "LogFileResource",
+    "LogResource",
+    "LogResourcePagingResource",
+    "ManualImportReprocessResource",
+    "ManualImportResource",
+    "MediaCover",
+    "MediaCoverTypes",
+    "MediaInfoResource",
+    "MediaManagementConfigResource",
+    "MetadataResource",
+    "MonitorTypes",
+    "MonitoringOptions",
+    "NamingConfigResource",
+    "NewItemMonitorTypes",
+    "NotificationResource",
+    "ParseResource",
+    "ParsedEpisodeInfo",
+    "PingResource",
+    "PrivacyLevel",
+    "ProfileFormatItemResource",
+    "ProperDownloadTypes",
+    "ProviderMessage",
+    "ProviderMessageType",
+    "ProxyType",
+    "Quality",
+    "QualityDefinitionLimitsResource",
+    "QualityDefinitionResource",
+    "QualityModel",
+    "QualityProfileQualityItemResource",
+    "QualityProfileResource",
+    "QualitySource",
+    "QueueBulkResource",
+    "QueueResource",
+    "QueueResourcePagingResource",
+    "QueueStatus",
+    "QueueStatusResource",
+    "Ratings",
+    "RejectionType",
+    "ReleaseEpisodeResource",
+    "ReleaseProfileResource",
+    "ReleaseResource",
+    "ReleaseType",
+    "RemotePathMappingResource",
+    "RenameEpisodeResource",
+    "RescanAfterRefreshType",
+    "Revision",
+    "RootFolderResource",
+    "RuntimeMode",
+    "SeasonPassResource",
+    "SeasonPassSeriesResource",
+    "SeasonResource",
+    "SeasonStatisticsResource",
+    "SelectOption",
+    "SeriesEditorResource",
+    "SeriesResource",
+    "SeriesStatisticsResource",
+    "SeriesStatusType",
+    "SeriesTitleInfo",
+    "SeriesTypes",
+    "SortDirection",
+    "SystemResource",
+    "TagDetailsResource",
+    "TagResource",
+    "TaskResource",
+    "TrackedDownloadState",
+    "TrackedDownloadStatus",
+    "TrackedDownloadStatusMessage",
+    "UiConfigResource",
+    "UnmappedFolder",
+    "UpdateChanges",
+    "UpdateMechanism",
+    "UpdateResource",
+]
+
+if __import__("typing").TYPE_CHECKING:
+    # import apis into sdk package
+    from sonarr.api.api_info_api import ApiInfoApi as ApiInfoApi
+    from sonarr.api.authentication_api import AuthenticationApi as AuthenticationApi
+    from sonarr.api.auto_tagging_api import AutoTaggingApi as AutoTaggingApi
+    from sonarr.api.backup_api import BackupApi as BackupApi
+    from sonarr.api.blocklist_api import BlocklistApi as BlocklistApi
+    from sonarr.api.calendar_api import CalendarApi as CalendarApi
+    from sonarr.api.calendar_feed_api import CalendarFeedApi as CalendarFeedApi
+    from sonarr.api.command_api import CommandApi as CommandApi
+    from sonarr.api.custom_filter_api import CustomFilterApi as CustomFilterApi
+    from sonarr.api.custom_format_api import CustomFormatApi as CustomFormatApi
+    from sonarr.api.cutoff_api import CutoffApi as CutoffApi
+    from sonarr.api.delay_profile_api import DelayProfileApi as DelayProfileApi
+    from sonarr.api.disk_space_api import DiskSpaceApi as DiskSpaceApi
+    from sonarr.api.download_client_api import DownloadClientApi as DownloadClientApi
+    from sonarr.api.download_client_config_api import DownloadClientConfigApi as DownloadClientConfigApi
+    from sonarr.api.episode_api import EpisodeApi as EpisodeApi
+    from sonarr.api.episode_file_api import EpisodeFileApi as EpisodeFileApi
+    from sonarr.api.file_system_api import FileSystemApi as FileSystemApi
+    from sonarr.api.health_api import HealthApi as HealthApi
+    from sonarr.api.history_api import HistoryApi as HistoryApi
+    from sonarr.api.host_config_api import HostConfigApi as HostConfigApi
+    from sonarr.api.import_list_api import ImportListApi as ImportListApi
+    from sonarr.api.import_list_config_api import ImportListConfigApi as ImportListConfigApi
+    from sonarr.api.import_list_exclusion_api import ImportListExclusionApi as ImportListExclusionApi
+    from sonarr.api.indexer_api import IndexerApi as IndexerApi
+    from sonarr.api.indexer_config_api import IndexerConfigApi as IndexerConfigApi
+    from sonarr.api.indexer_flag_api import IndexerFlagApi as IndexerFlagApi
+    from sonarr.api.language_api import LanguageApi as LanguageApi
+    from sonarr.api.language_profile_api import LanguageProfileApi as LanguageProfileApi
+    from sonarr.api.language_profile_schema_api import LanguageProfileSchemaApi as LanguageProfileSchemaApi
+    from sonarr.api.localization_api import LocalizationApi as LocalizationApi
+    from sonarr.api.log_api import LogApi as LogApi
+    from sonarr.api.log_file_api import LogFileApi as LogFileApi
+    from sonarr.api.manual_import_api import ManualImportApi as ManualImportApi
+    from sonarr.api.media_cover_api import MediaCoverApi as MediaCoverApi
+    from sonarr.api.media_management_config_api import MediaManagementConfigApi as MediaManagementConfigApi
+    from sonarr.api.metadata_api import MetadataApi as MetadataApi
+    from sonarr.api.missing_api import MissingApi as MissingApi
+    from sonarr.api.naming_config_api import NamingConfigApi as NamingConfigApi
+    from sonarr.api.notification_api import NotificationApi as NotificationApi
+    from sonarr.api.parse_api import ParseApi as ParseApi
+    from sonarr.api.ping_api import PingApi as PingApi
+    from sonarr.api.quality_definition_api import QualityDefinitionApi as QualityDefinitionApi
+    from sonarr.api.quality_profile_api import QualityProfileApi as QualityProfileApi
+    from sonarr.api.quality_profile_schema_api import QualityProfileSchemaApi as QualityProfileSchemaApi
+    from sonarr.api.queue_api import QueueApi as QueueApi
+    from sonarr.api.queue_action_api import QueueActionApi as QueueActionApi
+    from sonarr.api.queue_details_api import QueueDetailsApi as QueueDetailsApi
+    from sonarr.api.queue_status_api import QueueStatusApi as QueueStatusApi
+    from sonarr.api.release_api import ReleaseApi as ReleaseApi
+    from sonarr.api.release_profile_api import ReleaseProfileApi as ReleaseProfileApi
+    from sonarr.api.release_push_api import ReleasePushApi as ReleasePushApi
+    from sonarr.api.remote_path_mapping_api import RemotePathMappingApi as RemotePathMappingApi
+    from sonarr.api.rename_episode_api import RenameEpisodeApi as RenameEpisodeApi
+    from sonarr.api.root_folder_api import RootFolderApi as RootFolderApi
+    from sonarr.api.season_pass_api import SeasonPassApi as SeasonPassApi
+    from sonarr.api.series_api import SeriesApi as SeriesApi
+    from sonarr.api.series_editor_api import SeriesEditorApi as SeriesEditorApi
+    from sonarr.api.series_folder_api import SeriesFolderApi as SeriesFolderApi
+    from sonarr.api.series_import_api import SeriesImportApi as SeriesImportApi
+    from sonarr.api.series_lookup_api import SeriesLookupApi as SeriesLookupApi
+    from sonarr.api.static_resource_api import StaticResourceApi as StaticResourceApi
+    from sonarr.api.system_api import SystemApi as SystemApi
+    from sonarr.api.tag_api import TagApi as TagApi
+    from sonarr.api.tag_details_api import TagDetailsApi as TagDetailsApi
+    from sonarr.api.task_api import TaskApi as TaskApi
+    from sonarr.api.ui_config_api import UiConfigApi as UiConfigApi
+    from sonarr.api.update_api import UpdateApi as UpdateApi
+    from sonarr.api.update_log_file_api import UpdateLogFileApi as UpdateLogFileApi
+    
+    # import ApiClient
+    from sonarr.api_response import ApiResponse as ApiResponse
+    from sonarr.api_client import ApiClient as ApiClient
+    from sonarr.configuration import Configuration as Configuration
+    from sonarr.exceptions import OpenApiException as OpenApiException
+    from sonarr.exceptions import ApiTypeError as ApiTypeError
+    from sonarr.exceptions import ApiValueError as ApiValueError
+    from sonarr.exceptions import ApiKeyError as ApiKeyError
+    from sonarr.exceptions import ApiAttributeError as ApiAttributeError
+    from sonarr.exceptions import ApiException as ApiException
+    
+    # import models into sdk package
+    from sonarr.models.add_series_options import AddSeriesOptions as AddSeriesOptions
+    from sonarr.models.alternate_title_resource import AlternateTitleResource as AlternateTitleResource
+    from sonarr.models.apply_tags import ApplyTags as ApplyTags
+    from sonarr.models.authentication_required_type import AuthenticationRequiredType as AuthenticationRequiredType
+    from sonarr.models.authentication_type import AuthenticationType as AuthenticationType
+    from sonarr.models.auto_tagging_resource import AutoTaggingResource as AutoTaggingResource
+    from sonarr.models.auto_tagging_specification_schema import AutoTaggingSpecificationSchema as AutoTaggingSpecificationSchema
+    from sonarr.models.backup_resource import BackupResource as BackupResource
+    from sonarr.models.backup_type import BackupType as BackupType
+    from sonarr.models.blocklist_bulk_resource import BlocklistBulkResource as BlocklistBulkResource
+    from sonarr.models.blocklist_resource import BlocklistResource as BlocklistResource
+    from sonarr.models.blocklist_resource_paging_resource import BlocklistResourcePagingResource as BlocklistResourcePagingResource
+    from sonarr.models.certificate_validation_type import CertificateValidationType as CertificateValidationType
+    from sonarr.models.command import Command as Command
+    from sonarr.models.command_priority import CommandPriority as CommandPriority
+    from sonarr.models.command_resource import CommandResource as CommandResource
+    from sonarr.models.command_result import CommandResult as CommandResult
+    from sonarr.models.command_status import CommandStatus as CommandStatus
+    from sonarr.models.command_trigger import CommandTrigger as CommandTrigger
+    from sonarr.models.contract_field import ContractField as ContractField
+    from sonarr.models.custom_filter_resource import CustomFilterResource as CustomFilterResource
+    from sonarr.models.custom_format_bulk_resource import CustomFormatBulkResource as CustomFormatBulkResource
+    from sonarr.models.custom_format_resource import CustomFormatResource as CustomFormatResource
+    from sonarr.models.custom_format_specification_schema import CustomFormatSpecificationSchema as CustomFormatSpecificationSchema
+    from sonarr.models.database_type import DatabaseType as DatabaseType
+    from sonarr.models.delay_profile_resource import DelayProfileResource as DelayProfileResource
+    from sonarr.models.disk_space_resource import DiskSpaceResource as DiskSpaceResource
+    from sonarr.models.download_client_bulk_resource import DownloadClientBulkResource as DownloadClientBulkResource
+    from sonarr.models.download_client_config_resource import DownloadClientConfigResource as DownloadClientConfigResource
+    from sonarr.models.download_client_resource import DownloadClientResource as DownloadClientResource
+    from sonarr.models.download_protocol import DownloadProtocol as DownloadProtocol
+    from sonarr.models.episode_file_list_resource import EpisodeFileListResource as EpisodeFileListResource
+    from sonarr.models.episode_file_resource import EpisodeFileResource as EpisodeFileResource
+    from sonarr.models.episode_history_event_type import EpisodeHistoryEventType as EpisodeHistoryEventType
+    from sonarr.models.episode_resource import EpisodeResource as EpisodeResource
+    from sonarr.models.episode_resource_paging_resource import EpisodeResourcePagingResource as EpisodeResourcePagingResource
+    from sonarr.models.episode_title_required_type import EpisodeTitleRequiredType as EpisodeTitleRequiredType
+    from sonarr.models.episodes_monitored_resource import EpisodesMonitoredResource as EpisodesMonitoredResource
+    from sonarr.models.file_date_type import FileDateType as FileDateType
+    from sonarr.models.health_check_result import HealthCheckResult as HealthCheckResult
+    from sonarr.models.health_resource import HealthResource as HealthResource
+    from sonarr.models.history_resource import HistoryResource as HistoryResource
+    from sonarr.models.history_resource_paging_resource import HistoryResourcePagingResource as HistoryResourcePagingResource
+    from sonarr.models.host_config_resource import HostConfigResource as HostConfigResource
+    from sonarr.models.import_list_bulk_resource import ImportListBulkResource as ImportListBulkResource
+    from sonarr.models.import_list_config_resource import ImportListConfigResource as ImportListConfigResource
+    from sonarr.models.import_list_exclusion_bulk_resource import ImportListExclusionBulkResource as ImportListExclusionBulkResource
+    from sonarr.models.import_list_exclusion_resource import ImportListExclusionResource as ImportListExclusionResource
+    from sonarr.models.import_list_exclusion_resource_paging_resource import ImportListExclusionResourcePagingResource as ImportListExclusionResourcePagingResource
+    from sonarr.models.import_list_resource import ImportListResource as ImportListResource
+    from sonarr.models.import_list_type import ImportListType as ImportListType
+    from sonarr.models.import_rejection_resource import ImportRejectionResource as ImportRejectionResource
+    from sonarr.models.indexer_bulk_resource import IndexerBulkResource as IndexerBulkResource
+    from sonarr.models.indexer_config_resource import IndexerConfigResource as IndexerConfigResource
+    from sonarr.models.indexer_flag_resource import IndexerFlagResource as IndexerFlagResource
+    from sonarr.models.indexer_resource import IndexerResource as IndexerResource
+    from sonarr.models.language import Language as Language
+    from sonarr.models.language_profile_item_resource import LanguageProfileItemResource as LanguageProfileItemResource
+    from sonarr.models.language_profile_resource import LanguageProfileResource as LanguageProfileResource
+    from sonarr.models.language_resource import LanguageResource as LanguageResource
+    from sonarr.models.list_sync_level_type import ListSyncLevelType as ListSyncLevelType
+    from sonarr.models.localization_language_resource import LocalizationLanguageResource as LocalizationLanguageResource
+    from sonarr.models.localization_resource import LocalizationResource as LocalizationResource
+    from sonarr.models.log_file_resource import LogFileResource as LogFileResource
+    from sonarr.models.log_resource import LogResource as LogResource
+    from sonarr.models.log_resource_paging_resource import LogResourcePagingResource as LogResourcePagingResource
+    from sonarr.models.manual_import_reprocess_resource import ManualImportReprocessResource as ManualImportReprocessResource
+    from sonarr.models.manual_import_resource import ManualImportResource as ManualImportResource
+    from sonarr.models.media_cover import MediaCover as MediaCover
+    from sonarr.models.media_cover_types import MediaCoverTypes as MediaCoverTypes
+    from sonarr.models.media_info_resource import MediaInfoResource as MediaInfoResource
+    from sonarr.models.media_management_config_resource import MediaManagementConfigResource as MediaManagementConfigResource
+    from sonarr.models.metadata_resource import MetadataResource as MetadataResource
+    from sonarr.models.monitor_types import MonitorTypes as MonitorTypes
+    from sonarr.models.monitoring_options import MonitoringOptions as MonitoringOptions
+    from sonarr.models.naming_config_resource import NamingConfigResource as NamingConfigResource
+    from sonarr.models.new_item_monitor_types import NewItemMonitorTypes as NewItemMonitorTypes
+    from sonarr.models.notification_resource import NotificationResource as NotificationResource
+    from sonarr.models.parse_resource import ParseResource as ParseResource
+    from sonarr.models.parsed_episode_info import ParsedEpisodeInfo as ParsedEpisodeInfo
+    from sonarr.models.ping_resource import PingResource as PingResource
+    from sonarr.models.privacy_level import PrivacyLevel as PrivacyLevel
+    from sonarr.models.profile_format_item_resource import ProfileFormatItemResource as ProfileFormatItemResource
+    from sonarr.models.proper_download_types import ProperDownloadTypes as ProperDownloadTypes
+    from sonarr.models.provider_message import ProviderMessage as ProviderMessage
+    from sonarr.models.provider_message_type import ProviderMessageType as ProviderMessageType
+    from sonarr.models.proxy_type import ProxyType as ProxyType
+    from sonarr.models.quality import Quality as Quality
+    from sonarr.models.quality_definition_limits_resource import QualityDefinitionLimitsResource as QualityDefinitionLimitsResource
+    from sonarr.models.quality_definition_resource import QualityDefinitionResource as QualityDefinitionResource
+    from sonarr.models.quality_model import QualityModel as QualityModel
+    from sonarr.models.quality_profile_quality_item_resource import QualityProfileQualityItemResource as QualityProfileQualityItemResource
+    from sonarr.models.quality_profile_resource import QualityProfileResource as QualityProfileResource
+    from sonarr.models.quality_source import QualitySource as QualitySource
+    from sonarr.models.queue_bulk_resource import QueueBulkResource as QueueBulkResource
+    from sonarr.models.queue_resource import QueueResource as QueueResource
+    from sonarr.models.queue_resource_paging_resource import QueueResourcePagingResource as QueueResourcePagingResource
+    from sonarr.models.queue_status import QueueStatus as QueueStatus
+    from sonarr.models.queue_status_resource import QueueStatusResource as QueueStatusResource
+    from sonarr.models.ratings import Ratings as Ratings
+    from sonarr.models.rejection_type import RejectionType as RejectionType
+    from sonarr.models.release_episode_resource import ReleaseEpisodeResource as ReleaseEpisodeResource
+    from sonarr.models.release_profile_resource import ReleaseProfileResource as ReleaseProfileResource
+    from sonarr.models.release_resource import ReleaseResource as ReleaseResource
+    from sonarr.models.release_type import ReleaseType as ReleaseType
+    from sonarr.models.remote_path_mapping_resource import RemotePathMappingResource as RemotePathMappingResource
+    from sonarr.models.rename_episode_resource import RenameEpisodeResource as RenameEpisodeResource
+    from sonarr.models.rescan_after_refresh_type import RescanAfterRefreshType as RescanAfterRefreshType
+    from sonarr.models.revision import Revision as Revision
+    from sonarr.models.root_folder_resource import RootFolderResource as RootFolderResource
+    from sonarr.models.runtime_mode import RuntimeMode as RuntimeMode
+    from sonarr.models.season_pass_resource import SeasonPassResource as SeasonPassResource
+    from sonarr.models.season_pass_series_resource import SeasonPassSeriesResource as SeasonPassSeriesResource
+    from sonarr.models.season_resource import SeasonResource as SeasonResource
+    from sonarr.models.season_statistics_resource import SeasonStatisticsResource as SeasonStatisticsResource
+    from sonarr.models.select_option import SelectOption as SelectOption
+    from sonarr.models.series_editor_resource import SeriesEditorResource as SeriesEditorResource
+    from sonarr.models.series_resource import SeriesResource as SeriesResource
+    from sonarr.models.series_statistics_resource import SeriesStatisticsResource as SeriesStatisticsResource
+    from sonarr.models.series_status_type import SeriesStatusType as SeriesStatusType
+    from sonarr.models.series_title_info import SeriesTitleInfo as SeriesTitleInfo
+    from sonarr.models.series_types import SeriesTypes as SeriesTypes
+    from sonarr.models.sort_direction import SortDirection as SortDirection
+    from sonarr.models.system_resource import SystemResource as SystemResource
+    from sonarr.models.tag_details_resource import TagDetailsResource as TagDetailsResource
+    from sonarr.models.tag_resource import TagResource as TagResource
+    from sonarr.models.task_resource import TaskResource as TaskResource
+    from sonarr.models.tracked_download_state import TrackedDownloadState as TrackedDownloadState
+    from sonarr.models.tracked_download_status import TrackedDownloadStatus as TrackedDownloadStatus
+    from sonarr.models.tracked_download_status_message import TrackedDownloadStatusMessage as TrackedDownloadStatusMessage
+    from sonarr.models.ui_config_resource import UiConfigResource as UiConfigResource
+    from sonarr.models.unmapped_folder import UnmappedFolder as UnmappedFolder
+    from sonarr.models.update_changes import UpdateChanges as UpdateChanges
+    from sonarr.models.update_mechanism import UpdateMechanism as UpdateMechanism
+    from sonarr.models.update_resource import UpdateResource as UpdateResource
+    
+else:
+    from lazy_imports import LazyModule, as_package, load
+
+    load(
+        LazyModule(
+            *as_package(__file__),
+            ("__version__", __version__),
+            ("__all__", __all__),
+            """# import apis into sdk package
+from sonarr.api.api_info_api import ApiInfoApi as ApiInfoApi
+from sonarr.api.authentication_api import AuthenticationApi as AuthenticationApi
+from sonarr.api.auto_tagging_api import AutoTaggingApi as AutoTaggingApi
+from sonarr.api.backup_api import BackupApi as BackupApi
+from sonarr.api.blocklist_api import BlocklistApi as BlocklistApi
+from sonarr.api.calendar_api import CalendarApi as CalendarApi
+from sonarr.api.calendar_feed_api import CalendarFeedApi as CalendarFeedApi
+from sonarr.api.command_api import CommandApi as CommandApi
+from sonarr.api.custom_filter_api import CustomFilterApi as CustomFilterApi
+from sonarr.api.custom_format_api import CustomFormatApi as CustomFormatApi
+from sonarr.api.cutoff_api import CutoffApi as CutoffApi
+from sonarr.api.delay_profile_api import DelayProfileApi as DelayProfileApi
+from sonarr.api.disk_space_api import DiskSpaceApi as DiskSpaceApi
+from sonarr.api.download_client_api import DownloadClientApi as DownloadClientApi
+from sonarr.api.download_client_config_api import DownloadClientConfigApi as DownloadClientConfigApi
+from sonarr.api.episode_api import EpisodeApi as EpisodeApi
+from sonarr.api.episode_file_api import EpisodeFileApi as EpisodeFileApi
+from sonarr.api.file_system_api import FileSystemApi as FileSystemApi
+from sonarr.api.health_api import HealthApi as HealthApi
+from sonarr.api.history_api import HistoryApi as HistoryApi
+from sonarr.api.host_config_api import HostConfigApi as HostConfigApi
+from sonarr.api.import_list_api import ImportListApi as ImportListApi
+from sonarr.api.import_list_config_api import ImportListConfigApi as ImportListConfigApi
+from sonarr.api.import_list_exclusion_api import ImportListExclusionApi as ImportListExclusionApi
+from sonarr.api.indexer_api import IndexerApi as IndexerApi
+from sonarr.api.indexer_config_api import IndexerConfigApi as IndexerConfigApi
+from sonarr.api.indexer_flag_api import IndexerFlagApi as IndexerFlagApi
+from sonarr.api.language_api import LanguageApi as LanguageApi
+from sonarr.api.language_profile_api import LanguageProfileApi as LanguageProfileApi
+from sonarr.api.language_profile_schema_api import LanguageProfileSchemaApi as LanguageProfileSchemaApi
+from sonarr.api.localization_api import LocalizationApi as LocalizationApi
+from sonarr.api.log_api import LogApi as LogApi
+from sonarr.api.log_file_api import LogFileApi as LogFileApi
+from sonarr.api.manual_import_api import ManualImportApi as ManualImportApi
+from sonarr.api.media_cover_api import MediaCoverApi as MediaCoverApi
+from sonarr.api.media_management_config_api import MediaManagementConfigApi as MediaManagementConfigApi
+from sonarr.api.metadata_api import MetadataApi as MetadataApi
+from sonarr.api.missing_api import MissingApi as MissingApi
+from sonarr.api.naming_config_api import NamingConfigApi as NamingConfigApi
+from sonarr.api.notification_api import NotificationApi as NotificationApi
+from sonarr.api.parse_api import ParseApi as ParseApi
+from sonarr.api.ping_api import PingApi as PingApi
+from sonarr.api.quality_definition_api import QualityDefinitionApi as QualityDefinitionApi
+from sonarr.api.quality_profile_api import QualityProfileApi as QualityProfileApi
+from sonarr.api.quality_profile_schema_api import QualityProfileSchemaApi as QualityProfileSchemaApi
+from sonarr.api.queue_api import QueueApi as QueueApi
+from sonarr.api.queue_action_api import QueueActionApi as QueueActionApi
+from sonarr.api.queue_details_api import QueueDetailsApi as QueueDetailsApi
+from sonarr.api.queue_status_api import QueueStatusApi as QueueStatusApi
+from sonarr.api.release_api import ReleaseApi as ReleaseApi
+from sonarr.api.release_profile_api import ReleaseProfileApi as ReleaseProfileApi
+from sonarr.api.release_push_api import ReleasePushApi as ReleasePushApi
+from sonarr.api.remote_path_mapping_api import RemotePathMappingApi as RemotePathMappingApi
+from sonarr.api.rename_episode_api import RenameEpisodeApi as RenameEpisodeApi
+from sonarr.api.root_folder_api import RootFolderApi as RootFolderApi
+from sonarr.api.season_pass_api import SeasonPassApi as SeasonPassApi
+from sonarr.api.series_api import SeriesApi as SeriesApi
+from sonarr.api.series_editor_api import SeriesEditorApi as SeriesEditorApi
+from sonarr.api.series_folder_api import SeriesFolderApi as SeriesFolderApi
+from sonarr.api.series_import_api import SeriesImportApi as SeriesImportApi
+from sonarr.api.series_lookup_api import SeriesLookupApi as SeriesLookupApi
+from sonarr.api.static_resource_api import StaticResourceApi as StaticResourceApi
+from sonarr.api.system_api import SystemApi as SystemApi
+from sonarr.api.tag_api import TagApi as TagApi
+from sonarr.api.tag_details_api import TagDetailsApi as TagDetailsApi
+from sonarr.api.task_api import TaskApi as TaskApi
+from sonarr.api.ui_config_api import UiConfigApi as UiConfigApi
+from sonarr.api.update_api import UpdateApi as UpdateApi
+from sonarr.api.update_log_file_api import UpdateLogFileApi as UpdateLogFileApi
 
 # import ApiClient
-from sonarr.api_response import ApiResponse
-from sonarr.api_client import ApiClient
-from sonarr.configuration import Configuration
-from sonarr.exceptions import OpenApiException
-from sonarr.exceptions import ApiTypeError
-from sonarr.exceptions import ApiValueError
-from sonarr.exceptions import ApiKeyError
-from sonarr.exceptions import ApiAttributeError
-from sonarr.exceptions import ApiException
+from sonarr.api_response import ApiResponse as ApiResponse
+from sonarr.api_client import ApiClient as ApiClient
+from sonarr.configuration import Configuration as Configuration
+from sonarr.exceptions import OpenApiException as OpenApiException
+from sonarr.exceptions import ApiTypeError as ApiTypeError
+from sonarr.exceptions import ApiValueError as ApiValueError
+from sonarr.exceptions import ApiKeyError as ApiKeyError
+from sonarr.exceptions import ApiAttributeError as ApiAttributeError
+from sonarr.exceptions import ApiException as ApiException
 
 # import models into sdk package
-from sonarr.models.add_series_options import AddSeriesOptions
-from sonarr.models.alternate_title_resource import AlternateTitleResource
-from sonarr.models.apply_tags import ApplyTags
-from sonarr.models.authentication_required_type import AuthenticationRequiredType
-from sonarr.models.authentication_type import AuthenticationType
-from sonarr.models.auto_tagging_resource import AutoTaggingResource
-from sonarr.models.auto_tagging_specification_schema import AutoTaggingSpecificationSchema
-from sonarr.models.backup_resource import BackupResource
-from sonarr.models.backup_type import BackupType
-from sonarr.models.blocklist_bulk_resource import BlocklistBulkResource
-from sonarr.models.blocklist_resource import BlocklistResource
-from sonarr.models.blocklist_resource_paging_resource import BlocklistResourcePagingResource
-from sonarr.models.certificate_validation_type import CertificateValidationType
-from sonarr.models.command import Command
-from sonarr.models.command_priority import CommandPriority
-from sonarr.models.command_resource import CommandResource
-from sonarr.models.command_result import CommandResult
-from sonarr.models.command_status import CommandStatus
-from sonarr.models.command_trigger import CommandTrigger
-from sonarr.models.contract_field import ContractField
-from sonarr.models.custom_filter_resource import CustomFilterResource
-from sonarr.models.custom_format_bulk_resource import CustomFormatBulkResource
-from sonarr.models.custom_format_resource import CustomFormatResource
-from sonarr.models.custom_format_specification_schema import CustomFormatSpecificationSchema
-from sonarr.models.database_type import DatabaseType
-from sonarr.models.delay_profile_resource import DelayProfileResource
-from sonarr.models.disk_space_resource import DiskSpaceResource
-from sonarr.models.download_client_bulk_resource import DownloadClientBulkResource
-from sonarr.models.download_client_config_resource import DownloadClientConfigResource
-from sonarr.models.download_client_resource import DownloadClientResource
-from sonarr.models.download_protocol import DownloadProtocol
-from sonarr.models.episode_file_list_resource import EpisodeFileListResource
-from sonarr.models.episode_file_resource import EpisodeFileResource
-from sonarr.models.episode_history_event_type import EpisodeHistoryEventType
-from sonarr.models.episode_resource import EpisodeResource
-from sonarr.models.episode_resource_paging_resource import EpisodeResourcePagingResource
-from sonarr.models.episode_title_required_type import EpisodeTitleRequiredType
-from sonarr.models.episodes_monitored_resource import EpisodesMonitoredResource
-from sonarr.models.file_date_type import FileDateType
-from sonarr.models.health_check_result import HealthCheckResult
-from sonarr.models.health_resource import HealthResource
-from sonarr.models.history_resource import HistoryResource
-from sonarr.models.history_resource_paging_resource import HistoryResourcePagingResource
-from sonarr.models.host_config_resource import HostConfigResource
-from sonarr.models.import_list_bulk_resource import ImportListBulkResource
-from sonarr.models.import_list_config_resource import ImportListConfigResource
-from sonarr.models.import_list_exclusion_bulk_resource import ImportListExclusionBulkResource
-from sonarr.models.import_list_exclusion_resource import ImportListExclusionResource
-from sonarr.models.import_list_exclusion_resource_paging_resource import ImportListExclusionResourcePagingResource
-from sonarr.models.import_list_resource import ImportListResource
-from sonarr.models.import_list_type import ImportListType
-from sonarr.models.import_rejection_resource import ImportRejectionResource
-from sonarr.models.indexer_bulk_resource import IndexerBulkResource
-from sonarr.models.indexer_config_resource import IndexerConfigResource
-from sonarr.models.indexer_flag_resource import IndexerFlagResource
-from sonarr.models.indexer_resource import IndexerResource
-from sonarr.models.language import Language
-from sonarr.models.language_profile_item_resource import LanguageProfileItemResource
-from sonarr.models.language_profile_resource import LanguageProfileResource
-from sonarr.models.language_resource import LanguageResource
-from sonarr.models.list_sync_level_type import ListSyncLevelType
-from sonarr.models.localization_language_resource import LocalizationLanguageResource
-from sonarr.models.localization_resource import LocalizationResource
-from sonarr.models.log_file_resource import LogFileResource
-from sonarr.models.log_resource import LogResource
-from sonarr.models.log_resource_paging_resource import LogResourcePagingResource
-from sonarr.models.manual_import_reprocess_resource import ManualImportReprocessResource
-from sonarr.models.manual_import_resource import ManualImportResource
-from sonarr.models.media_cover import MediaCover
-from sonarr.models.media_cover_types import MediaCoverTypes
-from sonarr.models.media_info_resource import MediaInfoResource
-from sonarr.models.media_management_config_resource import MediaManagementConfigResource
-from sonarr.models.metadata_resource import MetadataResource
-from sonarr.models.monitor_types import MonitorTypes
-from sonarr.models.monitoring_options import MonitoringOptions
-from sonarr.models.naming_config_resource import NamingConfigResource
-from sonarr.models.new_item_monitor_types import NewItemMonitorTypes
-from sonarr.models.notification_resource import NotificationResource
-from sonarr.models.parse_resource import ParseResource
-from sonarr.models.parsed_episode_info import ParsedEpisodeInfo
-from sonarr.models.ping_resource import PingResource
-from sonarr.models.privacy_level import PrivacyLevel
-from sonarr.models.profile_format_item_resource import ProfileFormatItemResource
-from sonarr.models.proper_download_types import ProperDownloadTypes
-from sonarr.models.provider_message import ProviderMessage
-from sonarr.models.provider_message_type import ProviderMessageType
-from sonarr.models.proxy_type import ProxyType
-from sonarr.models.quality import Quality
-from sonarr.models.quality_definition_limits_resource import QualityDefinitionLimitsResource
-from sonarr.models.quality_definition_resource import QualityDefinitionResource
-from sonarr.models.quality_model import QualityModel
-from sonarr.models.quality_profile_quality_item_resource import QualityProfileQualityItemResource
-from sonarr.models.quality_profile_resource import QualityProfileResource
-from sonarr.models.quality_source import QualitySource
-from sonarr.models.queue_bulk_resource import QueueBulkResource
-from sonarr.models.queue_resource import QueueResource
-from sonarr.models.queue_resource_paging_resource import QueueResourcePagingResource
-from sonarr.models.queue_status import QueueStatus
-from sonarr.models.queue_status_resource import QueueStatusResource
-from sonarr.models.ratings import Ratings
-from sonarr.models.rejection_type import RejectionType
-from sonarr.models.release_episode_resource import ReleaseEpisodeResource
-from sonarr.models.release_profile_resource import ReleaseProfileResource
-from sonarr.models.release_resource import ReleaseResource
-from sonarr.models.release_type import ReleaseType
-from sonarr.models.remote_path_mapping_resource import RemotePathMappingResource
-from sonarr.models.rename_episode_resource import RenameEpisodeResource
-from sonarr.models.rescan_after_refresh_type import RescanAfterRefreshType
-from sonarr.models.revision import Revision
-from sonarr.models.root_folder_resource import RootFolderResource
-from sonarr.models.runtime_mode import RuntimeMode
-from sonarr.models.season_pass_resource import SeasonPassResource
-from sonarr.models.season_pass_series_resource import SeasonPassSeriesResource
-from sonarr.models.season_resource import SeasonResource
-from sonarr.models.season_statistics_resource import SeasonStatisticsResource
-from sonarr.models.select_option import SelectOption
-from sonarr.models.series_editor_resource import SeriesEditorResource
-from sonarr.models.series_resource import SeriesResource
-from sonarr.models.series_statistics_resource import SeriesStatisticsResource
-from sonarr.models.series_status_type import SeriesStatusType
-from sonarr.models.series_title_info import SeriesTitleInfo
-from sonarr.models.series_types import SeriesTypes
-from sonarr.models.sort_direction import SortDirection
-from sonarr.models.system_resource import SystemResource
-from sonarr.models.tag_details_resource import TagDetailsResource
-from sonarr.models.tag_resource import TagResource
-from sonarr.models.task_resource import TaskResource
-from sonarr.models.tracked_download_state import TrackedDownloadState
-from sonarr.models.tracked_download_status import TrackedDownloadStatus
-from sonarr.models.tracked_download_status_message import TrackedDownloadStatusMessage
-from sonarr.models.ui_config_resource import UiConfigResource
-from sonarr.models.unmapped_folder import UnmappedFolder
-from sonarr.models.update_changes import UpdateChanges
-from sonarr.models.update_mechanism import UpdateMechanism
-from sonarr.models.update_resource import UpdateResource
+from sonarr.models.add_series_options import AddSeriesOptions as AddSeriesOptions
+from sonarr.models.alternate_title_resource import AlternateTitleResource as AlternateTitleResource
+from sonarr.models.apply_tags import ApplyTags as ApplyTags
+from sonarr.models.authentication_required_type import AuthenticationRequiredType as AuthenticationRequiredType
+from sonarr.models.authentication_type import AuthenticationType as AuthenticationType
+from sonarr.models.auto_tagging_resource import AutoTaggingResource as AutoTaggingResource
+from sonarr.models.auto_tagging_specification_schema import AutoTaggingSpecificationSchema as AutoTaggingSpecificationSchema
+from sonarr.models.backup_resource import BackupResource as BackupResource
+from sonarr.models.backup_type import BackupType as BackupType
+from sonarr.models.blocklist_bulk_resource import BlocklistBulkResource as BlocklistBulkResource
+from sonarr.models.blocklist_resource import BlocklistResource as BlocklistResource
+from sonarr.models.blocklist_resource_paging_resource import BlocklistResourcePagingResource as BlocklistResourcePagingResource
+from sonarr.models.certificate_validation_type import CertificateValidationType as CertificateValidationType
+from sonarr.models.command import Command as Command
+from sonarr.models.command_priority import CommandPriority as CommandPriority
+from sonarr.models.command_resource import CommandResource as CommandResource
+from sonarr.models.command_result import CommandResult as CommandResult
+from sonarr.models.command_status import CommandStatus as CommandStatus
+from sonarr.models.command_trigger import CommandTrigger as CommandTrigger
+from sonarr.models.contract_field import ContractField as ContractField
+from sonarr.models.custom_filter_resource import CustomFilterResource as CustomFilterResource
+from sonarr.models.custom_format_bulk_resource import CustomFormatBulkResource as CustomFormatBulkResource
+from sonarr.models.custom_format_resource import CustomFormatResource as CustomFormatResource
+from sonarr.models.custom_format_specification_schema import CustomFormatSpecificationSchema as CustomFormatSpecificationSchema
+from sonarr.models.database_type import DatabaseType as DatabaseType
+from sonarr.models.delay_profile_resource import DelayProfileResource as DelayProfileResource
+from sonarr.models.disk_space_resource import DiskSpaceResource as DiskSpaceResource
+from sonarr.models.download_client_bulk_resource import DownloadClientBulkResource as DownloadClientBulkResource
+from sonarr.models.download_client_config_resource import DownloadClientConfigResource as DownloadClientConfigResource
+from sonarr.models.download_client_resource import DownloadClientResource as DownloadClientResource
+from sonarr.models.download_protocol import DownloadProtocol as DownloadProtocol
+from sonarr.models.episode_file_list_resource import EpisodeFileListResource as EpisodeFileListResource
+from sonarr.models.episode_file_resource import EpisodeFileResource as EpisodeFileResource
+from sonarr.models.episode_history_event_type import EpisodeHistoryEventType as EpisodeHistoryEventType
+from sonarr.models.episode_resource import EpisodeResource as EpisodeResource
+from sonarr.models.episode_resource_paging_resource import EpisodeResourcePagingResource as EpisodeResourcePagingResource
+from sonarr.models.episode_title_required_type import EpisodeTitleRequiredType as EpisodeTitleRequiredType
+from sonarr.models.episodes_monitored_resource import EpisodesMonitoredResource as EpisodesMonitoredResource
+from sonarr.models.file_date_type import FileDateType as FileDateType
+from sonarr.models.health_check_result import HealthCheckResult as HealthCheckResult
+from sonarr.models.health_resource import HealthResource as HealthResource
+from sonarr.models.history_resource import HistoryResource as HistoryResource
+from sonarr.models.history_resource_paging_resource import HistoryResourcePagingResource as HistoryResourcePagingResource
+from sonarr.models.host_config_resource import HostConfigResource as HostConfigResource
+from sonarr.models.import_list_bulk_resource import ImportListBulkResource as ImportListBulkResource
+from sonarr.models.import_list_config_resource import ImportListConfigResource as ImportListConfigResource
+from sonarr.models.import_list_exclusion_bulk_resource import ImportListExclusionBulkResource as ImportListExclusionBulkResource
+from sonarr.models.import_list_exclusion_resource import ImportListExclusionResource as ImportListExclusionResource
+from sonarr.models.import_list_exclusion_resource_paging_resource import ImportListExclusionResourcePagingResource as ImportListExclusionResourcePagingResource
+from sonarr.models.import_list_resource import ImportListResource as ImportListResource
+from sonarr.models.import_list_type import ImportListType as ImportListType
+from sonarr.models.import_rejection_resource import ImportRejectionResource as ImportRejectionResource
+from sonarr.models.indexer_bulk_resource import IndexerBulkResource as IndexerBulkResource
+from sonarr.models.indexer_config_resource import IndexerConfigResource as IndexerConfigResource
+from sonarr.models.indexer_flag_resource import IndexerFlagResource as IndexerFlagResource
+from sonarr.models.indexer_resource import IndexerResource as IndexerResource
+from sonarr.models.language import Language as Language
+from sonarr.models.language_profile_item_resource import LanguageProfileItemResource as LanguageProfileItemResource
+from sonarr.models.language_profile_resource import LanguageProfileResource as LanguageProfileResource
+from sonarr.models.language_resource import LanguageResource as LanguageResource
+from sonarr.models.list_sync_level_type import ListSyncLevelType as ListSyncLevelType
+from sonarr.models.localization_language_resource import LocalizationLanguageResource as LocalizationLanguageResource
+from sonarr.models.localization_resource import LocalizationResource as LocalizationResource
+from sonarr.models.log_file_resource import LogFileResource as LogFileResource
+from sonarr.models.log_resource import LogResource as LogResource
+from sonarr.models.log_resource_paging_resource import LogResourcePagingResource as LogResourcePagingResource
+from sonarr.models.manual_import_reprocess_resource import ManualImportReprocessResource as ManualImportReprocessResource
+from sonarr.models.manual_import_resource import ManualImportResource as ManualImportResource
+from sonarr.models.media_cover import MediaCover as MediaCover
+from sonarr.models.media_cover_types import MediaCoverTypes as MediaCoverTypes
+from sonarr.models.media_info_resource import MediaInfoResource as MediaInfoResource
+from sonarr.models.media_management_config_resource import MediaManagementConfigResource as MediaManagementConfigResource
+from sonarr.models.metadata_resource import MetadataResource as MetadataResource
+from sonarr.models.monitor_types import MonitorTypes as MonitorTypes
+from sonarr.models.monitoring_options import MonitoringOptions as MonitoringOptions
+from sonarr.models.naming_config_resource import NamingConfigResource as NamingConfigResource
+from sonarr.models.new_item_monitor_types import NewItemMonitorTypes as NewItemMonitorTypes
+from sonarr.models.notification_resource import NotificationResource as NotificationResource
+from sonarr.models.parse_resource import ParseResource as ParseResource
+from sonarr.models.parsed_episode_info import ParsedEpisodeInfo as ParsedEpisodeInfo
+from sonarr.models.ping_resource import PingResource as PingResource
+from sonarr.models.privacy_level import PrivacyLevel as PrivacyLevel
+from sonarr.models.profile_format_item_resource import ProfileFormatItemResource as ProfileFormatItemResource
+from sonarr.models.proper_download_types import ProperDownloadTypes as ProperDownloadTypes
+from sonarr.models.provider_message import ProviderMessage as ProviderMessage
+from sonarr.models.provider_message_type import ProviderMessageType as ProviderMessageType
+from sonarr.models.proxy_type import ProxyType as ProxyType
+from sonarr.models.quality import Quality as Quality
+from sonarr.models.quality_definition_limits_resource import QualityDefinitionLimitsResource as QualityDefinitionLimitsResource
+from sonarr.models.quality_definition_resource import QualityDefinitionResource as QualityDefinitionResource
+from sonarr.models.quality_model import QualityModel as QualityModel
+from sonarr.models.quality_profile_quality_item_resource import QualityProfileQualityItemResource as QualityProfileQualityItemResource
+from sonarr.models.quality_profile_resource import QualityProfileResource as QualityProfileResource
+from sonarr.models.quality_source import QualitySource as QualitySource
+from sonarr.models.queue_bulk_resource import QueueBulkResource as QueueBulkResource
+from sonarr.models.queue_resource import QueueResource as QueueResource
+from sonarr.models.queue_resource_paging_resource import QueueResourcePagingResource as QueueResourcePagingResource
+from sonarr.models.queue_status import QueueStatus as QueueStatus
+from sonarr.models.queue_status_resource import QueueStatusResource as QueueStatusResource
+from sonarr.models.ratings import Ratings as Ratings
+from sonarr.models.rejection_type import RejectionType as RejectionType
+from sonarr.models.release_episode_resource import ReleaseEpisodeResource as ReleaseEpisodeResource
+from sonarr.models.release_profile_resource import ReleaseProfileResource as ReleaseProfileResource
+from sonarr.models.release_resource import ReleaseResource as ReleaseResource
+from sonarr.models.release_type import ReleaseType as ReleaseType
+from sonarr.models.remote_path_mapping_resource import RemotePathMappingResource as RemotePathMappingResource
+from sonarr.models.rename_episode_resource import RenameEpisodeResource as RenameEpisodeResource
+from sonarr.models.rescan_after_refresh_type import RescanAfterRefreshType as RescanAfterRefreshType
+from sonarr.models.revision import Revision as Revision
+from sonarr.models.root_folder_resource import RootFolderResource as RootFolderResource
+from sonarr.models.runtime_mode import RuntimeMode as RuntimeMode
+from sonarr.models.season_pass_resource import SeasonPassResource as SeasonPassResource
+from sonarr.models.season_pass_series_resource import SeasonPassSeriesResource as SeasonPassSeriesResource
+from sonarr.models.season_resource import SeasonResource as SeasonResource
+from sonarr.models.season_statistics_resource import SeasonStatisticsResource as SeasonStatisticsResource
+from sonarr.models.select_option import SelectOption as SelectOption
+from sonarr.models.series_editor_resource import SeriesEditorResource as SeriesEditorResource
+from sonarr.models.series_resource import SeriesResource as SeriesResource
+from sonarr.models.series_statistics_resource import SeriesStatisticsResource as SeriesStatisticsResource
+from sonarr.models.series_status_type import SeriesStatusType as SeriesStatusType
+from sonarr.models.series_title_info import SeriesTitleInfo as SeriesTitleInfo
+from sonarr.models.series_types import SeriesTypes as SeriesTypes
+from sonarr.models.sort_direction import SortDirection as SortDirection
+from sonarr.models.system_resource import SystemResource as SystemResource
+from sonarr.models.tag_details_resource import TagDetailsResource as TagDetailsResource
+from sonarr.models.tag_resource import TagResource as TagResource
+from sonarr.models.task_resource import TaskResource as TaskResource
+from sonarr.models.tracked_download_state import TrackedDownloadState as TrackedDownloadState
+from sonarr.models.tracked_download_status import TrackedDownloadStatus as TrackedDownloadStatus
+from sonarr.models.tracked_download_status_message import TrackedDownloadStatusMessage as TrackedDownloadStatusMessage
+from sonarr.models.ui_config_resource import UiConfigResource as UiConfigResource
+from sonarr.models.unmapped_folder import UnmappedFolder as UnmappedFolder
+from sonarr.models.update_changes import UpdateChanges as UpdateChanges
+from sonarr.models.update_mechanism import UpdateMechanism as UpdateMechanism
+from sonarr.models.update_resource import UpdateResource as UpdateResource
+
+""",
+            name=__name__,
+            doc=__doc__,
+        )
+    )
