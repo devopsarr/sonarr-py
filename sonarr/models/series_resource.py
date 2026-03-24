@@ -32,6 +32,7 @@ from sonarr.models.series_status_type import SeriesStatusType
 from sonarr.models.series_types import SeriesTypes
 from typing import Optional, Set
 from typing_extensions import Self
+from pydantic_core import to_jsonable_python
 
 class SeriesResource(BaseModel):
     """
@@ -85,7 +86,8 @@ class SeriesResource(BaseModel):
     __properties: ClassVar[List[str]] = ["id", "title", "alternateTitles", "sortTitle", "status", "ended", "profileName", "overview", "nextAiring", "previousAiring", "network", "airTime", "images", "originalLanguage", "remotePoster", "seasons", "year", "path", "qualityProfileId", "seasonFolder", "monitored", "monitorNewItems", "useSceneNumbering", "runtime", "tvdbId", "tvRageId", "tvMazeId", "tmdbId", "firstAired", "lastAired", "seriesType", "cleanTitle", "imdbId", "titleSlug", "rootFolderPath", "folder", "certification", "genres", "tags", "added", "addOptions", "ratings", "statistics", "episodesChanged", "languageProfileId"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )
@@ -97,8 +99,7 @@ class SeriesResource(BaseModel):
 
     def to_json(self) -> str:
         """Returns the JSON representation of the model using alias"""
-        # TODO: pydantic v2: use .model_dump_json(by_alias=True, exclude_unset=True) instead
-        return json.dumps(self.to_dict())
+        return json.dumps(to_jsonable_python(self.to_dict()))
 
     @classmethod
     def from_json(cls, json_str: str) -> Optional[Self]:

@@ -24,6 +24,7 @@ from sonarr.models.new_item_monitor_types import NewItemMonitorTypes
 from sonarr.models.series_types import SeriesTypes
 from typing import Optional, Set
 from typing_extensions import Self
+from pydantic_core import to_jsonable_python
 
 class SeriesEditorResource(BaseModel):
     """
@@ -44,7 +45,8 @@ class SeriesEditorResource(BaseModel):
     __properties: ClassVar[List[str]] = ["seriesIds", "monitored", "monitorNewItems", "qualityProfileId", "seriesType", "seasonFolder", "rootFolderPath", "tags", "applyTags", "moveFiles", "deleteFiles", "addImportListExclusion"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )
@@ -56,8 +58,7 @@ class SeriesEditorResource(BaseModel):
 
     def to_json(self) -> str:
         """Returns the JSON representation of the model using alias"""
-        # TODO: pydantic v2: use .model_dump_json(by_alias=True, exclude_unset=True) instead
-        return json.dumps(self.to_dict())
+        return json.dumps(to_jsonable_python(self.to_dict()))
 
     @classmethod
     def from_json(cls, json_str: str) -> Optional[Self]:
