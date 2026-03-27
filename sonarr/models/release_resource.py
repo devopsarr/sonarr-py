@@ -28,6 +28,7 @@ from sonarr.models.quality_model import QualityModel
 from sonarr.models.release_episode_resource import ReleaseEpisodeResource
 from typing import Optional, Set
 from typing_extensions import Self
+from pydantic_core import to_jsonable_python
 
 class ReleaseResource(BaseModel):
     """
@@ -97,7 +98,8 @@ class ReleaseResource(BaseModel):
     __properties: ClassVar[List[str]] = ["id", "guid", "quality", "qualityWeight", "age", "ageHours", "ageMinutes", "size", "indexerId", "indexer", "releaseGroup", "subGroup", "releaseHash", "title", "fullSeason", "sceneSource", "seasonNumber", "languages", "languageWeight", "airDate", "seriesTitle", "episodeNumbers", "absoluteEpisodeNumbers", "mappedSeasonNumber", "mappedEpisodeNumbers", "mappedAbsoluteEpisodeNumbers", "mappedSeriesId", "mappedEpisodeInfo", "approved", "temporarilyRejected", "rejected", "tvdbId", "tvRageId", "imdbId", "rejections", "publishDate", "commentUrl", "downloadUrl", "infoUrl", "episodeRequested", "downloadAllowed", "releaseWeight", "customFormats", "customFormatScore", "sceneMapping", "magnetUrl", "infoHash", "seeders", "leechers", "protocol", "indexerFlags", "isDaily", "isAbsoluteNumbering", "isPossibleSpecialEpisode", "special", "seriesId", "episodeId", "episodeIds", "downloadClientId", "downloadClient", "shouldOverride"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )
@@ -109,8 +111,7 @@ class ReleaseResource(BaseModel):
 
     def to_json(self) -> str:
         """Returns the JSON representation of the model using alias"""
-        # TODO: pydantic v2: use .model_dump_json(by_alias=True, exclude_unset=True) instead
-        return json.dumps(self.to_dict())
+        return json.dumps(to_jsonable_python(self.to_dict()))
 
     @classmethod
     def from_json(cls, json_str: str) -> Optional[Self]:

@@ -26,6 +26,7 @@ from sonarr.models.runtime_mode import RuntimeMode
 from sonarr.models.update_mechanism import UpdateMechanism
 from typing import Optional, Set
 from typing_extensions import Self
+from pydantic_core import to_jsonable_python
 
 class SystemResource(BaseModel):
     """
@@ -66,7 +67,8 @@ class SystemResource(BaseModel):
     __properties: ClassVar[List[str]] = ["appName", "instanceName", "version", "buildTime", "isDebug", "isProduction", "isAdmin", "isUserInteractive", "startupPath", "appData", "osName", "osVersion", "isNetCore", "isLinux", "isOsx", "isWindows", "isDocker", "mode", "branch", "authentication", "sqliteVersion", "migrationVersion", "urlBase", "runtimeVersion", "runtimeName", "startTime", "packageVersion", "packageAuthor", "packageUpdateMechanism", "packageUpdateMechanismMessage", "databaseVersion", "databaseType"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )
@@ -78,8 +80,7 @@ class SystemResource(BaseModel):
 
     def to_json(self) -> str:
         """Returns the JSON representation of the model using alias"""
-        # TODO: pydantic v2: use .model_dump_json(by_alias=True, exclude_unset=True) instead
-        return json.dumps(self.to_dict())
+        return json.dumps(to_jsonable_python(self.to_dict()))
 
     @classmethod
     def from_json(cls, json_str: str) -> Optional[Self]:
