@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.1.2](https://github.com/devopsarr/sonarr-py/compare/v1.1.1...v1.1.2) (2026-04-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency sonarr/sonarr to v4.0.16.2944 ([ba0c1e5](https://github.com/devopsarr/sonarr-py/commit/ba0c1e5b085b5c7ef93e393b607e0f8a2e15bfd1))
+* **deps:** update dependency sonarr/sonarr to v4.0.16.2944 ([ace7d58](https://github.com/devopsarr/sonarr-py/commit/ace7d584b653bf5af98a8ab9bda31a3d831576d9))
+* **deps:** update dependency sonarr/sonarr to v4.0.17.2952 ([a32556f](https://github.com/devopsarr/sonarr-py/commit/a32556f1d0855b2b7f03a7251ff12d94841df568))
+* **deps:** update dependency sonarr/sonarr to v4.0.17.2952 ([224c761](https://github.com/devopsarr/sonarr-py/commit/224c761ebf64b1bd494a131fa1a4515e23a0da5a))
+* **deps:** update openapitools/openapi-generator-cli docker tag to v7.16.0 ([f40399b](https://github.com/devopsarr/sonarr-py/commit/f40399b0af8a5a972d7b60062032f3bfd67984a2))
+* **deps:** update openapitools/openapi-generator-cli docker tag to v7.17.0 ([2c0929c](https://github.com/devopsarr/sonarr-py/commit/2c0929c6e1bf37fc46b4d5d945d60863e3532e92))
+* **deps:** update openapitools/openapi-generator-cli docker tag to v7.18.0 ([ee6a223](https://github.com/devopsarr/sonarr-py/commit/ee6a223dc22e352b18a92934422a9d571af69157))
+* **deps:** update openapitools/openapi-generator-cli docker tag to v7.18.0 ([fee17ef](https://github.com/devopsarr/sonarr-py/commit/fee17ef7ad1399e864f660cf0ec2821000e302eb))
+* **deps:** update openapitools/openapi-generator-cli docker tag to v7.19.0 ([b7581f5](https://github.com/devopsarr/sonarr-py/commit/b7581f5bcd8c53171746140f4f9998edd0bf4d2e))
+* **deps:** update openapitools/openapi-generator-cli docker tag to v7.19.0 ([8eebc32](https://github.com/devopsarr/sonarr-py/commit/8eebc32aa05c0da2a6d946247d9be71da5b7113a))
+* **deps:** update openapitools/openapi-generator-cli docker tag to v7.20.0 ([61e0cc5](https://github.com/devopsarr/sonarr-py/commit/61e0cc562c8b90ae3138d20c81335c84b176bc71))
+* **deps:** update openapitools/openapi-generator-cli docker tag to v7.20.0 ([7da98e0](https://github.com/devopsarr/sonarr-py/commit/7da98e0af2fbb6827af96dac23abe77c306d60b5))
+* **deps:** update openapitools/openapi-generator-cli docker tag to v7.21.0 ([dcd8a2b](https://github.com/devopsarr/sonarr-py/commit/dcd8a2b30bf05cece497548ebe544788e4f8727d))
+* **deps:** update openapitools/openapi-generator-cli docker tag to v7.21.0 ([a539516](https://github.com/devopsarr/sonarr-py/commit/a539516d587416cbd4dedefe985e25a3ff320f66))
+* **deps:** update openapitools/openapi-generator-cli docker tag to v7.22.0 ([6fae7e9](https://github.com/devopsarr/sonarr-py/commit/6fae7e9ec17b98fe8641356f9018bdaabc9f59a4))
+* **deps:** update openapitools/openapi-generator-cli docker tag to v7.22.0 ([3f041a8](https://github.com/devopsarr/sonarr-py/commit/3f041a8ce9cfc0b0ac60a46698e9484ffcc28c2f))
+
 ## [1.1.1](https://github.com/devopsarr/sonarr-py/compare/v1.1.0...v1.1.1) (2025-09-02)
 
 
