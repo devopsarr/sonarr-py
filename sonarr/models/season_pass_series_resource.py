@@ -76,8 +76,7 @@ class SeasonPassSeriesResource(BaseModel):
         _items = []
         if self.seasons:
             for _item_seasons in self.seasons:
-                if _item_seasons:
-                    _items.append(_item_seasons.to_dict())
+                _items.append(_item_seasons.to_dict() if _item_seasons is not None else None)
             _dict['seasons'] = _items
         # set to None if monitored (nullable) is None
         # and model_fields_set contains the field

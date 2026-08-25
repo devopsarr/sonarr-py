@@ -76,8 +76,7 @@ class SeasonPassResource(BaseModel):
         _items = []
         if self.series:
             for _item_series in self.series:
-                if _item_series:
-                    _items.append(_item_series.to_dict())
+                _items.append(_item_series.to_dict() if _item_series is not None else None)
             _dict['series'] = _items
         # override the default output from pydantic by calling `to_dict()` of monitoring_options
         if self.monitoring_options:
