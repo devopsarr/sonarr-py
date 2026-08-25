@@ -107,8 +107,7 @@ class EpisodeResource(BaseModel):
         _items = []
         if self.images:
             for _item_images in self.images:
-                if _item_images:
-                    _items.append(_item_images.to_dict())
+                _items.append(_item_images.to_dict() if _item_images is not None else None)
             _dict['images'] = _items
         # set to None if title (nullable) is None
         # and model_fields_set contains the field

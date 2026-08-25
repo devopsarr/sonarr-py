@@ -79,8 +79,7 @@ class EpisodeFileListResource(BaseModel):
         _items = []
         if self.languages:
             for _item_languages in self.languages:
-                if _item_languages:
-                    _items.append(_item_languages.to_dict())
+                _items.append(_item_languages.to_dict() if _item_languages is not None else None)
             _dict['languages'] = _items
         # override the default output from pydantic by calling `to_dict()` of quality
         if self.quality:
