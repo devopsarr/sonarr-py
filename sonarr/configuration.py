@@ -594,7 +594,7 @@ conf = sonarr.Configuration(
                "Python Version: {pyversion}\n"\
                "Version of the API: v4.0.19.2979\n"\
                "SDK Package Version:  {v}".\
-               format(env=sys.platform, pyversion=sys.version, v="1.1.1") # x-release-please-version
+               format(env=sys.platform, pyversion=sys.version, v="1.1.2") # x-release-please-version
 
     def get_host_settings(self) -> List[HostSetting]:
         """Gets an array of host settings
