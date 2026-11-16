@@ -1,5 +1,29 @@
 # Changelog
 
+## 1.1.2 (2026-11-16)
+
+## What's Changed
+* fix(deps): update openapitools/openapi-generator-cli docker tag to v7.16.0 by @devopsarr[bot] in https://github.com/devopsarr/sonarr-py/pull/89
+* fix(deps): update dependency sonarr/sonarr to v4.0.16.2944 by @devopsarr[bot] in https://github.com/devopsarr/sonarr-py/pull/91
+* fix(deps): update openapitools/openapi-generator-cli docker tag to v7.18.0 by @devopsarr[bot] in https://github.com/devopsarr/sonarr-py/pull/92
+* fix(deps): update openapitools/openapi-generator-cli docker tag to v7.19.0 by @devopsarr[bot] in https://github.com/devopsarr/sonarr-py/pull/93
+* fix(deps): update openapitools/openapi-generator-cli docker tag to v7.20.0 by @devopsarr[bot] in https://github.com/devopsarr/sonarr-py/pull/96
+* chore: add files for relase please v4 migration by @devopsarr[bot] in https://github.com/devopsarr/sonarr-py/pull/97
+* fix(deps): update dependency sonarr/sonarr to v4.0.17.2952 by @devopsarr[bot] in https://github.com/devopsarr/sonarr-py/pull/98
+* fix(deps): update openapitools/openapi-generator-cli docker tag to v7.21.0 by @devopsarr[bot] in https://github.com/devopsarr/sonarr-py/pull/99
+* fix(deps): update openapitools/openapi-generator-cli docker tag to v7.22.0 by @devopsarr[bot] in https://github.com/devopsarr/sonarr-py/pull/100
+* fix(deps): update openapitools/openapi-generator-cli docker tag to v7.23.0 by @devopsarr[bot] in https://github.com/devopsarr/sonarr-py/pull/101
+* fix(deps): update dependency sonarr/sonarr to v4.0.18.2971 by @devopsarr[bot] in https://github.com/devopsarr/sonarr-py/pull/102
+* fix(deps): update openapitools/openapi-generator-cli docker tag to v7.25.0 by @devopsarr[bot] in https://github.com/devopsarr/sonarr-py/pull/103
+* fix(deps): update dependency sonarr/sonarr to v4.0.19.2979 by @devopsarr[bot] in https://github.com/devopsarr/sonarr-py/pull/104
+* fix(deps): update dependency sonarr/sonarr to v4.0.20.3014 by @devopsarr[bot] in https://github.com/devopsarr/sonarr-py/pull/105
+* fix(deps): update dependency sonarr/sonarr to v4.0.20.3014 by @devopsarr[bot] in https://github.com/devopsarr/sonarr-py/pull/106
+* chore: align-versions by @devopsarr[bot] in https://github.com/devopsarr/sonarr-py/pull/107
+* chore: edit changelog type to github by @devopsarr[bot] in https://github.com/devopsarr/sonarr-py/pull/108
+
+
+**Full Changelog**: https://github.com/devopsarr/sonarr-py/compare/v1.1.1...v1.1.2
+
 ## [1.1.1](https://github.com/devopsarr/sonarr-py/compare/v1.1.0...v1.1.1) (2025-09-02)
 
 
